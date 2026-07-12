@@ -1,0 +1,262 @@
+[
+  {
+    "title": "Getting Started With Python",
+    "language": "Python",
+    "activity_type": "Lesson",
+    "difficulty": "Beginner",
+    "description": "Learn what Python is, install it on your computer, and write your first program!",
+    "content": "## What Is Python?\n\nPython is a high-level, interpreted programming language focused on readability and productivity. It allows programmers to focus on problem-solving instead of low-level details like memory management.\n\nPython is commonly used for:\n- Automation & scripting\n- Data science and AI\n- Web development\n- Cybersecurity\n- Scientific computing\n\n## Installing Python\n\n1. Go to **python.org** → Downloads\n2. Download the latest Python 3.x release\n3. During installation (Windows): ✅ Check **Add Python to PATH**\n4. Verify installation:\n\n```python\npython --version      # Windows\npython3 --version     # macOS/Linux\n```\n\n## Installing VS Code\n\nVS Code is a professional-grade code editor used in industry.\n\n**Steps:**\n1. Download from code.visualstudio.com\n2. Install the Python (Microsoft) extension\n3. Enable Format on Save\n\n## First Program\n\n```python\nprint(\"Hello, world\")\nprint(\"Welcome to CuriosityQuest\")\n```\n\nExecution order is top to bottom.\n\n## Recap\n- Installed Python and VS Code\n- Ran a Python script\n- Used the `print()` function",
+    "order": 1,
+    "id": "6966fb58e548b830753a4247"
+  },
+  {
+    "title": "How Python Executes Code",
+    "language": "Python",
+    "activity_type": "Lesson",
+    "difficulty": "Beginner",
+    "description": "Understand how Python interprets and runs your code, and learn about expressions vs statements.",
+    "content": "## Interpreter vs Compiler\n\nPython uses an **interpreter**:\n1. Source code (.py)\n2. Compiled to bytecode (.pyc)\n3. Executed by the Python Virtual Machine\n\n## Expressions\n\nAn **expression** produces a value:\n\n```python\n2 + 2\n5 > 3\n\"hi\" + \" there\"\n```\n\n**Statements** perform actions:\n\n```python\nprint(\"Hello\")\n```\n\n## Syntax Errors\n\n```python\nprint(\"Hello\"\n```\n\nSyntax errors stop execution **before** the program runs.\n\n## Recap\n- Learned how Python runs code\n- Distinguished expressions vs statements",
+    "order": 2,
+    "id": "6966fb58e548b830753a4248"
+  },
+  {
+    "title": "Variables and Memory Model",
+    "language": "Python",
+    "activity_type": "Lesson",
+    "difficulty": "Beginner",
+    "description": "Learn how variables work in Python and best practices for naming them.",
+    "content": "## Variables Reference Objects\n\nVariables reference objects in memory.\n\n```python\nstudents = 100\nstudents = 200\n```\n\nThe variable now points to a new object.\n\n## Naming Conventions\n\n- Use `snake_case`\n- Use descriptive names\n- Constants use `ALL_CAPS`\n\n```python\nMAX_ATTEMPTS = 3\nuser_name = \"Alex\"\ntotal_score = 0\n```\n\n## Recap\n- Variables reference objects\n- Naming affects readability",
+    "order": 3,
+    "id": "6966fb58e548b830753a4249"
+  },
+  {
+    "title": "Primitive Data Types (Deep Dive)",
+    "language": "Python",
+    "activity_type": "Lesson",
+    "difficulty": "Beginner",
+    "description": "Explore Python's basic data types: numbers, booleans, and truthiness.",
+    "content": "## Numeric Types\n\n```python\nx = 10          # int\ny = 3.14        # float\nz = 1 + 2j      # complex\n```\n\n## Boolean Logic\n\n```python\nis_active = True\nis_done = False\n```\n\n## Truthiness\n\nPython values can be \"truthy\" or \"falsy\":\n\n```python\nbool(0)      # False\nbool(\"\")     # False\nbool(None)   # False\n\nbool(1)      # True\nbool(\"hi\")   # True\nbool([1,2])  # True\n```\n\n## Recap\n- Understood Python primitive types\n- Learned truthy vs falsy values",
+    "order": 4,
+    "id": "6966fb58e548b830753a424a"
+  },
+  {
+    "title": "Interactive Profile Builder",
+    "language": "Python",
+    "activity_type": "Program",
+    "difficulty": "Beginner",
+    "description": "Create a program that asks for user information and displays a formatted profile.",
+    "content": "## Your First Program!\n\nCreate a program that:\n- Asks for name, age, and favorite language\n- Prints a formatted profile summary\n\n## Starter Code\n\n```python\n# Get user information\nname = input(\"What is your name? \")\nage = input(\"How old are you? \")\nfavorite_language = input(\"What's your favorite programming language? \")\n\n# Display the profile\nprint(\"\\n--- Your Profile ---\")\nprint(\"Name:\", name)\nprint(\"Age:\", age)\nprint(\"Favorite Language:\", favorite_language)\n```\n\n## Stretch Goals\n\n1. Convert age to int and do math:\n\n```python\nage = int(input(\"How old are you? \"))\nyears_to_100 = 100 - age\nprint(\"Years until you're 100:\", years_to_100)\n```\n\n2. Add conditional logic based on age:\n\n```python\nif age < 13:\n    print(\"You're a young coder!\")\nelif age < 20:\n    print(\"You're a teenage programmer!\")\nelse:\n    print(\"You're an adult developer!\")\n```\n\n## What You'll Learn\n- Using `input()` to get user data\n- Storing data in variables\n- Printing formatted output",
+    "order": 5,
+    "id": "6966fb58e548b830753a424b"
+  },
+  {
+    "title": "Strings Internals & Operations",
+    "language": "Python",
+    "activity_type": "Lesson",
+    "difficulty": "Beginner",
+    "description": "Master string indexing, slicing, and escape sequences.",
+    "content": "## Indexing & Slicing\n\n```python\nword = \"Programming\"\n\nprint(word[0])      # P (first character)\nprint(word[-1])     # g (last character)\nprint(word[0:4])    # Prog (first 4 chars)\nprint(word[::2])    # Pormig (every 2nd char)\n```\n\n## String Indices Explained\n\n```\n P  r  o  g  r  a  m  m  i  n  g\n 0  1  2  3  4  5  6  7  8  9  10\n-11-10 -9 -8 -7 -6 -5 -4 -3 -2 -1\n```\n\n## Escape Sequences\n\n```python\nprint(\"Line1\\nLine2\")    # Newline\nprint(\"Tab\\there\")       # Tab\nprint(\"Quote: \\\"Hi\\\"\")  # Quotes\n```\n\n## Recap\n- Used slicing patterns\n- Manipulated string data",
+    "order": 6,
+    "id": "6966fb58e548b830753a424c"
+  },
+  {
+    "title": "String Methods (Advanced Usage)",
+    "language": "Python",
+    "activity_type": "Lesson",
+    "difficulty": "Beginner",
+    "description": "Learn powerful string methods for text manipulation.",
+    "content": "## Chaining Methods\n\n```python\ntext = \"  python programming  \"\nresult = text.strip().title()\nprint(result)  # \"Python Programming\"\n```\n\nChaining methods creates clean pipelines.\n\n## Common String Methods\n\n```python\nmessage = \"Hello World\"\n\nprint(message.lower())       # hello world\nprint(message.upper())       # HELLO WORLD\nprint(message.replace(\"World\", \"Python\"))  # Hello Python\nprint(message.split())       # ['Hello', 'World']\n```\n\n## Searching and Replacing\n\n```python\nemail = \"user@gmail.com\"\n\nprint(email.endswith(\".com\"))    # True\nprint(email.startswith(\"user\"))  # True\nprint(\"@\" in email)              # True\n```\n\n## Recap\n- Used built-in string utilities\n- Combined multiple transformations",
+    "order": 7,
+    "id": "6966fb58e548b830753a424d"
+  },
+  {
+    "title": "Numbers, Precision, and Math",
+    "language": "Python",
+    "activity_type": "Lesson",
+    "difficulty": "Beginner",
+    "description": "Master arithmetic operators and the math module.",
+    "content": "## Arithmetic Operators\n\n```python\nx = 7\ny = 2\n\nprint(x + y)    # 9  (addition)\nprint(x - y)    # 5  (subtraction)\nprint(x * y)    # 14 (multiplication)\nprint(x / y)    # 3.5 (division)\nprint(x // y)   # 3  (floor division)\nprint(x % y)    # 1  (modulus/remainder)\nprint(x ** y)   # 49 (exponent)\n```\n\n## The math Module\n\n```python\nimport math\n\nprint(math.sqrt(16))    # 4.0\nprint(math.pi)          # 3.14159...\nprint(math.floor(3.7))  # 3\nprint(math.ceil(3.2))   # 4\nprint(math.pow(2, 3))   # 8.0\n```\n\n## Recap\n- Understood numeric behavior\n- Used standard library modules",
+    "order": 8,
+    "id": "6966fb58e548b830753a424e"
+  },
+  {
+    "title": "Financial Calculator",
+    "language": "Python",
+    "activity_type": "Program",
+    "difficulty": "Beginner",
+    "description": "Build a calculator that computes tax, discounts, and interest.",
+    "content": "## Build a Financial Calculator\n\nCreate a calculator that:\n- Computes tax\n- Calculates discounts\n- Rounds results properly\n\n## Starter Code\n\n```python\n# Get the price\nprice = float(input(\"Enter the price: $\"))\n\n# Calculate tax (8%)\ntax_rate = 0.08\ntax_amount = price * tax_rate\ntotal_with_tax = price + tax_amount\n\nprint(f\"Price: ${price:.2f}\")\nprint(f\"Tax (8%): ${tax_amount:.2f}\")\nprint(f\"Total: ${total_with_tax:.2f}\")\n```\n\n## Add Discount Feature\n\n```python\n# Apply discount\ndiscount_percent = float(input(\"Enter discount %: \"))\ndiscount_amount = price * (discount_percent / 100)\nfinal_price = total_with_tax - discount_amount\n\nprint(f\"Discount: -${discount_amount:.2f}\")\nprint(f\"Final Price: ${final_price:.2f}\")\n```\n\n## Stretch: Compound Interest\n\n```python\nprincipal = float(input(\"Initial investment: $\"))\nrate = float(input(\"Annual interest rate (%): \")) / 100\nyears = int(input(\"Number of years: \"))\n\nfinal_amount = principal * (1 + rate) ** years\nprint(f\"After {years} years: ${final_amount:.2f}\")\n```\n\n## What You'll Learn\n- Float arithmetic\n- String formatting with f-strings\n- Rounding numbers",
+    "order": 9,
+    "id": "6966fb58e548b830753a424f"
+  },
+  {
+    "title": "Comparison & Logical Operators",
+    "language": "Python",
+    "activity_type": "Lesson",
+    "difficulty": "Intermediate",
+    "description": "Build complex logical expressions with comparison and boolean operators.",
+    "content": "## Comparison Operators\n\n```python\nx = 10\ny = 5\n\nprint(x == y)   # False (equal)\nprint(x != y)   # True (not equal)\nprint(x > y)    # True\nprint(x < y)    # False\nprint(x >= y)   # True\nprint(x <= y)   # False\n```\n\n## Logical Operators\n\n```python\nage = 20\n\nif age >= 18 and age < 65:\n    print(\"Eligible\")\n\nif age < 13 or age > 65:\n    print(\"Special rate\")\n\nif not age < 18:\n    print(\"Adult\")\n```\n\n## Chained Comparisons\n\n```python\n# Instead of:\nif age >= 18 and age < 65:\n    print(\"Eligible\")\n\n# You can write:\nif 18 <= age < 65:\n    print(\"Eligible\")\n```\n\n## Recap\n- Built complex logical expressions",
+    "order": 10,
+    "id": "6966fb58e548b830753a4250"
+  },
+  {
+    "title": "Conditional Structures",
+    "language": "Python",
+    "activity_type": "Lesson",
+    "difficulty": "Intermediate",
+    "description": "Master if/elif/else statements and ternary expressions.",
+    "content": "## If/Elif/Else\n\n```python\nscore = 85\n\nif score >= 90:\n    grade = \"A\"\nelif score >= 80:\n    grade = \"B\"\nelif score >= 70:\n    grade = \"C\"\nelif score >= 60:\n    grade = \"D\"\nelse:\n    grade = \"F\"\n\nprint(f\"Your grade: {grade}\")\n```\n\n## Nested Conditions\n\n```python\nhas_ticket = True\nage = 15\n\nif has_ticket:\n    if age >= 18:\n        print(\"Welcome to the R-rated movie!\")\n    else:\n        print(\"Sorry, you need to be 18+\")\nelse:\n    print(\"Please purchase a ticket first.\")\n```\n\n## Ternary Expressions\n\n```python\nscore = 75\nstatus = \"pass\" if score >= 60 else \"fail\"\nprint(status)  # pass\n```\n\n## Recap\n- Designed decision trees\n- Used ternary expressions for concise code",
+    "order": 11,
+    "id": "6966fb58e548b830753a4251"
+  },
+  {
+    "title": "For Loops and Iteration Patterns",
+    "language": "Python",
+    "activity_type": "Lesson",
+    "difficulty": "Intermediate",
+    "description": "Learn to iterate over sequences with for loops.",
+    "content": "## Basic For Loop\n\n```python\nfor i in range(1, 11):\n    print(i)\n```\n\nOutput: 1, 2, 3, 4, 5, 6, 7, 8, 9, 10\n\n## Range Explained\n\n```python\nrange(5)        # 0, 1, 2, 3, 4\nrange(2, 6)     # 2, 3, 4, 5\nrange(0, 10, 2) # 0, 2, 4, 6, 8\n```\n\n## Iteration Over Strings\n\n```python\nfor ch in \"Python\":\n    print(ch)\n```\n\nOutput: P, y, t, h, o, n\n\n## Iteration Over Lists\n\n```python\nfruits = [\"apple\", \"banana\", \"cherry\"]\n\nfor fruit in fruits:\n    print(f\"I love {fruit}!\")\n```\n\n## Using enumerate()\n\n```python\nfor index, fruit in enumerate(fruits):\n    print(f\"{index}: {fruit}\")\n```\n\n## Recap\n- Iterated over sequences\n- Used range() and enumerate()",
+    "order": 12,
+    "id": "6966fb58e548b830753a4252"
+  },
+  {
+    "title": "While Loops & Loop Control",
+    "language": "Python",
+    "activity_type": "Lesson",
+    "difficulty": "Intermediate",
+    "description": "Control program flow with while loops, break, and continue.",
+    "content": "## Basic While Loop\n\n```python\ncount = 0\n\nwhile count < 5:\n    print(count)\n    count += 1\n```\n\n## Infinite Loop with Break\n\n```python\nwhile True:\n    command = input(\">>> \").lower()\n    if command == \"quit\":\n        print(\"Goodbye!\")\n        break\n    print(f\"You entered: {command}\")\n```\n\n## Using Continue\n\n```python\nfor i in range(10):\n    if i % 2 == 0:\n        continue  # Skip even numbers\n    print(i)  # Only prints odd numbers\n```\n\n## Loop with Counter\n\n```python\nattempts = 0\nmax_attempts = 3\n\nwhile attempts < max_attempts:\n    password = input(\"Enter password: \")\n    if password == \"secret123\":\n        print(\"Access granted!\")\n        break\n    attempts += 1\n    print(f\"Wrong! {max_attempts - attempts} attempts left.\")\nelse:\n    print(\"Account locked.\")\n```\n\n## Recap\n- Controlled execution flow safely\n- Used break and continue",
+    "order": 13,
+    "id": "6966fb58e548b830753a4253"
+  },
+  {
+    "title": "Guessing Game (Advanced)",
+    "language": "Python",
+    "activity_type": "Program",
+    "difficulty": "Intermediate",
+    "description": "Create a number guessing game with hints, limited attempts, and scoring.",
+    "content": "## Build a Guessing Game\n\nEnhancements:\n- Limit attempts\n- Give hints (high/low)\n- Track score\n\n## Complete Code\n\n```python\nimport random\n\ndef play_game():\n    secret = random.randint(1, 100)\n    attempts = 0\n    max_attempts = 7\n    \n    print(\"I'm thinking of a number between 1 and 100.\")\n    print(f\"You have {max_attempts} attempts.\")\n    \n    while attempts < max_attempts:\n        guess = int(input(\"\\nYour guess: \"))\n        attempts += 1\n        \n        if guess == secret:\n            score = (max_attempts - attempts + 1) * 10\n            print(f\"🎉 Correct! You got it in {attempts} attempts!\")\n            print(f\"Score: {score} points\")\n            return score\n        elif guess < secret:\n            print(\"📈 Too low! Go higher.\")\n        else:\n            print(\"📉 Too high! Go lower.\")\n        \n        remaining = max_attempts - attempts\n        print(f\"Attempts remaining: {remaining}\")\n    \n    print(f\"\\n😢 Out of attempts! The number was {secret}\")\n    return 0\n\n# Play the game\ntotal_score = 0\nplay_again = \"yes\"\n\nwhile play_again.lower() == \"yes\":\n    total_score += play_game()\n    print(f\"\\nTotal Score: {total_score}\")\n    play_again = input(\"Play again? (yes/no): \")\n\nprint(\"Thanks for playing!\")\n```\n\n## What You'll Learn\n- Random number generation\n- While loops with conditions\n- Function design",
+    "order": 14,
+    "id": "6966fb58e548b830753a4254"
+  },
+  {
+    "title": "Defining Functions (Deep Dive)",
+    "language": "Python",
+    "activity_type": "Lesson",
+    "difficulty": "Intermediate",
+    "description": "Create reusable code blocks with functions.",
+    "content": "## Basic Function\n\n```python\ndef greet(name):\n    return f\"Hello, {name}!\"\n\nmessage = greet(\"Alice\")\nprint(message)  # Hello, Alice!\n```\n\n## Functions Should\n\n1. **Do one thing** - Single responsibility\n2. **Be reusable** - Work with different inputs\n3. **Have clear names** - Describe what they do\n\n## Multiple Parameters\n\n```python\ndef add(a, b):\n    return a + b\n\nresult = add(5, 3)\nprint(result)  # 8\n```\n\n## Functions Without Return\n\n```python\ndef print_greeting(name):\n    print(f\"Welcome, {name}!\")\n    # No return statement (returns None)\n\nprint_greeting(\"Bob\")\n```\n\n## Recap\n- Created reusable logic blocks\n- Understood function structure",
+    "order": 15,
+    "id": "6966fb58e548b830753a4255"
+  },
+  {
+    "title": "Parameters, Defaults, Keywords",
+    "language": "Python",
+    "activity_type": "Lesson",
+    "difficulty": "Intermediate",
+    "description": "Design flexible functions with default and keyword arguments.",
+    "content": "## Default Parameters\n\n```python\ndef power(base, exponent=2):\n    return base ** exponent\n\nprint(power(3))      # 9 (3^2)\nprint(power(3, 3))   # 27 (3^3)\nprint(power(2, 10))  # 1024\n```\n\n## Keyword Arguments\n\n```python\ndef create_profile(name, age, city=\"Unknown\"):\n    return f\"{name}, {age}, from {city}\"\n\n# Using keyword arguments\nprint(create_profile(name=\"Alice\", age=25))\nprint(create_profile(age=30, name=\"Bob\", city=\"NYC\"))\n```\n\n## Mixing Positional and Keyword\n\n```python\ndef greet(name, greeting=\"Hello\", punctuation=\"!\"):\n    return f\"{greeting}, {name}{punctuation}\"\n\nprint(greet(\"Alice\"))                    # Hello, Alice!\nprint(greet(\"Bob\", greeting=\"Hi\"))       # Hi, Bob!\nprint(greet(\"Charlie\", punctuation=\"?\")) # Hello, Charlie?\n```\n\n## Recap\n- Designed flexible APIs\n- Used default and keyword arguments",
+    "order": 16,
+    "id": "6966fb58e548b830753a4256"
+  },
+  {
+    "title": "*args and Advanced Returns",
+    "language": "Python",
+    "activity_type": "Lesson",
+    "difficulty": "Intermediate",
+    "description": "Handle variable-length arguments and multiple return values.",
+    "content": "## *args for Variable Arguments\n\n```python\ndef average(*numbers):\n    if len(numbers) == 0:\n        return 0\n    return sum(numbers) / len(numbers)\n\nprint(average(1, 2, 3))        # 2.0\nprint(average(10, 20, 30, 40)) # 25.0\nprint(average(5))              # 5.0\n```\n\n## Multiple Return Values\n\n```python\ndef get_stats(numbers):\n    total = sum(numbers)\n    count = len(numbers)\n    avg = total / count if count > 0 else 0\n    return total, count, avg\n\nnums = [10, 20, 30]\ntotal, count, average = get_stats(nums)\nprint(f\"Total: {total}, Count: {count}, Average: {average}\")\n```\n\n## **kwargs for Keyword Arguments\n\n```python\ndef print_info(**kwargs):\n    for key, value in kwargs.items():\n        print(f\"{key}: {value}\")\n\nprint_info(name=\"Alice\", age=25, city=\"NYC\")\n```\n\n## Recap\n- Handled variable-length input\n- Returned multiple values",
+    "order": 17,
+    "id": "6966fb58e548b830753a4257"
+  },
+  {
+    "title": "Utility Toolkit",
+    "language": "Python",
+    "activity_type": "Program",
+    "difficulty": "Intermediate",
+    "description": "Create a collection of reusable utility functions.",
+    "content": "## Build Your Utility Toolkit\n\nCreate reusable functions for:\n- Math utilities\n- String formatting\n- Validation\n\n## Math Utilities\n\n```python\ndef is_even(n):\n    return n % 2 == 0\n\ndef is_prime(n):\n    if n < 2:\n        return False\n    for i in range(2, int(n ** 0.5) + 1):\n        if n % i == 0:\n            return False\n    return True\n\ndef factorial(n):\n    if n <= 1:\n        return 1\n    return n * factorial(n - 1)\n```\n\n## String Utilities\n\n```python\ndef capitalize_words(text):\n    return ' '.join(word.capitalize() for word in text.split())\n\ndef reverse_string(text):\n    return text[::-1]\n\ndef count_vowels(text):\n    vowels = 'aeiouAEIOU'\n    return sum(1 for char in text if char in vowels)\n```\n\n## Validation Utilities\n\n```python\ndef is_valid_email(email):\n    return '@' in email and '.' in email.split('@')[-1]\n\ndef is_strong_password(password):\n    has_length = len(password) >= 8\n    has_upper = any(c.isupper() for c in password)\n    has_lower = any(c.islower() for c in password)\n    has_digit = any(c.isdigit() for c in password)\n    return has_length and has_upper and has_lower and has_digit\n```\n\n## What You'll Learn\n- Function design patterns\n- Code reusability\n- Input validation",
+    "order": 18,
+    "id": "6966fb58e548b830753a4258"
+  },
+  {
+    "title": "Lists and Iteration",
+    "language": "Python",
+    "activity_type": "Lesson",
+    "difficulty": "Intermediate",
+    "description": "Master Python lists and list operations.",
+    "content": "## Creating Lists\n\n```python\nnumbers = [1, 2, 3, 4, 5]\nnames = [\"Alice\", \"Bob\", \"Charlie\"]\nmixed = [1, \"hello\", 3.14, True]\nempty = []\n```\n\n## List Operations\n\n```python\nnumbers = [1, 2, 3]\n\nnumbers.append(4)       # [1, 2, 3, 4]\nnumbers.insert(0, 0)    # [0, 1, 2, 3, 4]\nnumbers.remove(2)       # [0, 1, 3, 4]\npopped = numbers.pop()  # popped = 4, list = [0, 1, 3]\n```\n\n## List Slicing\n\n```python\nletters = ['a', 'b', 'c', 'd', 'e']\n\nprint(letters[1:3])   # ['b', 'c']\nprint(letters[:3])    # ['a', 'b', 'c']\nprint(letters[2:])    # ['c', 'd', 'e']\nprint(letters[-2:])   # ['d', 'e']\n```\n\n## List Comprehensions\n\n```python\n# Traditional way\nsquares = []\nfor x in range(5):\n    squares.append(x ** 2)\n\n# List comprehension\nsquares = [x ** 2 for x in range(5)]\nprint(squares)  # [0, 1, 4, 9, 16]\n\n# With condition\nevens = [x for x in range(10) if x % 2 == 0]\nprint(evens)  # [0, 2, 4, 6, 8]\n```",
+    "order": 19,
+    "id": "6966fb58e548b830753a4259"
+  },
+  {
+    "title": "Tuples and Immutability",
+    "language": "Python",
+    "activity_type": "Lesson",
+    "difficulty": "Intermediate",
+    "description": "Understand tuples and when to use them over lists.",
+    "content": "## Creating Tuples\n\n```python\npoint = (3, 4)\nrgb = (255, 128, 0)\nsingle = (42,)  # Note the comma!\nempty = ()\n```\n\n## Tuples are Immutable\n\n```python\npoint = (3, 4)\n# point[0] = 5  # ERROR! Can't modify\n\n# But you can create a new tuple\nnew_point = (5, point[1])\nprint(new_point)  # (5, 4)\n```\n\n## Tuple Unpacking\n\n```python\npoint = (3, 4)\nx, y = point\nprint(f\"x={x}, y={y}\")  # x=3, y=4\n\n# Swap values\na, b = 1, 2\na, b = b, a\nprint(a, b)  # 2 1\n```\n\n## When to Use Tuples\n\n1. **Fixed data** - Coordinates, RGB colors\n2. **Dictionary keys** - Tuples can be keys, lists cannot\n3. **Return multiple values** - Functions returning tuples\n4. **Data integrity** - Prevent accidental modification\n\n```python\n# Tuples as dictionary keys\nlocations = {\n    (40.7128, -74.0060): \"New York\",\n    (34.0522, -118.2437): \"Los Angeles\"\n}\n```",
+    "order": 20,
+    "id": "6966fb58e548b830753a425a"
+  },
+  {
+    "title": "Dictionaries and Data Modeling",
+    "language": "Python",
+    "activity_type": "Lesson",
+    "difficulty": "Intermediate",
+    "description": "Use dictionaries to organize and model real-world data.",
+    "content": "## Creating Dictionaries\n\n```python\nstudent = {\n    \"name\": \"Alex\",\n    \"age\": 16,\n    \"grade\": \"10th\",\n    \"gpa\": 3.8\n}\n```\n\n## Accessing Values\n\n```python\nprint(student[\"name\"])      # Alex\nprint(student.get(\"age\"))   # 16\nprint(student.get(\"email\", \"N/A\"))  # N/A (default)\n```\n\n## Modifying Dictionaries\n\n```python\nstudent[\"age\"] = 17           # Update\nstudent[\"email\"] = \"a@b.com\"  # Add new key\ndel student[\"gpa\"]            # Delete key\n```\n\n## Iterating Over Dictionaries\n\n```python\n# Keys\nfor key in student:\n    print(key)\n\n# Values\nfor value in student.values():\n    print(value)\n\n# Both\nfor key, value in student.items():\n    print(f\"{key}: {value}\")\n```\n\n## Dictionary Comprehensions\n\n```python\nsquares = {x: x**2 for x in range(5)}\nprint(squares)  # {0: 0, 1: 1, 2: 4, 3: 9, 4: 16}\n```",
+    "order": 21,
+    "id": "6966fb58e548b830753a425b"
+  },
+  {
+    "title": "Nested Data Structures",
+    "language": "Python",
+    "activity_type": "Lesson",
+    "difficulty": "Intermediate",
+    "description": "Work with complex nested lists and dictionaries.",
+    "content": "## List of Dictionaries\n\n```python\nstudents = [\n    {\"name\": \"Alice\", \"score\": 90},\n    {\"name\": \"Bob\", \"score\": 85},\n    {\"name\": \"Charlie\", \"score\": 92}\n]\n\n# Access\nprint(students[0][\"name\"])  # Alice\n\n# Iterate\nfor student in students:\n    print(f\"{student['name']}: {student['score']}\")\n```\n\n## Dictionary of Lists\n\n```python\ngrades = {\n    \"Alice\": [90, 85, 92, 88],\n    \"Bob\": [78, 82, 80, 85],\n    \"Charlie\": [95, 98, 92, 96]\n}\n\n# Calculate averages\nfor name, scores in grades.items():\n    avg = sum(scores) / len(scores)\n    print(f\"{name}: {avg:.1f}\")\n```\n\n## Nested Dictionaries\n\n```python\nschool = {\n    \"students\": {\n        \"Alice\": {\"grade\": 10, \"gpa\": 3.9},\n        \"Bob\": {\"grade\": 11, \"gpa\": 3.5}\n    },\n    \"teachers\": {\n        \"Ms. Smith\": {\"subject\": \"Math\"},\n        \"Mr. Jones\": {\"subject\": \"Science\"}\n    }\n}\n\n# Deep access\nprint(school[\"students\"][\"Alice\"][\"gpa\"])  # 3.9\n```",
+    "order": 22,
+    "id": "6966fb58e548b830753a425c"
+  },
+  {
+    "title": "Student Management System",
+    "language": "Python",
+    "activity_type": "Program",
+    "difficulty": "Intermediate",
+    "description": "Build a complete student management system with CRUD operations.",
+    "content": "## Build a Student Management System\n\nFeatures:\n- Add students\n- Compute averages\n- Display reports\n\n## Complete Code\n\n```python\nstudents = []\n\ndef add_student():\n    name = input(\"Student name: \")\n    age = int(input(\"Age: \"))\n    grades = []\n    \n    print(\"Enter grades (type 'done' when finished):\")\n    while True:\n        grade = input(\"Grade: \")\n        if grade.lower() == 'done':\n            break\n        grades.append(float(grade))\n    \n    student = {\n        \"name\": name,\n        \"age\": age,\n        \"grades\": grades\n    }\n    students.append(student)\n    print(f\"Added {name}!\")\n\ndef show_all_students():\n    if not students:\n        print(\"No students yet.\")\n        return\n    \n    print(\"\\n--- All Students ---\")\n    for i, student in enumerate(students, 1):\n        avg = sum(student['grades']) / len(student['grades']) if student['grades'] else 0\n        print(f\"{i}. {student['name']} (Age: {student['age']}, Avg: {avg:.1f})\")\n\ndef show_report():\n    if not students:\n        print(\"No students yet.\")\n        return\n    \n    print(\"\\n--- Class Report ---\")\n    all_averages = []\n    \n    for student in students:\n        if student['grades']:\n            avg = sum(student['grades']) / len(student['grades'])\n            all_averages.append(avg)\n            print(f\"{student['name']}: {avg:.1f}\")\n    \n    if all_averages:\n        class_avg = sum(all_averages) / len(all_averages)\n        print(f\"\\nClass Average: {class_avg:.1f}\")\n\n# Main menu\nwhile True:\n    print(\"\\n1. Add Student\")\n    print(\"2. View All Students\")\n    print(\"3. Show Report\")\n    print(\"4. Exit\")\n    \n    choice = input(\"Choose: \")\n    \n    if choice == \"1\":\n        add_student()\n    elif choice == \"2\":\n        show_all_students()\n    elif choice == \"3\":\n        show_report()\n    elif choice == \"4\":\n        break\n```",
+    "order": 23,
+    "id": "6966fb58e548b830753a425d"
+  },
+  {
+    "title": "Modules, Imports, and Code Organization",
+    "language": "Python",
+    "activity_type": "Lesson",
+    "difficulty": "Advanced",
+    "description": "Organize code with modules and understand Python imports.",
+    "content": "## Importing Modules\n\n```python\n# Import entire module\nimport math\nprint(math.sqrt(16))\n\n# Import specific functions\nfrom math import sqrt, pi\nprint(sqrt(16))\nprint(pi)\n\n# Import with alias\nimport random as rnd\nprint(rnd.randint(1, 10))\n```\n\n## Common Built-in Modules\n\n```python\nimport random\nrandom.randint(1, 100)    # Random integer\nrandom.choice([1, 2, 3])  # Random choice\nrandom.shuffle(my_list)   # Shuffle in place\n\nimport datetime\nnow = datetime.datetime.now()\nprint(now.strftime(\"%Y-%m-%d\"))\n\nimport os\nos.getcwd()              # Current directory\nos.listdir('.')          # List files\n```\n\n## Creating Your Own Module\n\n```python\n# my_utils.py\ndef greet(name):\n    return f\"Hello, {name}!\"\n\ndef add(a, b):\n    return a + b\n\n# main.py\nfrom my_utils import greet, add\n\nprint(greet(\"Alice\"))\nprint(add(2, 3))\n```\n\n## The `if __name__ == \"__main__\"` Pattern\n\n```python\n# my_module.py\ndef main():\n    print(\"Running as main program\")\n\nif __name__ == \"__main__\":\n    main()\n```",
+    "order": 24,
+    "id": "6966fb58e548b830753a425e"
+  },
+  {
+    "title": "Error Handling & Defensive Coding",
+    "language": "Python",
+    "activity_type": "Lesson",
+    "difficulty": "Advanced",
+    "description": "Handle errors gracefully and write robust code.",
+    "content": "## Try/Except Basics\n\n```python\ntry:\n    x = int(input(\"Enter a number: \"))\n    print(f\"You entered: {x}\")\nexcept ValueError:\n    print(\"That's not a valid number!\")\n```\n\n## Multiple Exception Types\n\n```python\ntry:\n    num = int(input(\"Enter a number: \"))\n    result = 100 / num\n    print(f\"100 / {num} = {result}\")\nexcept ValueError:\n    print(\"Please enter a valid number.\")\nexcept ZeroDivisionError:\n    print(\"Cannot divide by zero!\")\n```\n\n## Try/Except/Finally\n\n```python\ntry:\n    file = open(\"data.txt\", \"r\")\n    content = file.read()\nexcept FileNotFoundError:\n    print(\"File not found.\")\nfinally:\n    print(\"This always runs.\")\n```\n\n## Raising Exceptions\n\n```python\ndef set_age(age):\n    if age < 0:\n        raise ValueError(\"Age cannot be negative\")\n    if age > 150:\n        raise ValueError(\"Age seems unrealistic\")\n    return age\n\ntry:\n    set_age(-5)\nexcept ValueError as e:\n    print(f\"Error: {e}\")\n```\n\n## Input Validation Pattern\n\n```python\ndef get_positive_int(prompt):\n    while True:\n        try:\n            value = int(input(prompt))\n            if value > 0:\n                return value\n            print(\"Must be positive!\")\n        except ValueError:\n            print(\"Enter a valid number!\")\n\nage = get_positive_int(\"Enter your age: \")\n```",
+    "order": 25,
+    "id": "6966fb58e548b830753a425f"
+  },
+  {
+    "title": "Capstone: CLI Task Manager",
+    "language": "Python",
+    "activity_type": "Project",
+    "difficulty": "Advanced",
+    "description": "Build a complete command-line task management application.",
+    "content": "## Final Project: Task Manager\n\nBuild a complete CLI application with:\n- Functions\n- Loops\n- Conditionals\n- Data structures\n- Input validation\n\n## Complete Implementation\n\n```python\nimport datetime\n\ntasks = []\n\ndef add_task():\n    title = input(\"Task title: \").strip()\n    if not title:\n        print(\"Title cannot be empty!\")\n        return\n    \n    priority = input(\"Priority (high/medium/low): \").lower()\n    if priority not in ['high', 'medium', 'low']:\n        priority = 'medium'\n    \n    task = {\n        \"id\": len(tasks) + 1,\n        \"title\": title,\n        \"priority\": priority,\n        \"completed\": False,\n        \"created\": datetime.datetime.now().strftime(\"%Y-%m-%d %H:%M\")\n    }\n    tasks.append(task)\n    print(f\"✅ Task '{title}' added!\")\n\ndef view_tasks(show_completed=True):\n    if not tasks:\n        print(\"No tasks yet!\")\n        return\n    \n    print(\"\\n\" + \"=\"*50)\n    print(\"YOUR TASKS\")\n    print(\"=\"*50)\n    \n    for task in tasks:\n        if not show_completed and task['completed']:\n            continue\n        \n        status = \"✓\" if task['completed'] else \"○\"\n        priority_icon = {\"high\": \"🔴\", \"medium\": \"🟡\", \"low\": \"🟢\"}[task['priority']]\n        \n        print(f\"{task['id']}. [{status}] {priority_icon} {task['title']}\")\n        print(f\"   Created: {task['created']}\")\n    print(\"=\"*50)\n\ndef complete_task():\n    view_tasks(show_completed=False)\n    try:\n        task_id = int(input(\"Enter task ID to complete: \"))\n        for task in tasks:\n            if task['id'] == task_id:\n                task['completed'] = True\n                print(f\"✅ '{task['title']}' marked complete!\")\n                return\n        print(\"Task not found.\")\n    except ValueError:\n        print(\"Invalid ID.\")\n\ndef delete_task():\n    view_tasks()\n    try:\n        task_id = int(input(\"Enter task ID to delete: \"))\n        for i, task in enumerate(tasks):\n            if task['id'] == task_id:\n                removed = tasks.pop(i)\n                print(f\"🗑️ '{removed['title']}' deleted!\")\n                return\n        print(\"Task not found.\")\n    except ValueError:\n        print(\"Invalid ID.\")\n\ndef main():\n    print(\"\\n🎯 TASK MANAGER\")\n    print(\"Your personal productivity tool!\\n\")\n    \n    while True:\n        print(\"\\n1. Add Task\")\n        print(\"2. View All Tasks\")\n        print(\"3. View Pending Tasks\")\n        print(\"4. Complete Task\")\n        print(\"5. Delete Task\")\n        print(\"6. Exit\")\n        \n        choice = input(\"\\nChoose an option: \")\n        \n        if choice == \"1\":\n            add_task()\n        elif choice == \"2\":\n            view_tasks()\n        elif choice == \"3\":\n            view_tasks(show_completed=False)\n        elif choice == \"4\":\n            complete_task()\n        elif choice == \"5\":\n            delete_task()\n        elif choice == \"6\":\n            print(\"\\nGoodbye! Stay productive! 🚀\")\n            break\n        else:\n            print(\"Invalid option.\")\n\nif __name__ == \"__main__\":\n    main()\n```\n\n## What You've Learned\n- Complete program architecture\n- User input handling\n- Data management with dictionaries\n- Menu-driven interfaces\n- Error handling\n\n## Congratulations!\n\nBy completing this course, you:\n- Understand Python at a conceptual level\n- Write clean, maintainable code\n- Debug and reason about programs\n- Are prepared for advanced topics (OOP, files, APIs)\n\n**CuriosityQuest graduates are real coders!** 🎓",
+    "order": 26,
+    "id": "6966fb58e548b830753a4260"
+  }
+]

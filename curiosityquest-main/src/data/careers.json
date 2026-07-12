@@ -1,0 +1,1046 @@
+[
+  {
+    "title": "Accessibility Engineer",
+    "category": "Design & UX",
+    "description": "Ensures digital products are usable by people with disabilities, following accessibility standards and inclusive design principles.",
+    "good_fit_for": "Empathetic, detail-focused, socially conscious individuals",
+    "employers": "Microsoft, Apple, government agencies",
+    "image_url": null,
+    "id": "6966fa375099f9c567496f7f"
+  },
+  {
+    "title": "Accessibility UX Specialist",
+    "category": "Design & UX",
+    "description": "Ensures products are accessible to people with disabilities. Advocates inclusive design in digital products and physical spaces.",
+    "good_fit_for": "Empathetic, detail-oriented, user-focused, socially conscious",
+    "employers": "Microsoft, Apple, government agencies",
+    "image_url": null,
+    "id": "6966fa375099f9c567496f7b"
+  },
+  {
+    "title": "Acoustical Engineer",
+    "category": "Engineering",
+    "description": "Acoustical Engineers manage sound and vibration in buildings, vehicles, and products. They improve sound quality while reducing noise pollution.",
+    "good_fit_for": "Physics-oriented, auditory-focused, analytical, creative",
+    "employers": "Bose, Arup, Dolby Laboratories",
+    "image_url": null,
+    "id": "6966f9bc5099f9c567496f08"
+  },
+  {
+    "title": "Aerospace Engineer",
+    "category": "Engineering",
+    "description": "Aerospace Engineers design, test, and improve aircraft, rockets, satellites, and spacecraft. They work on aerodynamics, propulsion, materials, and structural systems to ensure safety and performance in extreme conditions.",
+    "good_fit_for": "Analytical, physics-driven, detail-oriented, curious",
+    "employers": "Boeing, Lockheed Martin, SpaceX, NASA",
+    "image_url": null,
+    "id": "6966f9bc5099f9c567496ef2"
+  },
+  {
+    "title": "AI Ethics Specialist",
+    "category": "Robotics & AI",
+    "description": "Evaluates and guides the responsible development of AI systems, focusing on fairness, bias, transparency, and societal impact. Works closely with engineers, legal teams, and policymakers.",
+    "good_fit_for": "Ethical, detail-oriented, socially aware individuals",
+    "employers": "Google, Microsoft, OpenAI",
+    "image_url": null,
+    "id": "6966f9fe5099f9c567496f37"
+  },
+  {
+    "title": "AI Research Scientist",
+    "category": "Computer Science & Coding",
+    "description": "AI Research Scientists develop new artificial intelligence methods and algorithms. Their work pushes the boundaries of what machines can do.",
+    "good_fit_for": "Research-driven, mathematically inclined, curious, theoretical",
+    "employers": "DeepMind, OpenAI, research institutions",
+    "image_url": null,
+    "id": "6966f9df5099f9c567496f27"
+  },
+  {
+    "title": "Air Quality Analyst",
+    "category": "Environmental Science",
+    "description": "Air Quality Analysts monitor and model pollutants to assess environmental health risks. Their work informs regulations and public health recommendations.",
+    "good_fit_for": "Analytical, scientific, detail-focused, solution-oriented",
+    "employers": "EPA, consulting firms, research universities",
+    "image_url": null,
+    "id": "6966fa115099f9c567496f56"
+  },
+  {
+    "title": "Astrophysicist",
+    "category": "Space & Physics",
+    "description": "Astrophysicists study stars, galaxies, and cosmic phenomena to understand the universe. Research can involve telescopes, simulations, and theoretical models.",
+    "good_fit_for": "Curious, analytical, research-driven, physics-minded",
+    "employers": "NASA, SETI, universities",
+    "image_url": null,
+    "id": "6966f9fe5099f9c567496f44"
+  },
+  {
+    "title": "Augmented Reality Developer",
+    "category": "Computer Science & Coding",
+    "description": "AR Developers create experiences that blend digital content with the real world. Their work is used in gaming, education, and training.",
+    "good_fit_for": "Creative, spatially aware, experimental, innovative",
+    "employers": "Apple, Niantic, Meta",
+    "image_url": null,
+    "id": "6966f9df5099f9c567496f2f"
+  },
+  {
+    "title": "Automotive Design Engineer",
+    "category": "Engineering",
+    "description": "Automotive Design Engineers develop vehicle components such as chassis, engines, safety systems, and drivetrains. They balance performance, efficiency, cost, and manufacturability while working closely with manufacturing teams.",
+    "good_fit_for": "Mechanical-minded, creative, hands-on, problem-solving",
+    "employers": "Tesla, Ford, General Motors, Toyota",
+    "image_url": null,
+    "id": "6966f9bc5099f9c567496ef3"
+  },
+  {
+    "title": "Autonomous Vehicle Engineer",
+    "category": "Robotics & AI",
+    "description": "Autonomous Vehicle Engineers design self-driving systems, integrating sensors, AI, and vehicle controls. Their work advances transportation safety and automation.",
+    "good_fit_for": "Analytical, innovative, systems-oriented, technical",
+    "employers": "Waymo, Cruise, Tesla",
+    "image_url": null,
+    "id": "6966f9fe5099f9c567496f3c"
+  },
+  {
+    "title": "Back-End Developer",
+    "category": "Computer Science & Coding",
+    "description": "Back-End Developers build server-side systems, databases, and APIs that power applications. They focus on performance, security, and scalability.",
+    "good_fit_for": "Analytical, systems-focused, structured, logical",
+    "employers": "Amazon, Stripe, fintech companies",
+    "image_url": null,
+    "id": "6966f9df5099f9c567496f1c"
+  },
+  {
+    "title": "Backend Software Engineer",
+    "category": "Computer Science & Coding",
+    "description": "Backend Software Engineers build server-side systems that handle data processing, authentication, and scalability. They ensure reliability and performance behind the scenes.",
+    "good_fit_for": "Logical, detail-oriented, infrastructure-focused coders",
+    "employers": "Amazon, Stripe, LinkedIn",
+    "image_url": null,
+    "id": "6966f9df5099f9c567496f31"
+  },
+  {
+    "title": "Biomechanical Engineer",
+    "category": "Engineering",
+    "description": "Biomechanical Engineers apply mechanical principles to biological systems such as joints, muscles, and medical implants. Their work improves mobility and health outcomes.",
+    "good_fit_for": "Biology-interested, mechanical, empathetic, analytical",
+    "employers": "Stryker, Zimmer Biomet, research hospitals",
+    "image_url": null,
+    "id": "6966f9bc5099f9c567496f09"
+  },
+  {
+    "title": "Biostatistician",
+    "category": "Biomedical & Health",
+    "description": "Analyzes biological and medical data to support clinical research and public health decisions. Ensures studies are statistically valid and reliable.",
+    "good_fit_for": "Statistical, methodical, detail-oriented individuals",
+    "employers": "CDC, pharmaceutical companies, research hospitals",
+    "image_url": null,
+    "id": "6966fa375099f9c567496f67"
+  },
+  {
+    "title": "Blockchain Developer",
+    "category": "Computer Science & Coding",
+    "description": "Blockchain Developers build decentralized applications and secure digital ledgers. Their work supports cryptocurrencies and distributed systems.",
+    "good_fit_for": "Security-minded, systems-oriented, innovative, independent",
+    "employers": "Consensys, Coinbase, Web3 startups",
+    "image_url": null,
+    "id": "6966f9df5099f9c567496f28"
+  },
+  {
+    "title": "Chemical Process Engineer",
+    "category": "Engineering",
+    "description": "Chemical Process Engineers design and optimize industrial processes that convert raw materials into usable products like fuels, plastics, and pharmaceuticals. Their work focuses on efficiency, safety, and large-scale production reliability.",
+    "good_fit_for": "Analytical, chemistry-focused, systematic, methodical",
+    "employers": "Dow, BASF, ExxonMobil, Pfizer",
+    "image_url": null,
+    "id": "6966f9bc5099f9c567496ef4"
+  },
+  {
+    "title": "Civil Structural Engineer",
+    "category": "Engineering",
+    "description": "Civil Structural Engineers design buildings, bridges, and infrastructure to withstand loads, weather, and long-term use. They ensure structures meet safety codes while remaining cost-effective and durable.",
+    "good_fit_for": "Practical, math-oriented, responsible, detail-focused",
+    "employers": "AECOM, HDR, Jacobs, WSP",
+    "image_url": null,
+    "id": "6966f9bc5099f9c567496ef5"
+  },
+  {
+    "title": "Climate Change Analyst",
+    "category": "Environmental Science",
+    "description": "Climate Change Analysts study trends, risks, and impacts of global climate change. They model scenarios and propose mitigation strategies.",
+    "good_fit_for": "Analytical, research-focused, environmentally conscious, policy-minded",
+    "employers": "NASA, NOAA, environmental NGOs",
+    "image_url": null,
+    "id": "6966fa115099f9c567496f58"
+  },
+  {
+    "title": "Clinical Research Coordinator",
+    "category": "Biomedical & Health",
+    "description": "Clinical Research Coordinators organize and oversee medical trials, ensuring protocols are followed and data is accurately collected. They support the development of new therapies and medical devices.",
+    "good_fit_for": "Organized, detail-oriented, communicative, research-focused",
+    "employers": "Mayo Clinic, Pfizer, Novartis",
+    "image_url": null,
+    "id": "6966fa375099f9c567496f6a"
+  },
+  {
+    "title": "Cloud Architect",
+    "category": "Computer Science & Coding",
+    "description": "Cloud Architects design large-scale cloud infrastructure for applications used worldwide. They balance cost, performance, and reliability.",
+    "good_fit_for": "Strategic, systems-level thinkers, analytical, forward-looking",
+    "employers": "AWS, Google Cloud, Microsoft Azure",
+    "image_url": null,
+    "id": "6966f9df5099f9c567496f1e"
+  },
+  {
+    "title": "Computational Biologist",
+    "category": "Biomedical & Health",
+    "description": "Uses algorithms and simulations to study biological systems such as protein folding or gene regulation. Plays a major role in modern biomedical research.",
+    "good_fit_for": "Computational, biology-focused, detail-oriented thinkers",
+    "employers": "Genentech, Illumina, research labs",
+    "image_url": null,
+    "id": "6966fa375099f9c567496f65"
+  },
+  {
+    "title": "Computer Vision Engineer",
+    "category": "Computer Science & Coding",
+    "description": "Computer Vision Engineers develop systems that interpret images and video. Applications include self-driving cars and medical imaging.",
+    "good_fit_for": "Visual thinkers, analytical, AI-focused, innovative",
+    "employers": "Tesla, Apple, Meta",
+    "image_url": null,
+    "id": "6966f9df5099f9c567496f2a"
+  },
+  {
+    "title": "Conservation Scientist",
+    "category": "Environmental Science",
+    "description": "Develops strategies to protect ecosystems, wildlife, and natural resources using data and field research. Often works with governments and nonprofits.",
+    "good_fit_for": "Environmentally driven, analytical, field-oriented individuals",
+    "employers": "The Nature Conservancy, WWF, US Fish & Wildlife Service",
+    "image_url": null,
+    "id": "6966fa115099f9c567496f50"
+  },
+  {
+    "title": "Construction Engineer / Manager",
+    "category": "Engineering",
+    "description": "Construction Engineers manage the execution of engineering designs on job sites. They coordinate schedules, materials, safety, and teams to ensure projects are completed efficiently and correctly.",
+    "good_fit_for": "Organized, leadership-oriented, decisive, hands-on",
+    "employers": "Bechtel, Skanska, Turner Construction",
+    "image_url": null,
+    "id": "6966f9bc5099f9c567496ef6"
+  },
+  {
+    "title": "Cybersecurity Analyst",
+    "category": "Computer Science & Coding",
+    "description": "Cybersecurity Analysts protect systems from digital attacks. They monitor threats, investigate vulnerabilities, and strengthen defenses.",
+    "good_fit_for": "Detail-oriented, vigilant, logical, security-minded",
+    "employers": "Cisco, Palo Alto Networks, DHS",
+    "image_url": null,
+    "id": "6966f9df5099f9c567496f21"
+  },
+  {
+    "title": "Data Scientist",
+    "category": "Computer Science & Coding",
+    "description": "Data Scientists analyze large datasets to uncover patterns and insights. Their findings influence business, science, and policy decisions.",
+    "good_fit_for": "Curious, analytical, data-driven, investigative",
+    "employers": "Meta, Netflix, Nike",
+    "image_url": null,
+    "id": "6966f9df5099f9c567496f20"
+  },
+  {
+    "title": "Database Administrator",
+    "category": "Computer Science & Coding",
+    "description": "Database Administrators manage and optimize databases that store critical information. They ensure data integrity, security, and performance.",
+    "good_fit_for": "Organized, detail-focused, data-oriented, methodical",
+    "employers": "Oracle, hospitals, financial institutions",
+    "image_url": null,
+    "id": "6966f9df5099f9c567496f23"
+  },
+  {
+    "title": "Design Strategist",
+    "category": "Design & UX",
+    "description": "Design Strategists use design thinking to align product design with business strategy and user needs. Guides long-term vision and innovation.",
+    "good_fit_for": "Strategic, creative, analytical, user-focused",
+    "employers": "McKinsey Design, IDEO, Frog Design",
+    "image_url": null,
+    "id": "6966fa375099f9c567496f7a"
+  },
+  {
+    "title": "DevOps Engineer",
+    "category": "Computer Science & Coding",
+    "description": "DevOps Engineers automate software deployment and infrastructure management. They ensure systems are reliable, scalable, and efficient.",
+    "good_fit_for": "Automation-minded, reliable, systems-oriented, proactive",
+    "employers": "Netflix, Spotify, Cloudflare",
+    "image_url": null,
+    "id": "6966f9df5099f9c567496f1d"
+  },
+  {
+    "title": "Digital Health Product Specialist",
+    "category": "Biomedical & Health",
+    "description": "Works on software platforms that support telemedicine, patient monitoring, and health analytics. Bridges healthcare needs with technology solutions.",
+    "good_fit_for": "Tech-savvy, healthcare-interested, user-focused individuals",
+    "employers": "Epic Systems, Teladoc, Apple Health",
+    "image_url": null,
+    "id": "6966fa375099f9c567496f68"
+  },
+  {
+    "title": "Ecological Restoration Specialist",
+    "category": "Environmental Science",
+    "description": "Plans and manages projects that restore damaged ecosystems such as wetlands and forests. Combines science, engineering, and land management.",
+    "good_fit_for": "Hands-on, environmentally passionate, methodical individuals",
+    "employers": "Environmental consultancies, NGOs, state agencies",
+    "image_url": null,
+    "id": "6966fa115099f9c567496f52"
+  },
+  {
+    "title": "Electrical Power Systems Engineer",
+    "category": "Engineering",
+    "description": "These engineers design and maintain systems that generate, transmit, and distribute electrical power. Their work increasingly involves renewable energy and smart grid technologies.",
+    "good_fit_for": "Logical, systems-focused, technically precise, analytical",
+    "employers": "Siemens, GE, National Grid, Duke Energy",
+    "image_url": null,
+    "id": "6966f9bc5099f9c567496ef7"
+  },
+  {
+    "title": "Embedded Systems Developer",
+    "category": "Computer Science & Coding",
+    "description": "Embedded Systems Developers write software that runs directly on hardware devices. These systems control medical devices, vehicles, and electronics.",
+    "good_fit_for": "Hardware-oriented, precise, logical, technically curious",
+    "employers": "Bosch, Medtronic, Intel",
+    "image_url": null,
+    "id": "6966f9df5099f9c567496f26"
+  },
+  {
+    "title": "Energy Systems Engineer",
+    "category": "Engineering",
+    "description": "Energy Systems Engineers design systems that generate, store, and distribute energy efficiently. They often work on smart grids and alternative energy solutions.",
+    "good_fit_for": "Analytical, sustainability-focused, systems thinkers",
+    "employers": "Duke Energy, Siemens Energy, GE Vernova",
+    "image_url": null,
+    "id": "6966f9bc5099f9c567496f0d"
+  },
+  {
+    "title": "Environmental Data Modeler",
+    "category": "Environmental Science",
+    "description": "Uses computational models to simulate environmental systems such as climate, pollution spread, or land use. Supports policy and scientific decision-making.",
+    "good_fit_for": "Data-focused, analytical, systems thinkers",
+    "employers": "NOAA, EPA, research institutes",
+    "image_url": null,
+    "id": "6966fa115099f9c567496f51"
+  },
+  {
+    "title": "Environmental Engineer",
+    "category": "Engineering",
+    "description": "Environmental Engineers develop solutions to problems like water pollution, waste management, and environmental contamination. Their work protects ecosystems while supporting sustainable development.",
+    "good_fit_for": "Environmentally conscious, analytical, mission-driven, practical",
+    "employers": "Tetra Tech, EPA, Veolia, AECOM",
+    "image_url": null,
+    "id": "6966f9bc5099f9c567496ef8"
+  },
+  {
+    "title": "Environmental Health & Safety Specialist",
+    "category": "Environmental Science",
+    "description": "EHS Specialists ensure workplaces comply with safety and environmental regulations. They evaluate hazards, train staff, and implement preventative measures.",
+    "good_fit_for": "Responsible, detail-oriented, regulatory-minded, safety-conscious",
+    "employers": "DuPont, 3M, government agencies",
+    "image_url": null,
+    "id": "6966fa115099f9c567496f55"
+  },
+  {
+    "title": "Environmental Planner",
+    "category": "Environmental Science",
+    "description": "Environmental Planners integrate ecological considerations into urban and regional development. They evaluate projects for sustainability, safety, and compliance.",
+    "good_fit_for": "Strategic, analytical, detail-oriented, environmentally minded",
+    "employers": "City governments, AECOM, planning consultancies",
+    "image_url": null,
+    "id": "6966fa115099f9c567496f59"
+  },
+  {
+    "title": "Front-End Web Developer",
+    "category": "Computer Science & Coding",
+    "description": "Front-End Developers build interactive and visually appealing user interfaces. They ensure websites are responsive, accessible, and engaging.",
+    "good_fit_for": "Creative, design-oriented, detail-focused, user-centered",
+    "employers": "Design agencies, tech companies, startups",
+    "image_url": null,
+    "id": "6966f9df5099f9c567496f1b"
+  },
+  {
+    "title": "Frontend Engineer",
+    "category": "Computer Science & Coding",
+    "description": "Frontend Engineers develop the visual and interactive components of websites and applications. They focus on performance, accessibility, and user experience.",
+    "good_fit_for": "Creative, detail-oriented, user-focused developers",
+    "employers": "Meta, Airbnb, Shopify",
+    "image_url": null,
+    "id": "6966f9df5099f9c567496f32"
+  },
+  {
+    "title": "Full-Stack Engineer",
+    "category": "Computer Science & Coding",
+    "description": "Full-Stack Engineers work on both the front-end and back-end of applications. They build complete systems from user interface to database.",
+    "good_fit_for": "Versatile, technically curious, independent, solution-oriented",
+    "employers": "Shopify, Google, startups",
+    "image_url": null,
+    "id": "6966f9df5099f9c567496f1a"
+  },
+  {
+    "title": "Game Designer",
+    "category": "Design & UX",
+    "description": "Game Designers define gameplay mechanics, storylines, and user engagement for video games. Collaborates with developers and artists.",
+    "good_fit_for": "Creative, strategic, imaginative, collaborative",
+    "employers": "EA, Ubisoft, Blizzard",
+    "image_url": null,
+    "id": "6966fa375099f9c567496f77"
+  },
+  {
+    "title": "Game Developer",
+    "category": "Computer Science & Coding",
+    "description": "Game Developers design and program video games, working on gameplay, graphics, and AI. They collaborate with artists and designers.",
+    "good_fit_for": "Creative, persistent, technically curious, imaginative",
+    "employers": "EA, Ubisoft, Epic Games",
+    "image_url": null,
+    "id": "6966f9df5099f9c567496f24"
+  },
+  {
+    "title": "Geotechnical Engineer",
+    "category": "Engineering",
+    "description": "Geotechnical Engineers analyze soil, rock, and underground conditions to ensure foundations and infrastructure are safe and stable. Their work is critical for construction projects of all sizes.",
+    "good_fit_for": "Field-oriented, analytical, earth-science curious, methodical",
+    "employers": "Terracon, Golder Associates, GeoEngineers",
+    "image_url": null,
+    "id": "6966f9bc5099f9c567496ef9"
+  },
+  {
+    "title": "Hardware Design Engineer",
+    "category": "Computer Science & Coding",
+    "description": "Hardware Design Engineers develop electronic components and computer hardware. Their work supports modern computing systems.",
+    "good_fit_for": "Detail-focused, circuit-oriented, analytical, precise",
+    "employers": "Intel, AMD, NVIDIA",
+    "image_url": null,
+    "id": "6966f9df5099f9c567496f2e"
+  },
+  {
+    "title": "Healthcare Data Analyst",
+    "category": "Biomedical & Health",
+    "description": "Healthcare Data Analysts analyze medical data to improve patient outcomes, efficiency, and operational decisions. They work with electronic health records, predictive models, and analytics platforms.",
+    "good_fit_for": "Analytical, detail-oriented, data-driven, problem-solving",
+    "employers": "Kaiser Permanente, Epic Systems, Cerner",
+    "image_url": null,
+    "id": "6966fa375099f9c567496f6c"
+  },
+  {
+    "title": "Human Factors Engineer",
+    "category": "Design & UX",
+    "description": "Improves usability and safety of systems by applying knowledge of human behavior, capabilities, and limitations. Often works in medical, aviation, or industrial fields.",
+    "good_fit_for": "Analytical, user-focused, detail-oriented, interdisciplinary",
+    "employers": "NASA, Boeing, medical device companies",
+    "image_url": null,
+    "id": "6966fa375099f9c567496f71"
+  },
+  {
+    "title": "Human-Centered Design Researcher",
+    "category": "Design & UX",
+    "description": "Conducts studies on human needs and behaviors to inform design decisions. Integrates ethnography, interviews, and data analysis.",
+    "good_fit_for": "Curious, empathetic, analytical, research-minded",
+    "employers": "IDEO, Google, design consultancies",
+    "image_url": null,
+    "id": "6966fa375099f9c567496f7c"
+  },
+  {
+    "title": "Human-Robot Interaction Engineer",
+    "category": "Robotics & AI",
+    "description": "Designs systems that allow humans and robots to work together safely and intuitively, often focusing on behavior, interfaces, and trust. This role blends engineering with psychology and usability testing.",
+    "good_fit_for": "Analytical, empathetic, interdisciplinary thinkers",
+    "employers": "Boston Dynamics, Toyota Research Institute, NASA JPL",
+    "image_url": null,
+    "id": "6966f9fe5099f9c567496f36"
+  },
+  {
+    "title": "Human-Robot Interaction Researcher",
+    "category": "Robotics & AI",
+    "description": "These researchers study how humans interact with robots to make systems intuitive, safe, and effective. Work involves psychology, design, and engineering.",
+    "good_fit_for": "Empathetic, analytical, interdisciplinary, research-oriented",
+    "employers": "MIT CSAIL, Toyota Research Institute, Boston Dynamics",
+    "image_url": null,
+    "id": "6966f9fe5099f9c567496f3e"
+  },
+  {
+    "title": "Hydrologist",
+    "category": "Environmental Science",
+    "description": "Hydrologists study the movement, distribution, and quality of water on Earth. Their work informs water resource management, flood prevention, and environmental protection.",
+    "good_fit_for": "Analytical, field-oriented, investigative, earth-focused",
+    "employers": "USGS, NOAA, state water agencies",
+    "image_url": null,
+    "id": "6966fa115099f9c567496f53"
+  },
+  {
+    "title": "Immunologist",
+    "category": "Biomedical & Health",
+    "description": "Immunologists study the immune system to understand diseases, develop vaccines, and design therapies. Their research can impact both human and animal health.",
+    "good_fit_for": "Curious, meticulous, biology-driven, investigative",
+    "employers": "NIH, Moderna, research universities",
+    "image_url": null,
+    "id": "6966fa375099f9c567496f6b"
+  },
+  {
+    "title": "Industrial Designer",
+    "category": "Design & UX",
+    "description": "Creates consumer products considering usability, aesthetics, and manufacturability. Work ranges from electronics to furniture.",
+    "good_fit_for": "Creative, practical, detail-focused, user-centered",
+    "employers": "IDEO, Apple, Whirlpool",
+    "image_url": null,
+    "id": "6966fa375099f9c567496f79"
+  },
+  {
+    "title": "Industrial Engineer",
+    "category": "Engineering",
+    "description": "Industrial Engineers improve efficiency in systems such as factories, hospitals, and supply chains. They analyze workflows, data, and processes to reduce waste and improve productivity.",
+    "good_fit_for": "Optimization-focused, data-driven, strategic, logical",
+    "employers": "Amazon, UPS, Honeywell, Boeing",
+    "image_url": null,
+    "id": "6966f9bc5099f9c567496efa"
+  },
+  {
+    "title": "Information Architect",
+    "category": "Design & UX",
+    "description": "Information Architects structure digital content and navigation to make information accessible and logical for users.",
+    "good_fit_for": "Organized, analytical, user-focused, detail-oriented",
+    "employers": "Microsoft, IBM, UX agencies",
+    "image_url": null,
+    "id": "6966fa375099f9c567496f73"
+  },
+  {
+    "title": "Intelligent Systems Engineer",
+    "category": "Robotics & AI",
+    "description": "Builds systems that combine sensing, reasoning, and action, often used in smart factories or autonomous platforms. Focuses on system-level intelligence rather than isolated algorithms.",
+    "good_fit_for": "Systems-oriented, logical, innovative thinkers",
+    "employers": "Siemens, ABB, Honeywell",
+    "image_url": null,
+    "id": "6966f9fe5099f9c567496f39"
+  },
+  {
+    "title": "Interaction Designer",
+    "category": "Design & UX",
+    "description": "Interaction Designers focus on how users engage with digital systems through workflows, animations, and feedback. Goal is intuitive and satisfying user experiences.",
+    "good_fit_for": "Creative, analytical, detail-focused, user-centered",
+    "employers": "Google, Adobe, IDEO",
+    "image_url": null,
+    "id": "6966fa375099f9c567496f72"
+  },
+  {
+    "title": "Interactive Media Designer",
+    "category": "Design & UX",
+    "description": "Develops digital experiences such as apps, installations, or games that respond to user input. Combines design, coding, and storytelling.",
+    "good_fit_for": "Creative, technically skilled, interactive-focused, imaginative",
+    "employers": "Adobe, Unity, media studios",
+    "image_url": null,
+    "id": "6966fa375099f9c567496f7d"
+  },
+  {
+    "title": "IT Support Specialist",
+    "category": "Computer Science & Coding",
+    "description": "IT Support Specialists help users resolve technical issues and maintain systems. They ensure technology works smoothly for organizations.",
+    "good_fit_for": "Patient, helpful, technically curious, communicative",
+    "employers": "Schools, corporations, hospitals",
+    "image_url": null,
+    "id": "6966f9df5099f9c567496f2c"
+  },
+  {
+    "title": "Machine Learning Engineer",
+    "category": "Computer Science & Coding",
+    "description": "Machine Learning Engineers develop AI systems that learn from data. They deploy models into real products such as recommendations or predictions.",
+    "good_fit_for": "Math-driven, analytical, innovative, data-focused",
+    "employers": "OpenAI, NVIDIA, Google",
+    "image_url": null,
+    "id": "6966f9df5099f9c567496f1f"
+  },
+  {
+    "title": "Manufacturing Process Engineer",
+    "category": "Engineering",
+    "description": "Manufacturing Process Engineers improve production processes to increase efficiency, quality, and safety in factories. They work closely with automation and quality teams.",
+    "good_fit_for": "Practical, optimization-focused, detail-oriented",
+    "employers": "Intel, Ford, Procter & Gamble",
+    "image_url": null,
+    "id": "6966f9bc5099f9c567496f0c"
+  },
+  {
+    "title": "Marine Engineer",
+    "category": "Engineering",
+    "description": "Marine Engineers design and maintain ships, submarines, and offshore platforms. Their work ensures propulsion, power, and mechanical systems operate reliably in harsh ocean environments.",
+    "good_fit_for": "Mechanical, adventurous, systems-oriented, resilient",
+    "employers": "Rolls-Royce Marine, Naval Sea Systems Command, Wärtsilä",
+    "image_url": null,
+    "id": "6966f9bc5099f9c567496efb"
+  },
+  {
+    "title": "Materials Engineer",
+    "category": "Engineering",
+    "description": "Materials Engineers develop and test materials used in electronics, aerospace, medical devices, and consumer products. They focus on improving strength, durability, conductivity, or heat resistance.",
+    "good_fit_for": "Curious, chemistry-oriented, experimental, innovative",
+    "employers": "3M, Corning, Intel, Boeing",
+    "image_url": null,
+    "id": "6966f9bc5099f9c567496efc"
+  },
+  {
+    "title": "Mechanical Design Engineer",
+    "category": "Engineering",
+    "description": "Mechanical Design Engineers create mechanical components and systems using CAD software, simulations, and prototypes. They translate ideas into manufacturable products.",
+    "good_fit_for": "Creative, mechanically inclined, detail-oriented, hands-on",
+    "employers": "Caterpillar, Dyson, Parker Hannifin, John Deere",
+    "image_url": null,
+    "id": "6966f9bc5099f9c567496efd"
+  },
+  {
+    "title": "Mechatronics Engineer",
+    "category": "Engineering",
+    "description": "Mechatronics Engineers integrate mechanical systems, electronics, sensors, and software into unified products such as robots and smart machines.",
+    "good_fit_for": "Versatile, hands-on, systems-oriented problem-solvers",
+    "employers": "Tesla, Bosch, ABB",
+    "image_url": null,
+    "id": "6966f9bc5099f9c567496f0b"
+  },
+  {
+    "title": "Medical Imaging Scientist",
+    "category": "Biomedical & Health",
+    "description": "Develops imaging techniques such as MRI, CT, and ultrasound to improve diagnostics. Works at the intersection of physics, software, and medicine.",
+    "good_fit_for": "Analytical, precision-focused, interdisciplinary individuals",
+    "employers": "GE Healthcare, Siemens Healthineers, Philips",
+    "image_url": null,
+    "id": "6966fa375099f9c567496f66"
+  },
+  {
+    "title": "Mining / Resource Extraction Engineer",
+    "category": "Engineering",
+    "description": "These engineers plan and manage the extraction of minerals and natural resources. They focus on efficiency, worker safety, and environmental responsibility.",
+    "good_fit_for": "Practical, outdoors-oriented, analytical, safety-conscious",
+    "employers": "Rio Tinto, Freeport-McMoRan, BHP",
+    "image_url": null,
+    "id": "6966f9bc5099f9c567496efe"
+  },
+  {
+    "title": "Mobile App Developer",
+    "category": "Computer Science & Coding",
+    "description": "Mobile App Developers create applications for smartphones and tablets. They focus on performance, usability, and user engagement.",
+    "good_fit_for": "Creative, user-focused, adaptable, detail-oriented",
+    "employers": "Meta, Snap, Airbnb",
+    "image_url": null,
+    "id": "6966f9df5099f9c567496f19"
+  },
+  {
+    "title": "Natural Language Processing Engineer",
+    "category": "Robotics & AI",
+    "description": "Creates systems that allow computers to understand, generate, and interact using human language. Applications include chatbots, translation tools, and voice assistants.",
+    "good_fit_for": "Linguistically curious, analytical, creative coders",
+    "employers": "Google, Amazon, OpenAI",
+    "image_url": null,
+    "id": "6966f9fe5099f9c567496f3a"
+  },
+  {
+    "title": "Network Engineer",
+    "category": "Computer Science & Coding",
+    "description": "Network Engineers design and maintain communication networks that connect systems and users. Reliability and performance are critical to their work.",
+    "good_fit_for": "Infrastructure-focused, logical, systematic, dependable",
+    "employers": "AT&T, Juniper Networks, Verizon",
+    "image_url": null,
+    "id": "6966f9df5099f9c567496f22"
+  },
+  {
+    "title": "Neuroengineer",
+    "category": "Biomedical & Health",
+    "description": "Neuroengineers design technology that interacts with the brain and nervous system, including brain-computer interfaces and neural prosthetics. Their work combines biology, engineering, and software to restore or enhance neurological functions.",
+    "good_fit_for": "Innovative, interdisciplinary, analytical, problem-solving",
+    "employers": "Neuralink, Johns Hopkins Applied Physics Lab, Medtronic",
+    "image_url": null,
+    "id": "6966fa375099f9c567496f69"
+  },
+  {
+    "title": "Nuclear Engineer",
+    "category": "Engineering",
+    "description": "Nuclear Engineers work with nuclear systems for energy production, medical applications, or research. Safety, regulation, and precision are central to their role.",
+    "good_fit_for": "Detail-focused, physics-driven, cautious, analytical",
+    "employers": "Westinghouse, Department of Energy, GE Hitachi",
+    "image_url": null,
+    "id": "6966f9bc5099f9c567496eff"
+  },
+  {
+    "title": "Optical Engineer",
+    "category": "Space & Physics",
+    "description": "Optical Engineers design lenses, sensors, lasers, and imaging systems. Work spans cameras, telescopes, medical devices, and lasers.",
+    "good_fit_for": "Precise, creative, technically minded, problem-solving",
+    "employers": "Zeiss, Thorlabs, NASA",
+    "image_url": null,
+    "id": "6966f9fe5099f9c567496f48"
+  },
+  {
+    "title": "Particle Physicist",
+    "category": "Space & Physics",
+    "description": "Researches fundamental particles and forces using accelerators and detectors. This role often contributes to foundational discoveries in physics.",
+    "good_fit_for": "Theoretical, detail-oriented, intellectually driven thinkers",
+    "employers": "CERN, Fermilab, research universities",
+    "image_url": null,
+    "id": "6966f9fe5099f9c567496f42"
+  },
+  {
+    "title": "Petroleum Engineer",
+    "category": "Engineering",
+    "description": "Petroleum Engineers design methods to extract oil and gas efficiently from underground reservoirs. They use modeling and drilling technologies to maximize output and safety.",
+    "good_fit_for": "Analytical, systems-minded, data-driven, resilient",
+    "employers": "Chevron, Schlumberger, ExxonMobil",
+    "image_url": null,
+    "id": "6966f9bc5099f9c567496f00"
+  },
+  {
+    "title": "Planetary Scientist",
+    "category": "Space & Physics",
+    "description": "Planetary Scientists study planets, moons, and planetary systems. Work includes space missions, lab simulations, and data analysis from spacecraft.",
+    "good_fit_for": "Observant, analytical, space-focused, research-oriented",
+    "employers": "NASA, ESA, research institutes",
+    "image_url": null,
+    "id": "6966f9fe5099f9c567496f45"
+  },
+  {
+    "title": "Plasma Physicist",
+    "category": "Space & Physics",
+    "description": "Studies ionized gases used in fusion research, space propulsion, and astrophysical phenomena. Research often supports next-generation energy or space systems.",
+    "good_fit_for": "Highly analytical, curious, research-driven individuals",
+    "employers": "National Labs, NASA, fusion startups",
+    "image_url": null,
+    "id": "6966f9fe5099f9c567496f41"
+  },
+  {
+    "title": "Product Designer",
+    "category": "Design & UX",
+    "description": "Product Designers design physical or digital products from concept to completion. They consider usability, aesthetics, and manufacturing or technical feasibility.",
+    "good_fit_for": "Creative, problem-solving, analytical, user-focused",
+    "employers": "IDEO, Apple, Google",
+    "image_url": null,
+    "id": "6966fa375099f9c567496f70"
+  },
+  {
+    "title": "Product Manager (Tech)",
+    "category": "Computer Science & Coding",
+    "description": "Product Managers define product goals and coordinate teams to deliver technology solutions. They balance user needs and technical constraints.",
+    "good_fit_for": "Strategic, communicative, leadership-oriented, organized",
+    "employers": "Amazon, Google, startups",
+    "image_url": null,
+    "id": "6966f9df5099f9c567496f2d"
+  },
+  {
+    "title": "QA Test Engineer (Software)",
+    "category": "Computer Science & Coding",
+    "description": "QA Test Engineers test software to find bugs and usability issues. Their work ensures reliable and polished products.",
+    "good_fit_for": "Detail-oriented, patient, systematic, quality-focused",
+    "employers": "Apple, SAP, Atlassian",
+    "image_url": null,
+    "id": "6966f9df5099f9c567496f25"
+  },
+  {
+    "title": "Quality Assurance Engineer",
+    "category": "Engineering",
+    "description": "Quality Assurance Engineers test products and systems to ensure they meet performance and safety standards. They identify issues before products reach users.",
+    "good_fit_for": "Detail-oriented, methodical, quality-focused, systematic",
+    "employers": "Intel, Medtronic, Apple, Bosch",
+    "image_url": null,
+    "id": "6966f9bc5099f9c567496f01"
+  },
+  {
+    "title": "Quantum Computing Researcher",
+    "category": "Space & Physics",
+    "description": "Develops quantum algorithms, hardware, and software for next-generation computing. Combines physics, math, and computer science.",
+    "good_fit_for": "Analytical, innovative, research-focused, mathematically oriented",
+    "employers": "IBM, Google, Rigetti Computing",
+    "image_url": null,
+    "id": "6966f9fe5099f9c567496f4a"
+  },
+  {
+    "title": "Quantum Systems Engineer",
+    "category": "Space & Physics",
+    "description": "Develops hardware and control systems for quantum computers and sensors. Combines physics, engineering, and precision instrumentation.",
+    "good_fit_for": "Highly precise, analytical, forward-thinking individuals",
+    "employers": "IBM, Google Quantum AI, Rigetti",
+    "image_url": null,
+    "id": "6966f9fe5099f9c567496f43"
+  },
+  {
+    "title": "Reinforcement Learning Engineer",
+    "category": "Robotics & AI",
+    "description": "Develops AI systems that learn through trial and error, commonly used in robotics, games, and autonomous systems. This work often involves simulations and large-scale experimentation.",
+    "good_fit_for": "Experimental, mathematically inclined, persistent problem-solvers",
+    "employers": "DeepMind, Tesla, NVIDIA",
+    "image_url": null,
+    "id": "6966f9fe5099f9c567496f38"
+  },
+  {
+    "title": "Reliability Engineer",
+    "category": "Engineering",
+    "description": "Reliability Engineers analyze failures and design improvements to increase product lifespan and system uptime. Their work prevents costly breakdowns.",
+    "good_fit_for": "Analytical, risk-aware, methodical, problem-solving",
+    "employers": "Ford, Raytheon, Lockheed Martin",
+    "image_url": null,
+    "id": "6966f9bc5099f9c567496f02"
+  },
+  {
+    "title": "Renewable Energy Systems Engineer",
+    "category": "Environmental Science",
+    "description": "Designs and evaluates solar, wind, and energy storage systems to improve efficiency and reliability. Works on both grid-scale and localized energy solutions.",
+    "good_fit_for": "Sustainability-focused, technical, solution-oriented thinkers",
+    "employers": "Vestas, Tesla Energy, NextEra Energy",
+    "image_url": null,
+    "id": "6966fa115099f9c567496f4f"
+  },
+  {
+    "title": "RF (Radio Frequency) Engineer",
+    "category": "Space & Physics",
+    "description": "RF Engineers design wireless communication systems for satellites, radar, and telecom. Their work ensures reliable signal transmission and reception.",
+    "good_fit_for": "Technical, analytical, problem-solving, electronics-focused",
+    "employers": "Qualcomm, Boeing, Ericsson",
+    "image_url": null,
+    "id": "6966f9fe5099f9c567496f47"
+  },
+  {
+    "title": "Robotics Systems Engineer",
+    "category": "Engineering",
+    "description": "Robotics Systems Engineers integrate hardware, sensors, and software into complete robotic systems. They ensure robots perform tasks accurately and safely.",
+    "good_fit_for": "Multidisciplinary, inventive, technically curious, logical",
+    "employers": "Boston Dynamics, FANUC, ABB, Tesla",
+    "image_url": null,
+    "id": "6966f9bc5099f9c567496f03"
+  },
+  {
+    "title": "Robotics Technician",
+    "category": "Robotics & AI",
+    "description": "Robotics Technicians install, maintain, and repair robotic systems in manufacturing, research, and service applications. Their work ensures operational reliability.",
+    "good_fit_for": "Hands-on, problem-solving, technical, precise",
+    "employers": "ABB, FANUC, Boston Dynamics",
+    "image_url": null,
+    "id": "6966f9fe5099f9c567496f3b"
+  },
+  {
+    "title": "Safety / Health Engineer",
+    "category": "Engineering",
+    "description": "Safety Engineers design systems and procedures to prevent workplace injuries and accidents. They analyze risks and ensure compliance with safety regulations.",
+    "good_fit_for": "Responsible, detail-focused, preventative, analytical",
+    "employers": "OSHA, DuPont, ExxonMobil",
+    "image_url": null,
+    "id": "6966f9bc5099f9c567496f04"
+  },
+  {
+    "title": "Sanitation / Water Treatment Engineer",
+    "category": "Engineering",
+    "description": "These engineers design systems that deliver clean drinking water and treat wastewater safely. Their work directly supports public health and environmental protection.",
+    "good_fit_for": "Community-minded, analytical, environmentally focused, practical",
+    "employers": "Veolia, American Water, municipal utilities",
+    "image_url": null,
+    "id": "6966f9bc5099f9c567496f05"
+  },
+  {
+    "title": "Satellite Operations Engineer",
+    "category": "Space & Physics",
+    "description": "Monitors and controls satellites after launch, ensuring communication, navigation, and data collection systems function correctly. Often works with ground stations and mission control teams.",
+    "good_fit_for": "Detail-focused, calm-under-pressure, technical individuals",
+    "employers": "SpaceX, OneWeb, SES",
+    "image_url": null,
+    "id": "6966f9fe5099f9c567496f3f"
+  },
+  {
+    "title": "Service Designer",
+    "category": "Design & UX",
+    "description": "Service Designers plan end-to-end user experiences across touchpoints, integrating processes, tools, and people.",
+    "good_fit_for": "Systems thinkers, creative, analytical, empathetic",
+    "employers": "IDEO, Accenture, consultancy firms",
+    "image_url": null,
+    "id": "6966fa375099f9c567496f75"
+  },
+  {
+    "title": "Site Reliability Engineer",
+    "category": "Computer Science & Coding",
+    "description": "Site Reliability Engineers ensure large-scale systems stay online and performant. They combine software engineering with operations.",
+    "good_fit_for": "Reliability-focused, analytical, calm under pressure, systematic",
+    "employers": "Google, Cloudflare, LinkedIn",
+    "image_url": null,
+    "id": "6966f9df5099f9c567496f2b"
+  },
+  {
+    "title": "Software Developer",
+    "category": "Computer Science & Coding",
+    "description": "Software Developers build applications and systems used on computers, phones, and the web. They write, test, and maintain code to solve real-world problems.",
+    "good_fit_for": "Logical, persistent, creative, problem-solving",
+    "employers": "Microsoft, Google, startups, enterprise firms",
+    "image_url": null,
+    "id": "6966f9df5099f9c567496f18"
+  },
+  {
+    "title": "Software Test Automation Engineer",
+    "category": "Computer Science & Coding",
+    "description": "Software Test Automation Engineers design automated testing frameworks to ensure software reliability and prevent bugs. They play a key role in quality assurance.",
+    "good_fit_for": "Meticulous, systematic, analytical thinkers",
+    "employers": "Microsoft, Salesforce, Atlassian",
+    "image_url": null,
+    "id": "6966f9df5099f9c567496f33"
+  },
+  {
+    "title": "Soil Scientist",
+    "category": "Environmental Science",
+    "description": "Soil Scientists study soil composition, health, and suitability for agriculture or construction. Their research supports farming, conservation, and land management.",
+    "good_fit_for": "Observant, scientific, field-oriented, analytical",
+    "employers": "USDA, consulting firms, agricultural research institutes",
+    "image_url": null,
+    "id": "6966fa115099f9c567496f5a"
+  },
+  {
+    "title": "Space Mission Planner",
+    "category": "Space & Physics",
+    "description": "Designs mission timelines, trajectories, and operational strategies for space missions. Balances fuel efficiency, scientific goals, and safety constraints.",
+    "good_fit_for": "Strategic, analytical, big-picture thinkers",
+    "employers": "NASA, ESA, Lockheed Martin",
+    "image_url": null,
+    "id": "6966f9fe5099f9c567496f40"
+  },
+  {
+    "title": "Space Systems Engineer",
+    "category": "Space & Physics",
+    "description": "Space Systems Engineers design spacecraft and mission systems, integrating propulsion, electronics, and communications. They ensure missions are technically feasible and safe.",
+    "good_fit_for": "Systems-oriented, technical, innovative, analytical",
+    "employers": "SpaceX, Blue Origin, Lockheed Martin",
+    "image_url": null,
+    "id": "6966f9fe5099f9c567496f46"
+  },
+  {
+    "title": "Space Weather Analyst",
+    "category": "Space & Physics",
+    "description": "Monitors solar activity and space conditions that can affect satellites, power grids, and communications. Provides warnings and mitigation strategies.",
+    "good_fit_for": "Analytical, observant, detail-focused, research-minded",
+    "employers": "NOAA, NASA, ESA",
+    "image_url": null,
+    "id": "6966f9fe5099f9c567496f49"
+  },
+  {
+    "title": "Speech Recognition Engineer",
+    "category": "Robotics & AI",
+    "description": "Speech Recognition Engineers develop AI systems that understand and process human speech. Applications include voice assistants and transcription software.",
+    "good_fit_for": "Linguistic, analytical, AI-focused, creative",
+    "employers": "Amazon, Google, Apple",
+    "image_url": null,
+    "id": "6966f9fe5099f9c567496f3d"
+  },
+  {
+    "title": "Sustainability Consultant",
+    "category": "Environmental Science",
+    "description": "Sustainability Consultants advise organizations on reducing environmental impact, improving resource efficiency, and implementing green initiatives.",
+    "good_fit_for": "Strategic, environmentally conscious, analytical, communicative",
+    "employers": "Deloitte, BCG, PwC Sustainability Services",
+    "image_url": null,
+    "id": "6966fa115099f9c567496f57"
+  },
+  {
+    "title": "Systems / Controls Engineer",
+    "category": "Engineering",
+    "description": "Systems and Controls Engineers design automated control systems for machines, robots, and industrial processes. They ensure systems respond accurately and efficiently.",
+    "good_fit_for": "Logical, math-oriented, precise, systems-focused",
+    "employers": "Honeywell, Rockwell Automation, Siemens",
+    "image_url": null,
+    "id": "6966f9bc5099f9c567496f06"
+  },
+  {
+    "title": "Technical Writer (Software)",
+    "category": "Computer Science & Coding",
+    "description": "Technical Writers create clear documentation for complex software systems. They translate technical concepts into understandable language.",
+    "good_fit_for": "Organized, communicative, detail-oriented, analytical",
+    "employers": "Atlassian, Red Hat, GitHub",
+    "image_url": null,
+    "id": "6966f9df5099f9c567496f30"
+  },
+  {
+    "title": "Toxicologist",
+    "category": "Biomedical & Health",
+    "description": "Toxicologists investigate how chemicals, drugs, and environmental substances affect living systems. Their findings help ensure safety in medicine, consumer products, and industry.",
+    "good_fit_for": "Scientific, analytical, detail-focused, safety-minded",
+    "employers": "EPA, FDA, pharmaceutical companies",
+    "image_url": null,
+    "id": "6966fa375099f9c567496f6d"
+  },
+  {
+    "title": "Transportation / Traffic Engineer",
+    "category": "Engineering",
+    "description": "Transportation Engineers design and improve roadways, intersections, and transit systems. Their work increases safety and reduces congestion.",
+    "good_fit_for": "Urban-focused, analytical, data-driven, practical",
+    "employers": "State DOTs, WSP, AECOM",
+    "image_url": null,
+    "id": "6966f9bc5099f9c567496f07"
+  },
+  {
+    "title": "UI Designer",
+    "category": "Design & UX",
+    "description": "UI Designers focus on the visual design of applications, including colors, typography, and layout. Ensures interfaces are clear and appealing.",
+    "good_fit_for": "Creative, detail-oriented, visually-focused, user-centered",
+    "employers": "Adobe, Shopify, Meta",
+    "image_url": null,
+    "id": "6966fa375099f9c567496f6f"
+  },
+  {
+    "title": "UX Designer",
+    "category": "Design & UX",
+    "description": "UX Designers create products that are intuitive, efficient, and enjoyable for users. They conduct research, prototype, and iterate designs.",
+    "good_fit_for": "Creative, empathetic, analytical, problem-solving",
+    "employers": "Apple, Google, Adobe",
+    "image_url": null,
+    "id": "6966fa375099f9c567496f6e"
+  },
+  {
+    "title": "UX Engineer",
+    "category": "Computer Science & Coding",
+    "description": "UX Engineers combine front-end development with user experience design. They ensure digital products are intuitive and accessible.",
+    "good_fit_for": "User-focused, creative, technically versatile, empathetic",
+    "employers": "Adobe, Shopify, Google",
+    "image_url": null,
+    "id": "6966f9df5099f9c567496f29"
+  },
+  {
+    "title": "UX Researcher",
+    "category": "Design & UX",
+    "description": "Conducts user studies, interviews, and usability tests to inform product design decisions. Ensures products meet real user needs.",
+    "good_fit_for": "Curious, empathetic, data-informed designers",
+    "employers": "Google, Meta, Adobe",
+    "image_url": null,
+    "id": "6966fa375099f9c567496f7e"
+  },
+  {
+    "title": "Visual Designer",
+    "category": "Design & UX",
+    "description": "Visual Designers create graphics, illustrations, and visual branding. They communicate messages clearly and aesthetically.",
+    "good_fit_for": "Creative, detail-oriented, visually perceptive, communicative",
+    "employers": "Adobe, agencies, tech startups",
+    "image_url": null,
+    "id": "6966fa375099f9c567496f76"
+  },
+  {
+    "title": "Voice UX Designer",
+    "category": "Design & UX",
+    "description": "Designs voice interfaces for assistants, smart devices, and apps. Focuses on conversational flow and natural interactions.",
+    "good_fit_for": "Linguistically curious, creative, analytical, user-focused",
+    "employers": "Amazon, Google, Apple",
+    "image_url": null,
+    "id": "6966fa375099f9c567496f74"
+  },
+  {
+    "title": "VR/AR Experience Designer",
+    "category": "Design & UX",
+    "description": "Designs immersive virtual and augmented reality experiences for entertainment, training, or education. Combines interaction, graphics, and storytelling.",
+    "good_fit_for": "Creative, tech-savvy, imaginative, spatially aware",
+    "employers": "Meta, Niantic, Magic Leap",
+    "image_url": null,
+    "id": "6966fa375099f9c567496f78"
+  },
+  {
+    "title": "Wildlife Biologist",
+    "category": "Environmental Science",
+    "description": "Wildlife Biologists research animal populations, behavior, and habitats. They support conservation efforts, policy, and ecological balance.",
+    "good_fit_for": "Observant, patient, outdoors-oriented, analytical",
+    "employers": "National Park Service, WWF, state wildlife agencies",
+    "image_url": null,
+    "id": "6966fa115099f9c567496f54"
+  },
+  {
+    "title": "Wind Energy Engineer",
+    "category": "Engineering",
+    "description": "Wind Energy Engineers design and optimize wind turbines and wind farms. Their work advances renewable energy adoption and efficiency.",
+    "good_fit_for": "Sustainability-driven, mechanical, systems-oriented, innovative",
+    "employers": "Vestas, GE Renewable Energy, Siemens Gamesa",
+    "image_url": null,
+    "id": "6966f9bc5099f9c567496f0a"
+  }
+]

@@ -1,0 +1,58 @@
+[
+  {
+    "word": "Velocity",
+    "definition": "How fast something is moving and in what direction. It's like speed but with a compass!",
+    "example": "The car's velocity was 60 miles per hour heading north.",
+    "fields": "Physics, Engineering, Mathematics",
+    "word_date": "2026-01-12",
+    "id": "69687549a3a2445960532797"
+  },
+  {
+    "word": "Algorithm",
+    "definition": "A step-by-step set of instructions to solve a problem or complete a task, like a recipe for computers.",
+    "example": "The algorithm tells the robot how to navigate through the maze.",
+    "fields": "Computer Science, Mathematics, Robotics",
+    "word_date": "2026-01-14",
+    "id": "69687549a3a2445960532795"
+  },
+  {
+    "word": "Photosynthesis",
+    "definition": "The process plants use to turn sunlight, water, and carbon dioxide into food and oxygen.",
+    "example": "Trees create oxygen through photosynthesis, which helps us breathe.",
+    "fields": "Biology, Environmental Science",
+    "word_date": "2026-01-13",
+    "id": "69687549a3a2445960532796"
+  },
+  {
+    "word": "Ecosystem",
+    "definition": "A community of living things (plants, animals, bugs) and their environment all working together.",
+    "example": "A pond ecosystem includes fish, frogs, plants, and the water they live in.",
+    "fields": "Biology, Environmental Science",
+    "word_date": "2026-01-10",
+    "id": "69687549a3a2445960532799"
+  },
+  {
+    "word": "Density",
+    "definition": "How tightly packed the molecules are in an object. Dense things sink, less dense things float!",
+    "example": "Oil floats on water because it has lower density.",
+    "fields": "Physics, Chemistry",
+    "word_date": "2026-01-11",
+    "id": "69687549a3a2445960532798"
+  },
+  {
+    "word": "Hypothesis",
+    "definition": "An educated guess about what you think will happen in an experiment, based on what you already know.",
+    "example": "My hypothesis is that plants will grow faster with more sunlight.",
+    "fields": "Biology, Chemistry, Physics",
+    "word_date": "2026-01-15",
+    "id": "69687549a3a2445960532794"
+  },
+  {
+    "word": "Variable",
+    "definition": "Something in an experiment that can change or be changed to see what happens.",
+    "example": "In our plant experiment, the variable was the amount of water we gave each plant.",
+    "fields": "Mathematics, Computer Science, All Sciences",
+    "word_date": "2026-01-09",
+    "id": "69687549a3a244596053279a"
+  }
+]

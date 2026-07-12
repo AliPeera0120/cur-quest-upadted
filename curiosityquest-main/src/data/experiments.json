@@ -1,0 +1,242 @@
+[
+  {
+    "title": "Balloon-Powered Car",
+    "topic": "physics",
+    "difficulty": "Beginner",
+    "materials": "Balloon\nPlastic straw\n4 bottle caps (wheels)\nSkewers or toothpicks (axles)\nCardboard or lightweight plastic sheet\nTape\nScissors",
+    "instructions": "1. Cut the cardboard to a rectangle (around 15 x 10 cm) to form the car base.\n2. Push skewers through the cardboard horizontally to make axles.\n3. Attach bottle caps to the ends of skewers as wheels. Secure with tape if needed.\n4. Tape a straw along the top of the cardboard so that the balloon's opening points backward.\n5. Inflate the balloon, pinch it closed, and place it in the straw.\n6. Release the balloon and watch your car move forward.\n7. Try different balloon sizes or car weights to see which moves fastest.",
+    "what_you_learn": "Air pushes the car forward when it escapes the balloon (Newton's Third Law). The experiment demonstrates action-reaction forces and friction effects.",
+    "order": 1,
+    "id": "6966fad1e548b830753a4203"
+  },
+  {
+    "title": "Rubber Band Launcher",
+    "topic": "physics",
+    "difficulty": "Beginner",
+    "materials": "Rubber bands (various sizes)\nPopsicle sticks (2–3)\nTape\nSmall lightweight object (paper ball, pom-pom)",
+    "instructions": "1. Stack two popsicle sticks together and secure with tape to make a launcher base.\n2. Stretch a rubber band between the sticks so it can hold tension.\n3. Place your object on the rubber band.\n4. Pull back the rubber band to stretch it, and release to launch the object.\n5. Measure how far the object travels.\n6. Experiment with different rubber band thicknesses, lengths, and pull distances.",
+    "what_you_learn": "Elastic potential energy stored in the rubber band converts to kinetic energy. You can observe how energy transfer and tension affect motion.",
+    "order": 2,
+    "id": "6966fad1e548b830753a4204"
+  },
+  {
+    "title": "Simple Pendulum Experiment",
+    "topic": "physics",
+    "difficulty": "Medium",
+    "materials": "String (~50 cm)\nSmall weight (washer, nut, toy)\nStopwatch\nTape or hook",
+    "instructions": "1. Tie the weight to one end of the string.\n2. Attach the other end of the string to a hook or tape it to a sturdy table edge.\n3. Pull the pendulum to the side so the string is at a slight angle.\n4. Release the pendulum and start timing with a stopwatch.\n5. Count 10 full swings back and forth. Record the time.\n6. Repeat using strings of different lengths and compare results.",
+    "what_you_learn": "Longer pendulum strings take more time to complete one swing (period). The experiment demonstrates how gravity and length affect oscillatory motion.",
+    "order": 3,
+    "id": "6966fad1e548b830753a4205"
+  },
+  {
+    "title": "Water Bottle Rocket",
+    "topic": "physics",
+    "difficulty": "Medium",
+    "materials": "2-liter plastic bottle\nWater (~1/4 of bottle)\nCork\nBicycle pump with needle adapter\nSafe outdoor space",
+    "instructions": "1. Fill the bottle 1/4 full with water.\n2. Insert the cork into the bottle opening tightly.\n3. Insert the bicycle pump needle through the cork to pressurize the bottle.\n4. Place the bottle upside down on a flat, open surface outdoors.\n5. Pump air slowly into the bottle until the cork pops and the bottle launches.\n6. Measure flight distance or height. Experiment with different water levels.",
+    "what_you_learn": "Pressurized air pushes water downward, propelling the bottle upward (Newton's Third Law). Changing water levels alters mass and thrust, demonstrating propulsion principles.",
+    "order": 4,
+    "id": "6966fad1e548b830753a4206"
+  },
+  {
+    "title": "Homemade Electromagnet",
+    "topic": "physics",
+    "difficulty": "Advanced",
+    "materials": "Insulated copper wire (~2 m)\nIron nail (~5 cm)\nAA battery\nPaper clips",
+    "instructions": "1. Wrap the copper wire tightly around the nail, leaving ~5 cm free at each end.\n2. Connect the free ends to the positive and negative terminals of the AA battery.\n3. Hold the nail near paper clips and observe how it attracts them.\n4. Experiment by changing the number of wire coils or using a larger battery.\n5. Always disconnect the battery when not testing to avoid overheating the wire.",
+    "what_you_learn": "Electric current through wire creates a magnetic field around the nail. This experiment demonstrates electromagnetism and how coil turns and current strength affect magnetic power.",
+    "order": 5,
+    "id": "6966fad1e548b830753a4207"
+  },
+  {
+    "title": "Rube Goldberg Machine",
+    "topic": "physics",
+    "difficulty": "Advanced",
+    "materials": "Marbles or small balls\nCardboard ramps\nDominoes\nTape\nCups, toy cars, string, household objects",
+    "instructions": "1. Design a sequence of actions where one triggers the next, e.g., marble hits dominoes, which tip cups.\n2. Set up ramps and objects according to your design.\n3. Test each step individually to ensure it works.\n4. Connect all steps, then trigger the first action.\n5. Observe the chain reaction and adjust angles or spacing as needed.",
+    "what_you_learn": "Demonstrates mechanical energy transfer and cause-and-effect relationships. Shows problem-solving, creativity, and design thinking principles.",
+    "order": 6,
+    "id": "6966fad1e548b830753a4208"
+  },
+  {
+    "title": "Plant Observation Jar",
+    "topic": "biology",
+    "difficulty": "Beginner",
+    "materials": "Clear jar or container\nSoil\nSeeds (bean, sunflower)\nWater\nPaper and pen",
+    "instructions": "1. Fill the jar with soil to about 3/4 full.\n2. Plant the seeds 1–2 cm deep in the soil.\n3. Water lightly to moisten the soil.\n4. Cover the jar loosely to retain moisture.\n5. Place the jar in sunlight and observe daily.\n6. Record changes in stem, leaf, and root growth.",
+    "what_you_learn": "Plants grow toward light (phototropism). Seed germination and root development can be observed in real time.",
+    "order": 7,
+    "id": "6966fad1e548b830753a4209"
+  },
+  {
+    "title": "Leaf Rubbings",
+    "topic": "biology",
+    "difficulty": "Beginner",
+    "materials": "Leaves of various shapes and sizes\nPaper\nCrayons or colored pencils",
+    "instructions": "1. Place a leaf with the vein side up under a sheet of paper.\n2. Rub the crayon over the paper where the leaf is positioned.\n3. Continue rubbing until the leaf pattern is clearly visible.\n4. Compare patterns between different leaf types.\n5. Experiment with layering multiple leaves to create designs.",
+    "what_you_learn": "Leaf structure varies across species. Observing vein patterns teaches about nutrient transport in plants.",
+    "order": 8,
+    "id": "6966fad1e548b830753a420a"
+  },
+  {
+    "title": "DIY Microscope Slides",
+    "topic": "biology",
+    "difficulty": "Medium",
+    "materials": "Microscope\nGlass slides and cover slips\nOnion or leaf tissue\nDropper\nWater\nTweezers",
+    "instructions": "1. Cut a thin piece of onion or leaf tissue using tweezers.\n2. Place tissue on a glass slide.\n3. Add one drop of water on top using the dropper.\n4. Carefully cover with a cover slip, avoiding air bubbles.\n5. Place under the microscope and adjust focus.\n6. Observe cell shapes, nuclei, and other structures.",
+    "what_you_learn": "Microscopes allow us to see cells invisible to the naked eye. Observing tissue reveals basic plant cell structure.",
+    "order": 9,
+    "id": "6966fad1e548b830753a420b"
+  },
+  {
+    "title": "Worm Observation in Soil",
+    "topic": "biology",
+    "difficulty": "Medium",
+    "materials": "Transparent container\nSoil\nEarthworms\nMagnifying glass\nNotebook",
+    "instructions": "1. Fill the container with a 5–10 cm layer of soil.\n2. Gently place worms on the soil.\n3. Observe movement and burrowing behaviors.\n4. Use a magnifying glass to watch tunnels form.\n5. Record observations in your notebook over several days.",
+    "what_you_learn": "Worms improve soil aeration and nutrient distribution. Observation teaches about animal behavior and ecosystem roles.",
+    "order": 10,
+    "id": "6966fad1e548b830753a420c"
+  },
+  {
+    "title": "Yeast Metabolism Experiment",
+    "topic": "biology",
+    "difficulty": "Advanced",
+    "materials": "Dry yeast\nSugar\nWarm water\nBalloon\nSmall bottle\nSpoon",
+    "instructions": "1. Add 1 tsp sugar and 1 tsp yeast to the bottle.\n2. Add 50 ml warm water and stir gently.\n3. Stretch the balloon over the bottle top.\n4. Place bottle in a warm spot.\n5. Observe the balloon inflate as yeast produces carbon dioxide.\n6. Experiment with different sugar amounts to see effect on inflation rate.",
+    "what_you_learn": "Yeast produces gas through fermentation. Demonstrates how microorganisms metabolize sugar.",
+    "order": 11,
+    "id": "6966fad1e548b830753a420d"
+  },
+  {
+    "title": "Extracting DNA from Strawberries",
+    "topic": "biology",
+    "difficulty": "Advanced",
+    "materials": "Strawberries (2–3)\nDish soap (1 tsp)\nSalt (1/2 tsp)\nWater (~50 ml)\nCold rubbing alcohol\nZiplock bag, coffee filter, small cup",
+    "instructions": "1. Place strawberries in bag and mash thoroughly.\n2. Mix water, dish soap, and salt to create extraction solution.\n3. Pour solution into the bag and mix gently.\n4. Filter through a coffee filter into a cup.\n5. Slowly pour cold alcohol along the side of the cup to form a separate layer.\n6. Observe white, stringy DNA forming and spool it with a toothpick.",
+    "what_you_learn": "DNA can be extracted from cells with simple chemicals. This shows basic genetics and molecular biology principles.",
+    "order": 12,
+    "id": "6966fad1e548b830753a420e"
+  },
+  {
+    "title": "Baking Soda & Vinegar Volcano",
+    "topic": "chemistry",
+    "difficulty": "Beginner",
+    "materials": "Small container or bottle\nBaking soda (~2 tbsp)\nVinegar (~50 ml)\nRed food coloring (optional)\nTray or plate to contain mess",
+    "instructions": "1. Place the container on the tray to catch overflow.\n2. Add 2 tablespoons of baking soda into the container.\n3. Add a few drops of red food coloring for lava effect.\n4. Slowly pour vinegar into the container.\n5. Watch the foamy eruption as the liquid spills out.\n6. Try adding more baking soda or vinegar to see how eruption size changes.",
+    "what_you_learn": "Baking soda reacts with vinegar to produce carbon dioxide gas, creating pressure and fizz. Demonstrates an acid-base chemical reaction and gas production.",
+    "order": 13,
+    "id": "6966fad1e548b830753a420f"
+  },
+  {
+    "title": "Oil & Water Density Experiment",
+    "topic": "chemistry",
+    "difficulty": "Beginner",
+    "materials": "Water (~1 cup)\nVegetable oil (~1 cup)\nFood coloring (optional)\nTall clear glass",
+    "instructions": "1. Pour water into the glass.\n2. Add a few drops of food coloring to make water visible.\n3. Slowly pour oil on top of the water.\n4. Observe that oil floats on top and does not mix with water.\n5. Shake the glass gently to mix temporarily, then watch separation occur.\n6. Try adding small objects like coins to see which layer they sink into.",
+    "what_you_learn": "Oil is less dense than water, so it floats on top. This experiment demonstrates density and immiscible liquids.",
+    "order": 14,
+    "id": "6966fad1e548b830753a4210"
+  },
+  {
+    "title": "Homemade pH Indicator",
+    "topic": "chemistry",
+    "difficulty": "Medium",
+    "materials": "Red cabbage\nBlender or grater\nBoiling water\nStrainer or filter\nLemon juice, vinegar, baking soda",
+    "instructions": "1. Chop the cabbage into small pieces.\n2. Pour boiling water over the cabbage and let it sit for 10 minutes to extract pigment.\n3. Strain the liquid to remove solid pieces.\n4. Pour cabbage juice into small cups.\n5. Add lemon juice, vinegar, or baking soda to each cup.\n6. Observe color changes: acidic solutions turn red, neutral stay purple, basic solutions turn green/blue.",
+    "what_you_learn": "The pigment in cabbage acts as a pH indicator. Demonstrates acid-base reactions and chemical changes.",
+    "order": 15,
+    "id": "6966fad1e548b830753a4211"
+  },
+  {
+    "title": "Milk Surface Tension Experiment",
+    "topic": "chemistry",
+    "difficulty": "Medium",
+    "materials": "Whole milk (~1 cup)\nFood coloring\nDish soap (few drops)\nShallow plate",
+    "instructions": "1. Pour milk into the shallow plate until surface is covered.\n2. Add 2–3 drops of different colored food coloring in the center.\n3. Dip a toothpick into dish soap and touch it to the milk surface near the drops.\n4. Watch the colors swirl and move rapidly across the milk.\n5. Repeat touching different spots with the soapy toothpick.\n6. Try with skim or 2% milk and observe differences in effect.",
+    "what_you_learn": "Soap reduces surface tension, causing colored milk to move. Demonstrates molecular interactions and surface tension.",
+    "order": 16,
+    "id": "6966fad1e548b830753a4212"
+  },
+  {
+    "title": "Crystal Growth Experiment",
+    "topic": "chemistry",
+    "difficulty": "Advanced",
+    "materials": "Borax or Epsom salt (~100 g)\nBoiling water (~250 ml)\nJar\nPipe cleaners or string\nSpoon",
+    "instructions": "1. Shape pipe cleaners into desired designs.\n2. Boil water and dissolve borax or Epsom salt until saturated.\n3. Suspend the pipe cleaner in solution using string so it does not touch the jar sides.\n4. Leave the jar undisturbed overnight.\n5. Observe crystals forming on the pipe cleaner.\n6. Compare growth by changing solution concentration or temperature.",
+    "what_you_learn": "Crystals form as the solution becomes supersaturated. Demonstrates solubility, nucleation, and crystal growth.",
+    "order": 17,
+    "id": "6966fad1e548b830753a4213"
+  },
+  {
+    "title": "Electrolysis of Water",
+    "topic": "chemistry",
+    "difficulty": "Advanced",
+    "materials": "Glass jar (~250 ml)\nWater (~200 ml)\nSalt (pinch)\n9V battery\nTwo pencils, sharpened at both ends\nWires with alligator clips",
+    "instructions": "1. Fill the jar with water and dissolve a pinch of salt.\n2. Attach alligator clips to battery terminals and pencils.\n3. Submerge pencils in water without touching each other.\n4. Observe bubbles forming on each pencil.\n5. Identify hydrogen (smaller bubbles) and oxygen (larger bubbles) at electrodes.\n6. Try reversing battery connections to see gas production switch sides.",
+    "what_you_learn": "Electricity can split water into hydrogen and oxygen gas. Demonstrates electrolysis and chemical decomposition reactions.",
+    "order": 18,
+    "id": "6966fad1e548b830753a4214"
+  },
+  {
+    "title": "Popsicle Stick Bridge",
+    "topic": "engineering",
+    "difficulty": "Beginner",
+    "materials": "Popsicle sticks (~50)\nGlue\nSmall weights or coins",
+    "instructions": "1. Design your bridge by sketching a simple structure.\n2. Glue popsicle sticks together to form base, beams, and supports.\n3. Allow glue to dry completely before testing.\n4. Gradually place weights on the bridge until it collapses.\n5. Observe which parts broke first.\n6. Redesign and reinforce weak areas to improve strength.",
+    "what_you_learn": "Triangles and proper support increase bridge strength. Demonstrates structural engineering principles and load distribution.",
+    "order": 19,
+    "id": "6966fad1e548b830753a4215"
+  },
+  {
+    "title": "Balloon Rocket",
+    "topic": "engineering",
+    "difficulty": "Beginner",
+    "materials": "Balloon\nString (~3 m)\nStraw\nTape",
+    "instructions": "1. Thread string through straw and secure ends to two fixed points (chairs or door handles).\n2. Inflate balloon without tying it, and tape it to the straw.\n3. Hold the balloon closed and let go to launch along the string.\n4. Observe the motion and speed.\n5. Experiment with balloon sizes and angles of the string.\n6. Try adding a small weight to see how distance changes.",
+    "what_you_learn": "Escaping air propels the balloon along the string. Demonstrates Newton's Third Law and thrust concepts.",
+    "order": 20,
+    "id": "6966fad1e548b830753a4216"
+  },
+  {
+    "title": "Rubber Band-Powered Helicopter",
+    "topic": "engineering",
+    "difficulty": "Medium",
+    "materials": "Paper\nScissors\nRubber bands\nPaper clips",
+    "instructions": "1. Cut a paper helicopter shape with two rotors and a body.\n2. Attach a paper clip at the bottom to weigh it slightly.\n3. Loop a rubber band around the rotors for propulsion.\n4. Twist the rubber band and release to make it spin and fly.\n5. Observe rotor rotation and flight distance.\n6. Experiment with rotor size, paper weight, or rubber band tension.",
+    "what_you_learn": "Elastic energy turns into rotational kinetic energy. Demonstrates lift, drag, and rotational motion principles.",
+    "order": 21,
+    "id": "6966fad1e548b830753a4217"
+  },
+  {
+    "title": "Catapult Building",
+    "topic": "engineering",
+    "difficulty": "Medium",
+    "materials": "Popsicle sticks (~10)\nRubber bands (~5)\nPlastic spoon\nSmall objects (pom-poms, marshmallows)",
+    "instructions": "1. Stack 5 popsicle sticks and secure them with rubber bands for base.\n2. Attach spoon to another stick and connect with rubber band for tension.\n3. Place an object in the spoon and pull back to create tension.\n4. Release to launch the object.\n5. Adjust rubber band placement and angle for better distance.\n6. Try different weights to test performance.",
+    "what_you_learn": "Catapults store elastic potential energy that converts to kinetic energy. Demonstrates mechanical energy, tension, and projectile motion.",
+    "order": 22,
+    "id": "6966fad1e548b830753a4218"
+  },
+  {
+    "title": "DIY Water Filtration System",
+    "topic": "engineering",
+    "difficulty": "Advanced",
+    "materials": "Plastic bottle, cut in half\nGravel, sand, activated charcoal\nCoffee filter\nDirty water\nSpoon",
+    "instructions": "1. Invert top half of bottle to create a funnel.\n2. Place a coffee filter at the bottom.\n3. Layer activated charcoal, sand, and gravel inside the funnel.\n4. Slowly pour dirty water through layers.\n5. Observe particles being trapped in each layer.\n6. Compare filtered water clarity with different layer arrangements.",
+    "what_you_learn": "Each layer removes different contaminants. Demonstrates filtration, particle separation, and water purification principles.",
+    "order": 23,
+    "id": "6966fad1e548b830753a4219"
+  },
+  {
+    "title": "Paper Circuit Project",
+    "topic": "engineering",
+    "difficulty": "Advanced",
+    "materials": "Copper tape\nLED lights\nCoin battery\nPaper\nTape or glue",
+    "instructions": "1. Draw a simple circuit path on paper using copper tape.\n2. Place LEDs along the path with correct orientation.\n3. Attach coin battery so the tape completes the circuit.\n4. Ensure all connections are secure.\n5. LEDs should light up; troubleshoot any loose connections.\n6. Experiment with multiple LEDs, switches, or branching circuits.",
+    "what_you_learn": "Electric current flows through a closed circuit to power LEDs. Demonstrates basic electricity, conductivity, and circuit design.",
+    "order": 24,
+    "id": "6966fad1e548b830753a421a"
+  }
+]
