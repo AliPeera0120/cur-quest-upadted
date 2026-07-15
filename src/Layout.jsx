@@ -75,7 +75,7 @@ export default function Layout({ children, currentPageName }) {
               className="flex items-center gap-2 group"
             >
               <img 
-                src="https://qtrypzzcjebvfcihiynt.supabase.co/storage/v1/object/public/base44-prod/public/696594fc2acba2d4bc584513/118c89122_Curiosity.png"
+                src="/images/logo.png"
                 alt="CuriosityQuest Logo"
                 className="w-10 h-10 md:w-12 md:h-12 object-contain transform group-hover:scale-105 transition-transform"
               />
@@ -153,7 +153,7 @@ export default function Layout({ children, currentPageName }) {
             <div>
               <div className="flex items-center gap-2 mb-4">
                 <img 
-                  src="https://qtrypzzcjebvfcihiynt.supabase.co/storage/v1/object/public/base44-prod/public/696594fc2acba2d4bc584513/118c89122_Curiosity.png"
+                  src="/images/logo.png"
                   alt="CuriosityQuest Logo"
                   className="w-10 h-10 object-contain"
                 />

@@ -11,7 +11,7 @@ export default function Events() {
       ageGroup: "Ages 8-11",
       location: "Phoenixville Library",
       description: "Join us at the Phoenixville Library for a fun, hands-on STEM session! Kids ages 8–11 will explore exciting science experiments and discover how science, technology, engineering, and math show up in everyday life. Come ready to experiment, discover, and have a blast!",
-      posterUrl: "https://media.base44.com/images/public/696594fc2acba2d4bc584513/a2214e57c_PhoenixvilleLibrary.png"
+      posterUrl: "/images/event-phoenixville-library.png"
     }
   ];
 
@@ -23,7 +23,7 @@ export default function Events() {
       ageGroup: "All Ages",
       location: "Reservoir Park, Phoenixville",
       description: "Join us at Phoenixville Earth Day for an afternoon of hands-on STEM and real-world environmental learning. We'll be running interactive experiments where you can explore how science helps protect our planet, including a live oil spill cleanup demo and more activities using everyday materials. Come by, get involved, and see how STEM can make a real impact in our ecosystem. Bring friends, stop by our booth, and learn something new!",
-      posterUrl: "https://media.base44.com/images/public/696594fc2acba2d4bc584513/5dbc64fbc_CuriosityQuestatEarthDayPhoenixville1.png"
+      posterUrl: "/images/event-earth-day.png"
     },
     {
       title: "Elephant Toothpaste Adventure",
@@ -32,7 +32,7 @@ export default function Events() {
       ageGroup: "Ages 8-11",
       location: "Phoenixville Area Library",
       description: "Time to mix science and fun and make foam fly! In this exciting experiment, kids will create a foamy explosion that looks just like a giant tube of toothpaste—perfect for an elephant! Using simple ingredients like hydrogen peroxide, soap, and yeast, they'll learn about chemical reactions and how substances break down to create bubbles and foam. It's a hands-on, exciting way to see science in action while having a blast doing it!",
-      posterUrl: "https://qtrypzzcjebvfcihiynt.supabase.co/storage/v1/object/public/base44-prod/public/696594fc2acba2d4bc584513/c9c721d64_Science_Fun_Fiyer.png"
+      posterUrl: "/images/event-science-fun.png"
     },
     {
       title: "Lava Lamp Fun",
@@ -41,7 +41,7 @@ export default function Events() {
       ageGroup: "Ages 8-11",
       location: "Phoenixville Area Library",
       description: "Get ready for some fizzy fun! In this experiment, kids will make their very own lava lamps using water, oil, Alka-Seltzer, and a splash of food coloring. Kids will get to see science in action while learning about density and chemical reactions in a way that's super fun and easy to understand. This event gives kids the chance to have fun and learn new things in the summer.",
-      posterUrl: "https://qtrypzzcjebvfcihiynt.supabase.co/storage/v1/object/public/base44-prod/public/696594fc2acba2d4bc584513/c9c721d64_Science_Fun_Fiyer.png"
+      posterUrl: "/images/event-science-fun.png"
     }
   ];
 
