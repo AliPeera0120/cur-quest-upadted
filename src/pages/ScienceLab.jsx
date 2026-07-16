@@ -1,7 +1,7 @@
 import React, { useState, useMemo, useRef } from 'react';
 import { useQuest, COIN_RULES } from '@/lib/quest';
 import equipment from '@/data/labEquipment.json';
-import quizzes from '@/data/quizzes.json';
+import labQuestions from '@/data/labQuestions.json';
 import { Button } from '@/components/ui/button';
 import { Progress } from '@/components/ui/progress';
 import {
@@ -20,9 +20,18 @@ const ICONS = {
 
 const SESSION_LENGTH = 8;
 
-const allQuestions = Object.entries(quizzes).flatMap(([topic, qs]) =>
-  qs.map((q) => ({ ...q, topic }))
-);
+// Harder questions pay more: level 1 = 1x, level 2 = 1.5x, level 3 = 2x
+const LEVEL_REWARD = { 1: 1, 2: 1.5, 3: 2 };
+
+const DIFFICULTIES = [
+  { id: 'all', label: 'Mixed', desc: 'Questions from every level', levels: [1, 2, 3] },
+  { id: 'easy', label: 'Explorer', desc: 'Ages 7-9 · earn the base rate', levels: [1] },
+  { id: 'medium', label: 'Scientist', desc: 'Ages 9-12 · 1.5x coins', levels: [2] },
+  { id: 'hard', label: 'Professor', desc: 'Ages 12+ · 2x coins', levels: [3] },
+];
+
+const TOTAL_QUESTIONS = labQuestions.length;
+const CATEGORY_COUNT = new Set(labQuestions.map((q) => q.category)).size;
 
 const shuffle = (arr) => {
   const a = [...arr];
@@ -34,9 +43,13 @@ const shuffle = (arr) => {
 };
 
 // ---------------- Research session (question game) ----------------
-function ResearchSession({ onClose }) {
+function ResearchSession({ difficulty, onClose }) {
   const quest = useQuest();
-  const questions = useMemo(() => shuffle(allQuestions).slice(0, SESSION_LENGTH), []);
+  const diff = DIFFICULTIES.find((d) => d.id === difficulty) || DIFFICULTIES[0];
+  const questions = useMemo(() => {
+    const pool = labQuestions.filter((q) => diff.levels.includes(q.level));
+    return shuffle(pool).slice(0, SESSION_LENGTH);
+  }, [diff]);
   const [idx, setIdx] = useState(0);
   const [picked, setPicked] = useState(null);
   const [correct, setCorrect] = useState(0);
@@ -54,7 +67,8 @@ function ResearchSession({ onClose }) {
     if (i === q.answer) {
       const newStreak = streak + 1;
       const base = COIN_RULES.perCorrectAnswer + (newStreak - 1) * COIN_RULES.streakBonus;
-      const award = Math.round(base * quest.labMultiplier);
+      const levelReward = LEVEL_REWARD[q.level] || 1;
+      const award = Math.round(base * levelReward * quest.labMultiplier);
       setCorrect((c) => c + 1);
       setStreak(newStreak);
       setCoinsEarned((c) => c + award);
@@ -111,7 +125,7 @@ function ResearchSession({ onClose }) {
           <div className="p-6">
             <div className="flex justify-between text-xs font-semibold text-gray-500 mb-3">
               <span>Question {idx + 1} of {questions.length}</span>
-              <span className="capitalize">{q.topic}</span>
+              <span>{q.category}{LEVEL_REWARD[q.level] > 1 ? ` · ${LEVEL_REWARD[q.level]}x` : ''}</span>
             </div>
             <Progress value={(idx / questions.length) * 100} className="mb-5 h-2" />
             <p className="font-semibold text-gray-800 text-lg mb-5" style={{ fontFamily: 'Nunito, sans-serif' }}>
@@ -185,7 +199,15 @@ function ResearchSession({ onClose }) {
 export default function ScienceLab() {
   const quest = useQuest();
   const [sessionOpen, setSessionOpen] = useState(false);
+  const [difficulty, setDifficulty] = useState('all');
+  const [pickerOpen, setPickerOpen] = useState(false);
   const [tab, setTab] = useState('lab'); // 'lab' | 'shop'
+
+  const startSession = (diffId) => {
+    setDifficulty(diffId);
+    setPickerOpen(false);
+    setSessionOpen(true);
+  };
 
   const owned = quest.lab;
   const ownedItems = equipment.filter((e) => owned.includes(e.id));
@@ -248,7 +270,7 @@ export default function ScienceLab() {
             </div>
           </div>
           <button
-            onClick={() => setSessionOpen(true)}
+            onClick={() => setPickerOpen(true)}
             className="bg-[#ed7219] hover:bg-[#d86515] transition-colors rounded-2xl px-5 py-4 shadow-sm text-white flex items-center justify-center gap-2 font-bold"
             style={{ fontFamily: 'Nunito, sans-serif' }}
           >
@@ -289,7 +311,7 @@ export default function ScienceLab() {
                   Start a research session to earn your first coins, then visit the Equipment Shop
                   to buy your very first instrument.
                 </p>
-                <Button onClick={() => setSessionOpen(true)} className="bg-[#ed7219] hover:bg-[#d86515] rounded-xl gap-2">
+                <Button onClick={() => setPickerOpen(true)} className="bg-[#ed7219] hover:bg-[#d86515] rounded-xl gap-2">
                   <Play className="w-4 h-4" /> Start Your First Research Session
                 </Button>
               </div>
@@ -394,15 +416,55 @@ export default function ScienceLab() {
             <Sparkles className="w-5 h-5 text-[#ed7219]" /> How Your Lab Grows
           </h3>
           <div className="grid sm:grid-cols-3 gap-4 text-sm text-white/85">
-            <p><strong>1. Research.</strong> Answer science questions in a research session. Each correct answer earns Research Coins, and answer streaks earn bonus coins.</p>
+            <p><strong>1. Research.</strong> Answer questions from a bank of {TOTAL_QUESTIONS} science questions across {CATEGORY_COUNT} topics. Each correct answer earns Research Coins, streaks earn bonus coins, and harder questions pay up to 2x.</p>
             <p><strong>2. Build.</strong> Spend coins in the Equipment Shop on real scientific instruments, from beakers all the way to an electron microscope.</p>
-            <p><strong>3. Boost.</strong> Every instrument raises your earning boost, so a bigger lab means more coins per correct answer. {nextItem ? `Next up: ${nextItem.name}.` : 'You own everything. Incredible work!'}</p>
+            <p><strong>3. Boost.</strong> Every instrument raises your earning boost, so a bigger lab means more coins per correct answer. {nextItem ? `Next up: ${nextItem.name}.` : 'You own everything. Incredible work.'}</p>
           </div>
         </div>
       </div>
 
+      {/* Difficulty picker */}
       <AnimatePresence>
-        {sessionOpen && <ResearchSession onClose={() => setSessionOpen(false)} />}
+        {pickerOpen && (
+          <motion.div
+            initial={{ opacity: 0 }}
+            animate={{ opacity: 1 }}
+            exit={{ opacity: 0 }}
+            className="fixed inset-0 bg-black/60 z-50 flex items-center justify-center p-4"
+            onClick={() => setPickerOpen(false)}
+          >
+            <motion.div
+              initial={{ y: 20, opacity: 0 }}
+              animate={{ y: 0, opacity: 1 }}
+              className="bg-white rounded-3xl max-w-md w-full p-6 shadow-2xl"
+              onClick={(e) => e.stopPropagation()}
+            >
+              <h3 className="font-bold text-xl text-[#055b8e] mb-1" style={{ fontFamily: 'Nunito, sans-serif' }}>
+                Choose your challenge
+              </h3>
+              <p className="text-sm text-gray-500 mb-5">Harder questions are worth more Research Coins.</p>
+              <div className="space-y-2.5">
+                {DIFFICULTIES.map((d) => (
+                  <button
+                    key={d.id}
+                    onClick={() => startSession(d.id)}
+                    className="w-full text-left rounded-2xl border-2 border-gray-200 hover:border-[#ed7219] hover:bg-orange-50/40 p-4 transition-all flex items-center justify-between group"
+                  >
+                    <div>
+                      <div className="font-bold text-gray-800" style={{ fontFamily: 'Nunito, sans-serif' }}>{d.label}</div>
+                      <div className="text-xs text-gray-500">{d.desc}</div>
+                    </div>
+                    <ChevronRight className="w-5 h-5 text-gray-300 group-hover:text-[#ed7219] group-hover:translate-x-1 transition-all" />
+                  </button>
+                ))}
+              </div>
+            </motion.div>
+          </motion.div>
+        )}
+      </AnimatePresence>
+
+      <AnimatePresence>
+        {sessionOpen && <ResearchSession difficulty={difficulty} onClose={() => setSessionOpen(false)} />}
       </AnimatePresence>
     </div>
   );

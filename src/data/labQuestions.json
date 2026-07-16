@@ -1,0 +1,2420 @@
+[
+  {
+    "q": "What do we call the force that pulls objects down toward the Earth?",
+    "options": [
+      "Friction",
+      "Gravity",
+      "Magnetism",
+      "Sound"
+    ],
+    "answer": 1,
+    "explain": "Gravity is the force that pulls objects toward the center of the Earth.",
+    "category": "Forces & Motion",
+    "level": 1
+  },
+  {
+    "q": "Which of these actions is an example of a pull?",
+    "options": [
+      "Kicking a soccer ball",
+      "Pushing a shopping cart",
+      "Blowing up a balloon",
+      "Opening a drawer toward you"
+    ],
+    "answer": 3,
+    "explain": "Opening a drawer toward your body means you are pulling it closer.",
+    "category": "Forces & Motion",
+    "level": 1
+  },
+  {
+    "q": "Why does a sled slide more easily on smooth ice than on rough grass?",
+    "options": [
+      "Smooth ice has less friction",
+      "Ice has more gravity",
+      "Grass is magnetic",
+      "Ice is much heavier"
+    ],
+    "answer": 0,
+    "explain": "Smooth ice has less friction, so objects slide across it more easily.",
+    "category": "Forces & Motion",
+    "level": 1
+  },
+  {
+    "q": "What happens to a moving swing after you stop pushing it?",
+    "options": [
+      "It speeds up forever",
+      "It flies off into the sky",
+      "It slowly slows down and stops",
+      "It turns into heat"
+    ],
+    "answer": 2,
+    "explain": "Forces like friction and air resistance gradually slow the swing until it stops.",
+    "category": "Forces & Motion",
+    "level": 1
+  },
+  {
+    "q": "Which simple machine is a seesaw an example of?",
+    "options": [
+      "Pulley",
+      "Wedge",
+      "Screw",
+      "Lever"
+    ],
+    "answer": 3,
+    "explain": "A seesaw is a lever that balances on a turning point called a fulcrum.",
+    "category": "Forces & Motion",
+    "level": 2
+  },
+  {
+    "q": "In a vacuum with no air, a heavy bowling ball and a light tennis ball are dropped together. Which lands first?",
+    "options": [
+      "The bowling ball",
+      "They land at the same time",
+      "The tennis ball",
+      "Neither one falls"
+    ],
+    "answer": 1,
+    "explain": "Without air resistance, gravity makes all objects fall at the same rate no matter their mass.",
+    "category": "Forces & Motion",
+    "level": 2
+  },
+  {
+    "q": "What does a ramp, also called an inclined plane, help you do?",
+    "options": [
+      "Lift a load using less force over a longer distance",
+      "Make objects heavier",
+      "Remove gravity",
+      "Create electricity"
+    ],
+    "answer": 0,
+    "explain": "A ramp lets you raise a load with less force by spreading the work over a longer distance.",
+    "category": "Forces & Motion",
+    "level": 2
+  },
+  {
+    "q": "Which of these gives your shoes the most friction on the floor?",
+    "options": [
+      "Wet, slippery soles",
+      "Smooth plastic soles",
+      "Rubber soles with deep grooves",
+      "A thin layer of ice"
+    ],
+    "answer": 2,
+    "explain": "Rough, grippy rubber soles create more friction, which helps you avoid slipping.",
+    "category": "Forces & Motion",
+    "level": 2
+  },
+  {
+    "q": "According to Newton's first law, a moving object keeps moving at a steady speed unless what happens?",
+    "options": [
+      "It gets tired",
+      "Time runs out",
+      "It changes color",
+      "An unbalanced force acts on it"
+    ],
+    "answer": 3,
+    "explain": "Newton's first law says motion stays the same until an unbalanced force changes it.",
+    "category": "Forces & Motion",
+    "level": 3
+  },
+  {
+    "q": "Newton's third law says that for every action force there is an equal and opposite what?",
+    "options": [
+      "Gravity force",
+      "Reaction force",
+      "Friction force",
+      "Magnetic force"
+    ],
+    "answer": 1,
+    "explain": "Every action force is paired with an equal reaction force pushing in the opposite direction.",
+    "category": "Forces & Motion",
+    "level": 3
+  },
+  {
+    "q": "If you double the force pushing on a cart while its mass stays the same, its acceleration will do what?",
+    "options": [
+      "Double",
+      "Stay the same",
+      "Become half as much",
+      "Drop to zero"
+    ],
+    "answer": 0,
+    "explain": "Newton's second law shows acceleration grows with force, so doubling the force doubles the acceleration.",
+    "category": "Forces & Motion",
+    "level": 3
+  },
+  {
+    "q": "A skater pushes off a wall and glides backward. Which idea best explains this?",
+    "options": [
+      "Gravity pulling sideways",
+      "Magnetism in the wall",
+      "Action and reaction forces",
+      "Heat from friction"
+    ],
+    "answer": 2,
+    "explain": "The skater pushes the wall, and the wall pushes back with an equal and opposite force.",
+    "category": "Forces & Motion",
+    "level": 3
+  },
+  {
+    "q": "Which of these is a source of light and heat energy for Earth?",
+    "options": [
+      "The Moon",
+      "A rock",
+      "The Sun",
+      "A cloud"
+    ],
+    "answer": 2,
+    "explain": "The Sun gives off light and heat energy that travels all the way to Earth.",
+    "category": "Energy",
+    "level": 1
+  },
+  {
+    "q": "A stretched rubber band is holding what kind of stored energy?",
+    "options": [
+      "Stored potential energy",
+      "Sound energy",
+      "Light energy",
+      "No energy at all"
+    ],
+    "answer": 0,
+    "explain": "A stretched rubber band stores potential energy that is released when you let it go.",
+    "category": "Energy",
+    "level": 1
+  },
+  {
+    "q": "When you rub your hands together quickly, the energy of motion mostly turns into what?",
+    "options": [
+      "Ice",
+      "Light",
+      "Sound only",
+      "Heat"
+    ],
+    "answer": 3,
+    "explain": "Rubbing changes motion energy into heat, which is why your hands feel warm.",
+    "category": "Energy",
+    "level": 1
+  },
+  {
+    "q": "Which of these gives your body the energy it needs to run and play?",
+    "options": [
+      "A glass of plain water",
+      "A banana",
+      "A plastic toy",
+      "A small pebble"
+    ],
+    "answer": 1,
+    "explain": "Food such as a banana stores energy your body can use to move and grow.",
+    "category": "Energy",
+    "level": 1
+  },
+  {
+    "q": "A ball resting at the top of a hill has the most of which kind of energy?",
+    "options": [
+      "Gravitational potential energy",
+      "Kinetic energy",
+      "Sound energy",
+      "Electrical energy"
+    ],
+    "answer": 0,
+    "explain": "Because of its high position, the ball stores gravitational potential energy.",
+    "category": "Energy",
+    "level": 2
+  },
+  {
+    "q": "As a roller coaster car races down a hill, its stored energy changes mostly into what?",
+    "options": [
+      "Chemical energy",
+      "Light energy",
+      "Kinetic (motion) energy",
+      "Magnetic energy"
+    ],
+    "answer": 2,
+    "explain": "The car's potential energy at the top changes into kinetic energy as it speeds downhill.",
+    "category": "Energy",
+    "level": 2
+  },
+  {
+    "q": "How does heat move from a hot stove into a metal pan resting on it?",
+    "options": [
+      "By reflection",
+      "By conduction",
+      "By magnetism",
+      "By gravity"
+    ],
+    "answer": 1,
+    "explain": "Heat moves through direct contact between the stove and the pan by conduction.",
+    "category": "Energy",
+    "level": 2
+  },
+  {
+    "q": "Which energy change happens when a battery-powered flashlight is turned on?",
+    "options": [
+      "Light energy into sound",
+      "Heat into gravity",
+      "Sound into electricity",
+      "Chemical energy into light energy"
+    ],
+    "answer": 3,
+    "explain": "The battery's stored chemical energy is changed into electrical energy and then into light.",
+    "category": "Energy",
+    "level": 2
+  },
+  {
+    "q": "The law of conservation of energy states that energy can change form but cannot be what?",
+    "options": [
+      "Created or destroyed",
+      "Moved",
+      "Stored",
+      "Measured"
+    ],
+    "answer": 0,
+    "explain": "Energy only changes from one form to another and is never created or destroyed.",
+    "category": "Energy",
+    "level": 3
+  },
+  {
+    "q": "Warm air rising while cooler air sinks to spread heat around a room is called what?",
+    "options": [
+      "Conduction",
+      "Insulation",
+      "Convection",
+      "Radiation"
+    ],
+    "answer": 2,
+    "explain": "Convection is the transfer of heat by the movement of a fluid such as air or water.",
+    "category": "Energy",
+    "level": 3
+  },
+  {
+    "q": "How does energy from the Sun travel through empty space to reach Earth?",
+    "options": [
+      "Conduction",
+      "Convection",
+      "Friction",
+      "Radiation"
+    ],
+    "answer": 3,
+    "explain": "Radiation carries energy as waves that can travel through the vacuum of space.",
+    "category": "Energy",
+    "level": 3
+  },
+  {
+    "q": "In a swinging pendulum, energy keeps changing back and forth between which two forms?",
+    "options": [
+      "Sound and light",
+      "Kinetic and potential energy",
+      "Electrical and magnetic",
+      "Chemical and nuclear"
+    ],
+    "answer": 1,
+    "explain": "A pendulum trades kinetic energy at the bottom for potential energy at the top of each swing.",
+    "category": "Energy",
+    "level": 3
+  },
+  {
+    "q": "Which of these is a solid?",
+    "options": [
+      "Milk",
+      "Steam",
+      "Air",
+      "A wooden block"
+    ],
+    "answer": 3,
+    "explain": "A wooden block keeps its own shape, which is a property of solids.",
+    "category": "Matter & Materials",
+    "level": 1
+  },
+  {
+    "q": "What happens to water when it freezes?",
+    "options": [
+      "It becomes a gas",
+      "It turns into a solid called ice",
+      "It disappears",
+      "It becomes lighter than air"
+    ],
+    "answer": 1,
+    "explain": "When water gets cold enough, it freezes and becomes solid ice.",
+    "category": "Matter & Materials",
+    "level": 1
+  },
+  {
+    "q": "Which state of matter can be poured and takes the shape of its container?",
+    "options": [
+      "A solid brick",
+      "A hard rock",
+      "A liquid such as juice",
+      "A block of wood"
+    ],
+    "answer": 2,
+    "explain": "Liquids flow and take the shape of whatever container is holding them.",
+    "category": "Matter & Materials",
+    "level": 1
+  },
+  {
+    "q": "What do we call it when a puddle slowly dries up and turns into water vapor in the air?",
+    "options": [
+      "Evaporation",
+      "Freezing",
+      "Melting into a solid",
+      "Turning into a rock"
+    ],
+    "answer": 0,
+    "explain": "Evaporation is when liquid water changes into invisible water vapor gas.",
+    "category": "Matter & Materials",
+    "level": 1
+  },
+  {
+    "q": "When you mix sand and salt together, you make what?",
+    "options": [
+      "A brand-new substance",
+      "A mixture that can be separated",
+      "A chemical change",
+      "A gas"
+    ],
+    "answer": 1,
+    "explain": "Sand and salt keep their own properties, so together they form a mixture you can separate.",
+    "category": "Matter & Materials",
+    "level": 2
+  },
+  {
+    "q": "Which of these is a chemical change?",
+    "options": [
+      "Ice melting",
+      "Tearing paper",
+      "Boiling water",
+      "Wood burning into ash"
+    ],
+    "answer": 3,
+    "explain": "Burning wood makes new substances such as ash and smoke, which is a chemical change.",
+    "category": "Matter & Materials",
+    "level": 2
+  },
+  {
+    "q": "Why does a small metal coin sink while a large wooden log floats?",
+    "options": [
+      "The log has no weight",
+      "The coin is magnetic",
+      "The coin is denser than water",
+      "Water pushes all metal down"
+    ],
+    "answer": 2,
+    "explain": "The coin is denser than water so it sinks, while the less dense wood floats.",
+    "category": "Matter & Materials",
+    "level": 2
+  },
+  {
+    "q": "When sugar fully dissolves in warm water, the sugar and water form a what?",
+    "options": [
+      "Solution",
+      "Solid",
+      "New element",
+      "Chemical explosion"
+    ],
+    "answer": 0,
+    "explain": "The sugar spreads evenly throughout the water to make a solution.",
+    "category": "Matter & Materials",
+    "level": 2
+  },
+  {
+    "q": "Which of these is a physical change rather than a chemical change?",
+    "options": [
+      "Rust forming on a nail",
+      "Bending a copper wire",
+      "Milk turning sour",
+      "Baking a cake"
+    ],
+    "answer": 1,
+    "explain": "Bending copper changes its shape but not the substance, so it is a physical change.",
+    "category": "Matter & Materials",
+    "level": 3
+  },
+  {
+    "q": "Density describes the amount of mass packed into a certain what?",
+    "options": [
+      "Temperature",
+      "Color",
+      "Speed",
+      "Volume"
+    ],
+    "answer": 3,
+    "explain": "Density compares how much mass is contained in a given volume of space.",
+    "category": "Matter & Materials",
+    "level": 3
+  },
+  {
+    "q": "When water boils and turns into steam, its molecules do what?",
+    "options": [
+      "Disappear completely",
+      "Turn into a different substance",
+      "Move faster and spread apart",
+      "Stop moving"
+    ],
+    "answer": 2,
+    "explain": "Heating gives the molecules more energy, so they move faster and spread out as a gas.",
+    "category": "Matter & Materials",
+    "level": 3
+  },
+  {
+    "q": "Which statement about the particles in a solid is correct?",
+    "options": [
+      "They are packed closely and vibrate in place",
+      "They move freely and fill any container",
+      "They have no mass",
+      "They stop existing when cold"
+    ],
+    "answer": 0,
+    "explain": "Particles in a solid stay tightly packed and only vibrate in fixed positions.",
+    "category": "Matter & Materials",
+    "level": 3
+  },
+  {
+    "q": "What happens when you bring the two north poles of two magnets close together?",
+    "options": [
+      "They push each other away",
+      "They stick tightly together",
+      "Nothing happens at all",
+      "They melt"
+    ],
+    "answer": 0,
+    "explain": "Like poles, such as two norths, repel and push each other apart.",
+    "category": "Electricity & Magnetism",
+    "level": 1
+  },
+  {
+    "q": "Which of these objects will a magnet stick to?",
+    "options": [
+      "A plastic spoon",
+      "A wooden pencil",
+      "An iron nail",
+      "A rubber band"
+    ],
+    "answer": 2,
+    "explain": "Magnets are attracted to certain metals like iron.",
+    "category": "Electricity & Magnetism",
+    "level": 1
+  },
+  {
+    "q": "Rubbing a balloon on your hair can make the balloon do what?",
+    "options": [
+      "Turn your hair green",
+      "Attract your hair and make it stand up",
+      "Make your hair wet",
+      "Make a loud sound"
+    ],
+    "answer": 1,
+    "explain": "Rubbing builds up static electricity, which makes the balloon attract your hair.",
+    "category": "Electricity & Magnetism",
+    "level": 1
+  },
+  {
+    "q": "What do we call the complete path that electricity flows through to light a bulb?",
+    "options": [
+      "A magnet",
+      "A shadow",
+      "A mixture",
+      "A circuit"
+    ],
+    "answer": 3,
+    "explain": "Electricity flows in a complete loop called a circuit.",
+    "category": "Electricity & Magnetism",
+    "level": 1
+  },
+  {
+    "q": "For a flashlight bulb to light up, the circuit must be what?",
+    "options": [
+      "Broken",
+      "Empty",
+      "Complete and closed",
+      "Made of wood"
+    ],
+    "answer": 2,
+    "explain": "Electricity can only flow when the circuit forms a complete, closed loop.",
+    "category": "Electricity & Magnetism",
+    "level": 2
+  },
+  {
+    "q": "Which material is the best conductor of electricity?",
+    "options": [
+      "Copper wire",
+      "Rubber",
+      "Glass",
+      "Dry wood"
+    ],
+    "answer": 0,
+    "explain": "Metals like copper let electricity flow through them easily, so they are good conductors.",
+    "category": "Electricity & Magnetism",
+    "level": 2
+  },
+  {
+    "q": "Why are electrical wires usually covered in rubber or plastic?",
+    "options": [
+      "To make them heavier",
+      "To make them magnetic",
+      "To help them glow",
+      "Those materials are insulators that block the current"
+    ],
+    "answer": 3,
+    "explain": "Rubber and plastic are insulators that keep the electricity safely inside the wire.",
+    "category": "Electricity & Magnetism",
+    "level": 2
+  },
+  {
+    "q": "Where is a bar magnet's pull the strongest?",
+    "options": [
+      "In the exact middle",
+      "At its two ends, called poles",
+      "Only along the top edge",
+      "It has no strong spot"
+    ],
+    "answer": 1,
+    "explain": "A magnet's force is strongest at its poles, which are located at the two ends.",
+    "category": "Electricity & Magnetism",
+    "level": 2
+  },
+  {
+    "q": "What surrounds a magnet and lets it attract objects without touching them?",
+    "options": [
+      "A shadow",
+      "An electric spark",
+      "A magnetic field",
+      "A sound wave"
+    ],
+    "answer": 2,
+    "explain": "An invisible magnetic field surrounds a magnet and pulls on nearby magnetic objects.",
+    "category": "Electricity & Magnetism",
+    "level": 3
+  },
+  {
+    "q": "How can you make a simple electromagnet?",
+    "options": [
+      "Wrap a wire coil around an iron nail and connect it to a battery",
+      "Rub two magnets together",
+      "Leave a nail out in the sun",
+      "Freeze a copper wire"
+    ],
+    "answer": 0,
+    "explain": "Electric current flowing through a wire coiled around iron creates an electromagnet.",
+    "category": "Electricity & Magnetism",
+    "level": 3
+  },
+  {
+    "q": "In a series circuit with a single path, what happens to the other bulbs if one bulb burns out?",
+    "options": [
+      "They get brighter",
+      "Nothing changes",
+      "They change color",
+      "They all go out"
+    ],
+    "answer": 3,
+    "explain": "A series circuit has one path, so a break at one bulb stops the current to all of them.",
+    "category": "Electricity & Magnetism",
+    "level": 3
+  },
+  {
+    "q": "Static electricity builds up when a material gains or loses tiny charged particles called what?",
+    "options": [
+      "Iron atoms",
+      "Electrons",
+      "Magnets",
+      "Photons"
+    ],
+    "answer": 1,
+    "explain": "Static electricity comes from the transfer of negatively charged electrons between objects.",
+    "category": "Electricity & Magnetism",
+    "level": 3
+  },
+  {
+    "q": "What forms when an object blocks light?",
+    "options": [
+      "A rainbow",
+      "A sound",
+      "A magnet",
+      "A shadow"
+    ],
+    "answer": 3,
+    "explain": "A shadow forms in the space where an object blocks light from passing through.",
+    "category": "Light & Sound",
+    "level": 1
+  },
+  {
+    "q": "Which object lets you see your reflection because it reflects light well?",
+    "options": [
+      "A wooden door",
+      "A dry sponge",
+      "A mirror",
+      "A pile of dirt"
+    ],
+    "answer": 2,
+    "explain": "A smooth mirror reflects light clearly, so you can see your reflection in it.",
+    "category": "Light & Sound",
+    "level": 1
+  },
+  {
+    "q": "What do you need in order to see the objects around you?",
+    "options": [
+      "Light",
+      "Total darkness",
+      "Only sound",
+      "A magnet"
+    ],
+    "answer": 0,
+    "explain": "We see objects when light bounces off them and travels into our eyes.",
+    "category": "Light & Sound",
+    "level": 1
+  },
+  {
+    "q": "How is sound made?",
+    "options": [
+      "By things freezing",
+      "By things vibrating",
+      "By shadows moving",
+      "By magnets touching"
+    ],
+    "answer": 1,
+    "explain": "Sound is created when something vibrates and makes the air around it move.",
+    "category": "Light & Sound",
+    "level": 1
+  },
+  {
+    "q": "Hitting a drum harder makes the sound do what?",
+    "options": [
+      "Get higher in pitch",
+      "Stop completely",
+      "Turn into light",
+      "Get louder"
+    ],
+    "answer": 3,
+    "explain": "Hitting the drum harder makes bigger vibrations, which produce a louder sound.",
+    "category": "Light & Sound",
+    "level": 2
+  },
+  {
+    "q": "A short, tight guitar string that vibrates very quickly makes a sound with what pitch?",
+    "options": [
+      "A low pitch",
+      "No pitch at all",
+      "A high pitch",
+      "A colored pitch"
+    ],
+    "answer": 2,
+    "explain": "Faster vibrations create a higher pitched sound.",
+    "category": "Light & Sound",
+    "level": 2
+  },
+  {
+    "q": "Why do you see the colors of a rainbow when sunlight shines through raindrops?",
+    "options": [
+      "The raindrops add brand-new colors",
+      "White light is separated into its colors",
+      "The raindrops make sound",
+      "The Sun turns off for a moment"
+    ],
+    "answer": 1,
+    "explain": "Raindrops bend and split white sunlight into the separate colors that were already inside it.",
+    "category": "Light & Sound",
+    "level": 2
+  },
+  {
+    "q": "Sound travels as waves and needs what in order to move from place to place?",
+    "options": [
+      "A material like air, water, or a solid",
+      "Completely empty space",
+      "A magnet",
+      "A shadow"
+    ],
+    "answer": 0,
+    "explain": "Sound waves need a medium such as air, water, or a solid to travel through.",
+    "category": "Light & Sound",
+    "level": 2
+  },
+  {
+    "q": "When light passes from air into water and bends, this bending is called what?",
+    "options": [
+      "Reflection",
+      "Absorption",
+      "Vibration",
+      "Refraction"
+    ],
+    "answer": 3,
+    "explain": "Refraction is the bending of light as it moves between materials of different densities.",
+    "category": "Light & Sound",
+    "level": 3
+  },
+  {
+    "q": "A red apple looks red because it does what with light?",
+    "options": [
+      "Absorbs red light and reflects the rest",
+      "Makes its own red light",
+      "Reflects red light and absorbs the other colors",
+      "Blocks all light completely"
+    ],
+    "answer": 2,
+    "explain": "The apple reflects red light to our eyes while absorbing the other colors.",
+    "category": "Light & Sound",
+    "level": 3
+  },
+  {
+    "q": "Why do you usually see a flash of lightning before you hear the thunder?",
+    "options": [
+      "Sound travels faster than light",
+      "Light travels much faster than sound",
+      "The thunder happens much later",
+      "Your ears work slowly"
+    ],
+    "answer": 1,
+    "explain": "Light travels far faster than sound, so you see the lightning before the thunder reaches you.",
+    "category": "Light & Sound",
+    "level": 3
+  },
+  {
+    "q": "Compared with traveling through air, sound usually travels through solids how?",
+    "options": [
+      "Faster",
+      "Slower",
+      "It cannot travel through solids",
+      "At exactly the same speed"
+    ],
+    "answer": 0,
+    "explain": "Particles are packed closer together in solids, so sound waves move faster through them than through air.",
+    "category": "Light & Sound",
+    "level": 3
+  },
+  {
+    "q": "What do most plants need from the sun to help them grow?",
+    "options": [
+      "Light energy",
+      "Loud sounds",
+      "Cold ice",
+      "Salty seawater"
+    ],
+    "answer": 0,
+    "explain": "Plants use light energy from the sun to make their own food.",
+    "category": "Plants & Animals",
+    "level": 1
+  },
+  {
+    "q": "Which part of a plant usually holds it in the soil and soaks up water?",
+    "options": [
+      "Flower",
+      "Root",
+      "Petal",
+      "Fruit"
+    ],
+    "answer": 1,
+    "explain": "Roots anchor a plant in the ground and take in water and nutrients from the soil.",
+    "category": "Plants & Animals",
+    "level": 1
+  },
+  {
+    "q": "What is a young frog called before it grows legs and leaves the water?",
+    "options": [
+      "Kitten",
+      "Chick",
+      "Tadpole",
+      "Cub"
+    ],
+    "answer": 2,
+    "explain": "A tadpole is the swimming baby stage of a frog before it becomes an adult.",
+    "category": "Plants & Animals",
+    "level": 1
+  },
+  {
+    "q": "Which of these animals is a mammal that feeds its babies milk?",
+    "options": [
+      "Snake",
+      "Goldfish",
+      "Frog",
+      "Dog"
+    ],
+    "answer": 3,
+    "explain": "Dogs are mammals, and mammal mothers make milk to feed their young.",
+    "category": "Plants & Animals",
+    "level": 1
+  },
+  {
+    "q": "Butterflies go through a big body change during their life cycle called what?",
+    "options": [
+      "Metamorphosis",
+      "Hibernation",
+      "Migration",
+      "Photosynthesis"
+    ],
+    "answer": 0,
+    "explain": "Metamorphosis is the change from egg to caterpillar to chrysalis to butterfly.",
+    "category": "Plants & Animals",
+    "level": 2
+  },
+  {
+    "q": "Which group of animals has feathers, wings, and lays eggs?",
+    "options": [
+      "Reptiles",
+      "Birds",
+      "Amphibians",
+      "Insects"
+    ],
+    "answer": 1,
+    "explain": "Birds are the animal group known for feathers, wings, and laying eggs.",
+    "category": "Plants & Animals",
+    "level": 2
+  },
+  {
+    "q": "A cactus has thick stems and spiny leaves mainly to help it do what in the desert?",
+    "options": [
+      "Attract cars",
+      "Fly in the wind",
+      "Store and save water",
+      "Make music"
+    ],
+    "answer": 2,
+    "explain": "A cactus stores water in its thick stem so it can survive where rain is rare.",
+    "category": "Plants & Animals",
+    "level": 2
+  },
+  {
+    "q": "What is the main job of a flower on a plant?",
+    "options": [
+      "To help the plant breathe underwater",
+      "To keep the plant cool",
+      "To dig into the soil",
+      "To help the plant make seeds"
+    ],
+    "answer": 3,
+    "explain": "Flowers help plants reproduce by making seeds that can grow into new plants.",
+    "category": "Plants & Animals",
+    "level": 2
+  },
+  {
+    "q": "Which word describes an animal that eats only plants?",
+    "options": [
+      "Herbivore",
+      "Omnivore",
+      "Carnivore",
+      "Decomposer"
+    ],
+    "answer": 0,
+    "explain": "A herbivore is an animal whose diet is made up only of plants.",
+    "category": "Plants & Animals",
+    "level": 3
+  },
+  {
+    "q": "Scientists sort living things using classification; which is the broadest, largest group?",
+    "options": [
+      "Species",
+      "Kingdom",
+      "Genus",
+      "Family"
+    ],
+    "answer": 1,
+    "explain": "A kingdom is the widest grouping, and it splits into smaller groups down to species.",
+    "category": "Plants & Animals",
+    "level": 3
+  },
+  {
+    "q": "A polar bear's thick fur and layer of fat are examples of what?",
+    "options": [
+      "Random accidents",
+      "Learned tricks",
+      "Adaptations for cold places",
+      "Signs of sickness"
+    ],
+    "answer": 2,
+    "explain": "Adaptations are body features that help an animal survive in its environment.",
+    "category": "Plants & Animals",
+    "level": 3
+  },
+  {
+    "q": "Which body part pumps blood all around your body?",
+    "options": [
+      "Brain",
+      "Stomach",
+      "Lungs",
+      "Heart"
+    ],
+    "answer": 3,
+    "explain": "The heart is a muscle that pumps blood through your whole body.",
+    "category": "Human Body",
+    "level": 1
+  },
+  {
+    "q": "How many senses do people traditionally have?",
+    "options": [
+      "Five",
+      "Three",
+      "Two",
+      "Ten"
+    ],
+    "answer": 0,
+    "explain": "The five traditional senses are sight, hearing, smell, taste, and touch.",
+    "category": "Human Body",
+    "level": 1
+  },
+  {
+    "q": "Which body part do you use to smell things?",
+    "options": [
+      "Ears",
+      "Nose",
+      "Eyes",
+      "Elbows"
+    ],
+    "answer": 1,
+    "explain": "Your nose senses smells from the air around you.",
+    "category": "Human Body",
+    "level": 1
+  },
+  {
+    "q": "What covers and protects your body and is the largest organ you can see?",
+    "options": [
+      "Hair",
+      "Bones",
+      "Skin",
+      "Blood"
+    ],
+    "answer": 2,
+    "explain": "Skin is your body's largest organ and it protects everything inside.",
+    "category": "Human Body",
+    "level": 1
+  },
+  {
+    "q": "Which body system helps you breathe in oxygen and breathe out carbon dioxide?",
+    "options": [
+      "Digestive system",
+      "Nervous system",
+      "Skeletal system",
+      "Respiratory system"
+    ],
+    "answer": 3,
+    "explain": "The respiratory system, including your lungs, moves gases in and out of your body.",
+    "category": "Human Body",
+    "level": 2
+  },
+  {
+    "q": "What is one main job of your skeleton?",
+    "options": [
+      "To give your body support and shape",
+      "To digest your food",
+      "To pump your blood",
+      "To make you taller every day"
+    ],
+    "answer": 0,
+    "explain": "The bones of your skeleton hold you up and give your body its shape.",
+    "category": "Human Body",
+    "level": 2
+  },
+  {
+    "q": "After you chew and swallow, where does most of your food get broken down?",
+    "options": [
+      "In your lungs",
+      "In your stomach and intestines",
+      "In your brain",
+      "In your heart"
+    ],
+    "answer": 1,
+    "explain": "The stomach and intestines break food down so your body can use it.",
+    "category": "Human Body",
+    "level": 2
+  },
+  {
+    "q": "Which organ controls your body and lets you think, move, and feel?",
+    "options": [
+      "Liver",
+      "Kidney",
+      "Brain",
+      "Heart"
+    ],
+    "answer": 2,
+    "explain": "The brain is the body's control center for thinking, moving, and sensing.",
+    "category": "Human Body",
+    "level": 2
+  },
+  {
+    "q": "Red blood cells carry which gas from your lungs to the rest of your body?",
+    "options": [
+      "Nitrogen",
+      "Carbon dioxide",
+      "Helium",
+      "Oxygen"
+    ],
+    "answer": 3,
+    "explain": "Red blood cells pick up oxygen in the lungs and deliver it around the body.",
+    "category": "Human Body",
+    "level": 3
+  },
+  {
+    "q": "The nervous system sends messages using special cells called what?",
+    "options": [
+      "Neurons",
+      "Bones",
+      "Muscles",
+      "Platelets"
+    ],
+    "answer": 0,
+    "explain": "Neurons are nerve cells that carry signals throughout your body.",
+    "category": "Human Body",
+    "level": 3
+  },
+  {
+    "q": "Which part of the digestive system absorbs most of the nutrients from food?",
+    "options": [
+      "The esophagus",
+      "The small intestine",
+      "The mouth",
+      "The lungs"
+    ],
+    "answer": 1,
+    "explain": "The small intestine takes in most of the nutrients your food provides.",
+    "category": "Human Body",
+    "level": 3
+  },
+  {
+    "q": "A place where an animal lives and finds food, water, and shelter is called its what?",
+    "options": [
+      "Vacation",
+      "Costume",
+      "Habitat",
+      "Machine"
+    ],
+    "answer": 2,
+    "explain": "A habitat is the natural home where an animal gets everything it needs.",
+    "category": "Ecosystems",
+    "level": 1
+  },
+  {
+    "q": "In a food chain, what is usually the main starting source of energy?",
+    "options": [
+      "A fish",
+      "A rock",
+      "A cloud",
+      "The sun"
+    ],
+    "answer": 3,
+    "explain": "The sun's energy is captured by plants, which begin most food chains.",
+    "category": "Ecosystems",
+    "level": 1
+  },
+  {
+    "q": "Which of these is a living thing in an ecosystem?",
+    "options": [
+      "A rabbit",
+      "A rock",
+      "Sunlight",
+      "A puddle of water"
+    ],
+    "answer": 0,
+    "explain": "A rabbit is alive, while rocks, sunlight, and water are nonliving parts.",
+    "category": "Ecosystems",
+    "level": 1
+  },
+  {
+    "q": "Bees moving pollen from flower to flower help plants do what?",
+    "options": [
+      "Fly away",
+      "Make new seeds and fruit",
+      "Turn blue",
+      "Fall asleep"
+    ],
+    "answer": 1,
+    "explain": "When bees carry pollen, they help flowers make seeds and fruit.",
+    "category": "Ecosystems",
+    "level": 1
+  },
+  {
+    "q": "Animals that hunt and eat other animals for food are called what?",
+    "options": [
+      "Producers",
+      "Sprouts",
+      "Predators",
+      "Minerals"
+    ],
+    "answer": 2,
+    "explain": "Predators are animals that catch and eat other animals, called prey.",
+    "category": "Ecosystems",
+    "level": 2
+  },
+  {
+    "q": "In a food web, which living things make their own food using sunlight?",
+    "options": [
+      "Consumers",
+      "Decomposers",
+      "Predators",
+      "Producers"
+    ],
+    "answer": 3,
+    "explain": "Producers, such as green plants, make their own food using sunlight.",
+    "category": "Ecosystems",
+    "level": 2
+  },
+  {
+    "q": "What do decomposers like mushrooms and earthworms do in an ecosystem?",
+    "options": [
+      "Break down dead plants and animals",
+      "Hunt the largest prey",
+      "Make oxygen from rocks",
+      "Freeze water into ice"
+    ],
+    "answer": 0,
+    "explain": "Decomposers recycle nutrients by breaking down things that have died.",
+    "category": "Ecosystems",
+    "level": 2
+  },
+  {
+    "q": "If all the plants in a food chain disappeared, what would most likely happen to the plant-eaters?",
+    "options": [
+      "They would grow wings",
+      "They would have no food and struggle to survive",
+      "They would turn into plants",
+      "Nothing would change at all"
+    ],
+    "answer": 1,
+    "explain": "Plant-eaters depend on plants for energy, so losing plants would leave them hungry.",
+    "category": "Ecosystems",
+    "level": 2
+  },
+  {
+    "q": "What do we call all the different kinds of living things found in an area?",
+    "options": [
+      "Gravity",
+      "Erosion",
+      "Biodiversity",
+      "Evaporation"
+    ],
+    "answer": 2,
+    "explain": "Biodiversity means the variety of living things in a place.",
+    "category": "Ecosystems",
+    "level": 3
+  },
+  {
+    "q": "When one type of living thing is suddenly removed, a food web can become what?",
+    "options": [
+      "Frozen solid",
+      "Stronger forever",
+      "Invisible",
+      "Unbalanced"
+    ],
+    "answer": 3,
+    "explain": "Every living thing is connected, so removing one can throw the web out of balance.",
+    "category": "Ecosystems",
+    "level": 3
+  },
+  {
+    "q": "Two animals that both need the same limited food are said to be in what with each other?",
+    "options": [
+      "Competition",
+      "Cooperation",
+      "Hibernation",
+      "Photosynthesis"
+    ],
+    "answer": 0,
+    "explain": "Competition happens when living things must share a limited resource like food.",
+    "category": "Ecosystems",
+    "level": 3
+  },
+  {
+    "q": "What is the smallest building block that makes up all living things?",
+    "options": [
+      "A brick",
+      "A cell",
+      "A star",
+      "A raindrop"
+    ],
+    "answer": 1,
+    "explain": "Cells are the tiny basic units that make up every living thing.",
+    "category": "Cells & Genetics",
+    "level": 1
+  },
+  {
+    "q": "Traits like the color of your eyes are passed down from whom?",
+    "options": [
+      "Your friends",
+      "Your teachers",
+      "Your parents",
+      "Your pets"
+    ],
+    "answer": 2,
+    "explain": "You inherit traits like eye color from your parents.",
+    "category": "Cells & Genetics",
+    "level": 1
+  },
+  {
+    "q": "Which of these is an inherited trait you were born with?",
+    "options": [
+      "Being able to read",
+      "Knowing how to ride a bike",
+      "Your favorite game",
+      "The natural color of your hair"
+    ],
+    "answer": 3,
+    "explain": "Natural hair color is inherited, while the others are things you learn.",
+    "category": "Cells & Genetics",
+    "level": 1
+  },
+  {
+    "q": "A baby animal usually looks most similar to its what?",
+    "options": [
+      "Parents",
+      "Toys",
+      "House",
+      "Food"
+    ],
+    "answer": 0,
+    "explain": "Baby animals resemble their parents because they inherit their traits.",
+    "category": "Cells & Genetics",
+    "level": 1
+  },
+  {
+    "q": "What is the control center of a cell that holds its instructions?",
+    "options": [
+      "The wall",
+      "The nucleus",
+      "The roof",
+      "The engine"
+    ],
+    "answer": 1,
+    "explain": "The nucleus stores the cell's instructions and directs what the cell does.",
+    "category": "Cells & Genetics",
+    "level": 2
+  },
+  {
+    "q": "The instructions inside your cells that decide your traits are made of what?",
+    "options": [
+      "Water",
+      "Sugar",
+      "DNA",
+      "Sand"
+    ],
+    "answer": 2,
+    "explain": "DNA carries the coded instructions that shape your traits.",
+    "category": "Cells & Genetics",
+    "level": 2
+  },
+  {
+    "q": "Which of these is a learned behavior rather than an inherited trait?",
+    "options": [
+      "The shape of your ears",
+      "Having brown eyes",
+      "Being a certain height",
+      "Reading a book"
+    ],
+    "answer": 3,
+    "explain": "Reading is learned through practice, while the others are inherited traits.",
+    "category": "Cells & Genetics",
+    "level": 2
+  },
+  {
+    "q": "Plant cells have a stiff outer layer that animal cells do not have, called what?",
+    "options": [
+      "A cell wall",
+      "A backbone",
+      "A feather",
+      "A shell"
+    ],
+    "answer": 0,
+    "explain": "The cell wall gives plant cells extra support and structure.",
+    "category": "Cells & Genetics",
+    "level": 2
+  },
+  {
+    "q": "Which part of the cell makes energy the cell can use, often called the powerhouse?",
+    "options": [
+      "Nucleus",
+      "Mitochondria",
+      "Cell membrane",
+      "Vacuole"
+    ],
+    "answer": 1,
+    "explain": "Mitochondria release energy from food so the cell can work.",
+    "category": "Cells & Genetics",
+    "level": 3
+  },
+  {
+    "q": "Genes are found on tiny thread-like structures inside the nucleus called what?",
+    "options": [
+      "Muscles",
+      "Vitamins",
+      "Chromosomes",
+      "Minerals"
+    ],
+    "answer": 2,
+    "explain": "Chromosomes are structures made of DNA that carry your genes.",
+    "category": "Cells & Genetics",
+    "level": 3
+  },
+  {
+    "q": "Offspring often show a mix of traits from both parents because they receive what?",
+    "options": [
+      "A brand new body plan",
+      "Only the mother's blood",
+      "Food from the father",
+      "Genes from each parent"
+    ],
+    "answer": 3,
+    "explain": "Each parent passes on genes, so offspring blend traits from both.",
+    "category": "Cells & Genetics",
+    "level": 3
+  },
+  {
+    "q": "What is falling from the sky when it rains, snows, sleets, or hails?",
+    "options": [
+      "Precipitation",
+      "Gravity",
+      "Erosion",
+      "Sunshine"
+    ],
+    "answer": 0,
+    "explain": "Precipitation is water that falls from clouds as rain, snow, sleet, or hail.",
+    "category": "Earth & Weather",
+    "level": 1
+  },
+  {
+    "q": "Which of these do we see in the sky and is made of tiny water droplets?",
+    "options": [
+      "A boulder",
+      "A cloud",
+      "A tree",
+      "A road"
+    ],
+    "answer": 1,
+    "explain": "Clouds are made of many tiny water droplets floating in the air.",
+    "category": "Earth & Weather",
+    "level": 1
+  },
+  {
+    "q": "What do we call the day-to-day conditions outside, like sunny, rainy, or windy?",
+    "options": [
+      "Climate",
+      "Gravity",
+      "Weather",
+      "Soil"
+    ],
+    "answer": 2,
+    "explain": "Weather is what the air and sky are like outside right now.",
+    "category": "Earth & Weather",
+    "level": 1
+  },
+  {
+    "q": "The sun gives Earth which two important things?",
+    "options": [
+      "Metal and glass",
+      "Rocks and sand",
+      "Rain and snow",
+      "Light and heat"
+    ],
+    "answer": 3,
+    "explain": "The sun provides Earth with light and heat that living things need.",
+    "category": "Earth & Weather",
+    "level": 1
+  },
+  {
+    "q": "In the water cycle, what is it called when the sun heats water and it turns into a gas?",
+    "options": [
+      "Evaporation",
+      "Condensation",
+      "Precipitation",
+      "Collection"
+    ],
+    "answer": 0,
+    "explain": "Evaporation is when liquid water warms up and changes into water vapor.",
+    "category": "Earth & Weather",
+    "level": 2
+  },
+  {
+    "q": "What is the difference between weather and climate?",
+    "options": [
+      "They mean exactly the same thing",
+      "Weather is right now, while climate is the usual pattern over many years",
+      "Climate changes every hour",
+      "Weather only happens at night"
+    ],
+    "answer": 1,
+    "explain": "Weather is the short-term conditions, and climate is the long-term average pattern.",
+    "category": "Earth & Weather",
+    "level": 2
+  },
+  {
+    "q": "Clouds form when water vapor in the air cools and turns back into tiny droplets during what?",
+    "options": [
+      "Melting",
+      "Freezing",
+      "Condensation",
+      "Erosion"
+    ],
+    "answer": 2,
+    "explain": "Condensation is when water vapor cools and becomes liquid droplets, forming clouds.",
+    "category": "Earth & Weather",
+    "level": 2
+  },
+  {
+    "q": "Which type of cloud is puffy, white, and looks like cotton on a nice day?",
+    "options": [
+      "Funnel",
+      "Cirrus",
+      "Stratus",
+      "Cumulus"
+    ],
+    "answer": 3,
+    "explain": "Cumulus clouds are the puffy, cotton-like clouds seen on fair days.",
+    "category": "Earth & Weather",
+    "level": 2
+  },
+  {
+    "q": "Earth's seasons are mainly caused by what?",
+    "options": [
+      "The tilt of Earth's axis as it orbits the sun",
+      "The moon blocking the sun",
+      "Clouds moving around",
+      "The sun turning off at night"
+    ],
+    "answer": 0,
+    "explain": "Earth is tilted, so different parts get more direct sunlight at different times of year.",
+    "category": "Earth & Weather",
+    "level": 3
+  },
+  {
+    "q": "Which layer of gases surrounds Earth and holds the air we breathe and our weather?",
+    "options": [
+      "The crust",
+      "The atmosphere",
+      "The ocean",
+      "The core"
+    ],
+    "answer": 1,
+    "explain": "The atmosphere is the blanket of gases around Earth where weather happens.",
+    "category": "Earth & Weather",
+    "level": 3
+  },
+  {
+    "q": "Warm air does what compared to cool air, which helps create wind and weather?",
+    "options": [
+      "It turns solid",
+      "It sinks straight to the ground",
+      "It rises because it is lighter",
+      "It disappears completely"
+    ],
+    "answer": 2,
+    "explain": "Warm air is lighter than cool air, so it rises and helps set air moving.",
+    "category": "Earth & Weather",
+    "level": 3
+  },
+  {
+    "q": "What natural material is made of tiny bits of broken rock and helps plants grow?",
+    "options": [
+      "Plastic",
+      "Foil",
+      "Glass",
+      "Soil"
+    ],
+    "answer": 3,
+    "explain": "Soil is a mix of tiny rock pieces and other matter that plants grow in.",
+    "category": "Rocks & Resources",
+    "level": 1
+  },
+  {
+    "q": "Which of these is a natural resource that comes from the Earth?",
+    "options": [
+      "Water",
+      "A video game",
+      "A cartoon",
+      "A pop song"
+    ],
+    "answer": 0,
+    "explain": "Water is a natural resource we get from the Earth and need to live.",
+    "category": "Rocks & Resources",
+    "level": 1
+  },
+  {
+    "q": "What do we call using items again instead of throwing them away, like cans and paper?",
+    "options": [
+      "Melting",
+      "Recycling",
+      "Cooking",
+      "Painting"
+    ],
+    "answer": 1,
+    "explain": "Recycling turns used materials into new products and saves resources.",
+    "category": "Rocks & Resources",
+    "level": 1
+  },
+  {
+    "q": "A mountain that can erupt with hot melted rock is called a what?",
+    "options": [
+      "A glacier",
+      "A desert",
+      "A volcano",
+      "A river"
+    ],
+    "answer": 2,
+    "explain": "A volcano is an opening in Earth where melted rock can erupt to the surface.",
+    "category": "Rocks & Resources",
+    "level": 1
+  },
+  {
+    "q": "Rocks that form from cooled, hardened melted rock are called what type?",
+    "options": [
+      "Plastic",
+      "Sedimentary",
+      "Metamorphic",
+      "Igneous"
+    ],
+    "answer": 3,
+    "explain": "Igneous rocks form when melted rock cools and hardens.",
+    "category": "Rocks & Resources",
+    "level": 2
+  },
+  {
+    "q": "The slow wearing away of rock and soil by wind and water is called what?",
+    "options": [
+      "Erosion",
+      "Growth",
+      "Freezing",
+      "Baking"
+    ],
+    "answer": 0,
+    "explain": "Erosion is when wind or water slowly carries away bits of rock and soil.",
+    "category": "Rocks & Resources",
+    "level": 2
+  },
+  {
+    "q": "Which of these energy sources is renewable, meaning it will not run out?",
+    "options": [
+      "Coal",
+      "Sunlight",
+      "Oil",
+      "Natural gas"
+    ],
+    "answer": 1,
+    "explain": "Sunlight is renewable because the sun keeps providing energy every day.",
+    "category": "Rocks & Resources",
+    "level": 2
+  },
+  {
+    "q": "Preserved remains or prints of ancient living things found in rock are called what?",
+    "options": [
+      "Crystals",
+      "Bubbles",
+      "Fossils",
+      "Sparks"
+    ],
+    "answer": 2,
+    "explain": "Fossils are traces of ancient life saved in rock over a very long time.",
+    "category": "Rocks & Resources",
+    "level": 2
+  },
+  {
+    "q": "Sedimentary rocks form when layers of sediment press together over time; which rock is sedimentary?",
+    "options": [
+      "Basalt",
+      "Granite",
+      "Marble",
+      "Sandstone"
+    ],
+    "answer": 3,
+    "explain": "Sandstone forms from layers of sand pressed together, making it sedimentary.",
+    "category": "Rocks & Resources",
+    "level": 3
+  },
+  {
+    "q": "Earthquakes happen when large pieces of Earth's crust, called plates, do what?",
+    "options": [
+      "Suddenly move or slip past each other",
+      "Melt into water",
+      "Float into space",
+      "Turn into clouds"
+    ],
+    "answer": 0,
+    "explain": "Earthquakes are the shaking caused when Earth's plates suddenly shift.",
+    "category": "Rocks & Resources",
+    "level": 3
+  },
+  {
+    "q": "Which of these is a nonrenewable resource that can run out if we use too much?",
+    "options": [
+      "Wind",
+      "Coal",
+      "Sunlight",
+      "Flowing river water"
+    ],
+    "answer": 1,
+    "explain": "Coal is nonrenewable because it takes millions of years to form and cannot be quickly replaced.",
+    "category": "Rocks & Resources",
+    "level": 3
+  },
+  {
+    "q": "Which object in the sky gives Earth most of its light and heat during the day?",
+    "options": [
+      "The Moon",
+      "The Sun",
+      "A star called Sirius",
+      "Jupiter"
+    ],
+    "answer": 1,
+    "explain": "The Sun is our closest star, and its energy gives us the light and warmth we feel every day.",
+    "category": "Space & Astronomy",
+    "level": 1
+  },
+  {
+    "q": "What do we call the round object that orbits Earth and seems to change shape in the sky each month?",
+    "options": [
+      "The Sun",
+      "A comet",
+      "The Moon",
+      "Mars"
+    ],
+    "answer": 2,
+    "explain": "The Moon orbits Earth, and we see it appear to change shape as it goes through its phases.",
+    "category": "Space & Astronomy",
+    "level": 1
+  },
+  {
+    "q": "How many planets are in our solar system?",
+    "options": [
+      "Eight",
+      "Five",
+      "Twelve",
+      "Three"
+    ],
+    "answer": 0,
+    "explain": "Our solar system has eight planets, from Mercury closest to the Sun out to Neptune.",
+    "category": "Space & Astronomy",
+    "level": 1
+  },
+  {
+    "q": "What makes Earth have daytime and nighttime?",
+    "options": [
+      "The Sun turns off at night",
+      "Earth spins on its axis",
+      "The Moon blocks the Sun",
+      "Clouds cover the whole sky"
+    ],
+    "answer": 1,
+    "explain": "Earth spins once about every 24 hours, so the side facing the Sun has day while the other side has night.",
+    "category": "Space & Astronomy",
+    "level": 1
+  },
+  {
+    "q": "What causes the different phases of the Moon that we see from Earth?",
+    "options": [
+      "The Moon changes its size",
+      "Earth's shadow always covers part of it",
+      "We see different amounts of its sunlit half",
+      "The Sun moves behind it"
+    ],
+    "answer": 2,
+    "explain": "As the Moon orbits Earth, we see different portions of its sunlit half, which creates the phases.",
+    "category": "Space & Astronomy",
+    "level": 2
+  },
+  {
+    "q": "Which planet is often called the 'Red Planet'?",
+    "options": [
+      "Venus",
+      "Mars",
+      "Jupiter",
+      "Saturn"
+    ],
+    "answer": 1,
+    "explain": "Mars looks reddish because its surface is covered with iron-rich dust that acts a bit like rust.",
+    "category": "Space & Astronomy",
+    "level": 2
+  },
+  {
+    "q": "Which force keeps the planets moving in their orbits around the Sun?",
+    "options": [
+      "Magnetism",
+      "Electricity",
+      "Friction",
+      "Gravity"
+    ],
+    "answer": 3,
+    "explain": "The Sun's gravity pulls on the planets and keeps them traveling along their orbits.",
+    "category": "Space & Astronomy",
+    "level": 2
+  },
+  {
+    "q": "What is the main job of a telescope?",
+    "options": [
+      "To make far-away objects look larger and clearer",
+      "To send radio signals to space",
+      "To measure temperature in space",
+      "To create new stars"
+    ],
+    "answer": 0,
+    "explain": "A telescope gathers light so distant objects like stars and planets look bigger and brighter to us.",
+    "category": "Space & Astronomy",
+    "level": 2
+  },
+  {
+    "q": "What is the main reason Earth has different seasons?",
+    "options": [
+      "Earth's changing distance from the Sun",
+      "The tilt of Earth's axis",
+      "The Moon's gravity",
+      "Changing numbers of sunspots"
+    ],
+    "answer": 1,
+    "explain": "Earth is tilted on its axis, so different parts of the planet get more direct sunlight at different times of the year.",
+    "category": "Space & Astronomy",
+    "level": 3
+  },
+  {
+    "q": "What is the Sun mostly made of?",
+    "options": [
+      "Hydrogen and helium gas",
+      "Molten rock",
+      "Burning coal and oil",
+      "Ice and dust"
+    ],
+    "answer": 0,
+    "explain": "The Sun is a giant ball of hot gas made mostly of hydrogen and helium.",
+    "category": "Space & Astronomy",
+    "level": 3
+  },
+  {
+    "q": "What does a light-year measure?",
+    "options": [
+      "How bright a star is",
+      "How long a year lasts on a planet",
+      "The distance light travels in one year",
+      "The age of a star"
+    ],
+    "answer": 2,
+    "explain": "A light-year is a distance equal to how far light travels in one year, which is a very long way.",
+    "category": "Space & Astronomy",
+    "level": 3
+  },
+  {
+    "q": "Why does an astronaut appear to float inside a spaceship that is orbiting Earth?",
+    "options": [
+      "There is no gravity at all in space",
+      "Air currents push them upward",
+      "They are constantly falling around Earth while moving forward",
+      "Their suits are filled with helium"
+    ],
+    "answer": 2,
+    "explain": "The spaceship and astronaut both fall toward Earth while speeding forward, so they keep falling around it and feel weightless.",
+    "category": "Space & Astronomy",
+    "level": 3
+  },
+  {
+    "q": "What is usually the first step engineers take when solving a problem?",
+    "options": [
+      "Build the final product right away",
+      "Sell the product",
+      "Understand and clearly define the problem",
+      "Throw the idea away"
+    ],
+    "answer": 2,
+    "explain": "Engineers start by understanding the problem so they know exactly what their design needs to solve.",
+    "category": "Engineering & Design",
+    "level": 1
+  },
+  {
+    "q": "What is a prototype?",
+    "options": [
+      "A finished product ready for sale",
+      "A type of computer",
+      "A drawing that can never change",
+      "An early test version of a design"
+    ],
+    "answer": 3,
+    "explain": "A prototype is an early model engineers build to test their ideas before making the final version.",
+    "category": "Engineering & Design",
+    "level": 1
+  },
+  {
+    "q": "Which shape is often used in bridges and towers because it is very strong?",
+    "options": [
+      "Circle",
+      "Square",
+      "Triangle",
+      "Oval"
+    ],
+    "answer": 2,
+    "explain": "Triangles hold their shape well under pressure, which makes structures built with them very sturdy.",
+    "category": "Engineering & Design",
+    "level": 1
+  },
+  {
+    "q": "What do we call a person who designs and builds things to solve problems?",
+    "options": [
+      "An engineer",
+      "A chef",
+      "A pilot",
+      "A painter"
+    ],
+    "answer": 0,
+    "explain": "Engineers use science and math to design and build solutions to everyday problems.",
+    "category": "Engineering & Design",
+    "level": 1
+  },
+  {
+    "q": "In the engineering design process, what should you do after testing a prototype?",
+    "options": [
+      "Stop working right away",
+      "Use what you learned to improve the design",
+      "Hide the results",
+      "Start selling it immediately"
+    ],
+    "answer": 1,
+    "explain": "Testing shows what works and what does not, so engineers use that information to make the design better.",
+    "category": "Engineering & Design",
+    "level": 2
+  },
+  {
+    "q": "Why do engineers test their designs many times?",
+    "options": [
+      "To waste time",
+      "Because a rule says they must",
+      "To make the design heavier",
+      "To find and fix problems before the final build"
+    ],
+    "answer": 3,
+    "explain": "Repeated testing helps engineers catch problems early and improve the design before it is finished.",
+    "category": "Engineering & Design",
+    "level": 2
+  },
+  {
+    "q": "Which material would an engineer most likely choose to build a bridge that must hold heavy trucks?",
+    "options": [
+      "Cardboard",
+      "Paper",
+      "Steel",
+      "Cotton"
+    ],
+    "answer": 2,
+    "explain": "Steel is very strong and can support heavy loads, which makes it a good choice for big bridges.",
+    "category": "Engineering & Design",
+    "level": 2
+  },
+  {
+    "q": "What is a robot?",
+    "options": [
+      "A machine that can be programmed to do tasks",
+      "A living animal",
+      "A type of plant",
+      "A kind of rock"
+    ],
+    "answer": 0,
+    "explain": "A robot is a machine that follows programmed instructions to carry out tasks, sometimes on its own.",
+    "category": "Engineering & Design",
+    "level": 2
+  },
+  {
+    "q": "Why do many bridges and tall buildings include small gaps called expansion joints?",
+    "options": [
+      "To let the materials expand and shrink with temperature changes",
+      "To save money on materials",
+      "To make them look nicer",
+      "To let rainwater inside"
+    ],
+    "answer": 0,
+    "explain": "Materials grow slightly when hot and shrink when cold, and the gaps give them room to move without cracking.",
+    "category": "Engineering & Design",
+    "level": 3
+  },
+  {
+    "q": "What does it mean to 'iterate' during the engineering design process?",
+    "options": [
+      "To copy someone else's finished work",
+      "To repeat and improve a design based on test results",
+      "To finish the design in only one try",
+      "To measure the temperature"
+    ],
+    "answer": 1,
+    "explain": "Iterating means going through the design steps again to make each version better than the last.",
+    "category": "Engineering & Design",
+    "level": 3
+  },
+  {
+    "q": "Which design would most likely stay stable in strong wind?",
+    "options": [
+      "A tall, narrow tower with a tiny base",
+      "A structure with no supports",
+      "A top-heavy shape",
+      "A wide base that gets narrower toward the top"
+    ],
+    "answer": 3,
+    "explain": "A wide, low base spreads out the weight and helps keep a structure from tipping over.",
+    "category": "Engineering & Design",
+    "level": 3
+  },
+  {
+    "q": "Why do engineers often build models or run computer simulations before making a real product?",
+    "options": [
+      "Because real materials do not exist",
+      "To avoid learning anything new",
+      "To test ideas safely and cheaply before spending on the real thing",
+      "So they never have to test at all"
+    ],
+    "answer": 2,
+    "explain": "Models and simulations let engineers try out ideas and spot problems without the cost or risk of building the real thing first.",
+    "category": "Engineering & Design",
+    "level": 3
+  },
+  {
+    "q": "A computer mouse is an example of what kind of device?",
+    "options": [
+      "An output device",
+      "A storage box",
+      "A power source",
+      "An input device"
+    ],
+    "answer": 3,
+    "explain": "A mouse sends information into the computer when you move and click it, so it is an input device.",
+    "category": "Technology & Computers",
+    "level": 1
+  },
+  {
+    "q": "Which device is an output that shows you pictures and words?",
+    "options": [
+      "A monitor (screen)",
+      "A keyboard",
+      "A microphone",
+      "A mouse"
+    ],
+    "answer": 0,
+    "explain": "A monitor displays the computer's output so you can see images, text, and videos.",
+    "category": "Technology & Computers",
+    "level": 1
+  },
+  {
+    "q": "Which of these is a good rule for staying safe online?",
+    "options": [
+      "Share your home address with strangers",
+      "Click on every pop-up you see",
+      "Keep your passwords private",
+      "Post your school's name to new online friends"
+    ],
+    "answer": 2,
+    "explain": "Keeping passwords private helps protect your accounts and personal information from people who should not have them.",
+    "category": "Technology & Computers",
+    "level": 1
+  },
+  {
+    "q": "What do we call a clear set of step-by-step instructions for completing a task?",
+    "options": [
+      "An algorithm",
+      "A monitor",
+      "A cable",
+      "A pixel"
+    ],
+    "answer": 0,
+    "explain": "An algorithm is a list of ordered steps that tells a computer or person exactly how to do something.",
+    "category": "Technology & Computers",
+    "level": 1
+  },
+  {
+    "q": "In coding, what does a 'loop' do?",
+    "options": [
+      "Deletes the program",
+      "Turns off the computer",
+      "Changes the screen color one time",
+      "Repeats a set of instructions"
+    ],
+    "answer": 3,
+    "explain": "A loop lets a program run the same instructions over and over without writing them out each time.",
+    "category": "Technology & Computers",
+    "level": 2
+  },
+  {
+    "q": "Why does the order of steps matter in a computer program?",
+    "options": [
+      "It does not matter at all",
+      "Computers pick steps at random",
+      "Computers follow the steps in sequence, so the order changes the result",
+      "Order only matters in games"
+    ],
+    "answer": 2,
+    "explain": "Computers carry out instructions in the exact order given, so changing the order can change what happens.",
+    "category": "Technology & Computers",
+    "level": 2
+  },
+  {
+    "q": "What is the internet?",
+    "options": [
+      "A single computer in one building",
+      "A huge network that connects computers around the world",
+      "A type of printer",
+      "A program you buy only once"
+    ],
+    "answer": 1,
+    "explain": "The internet is a giant network linking millions of computers so they can share information worldwide.",
+    "category": "Technology & Computers",
+    "level": 2
+  },
+  {
+    "q": "What is a sensor on a device used for?",
+    "options": [
+      "To detect information like light, heat, or motion",
+      "To store your photos",
+      "To print papers",
+      "To charge the battery"
+    ],
+    "answer": 0,
+    "explain": "A sensor detects things in the world, such as light or movement, and turns them into signals the device can use.",
+    "category": "Technology & Computers",
+    "level": 2
+  },
+  {
+    "q": "What does a computer's CPU mainly do?",
+    "options": [
+      "Stores all your files forever",
+      "Carries out instructions and does calculations",
+      "Connects to the internet only",
+      "Displays images on the screen"
+    ],
+    "answer": 1,
+    "explain": "The CPU is like the computer's brain, following instructions and doing the calculations that make programs work.",
+    "category": "Technology & Computers",
+    "level": 3
+  },
+  {
+    "q": "Why is it smart to use a strong, unique password for important accounts?",
+    "options": [
+      "To slow down your computer",
+      "Because short passwords never work",
+      "So it is easier to share",
+      "To make it harder for others to guess and get into your account"
+    ],
+    "answer": 3,
+    "explain": "A strong, unique password is hard to guess, which helps keep your accounts and information secure.",
+    "category": "Technology & Computers",
+    "level": 3
+  },
+  {
+    "q": "What is the difference between hardware and software?",
+    "options": [
+      "Hardware is the physical parts, and software is the programs and instructions",
+      "They are exactly the same thing",
+      "Hardware is on the internet and software is not",
+      "Software is the physical parts you can touch"
+    ],
+    "answer": 0,
+    "explain": "Hardware is the equipment you can touch, while software is the coded programs that tell the hardware what to do.",
+    "category": "Technology & Computers",
+    "level": 3
+  },
+  {
+    "q": "What does 'debugging' mean in programming?",
+    "options": [
+      "Adding more bugs to a program",
+      "Finding and fixing errors in the code",
+      "Deleting the whole program",
+      "Making the screen brighter"
+    ],
+    "answer": 1,
+    "explain": "Debugging is the process of finding mistakes in code and fixing them so the program works correctly.",
+    "category": "Technology & Computers",
+    "level": 3
+  },
+  {
+    "q": "Which scientist is famous for describing gravity and the laws of motion?",
+    "options": [
+      "Marie Curie",
+      "Albert Einstein",
+      "Isaac Newton",
+      "Charles Darwin"
+    ],
+    "answer": 2,
+    "explain": "Isaac Newton described how gravity pulls objects together and wrote the famous laws of motion.",
+    "category": "Science All-Stars",
+    "level": 1
+  },
+  {
+    "q": "Jane Goodall is best known for studying which animals in the wild?",
+    "options": [
+      "Lions",
+      "Chimpanzees",
+      "Dolphins",
+      "Eagles"
+    ],
+    "answer": 1,
+    "explain": "Jane Goodall spent many years observing wild chimpanzees and learning about their behavior.",
+    "category": "Science All-Stars",
+    "level": 1
+  },
+  {
+    "q": "Thomas Edison helped develop a practical version of which everyday invention?",
+    "options": [
+      "The car",
+      "The telephone",
+      "The bicycle",
+      "The electric light bulb"
+    ],
+    "answer": 3,
+    "explain": "Edison and his team developed a long-lasting electric light bulb that people could use in their homes.",
+    "category": "Science All-Stars",
+    "level": 1
+  },
+  {
+    "q": "Which scientist is famous for the theory of evolution by natural selection?",
+    "options": [
+      "Galileo Galilei",
+      "Isaac Newton",
+      "Charles Darwin",
+      "Nikola Tesla"
+    ],
+    "answer": 2,
+    "explain": "Charles Darwin explained how living things change over many generations through natural selection.",
+    "category": "Science All-Stars",
+    "level": 1
+  },
+  {
+    "q": "Marie Curie won Nobel Prizes for her groundbreaking research on what?",
+    "options": [
+      "Radioactivity",
+      "Dinosaurs",
+      "Ocean currents",
+      "Volcanoes"
+    ],
+    "answer": 0,
+    "explain": "Marie Curie studied radioactivity and even discovered new elements, earning two Nobel Prizes.",
+    "category": "Science All-Stars",
+    "level": 2
+  },
+  {
+    "q": "Katherine Johnson was a mathematician who helped NASA do what?",
+    "options": [
+      "Design airplanes for airlines",
+      "Calculate the flight paths for spaceflights",
+      "Build the first computer",
+      "Discover a new planet"
+    ],
+    "answer": 1,
+    "explain": "Katherine Johnson's careful calculations helped guide astronauts safely on their journeys to space and back.",
+    "category": "Science All-Stars",
+    "level": 2
+  },
+  {
+    "q": "George Washington Carver is well known for his research on which crop and its many uses?",
+    "options": [
+      "Rice",
+      "Wheat",
+      "Apples",
+      "Peanuts"
+    ],
+    "answer": 3,
+    "explain": "Carver found hundreds of uses for peanuts and taught farmers ways to keep their soil healthy.",
+    "category": "Science All-Stars",
+    "level": 2
+  },
+  {
+    "q": "Nikola Tesla made important contributions to which kind of electricity system?",
+    "options": [
+      "Steam power",
+      "Solar panels",
+      "Alternating current (AC)",
+      "Battery-only power"
+    ],
+    "answer": 2,
+    "explain": "Tesla helped develop the alternating current system that carries electricity to homes and buildings today.",
+    "category": "Science All-Stars",
+    "level": 2
+  },
+  {
+    "q": "Albert Einstein is most famous for developing which idea?",
+    "options": [
+      "The theory of relativity",
+      "The theory of evolution",
+      "The germ theory of disease",
+      "The laws of planetary motion"
+    ],
+    "answer": 0,
+    "explain": "Einstein's theory of relativity changed how scientists understand space, time, and gravity.",
+    "category": "Science All-Stars",
+    "level": 3
+  },
+  {
+    "q": "Benjamin Franklin's famous experiments helped show that lightning is a form of what?",
+    "options": [
+      "Sound",
+      "Electricity",
+      "Magnetism",
+      "Heat only"
+    ],
+    "answer": 1,
+    "explain": "Franklin's experiments demonstrated that lightning is a powerful natural form of electricity.",
+    "category": "Science All-Stars",
+    "level": 3
+  },
+  {
+    "q": "Rosalind Franklin's X-ray images were key to discovering the structure of which molecule?",
+    "options": [
+      "Water",
+      "Salt",
+      "Oxygen",
+      "DNA"
+    ],
+    "answer": 3,
+    "explain": "Rosalind Franklin's X-ray photographs helped reveal that DNA has a twisted, double-helix shape.",
+    "category": "Science All-Stars",
+    "level": 3
+  },
+  {
+    "q": "Galileo Galilei improved the telescope and used it to observe what?",
+    "options": [
+      "Bacteria",
+      "Electric currents",
+      "The moons of Jupiter",
+      "The depths of the ocean"
+    ],
+    "answer": 2,
+    "explain": "Galileo used his improved telescope to discover four moons orbiting the planet Jupiter.",
+    "category": "Science All-Stars",
+    "level": 3
+  },
+  {
+    "q": "Which tool would you use to measure how long a pencil is?",
+    "options": [
+      "A thermometer",
+      "A scale",
+      "A ruler",
+      "A stopwatch"
+    ],
+    "answer": 2,
+    "explain": "A ruler is marked with units of length, making it the right tool for measuring how long something is.",
+    "category": "Measurement & Method",
+    "level": 1
+  },
+  {
+    "q": "Which tool is used to measure temperature?",
+    "options": [
+      "A thermometer",
+      "A ruler",
+      "A balance",
+      "A magnifying glass"
+    ],
+    "answer": 0,
+    "explain": "A thermometer measures how hot or cold something is.",
+    "category": "Measurement & Method",
+    "level": 1
+  },
+  {
+    "q": "In the metric system, which unit is used to measure length?",
+    "options": [
+      "Liter",
+      "Gram",
+      "Second",
+      "Meter"
+    ],
+    "answer": 3,
+    "explain": "The meter is the basic metric unit for measuring length or distance.",
+    "category": "Measurement & Method",
+    "level": 1
+  },
+  {
+    "q": "What is one of the first things scientists do to start learning about something?",
+    "options": [
+      "Guess the answer and stop",
+      "Make careful observations",
+      "Throw away their notes",
+      "Ignore the question"
+    ],
+    "answer": 1,
+    "explain": "Careful observations help scientists gather information and ask good questions about what they notice.",
+    "category": "Measurement & Method",
+    "level": 1
+  },
+  {
+    "q": "What is a hypothesis?",
+    "options": [
+      "The final result of an experiment",
+      "A type of measuring tool",
+      "A conclusion that cannot change",
+      "A testable guess or prediction made before an experiment"
+    ],
+    "answer": 3,
+    "explain": "A hypothesis is an educated guess that a scientist can test with an experiment.",
+    "category": "Measurement & Method",
+    "level": 2
+  },
+  {
+    "q": "Which tool would you use to measure the volume of a liquid?",
+    "options": [
+      "A ruler",
+      "A thermometer",
+      "A graduated cylinder",
+      "A scale"
+    ],
+    "answer": 2,
+    "explain": "A graduated cylinder has marked lines that show how much liquid it holds.",
+    "category": "Measurement & Method",
+    "level": 2
+  },
+  {
+    "q": "To keep an experiment fair, what should you do with the variables?",
+    "options": [
+      "Change everything at once",
+      "Change only one thing and keep the others the same",
+      "Never measure anything",
+      "Change the results to fit your guess"
+    ],
+    "answer": 1,
+    "explain": "Changing just one variable at a time lets you know that it caused any difference you see.",
+    "category": "Measurement & Method",
+    "level": 2
+  },
+  {
+    "q": "What is the difference between an observation and an inference?",
+    "options": [
+      "They are exactly the same thing",
+      "An inference uses only your eyes",
+      "An observation is something you sense directly, while an inference is a conclusion you reason out",
+      "An observation is always a guess"
+    ],
+    "answer": 2,
+    "explain": "You make an observation using your senses, and you make an inference by using those observations to reach a conclusion.",
+    "category": "Measurement & Method",
+    "level": 2
+  },
+  {
+    "q": "In a fair test, what is the variable you change on purpose called?",
+    "options": [
+      "The independent variable",
+      "The conclusion",
+      "The hypothesis",
+      "The observation"
+    ],
+    "answer": 0,
+    "explain": "The independent variable is the one thing the experimenter deliberately changes to see its effect.",
+    "category": "Measurement & Method",
+    "level": 3
+  },
+  {
+    "q": "What is the main purpose of a control group in an experiment?",
+    "options": [
+      "To make the experiment take longer",
+      "To change every step",
+      "To record only the temperature",
+      "To provide a comparison that stays unchanged"
+    ],
+    "answer": 3,
+    "explain": "A control group is left unchanged so scientists can compare it to the group they are testing.",
+    "category": "Measurement & Method",
+    "level": 3
+  },
+  {
+    "q": "Which metric unit would best measure the mass of an apple?",
+    "options": [
+      "Grams",
+      "Liters",
+      "Meters",
+      "Degrees"
+    ],
+    "answer": 0,
+    "explain": "Mass is measured in grams and kilograms, so grams work well for something as light as an apple.",
+    "category": "Measurement & Method",
+    "level": 3
+  },
+  {
+    "q": "What is a conclusion in the scientific method?",
+    "options": [
+      "A guess made before the experiment",
+      "A statement of what the results show",
+      "A list of the tools you used",
+      "The very first observation"
+    ],
+    "answer": 1,
+    "explain": "A conclusion sums up what the experiment's results tell you and whether they support your hypothesis.",
+    "category": "Measurement & Method",
+    "level": 3
+  }
+]
