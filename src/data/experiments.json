@@ -478,5 +478,245 @@
     "what_you_learn": "The rotating cam converts spinning motion into up-and-down motion of the follower rod. This experiment demonstrates mechanisms and how cams transform one type of motion into another.",
     "order": 48,
     "id": "cq-exp-048"
+  },
+  {
+    "title": "Homemade Sundial",
+    "topic": "physics",
+    "difficulty": "Beginner",
+    "materials": "Paper plate or stiff cardboard circle\nStraight stick, pencil, or straw (about 15 cm)\nModeling clay\nMarker\nCompass or phone compass\nSunny outdoor spot",
+    "instructions": "1. Push a straight stick or pencil through the center of a paper plate and hold it upright with a lump of modeling clay underneath.\n2. Take the sundial outside to a flat, sunny spot in the morning and use a compass so the plate stays in the same fixed direction all day.\n3. At the start of a full hour, use a marker to draw a line along the stick's shadow and write the time next to it.\n4. Return every hour throughout the day and mark the new shadow position with the correct time.\n5. Notice how the shadow moves around the plate and changes length as the sun crosses the sky.\n6. On the next sunny day, place the sundial in the exact same spot and use your marked lines to read the time, then check it against a real clock.",
+    "what_you_learn": "The sun's position in the sky changes through the day, so the stick's shadow moves and can mark the hours. This experiment demonstrates how Earth's rotation causes the apparent motion of the sun and how early people measured time.",
+    "order": 49,
+    "id": "cq-exp-049"
+  },
+  {
+    "title": "Dancing Rice on a Speaker",
+    "topic": "physics",
+    "difficulty": "Beginner",
+    "materials": "Large bowl or empty coffee can with an open top\nPlastic wrap\nRubber band\nUncooked rice (about 1 tablespoon)\nSpeaker or phone playing music or tones",
+    "instructions": "1. Stretch plastic wrap tightly over the open top of a bowl and hold it in place with a rubber band to make a flat, drum-like surface.\n2. Sprinkle about one tablespoon of uncooked rice evenly across the plastic wrap.\n3. Place a speaker or phone facing up right next to the bowl, or rest the bowl gently on top of a speaker.\n4. Play music or a steady tone with plenty of bass and slowly turn up the volume.\n5. Watch the grains of rice jump and dance across the surface as the sound plays.\n6. Turn the volume up and down and try different sounds to see how the movement of the rice changes.",
+    "what_you_learn": "Sound is made of vibrations that travel through the air and shake the stretched surface, making the rice bounce. This experiment demonstrates that sound is a wave and that louder sounds carry more energy.",
+    "order": 50,
+    "id": "cq-exp-050"
+  },
+  {
+    "title": "Straw Pan Pipes",
+    "topic": "physics",
+    "difficulty": "Medium",
+    "materials": "Plastic drinking straws (8 to 10)\nScissors\nTape\nRuler\nCardboard strip",
+    "instructions": "1. Line up eight to ten straws side by side and tape them to a cardboard strip so they stay in a neat row with their tops even.\n2. Use a ruler to measure and cut each straw a little shorter than the one before it, keeping the tops level.\n3. Pinch or fold the bottom of each straw and tape it closed so no air escapes out the bottom.\n4. Hold the row of straws so the open tops sit just below your lower lip.\n5. Blow a steady stream of air across the top of one straw, not down into it, until you hear a clear note.\n6. Play across all the straws and notice how the shorter straws make higher notes and the longer straws make lower notes.",
+    "what_you_learn": "Blowing across a straw makes the column of air inside it vibrate, and shorter columns vibrate faster to make higher pitches. This experiment demonstrates how sound frequency depends on the length of a vibrating air column.",
+    "order": 51,
+    "id": "cq-exp-051"
+  },
+  {
+    "title": "Color-Mixing Spinning Disk",
+    "topic": "physics",
+    "difficulty": "Medium",
+    "materials": "Stiff white cardboard\nMarkers or colored pencils (red, orange, yellow, green, blue, indigo, violet)\nRuler and a round object to trace\nSharpened pencil\nScissors",
+    "instructions": "1. Trace and cut a circle about 10 cm across from stiff white cardboard.\n2. Use a ruler to divide the circle into seven equal wedges, like slices of a pie.\n3. Color the wedges in the order red, orange, yellow, green, blue, indigo, and violet, pressing firmly for bright colors.\n4. Push a sharpened pencil through the exact center so the disk can spin like a top.\n5. Spin the disk as fast as you can on a smooth table.\n6. Watch the separate colors blur together and note how the fast-spinning disk looks pale or whitish instead of colorful.",
+    "what_you_learn": "When the colors spin quickly, your eyes blend them together faster than you can see each one, so they mix toward white. This experiment demonstrates persistence of vision and how white light is made of many colors combined.",
+    "order": 52,
+    "id": "cq-exp-052"
+  },
+  {
+    "title": "Spinning-Top Gyroscope",
+    "topic": "physics",
+    "difficulty": "Advanced",
+    "materials": "Old CD or DVD\nRound marble\nPlastic bottle cap slightly wider than the marble\nHot glue gun or strong tape (adult use for hot glue)\nSmooth, hard table surface",
+    "instructions": "1. Ask an adult to help with the hot glue, since the glue and the gun tip get hot enough to burn.\n2. Center the marble under the hole of the CD so about half of it sits in the hole, and glue or tape it firmly in place as the spinning tip.\n3. On the top side, glue a bottle cap over the center hole to make a handle you can grip and twist.\n4. Set the CD flat on a smooth table with the marble pointing down.\n5. Grip the bottle cap between your fingers, spin it hard, and let go so the disk balances and spins on the marble.\n6. While it spins, gently nudge the edge and watch how it resists tipping over and wobbles back toward upright.",
+    "what_you_learn": "A fast-spinning disk has angular momentum that keeps its spin axis pointed the same way and resists changes. This experiment demonstrates how gyroscopes stay stable and why spinning objects are hard to tip over.",
+    "order": 53,
+    "id": "cq-exp-053"
+  },
+  {
+    "title": "Simple Periscope with Mirrors",
+    "topic": "physics",
+    "difficulty": "Advanced",
+    "materials": "Long cardboard box or two clean milk cartons\n2 small flat mirrors of the same size\nRuler and pencil\nScissors or craft knife (adult use)\nTape\nProtractor",
+    "instructions": "1. Ask an adult to help with the cutting, since knives and scissors can be sharp.\n2. Make a tall rectangular tube from cardboard, or tape two clean milk cartons end to end with an opening left at each end.\n3. Near the top of the tube cut a viewing window on one side, and near the bottom cut a window on the opposite side.\n4. Use a protractor to mount a mirror at a 45-degree angle behind the top window, reflective side facing down into the tube.\n5. Mount the second mirror at a 45-degree angle behind the bottom window, reflective side facing up toward the first mirror.\n6. Look into the bottom window and adjust the mirror angles until you can see over a wall or around a corner through the top opening.",
+    "what_you_learn": "Light from above bounces off the top mirror down to the bottom mirror and into your eye, letting you see over obstacles. This experiment demonstrates the law of reflection and how mirrors redirect light along a set path.",
+    "order": 54,
+    "id": "cq-exp-054"
+  },
+  {
+    "title": "Heart Rate Before and After Exercise",
+    "topic": "biology",
+    "difficulty": "Beginner",
+    "materials": "Stopwatch or clock with a second hand\nNotebook and pen\nChair\nOpen space for exercise\nWater to drink",
+    "instructions": "1. Sit quietly in a chair for two minutes so your body is at rest.\n2. Find your pulse on your wrist or neck, count the beats for 15 seconds, and multiply by four to get beats per minute, then record this resting rate.\n3. Do one full minute of active exercise such as jumping jacks or running in place.\n4. Immediately count your pulse again for 15 seconds, multiply by four, and record this new rate.\n5. Rest and count your pulse once every minute for the next five minutes, recording each value.\n6. Make a simple graph of your heart rate over time and note how long it took to return to your resting rate.",
+    "what_you_learn": "Exercise makes your muscles need more oxygen, so the heart beats faster to pump more blood. This experiment demonstrates how the circulatory system responds to activity and recovers during rest.",
+    "order": 55,
+    "id": "cq-exp-055"
+  },
+  {
+    "title": "Taste and Smell Test",
+    "topic": "biology",
+    "difficulty": "Beginner",
+    "materials": "Several bite-sized food pieces (apple, potato, pear, carrot)\nBlindfold\nNotebook and pen\nA helper",
+    "instructions": "1. Ask a helper to cut small, similar-sized pieces of different foods without letting you see them.\n2. Put on a blindfold and gently pinch your nose closed with your fingers so you cannot smell.\n3. Have your helper place one food piece on your tongue and try to guess what it is using taste alone, then record your guess.\n4. Repeat with each food while your nose stays pinched and write down every guess.\n5. Now try the same foods again with your nose open and record how well you can identify each one.\n6. Compare your results and count how many foods you guessed correctly with and without smell.",
+    "what_you_learn": "Much of what we call taste actually comes from smell, so blocking the nose makes many foods hard to identify. This experiment demonstrates how taste and smell work together to create the flavors we recognize.",
+    "order": 56,
+    "id": "cq-exp-056"
+  },
+  {
+    "title": "Capillary Action Paper Flowers",
+    "topic": "biology",
+    "difficulty": "Medium",
+    "materials": "Paper (regular printer paper and thin cardstock)\nScissors\nColored markers\nShallow bowl or plate of water\nPencil",
+    "instructions": "1. Draw and cut out several flower shapes about 8 cm across from paper.\n2. Color the center and petals of each flower with markers to decorate them.\n3. Fold each of the flower's petals tightly inward toward the center so the flower looks like a closed bud.\n4. Gently place the folded flowers on the surface of a bowl of water with the folds facing up.\n5. Watch closely as the petals slowly unfold and the flowers appear to bloom.\n6. Compare flowers made from thin paper and thicker cardstock and note which one opens faster.",
+    "what_you_learn": "Water is drawn into the tiny spaces between the paper fibers, making the paper swell so the folds open on their own. This experiment demonstrates capillary action, the same process plants use to pull water upward through their stems.",
+    "order": 57,
+    "id": "cq-exp-057"
+  },
+  {
+    "title": "Terrarium Water Cycle in a Jar",
+    "topic": "biology",
+    "difficulty": "Medium",
+    "materials": "Large glass jar with a lid\nSmall pebbles or gravel\nPotting soil\nSmall plants or moss\nWater\nSunny windowsill",
+    "instructions": "1. Add a 2 cm layer of pebbles to the bottom of the jar for drainage.\n2. Cover the pebbles with about 5 cm of potting soil.\n3. Plant a few small plants or press in some moss, then gently firm the soil around the roots.\n4. Water the soil lightly until it is damp but not flooded.\n5. Seal the jar with its lid and place it on a windowsill that gets bright, indirect sunlight.\n6. Observe the jar for one to two weeks and watch for water droplets forming on the glass and trickling back down like rain.",
+    "what_you_learn": "Water evaporates from the soil and leaves, condenses on the cool glass, and falls back down, recycling within the sealed jar. This experiment demonstrates the water cycle and how a small closed ecosystem can sustain itself.",
+    "order": 58,
+    "id": "cq-exp-058"
+  },
+  {
+    "title": "Mushroom Spore Print",
+    "topic": "biology",
+    "difficulty": "Advanced",
+    "materials": "Fresh store-bought mushroom with an open cap\nWhite paper and dark paper\nSmall knife (adult use)\nBowl or glass to cover the cap\nClear tape (optional, for preserving the print)",
+    "instructions": "1. Ask an adult to help, and use only store-bought edible mushrooms; never use wild mushrooms, and wash your hands after handling any mushroom.\n2. With an adult, cut the stem off a mushroom so the cap can lie flat with its gills facing down.\n3. Place the cap gill-side down so it rests half on white paper and half on dark paper, so the print will show up whatever its color.\n4. Cover the cap with a bowl or glass to block drafts and air currents.\n5. Leave it undisturbed for 6 to 24 hours.\n6. Lift the cap straight up and observe the pattern of spores left behind, then wash your hands.",
+    "what_you_learn": "Mushrooms release thousands of tiny spores from their gills, and the spores fall to form a print that matches the gill pattern. This experiment demonstrates how fungi reproduce using spores instead of seeds.",
+    "order": 59,
+    "id": "cq-exp-059"
+  },
+  {
+    "title": "Leaf Pigment Chromatography",
+    "topic": "biology",
+    "difficulty": "Advanced",
+    "materials": "Several green leaves (spinach works well)\nRubbing alcohol (about 100 ml)\nSmall jar\nCoffee filter or paper towel strip\nBowl of warm water\nTape and a pencil",
+    "instructions": "1. Ask an adult to supervise, since rubbing alcohol is flammable and must be kept away from heat and open flames.\n2. Tear several leaves into small pieces, place them in a jar, and pour in just enough rubbing alcohol to cover them.\n3. Set the jar in a bowl of warm water and mash the leaves for about 30 minutes until the alcohol turns deep green.\n4. Cut a strip of coffee filter and tape its top to a pencil so the strip hangs into the jar with only its tip touching the liquid.\n5. Leave it for one to two hours as the alcohol slowly climbs the strip and carries the pigments upward.\n6. Remove the strip, let it dry, and observe the separated bands of green, yellow, and orange pigments.",
+    "what_you_learn": "Leaves contain several pigments that travel up the paper at different speeds, so they separate into colored bands. This experiment demonstrates chromatography and reveals the hidden pigments behind a leaf's green color.",
+    "order": 60,
+    "id": "cq-exp-060"
+  },
+  {
+    "title": "Naked Egg in Vinegar",
+    "topic": "chemistry",
+    "difficulty": "Beginner",
+    "materials": "Raw egg\nWhite vinegar (enough to cover the egg, about 250 ml)\nTall glass or jar\nSpoon",
+    "instructions": "1. Gently lower a raw egg into a tall glass without cracking it.\n2. Pour in enough white vinegar to cover the egg completely, about 250 ml.\n3. Notice the tiny bubbles that immediately begin forming on the eggshell.\n4. Cover the glass loosely and leave it in a safe place for two full days.\n5. After two days, use a spoon to lift the egg out and rinse it gently under water, rubbing away the softened shell.\n6. Hold the peeled egg up to the light, squeeze it carefully, and try bouncing it a couple of centimeters above a table.",
+    "what_you_learn": "The acid in vinegar reacts with the calcium carbonate shell and dissolves it, leaving only the soft membrane behind. This experiment demonstrates an acid-base reaction and shows the gas produced when acid meets a carbonate.",
+    "order": 61,
+    "id": "cq-exp-061"
+  },
+  {
+    "title": "Homemade Butter by Shaking Cream",
+    "topic": "chemistry",
+    "difficulty": "Beginner",
+    "materials": "Cold heavy whipping cream (about 250 ml)\nClean jar with a tight lid\nClean marble (optional)\nCold water\nPinch of salt (optional)",
+    "instructions": "1. Pour about 250 ml of cold heavy whipping cream into a clean jar, filling it no more than halfway.\n2. Add a clean marble if you have one to help stir the cream, then screw the lid on tightly.\n3. Shake the jar hard and steadily for 5 to 10 minutes, taking turns if your arms get tired.\n4. Notice the cream first turn into whipped cream, then suddenly separate into a yellow lump and a thin liquid.\n5. Pour off the liquid, which is buttermilk, and rinse the butter lump with cold water.\n6. Stir in a pinch of salt if you like, then spread your fresh butter on bread to taste it.",
+    "what_you_learn": "Shaking forces the fat droplets in the cream to bump together and clump into solid butter, separating from the watery liquid. This experiment demonstrates how an emulsion can be broken and how physical agitation makes fats join together.",
+    "order": 62,
+    "id": "cq-exp-062"
+  },
+  {
+    "title": "Lava Lamp with Oil and Antacid",
+    "topic": "chemistry",
+    "difficulty": "Medium",
+    "materials": "Clear bottle or tall glass\nVegetable oil (about three-quarters of the container)\nWater (about one-quarter of the container)\nFood coloring\nEffervescent antacid tablets (such as Alka-Seltzer)\nFlashlight (optional)",
+    "instructions": "1. Fill the container about one-quarter full with water.\n2. Slowly pour in vegetable oil until the container is about three-quarters full, then wait for the two layers to separate.\n3. Add about ten drops of food coloring and watch the drops sink through the oil into the water.\n4. Break an antacid tablet into a few pieces and drop one piece into the container.\n5. Watch colored blobs bubble up and sink back down like a lava lamp.\n6. Add more tablet pieces as the bubbling slows, and shine a flashlight behind the container for a glowing effect.",
+    "what_you_learn": "The antacid releases carbon dioxide bubbles that carry colored water up through the oil, and the water sinks again once the gas escapes at the top. This experiment demonstrates density differences between oil and water and how gas from a reaction can move liquids.",
+    "order": 63,
+    "id": "cq-exp-063"
+  },
+  {
+    "title": "Sugar Density Rainbow",
+    "topic": "chemistry",
+    "difficulty": "Medium",
+    "materials": "Sugar\nWarm water\n4 clear cups\nFood coloring (four colors)\nTablespoon\nTall clear glass\nDropper or turkey baster",
+    "instructions": "1. Line up four cups and add the same amount of warm water to each, about 3 tablespoons.\n2. Stir 1 tablespoon of sugar into the first cup, 2 into the second, 3 into the third, and 4 into the fourth, until each fully dissolves.\n3. Add a different food coloring to each cup so you can tell the layers apart.\n4. Pour the cup with the most sugar into a tall glass first to form the bottom layer.\n5. Using a dropper, gently add the next-sweetest solution by dribbling it slowly down the inside wall of the glass so it floats on top.\n6. Repeat with the remaining cups from most sugar to least, building a rainbow of separated layers.",
+    "what_you_learn": "Water with more dissolved sugar is denser and sinks below water with less sugar, so the layers stack without mixing. This experiment demonstrates density and how a dissolved substance changes the weight of a liquid.",
+    "order": 64,
+    "id": "cq-exp-064"
+  },
+  {
+    "title": "Endothermic Cold Pack",
+    "topic": "chemistry",
+    "difficulty": "Advanced",
+    "materials": "Baking soda (2 tablespoons)\nCitric acid powder (2 tablespoons)\nWater (about 2 tablespoons)\nSealable plastic bag\nThermometer\nSpoon",
+    "instructions": "1. Use a thermometer to measure and record the room-temperature starting point of a little water.\n2. Add 2 tablespoons of baking soda and 2 tablespoons of citric acid into a sealable plastic bag and mix the dry powders.\n3. Place a thermometer inside the bag, or be ready to measure the moment after mixing.\n4. Pour about 2 tablespoons of water into the bag and quickly seal it, pressing out the extra air.\n5. Gently squish the bag to mix everything, then hold it and feel how it turns cold.\n6. Read the thermometer again and record how far the temperature dropped compared with the start.",
+    "what_you_learn": "The reaction between baking soda and citric acid absorbs heat from its surroundings, so the bag feels cold to the touch. This experiment demonstrates an endothermic reaction, where a chemical change takes in energy rather than releasing it.",
+    "order": 65,
+    "id": "cq-exp-065"
+  },
+  {
+    "title": "Starch and Iodine Food Test",
+    "topic": "chemistry",
+    "difficulty": "Advanced",
+    "materials": "Tincture of iodine from a pharmacy\nDropper\nCornstarch\nTest foods (bread, potato, cracker, apple, sugar)\nSmall plates\nWater\nSafety goggles",
+    "instructions": "1. Ask an adult to supervise, as iodine can stain skin and clothes and must not be swallowed; wear goggles and do not eat any food after testing it.\n2. Make a control sample by mixing a little cornstarch with water on a plate.\n3. Place small samples of each test food on separate plates.\n4. Add one or two drops of iodine to the cornstarch control and watch it turn blue-black.\n5. Add a drop of iodine to each food sample and record which ones turn blue-black and which stay brownish.\n6. Sort the foods into those that contain starch and those that do not, then wash your hands and throw away the tested foods.",
+    "what_you_learn": "Iodine turns blue-black when it meets starch, so the color change reveals which foods contain it. This experiment demonstrates a chemical indicator test and how starch can be detected in everyday foods.",
+    "order": 66,
+    "id": "cq-exp-066"
+  },
+  {
+    "title": "Index-Card Tower Challenge",
+    "topic": "engineering",
+    "difficulty": "Beginner",
+    "materials": "Index cards (about 20)\nTape (a limited amount, about 30 cm)\nScissors\nRuler\nSmall weight to test (a toy or a coin)",
+    "instructions": "1. Explore how folding an index card into a tube or a triangular prism makes it far stiffer than a flat card.\n2. Fold and tape several cards into strong column shapes to use as supports.\n3. Stand your columns upright and connect their tops with flat cards to build the first level of a tower.\n4. Continue stacking levels, keeping the base wide and the structure balanced.\n5. Measure the height of your tower with a ruler once it stands on its own.\n6. Gently place a small weight on top to test its strength, then rebuild to make it taller and steadier.",
+    "what_you_learn": "Folding a flat card into a tube or triangle lets it carry far more weight without bending or buckling. This experiment demonstrates how shape gives structures strength and how engineers design stable towers.",
+    "order": 67,
+    "id": "cq-exp-067"
+  },
+  {
+    "title": "Paper Cup Phone",
+    "topic": "engineering",
+    "difficulty": "Beginner",
+    "materials": "2 paper or plastic cups\nString or fishing line (about 5 to 10 m)\nPencil or toothpick\nA partner",
+    "instructions": "1. Use a pencil to poke a small hole in the center of the bottom of each cup.\n2. Thread one end of the string through each hole from the outside of the cup.\n3. Tie a knot or wrap the string around a small piece of toothpick inside each cup so it cannot slip back out.\n4. Have you and a partner each hold a cup and walk apart until the string is pulled tight and straight.\n5. One person speaks softly into their cup while the other holds their cup to an ear and listens.\n6. Let the string sag, then pinch it with your other hand, and note how the sound changes with tension and contact.",
+    "what_you_learn": "Your voice makes the cup and the tight string vibrate, carrying the sound along the string to the other cup. This experiment demonstrates how sound travels as vibrations through solids, often better than through air.",
+    "order": 68,
+    "id": "cq-exp-068"
+  },
+  {
+    "title": "Balloon-Powered Boat",
+    "topic": "engineering",
+    "difficulty": "Medium",
+    "materials": "Plastic food container or foam tray for the hull\nBalloon\nFlexible straw\nWaterproof tape\nScissors\nBathtub, sink, or large basin of water",
+    "instructions": "1. Use a plastic container or cut a foam tray into a boat shape to make a hull that floats.\n2. Tape the neck of a balloon tightly around the short end of a bendy straw so no air can leak out.\n3. Tape the straw to the boat so the long end points out the back, just at the waterline, sealing well around it.\n4. Blow through the straw to inflate the balloon, then pinch the straw closed with your fingers.\n5. Set the boat on the water and release the straw so the air pushes out the back.\n6. Watch the boat move forward, then try different balloon sizes and straw angles to make it travel farther.",
+    "what_you_learn": "Air rushing backward out of the straw pushes the boat forward in the opposite direction. This experiment demonstrates Newton's Third Law of action and reaction and how thrust drives a vehicle.",
+    "order": 69,
+    "id": "cq-exp-069"
+  },
+  {
+    "title": "Wind-Powered Sail Car",
+    "topic": "engineering",
+    "difficulty": "Medium",
+    "materials": "Small cardboard base\n4 bottle caps or plastic lids for wheels\n2 wooden skewers for axles\nStraws\nPaper or thin cardboard for the sail\nTape and scissors\nA fan or your own breath",
+    "instructions": "1. Tape two straws across the bottom of a cardboard base and slide a skewer through each to make axles.\n2. Push a bottle cap onto each end of the skewers as wheels, making sure they spin freely.\n3. Tape a skewer or straw upright in the middle of the base to serve as a mast.\n4. Cut a paper sail and tape it to the mast so it can catch air coming from the front.\n5. Set the car on a smooth floor and blow on the sail or aim a fan at it.\n6. Measure how far the car rolls, then test different sail sizes and shapes to find the fastest design.",
+    "what_you_learn": "Moving air pushes against the sail and transfers its energy to roll the car forward. This experiment demonstrates how wind energy can be captured to do work and how sail size affects the pushing force.",
+    "order": 70,
+    "id": "cq-exp-070"
+  },
+  {
+    "title": "Hydraulic Cardboard Arm with Syringes",
+    "topic": "engineering",
+    "difficulty": "Advanced",
+    "materials": "Cardboard\n3 or 4 plastic syringes with no needles\nClear plastic tubing to fit the syringes\nWater\nSplit pins or small brads\nScissors or craft knife (adult use)\nHot glue or strong tape (adult use for hot glue)",
+    "instructions": "1. Ask an adult to help with cutting and hot glue, since knives and hot glue can cause injury.\n2. Cut cardboard into arm segments and join them with split pins so they can pivot like an elbow and a shoulder.\n3. Connect two syringes with a length of tubing, then fill one syringe and the tube with water, leaving the other syringe empty.\n4. Mount one syringe on the base and attach its partner to a moving joint of the arm.\n5. Push the plunger on the base syringe and watch the water force the other plunger out, moving the arm.\n6. Add another syringe pair to control a second joint, then test lifting a light object with your finished hydraulic arm.",
+    "what_you_learn": "Pushing one plunger sends water through the tube and pushes the other plunger, because liquids cannot be squeezed smaller. This experiment demonstrates hydraulics and how pressure is transmitted through a fluid to move things.",
+    "order": 71,
+    "id": "cq-exp-071"
+  },
+  {
+    "title": "Geodesic Dome from Gumdrops and Toothpicks",
+    "topic": "engineering",
+    "difficulty": "Advanced",
+    "materials": "Toothpicks (about 65)\nGumdrops or small marshmallows (about 26)\nFlat table\nRuler",
+    "instructions": "1. Build several triangles by joining three toothpicks with a gumdrop pressed onto each corner, since triangles are the strongest shape.\n2. Connect five triangles side by side and curve them into a ring to form the base of the dome.\n3. Add a second row of triangles on top of the base ring, tilting them slightly inward.\n4. Continue adding triangles that lean inward, making each new ring a little smaller than the one below.\n5. Close the top with a final ring of triangles that meet at a single gumdrop at the peak.\n6. Gently press on the finished dome to test how the network of triangles spreads out the load without collapsing.",
+    "what_you_learn": "A dome made of many triangles spreads weight evenly across the whole structure, making it strong yet lightweight. This experiment demonstrates how geodesic designs use triangles to build sturdy, stable shapes.",
+    "order": 72,
+    "id": "cq-exp-072"
   }
 ]
