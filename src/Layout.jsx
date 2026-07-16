@@ -1,19 +1,25 @@
 import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
 import { createPageUrl } from './utils';
-import { Menu, X, Instagram, Heart } from 'lucide-react';
+import { Menu, X, Instagram, Heart, ChevronDown } from 'lucide-react';
 import { motion } from 'framer-motion';
 import { Button } from '@/components/ui/button';
 
 export default function Layout({ children, currentPageName }) {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
+  const [playMenuOpen, setPlayMenuOpen] = useState(false);
+
+  // Interactive features grouped under a "Play & Learn" dropdown
+  const playLinks = [
+    { name: 'Physics Playground', page: 'PhysicsPlayground', desc: 'Launch projectiles and explore gravity' },
+    { name: 'Science Lab Tycoon', page: 'ScienceLab', desc: 'Answer questions to build your lab' },
+    { name: 'Quest Passport', page: 'QuestPassport', desc: 'Track XP, badges, and progress' },
+  ];
+  const playPages = playLinks.map((l) => l.page);
 
   const navLinks = [
     { name: 'Home', page: 'Home' },
     { name: 'Activities', page: 'Activities' },
-    { name: 'Playground', page: 'PhysicsPlayground' },
-    { name: 'Science Lab', page: 'ScienceLab' },
-    { name: 'Passport', page: 'QuestPassport' },
     { name: 'Events', page: 'Events' },
     { name: '5 Minutes of STEM', page: 'ThisWeekInSTEM' },
     { name: 'Careers', page: 'CareersInSTEM' },
@@ -90,7 +96,68 @@ export default function Layout({ children, currentPageName }) {
 
             {/* Desktop Navigation */}
             <nav className="hidden md:flex items-center gap-1">
-              {navLinks.map((link) => (
+              <Link
+                to={createPageUrl('Home')}
+                className={`px-4 py-2 rounded-lg text-base font-medium transition-all ${
+                  currentPageName === 'Home'
+                    ? 'bg-[#055b8e] text-white'
+                    : 'text-gray-700 hover:bg-[#055b8e]/10 hover:text-[#055b8e]'
+                }`}
+              >
+                Home
+              </Link>
+              <Link
+                to={createPageUrl('Activities')}
+                className={`px-4 py-2 rounded-lg text-base font-medium transition-all ${
+                  currentPageName === 'Activities'
+                    ? 'bg-[#055b8e] text-white'
+                    : 'text-gray-700 hover:bg-[#055b8e]/10 hover:text-[#055b8e]'
+                }`}
+              >
+                Activities
+              </Link>
+
+              {/* Play & Learn dropdown */}
+              <div
+                className="relative"
+                onMouseEnter={() => setPlayMenuOpen(true)}
+                onMouseLeave={() => setPlayMenuOpen(false)}
+              >
+                <button
+                  className={`flex items-center gap-1 px-4 py-2 rounded-lg text-base font-medium transition-all ${
+                    playPages.includes(currentPageName)
+                      ? 'bg-[#055b8e] text-white'
+                      : 'text-gray-700 hover:bg-[#055b8e]/10 hover:text-[#055b8e]'
+                  }`}
+                >
+                  Play &amp; Learn
+                  <ChevronDown className={`w-4 h-4 transition-transform ${playMenuOpen ? 'rotate-180' : ''}`} />
+                </button>
+                {playMenuOpen && (
+                  <div className="absolute left-0 top-full pt-2 w-72 z-50">
+                    <div className="bg-white rounded-2xl shadow-xl border border-gray-100 p-2">
+                      {playLinks.map((link) => (
+                        <Link
+                          key={link.page}
+                          to={createPageUrl(link.page)}
+                          className={`block px-4 py-3 rounded-xl transition-all ${
+                            currentPageName === link.page
+                              ? 'bg-[#055b8e]/10'
+                              : 'hover:bg-gray-50'
+                          }`}
+                        >
+                          <div className="font-semibold text-[#055b8e]" style={{ fontFamily: 'Nunito, sans-serif' }}>
+                            {link.name}
+                          </div>
+                          <div className="text-sm text-gray-500">{link.desc}</div>
+                        </Link>
+                      ))}
+                    </div>
+                  </div>
+                )}
+              </div>
+
+              {navLinks.slice(2).map((link) => (
                 <Link
                   key={link.page}
                   to={createPageUrl(link.page)}
@@ -125,7 +192,43 @@ export default function Layout({ children, currentPageName }) {
         {mobileMenuOpen && (
           <div className="md:hidden bg-white border-t border-gray-100 py-4">
             <nav className="flex flex-col px-4 gap-2">
-              {navLinks.map((link) => (
+              {navLinks.slice(0, 2).map((link) => (
+                <Link
+                  key={link.page}
+                  to={createPageUrl(link.page)}
+                  onClick={() => setMobileMenuOpen(false)}
+                  className={`px-4 py-3 rounded-xl text-lg font-medium transition-all ${
+                    currentPageName === link.page
+                      ? 'bg-[#055b8e] text-white'
+                      : 'text-gray-700 hover:bg-[#055b8e]/10'
+                  }`}
+                >
+                  {link.name}
+                </Link>
+              ))}
+
+              {/* Play & Learn group */}
+              <div className="mt-1 mb-1">
+                <div className="px-4 pt-2 pb-1 text-xs font-semibold uppercase tracking-wider text-gray-400">
+                  Play &amp; Learn
+                </div>
+                {playLinks.map((link) => (
+                  <Link
+                    key={link.page}
+                    to={createPageUrl(link.page)}
+                    onClick={() => setMobileMenuOpen(false)}
+                    className={`block px-4 py-3 rounded-xl text-lg font-medium transition-all ${
+                      currentPageName === link.page
+                        ? 'bg-[#055b8e] text-white'
+                        : 'text-gray-700 hover:bg-[#055b8e]/10'
+                    }`}
+                  >
+                    {link.name}
+                  </Link>
+                ))}
+              </div>
+
+              {navLinks.slice(2).map((link) => (
                 <Link
                   key={link.page}
                   to={createPageUrl(link.page)}
@@ -176,7 +279,7 @@ export default function Layout({ children, currentPageName }) {
                 Explore
               </h4>
               <nav className="flex flex-col gap-2">
-                {navLinks.map((link) => (
+                {[...navLinks, ...playLinks].map((link) => (
                   <Link
                     key={link.page}
                     to={createPageUrl(link.page)}
