@@ -4,6 +4,10 @@
  * All progress is stored in the browser (localStorage), so kids keep their
  * passport between visits without needing an account. Wrap the app in
  * <QuestProvider> and read/update progress anywhere with useQuest().
+ *
+ * The store also powers the Science Lab Tycoon: correct answers earn
+ * Research Coins, coins buy lab equipment, and equipment boosts the
+ * coin multiplier for future answers.
  */
 import React, { createContext, useContext, useEffect, useState, useCallback } from 'react';
 import confetti from 'canvas-confetti';
@@ -11,10 +15,11 @@ import { toast } from '@/components/ui/use-toast';
 import experiments from '@/data/experiments.json';
 import virtualActivities from '@/data/virtualActivities.json';
 import stemPosts from '@/data/stemPosts.json';
+import labEquipment from '@/data/labEquipment.json';
 
 const STORAGE_KEY = 'cq_quest_passport_v1';
 
-// ---------- XP + Levels ----------
+// ---------- XP + Coins rules ----------
 export const XP_RULES = {
   experiment: { Beginner: 20, Medium: 35, Advanced: 50 },
   lesson: 25,
@@ -22,15 +27,21 @@ export const XP_RULES = {
   quizCorrect: 5,
   quizPerfectBonus: 15,
   playgroundHit: 5,
+  researchXp: 2, // XP per correct answer in a Science Lab research session
+};
+
+export const COIN_RULES = {
+  perCorrectAnswer: 10, // base coins per correct answer (before lab multiplier)
+  streakBonus: 2, // extra coins per answer for each consecutive correct answer
 };
 
 export const LEVELS = [
-  { level: 1, name: 'Curious Cadet', emoji: '🐣', minXp: 0 },
-  { level: 2, name: 'Junior Scientist', emoji: '🔬', minXp: 100 },
-  { level: 3, name: 'Lab Explorer', emoji: '🧭', minXp: 250 },
-  { level: 4, name: 'STEM Adventurer', emoji: '🚀', minXp: 500 },
-  { level: 5, name: 'Quest Master', emoji: '🌟', minXp: 900 },
-  { level: 6, name: 'Lab Legend', emoji: '🏆', minXp: 1400 },
+  { level: 1, name: 'Curious Cadet', minXp: 0 },
+  { level: 2, name: 'Junior Scientist', minXp: 100 },
+  { level: 3, name: 'Lab Explorer', minXp: 250 },
+  { level: 4, name: 'STEM Adventurer', minXp: 500 },
+  { level: 5, name: 'Quest Master', minXp: 900 },
+  { level: 6, name: 'Lab Legend', minXp: 1400 },
 ];
 
 export const levelForXp = (xp) =>
@@ -44,25 +55,41 @@ const topicTotals = experiments.reduce((acc, e) => {
   return acc;
 }, {});
 
+// ---------- Lab economy helpers ----------
+export const labMultiplierFor = (labIds) =>
+  1 + labIds.reduce((sum, id) => {
+    const item = labEquipment.find((e) => e.id === id);
+    return sum + (item ? item.boost : 0);
+  }, 0);
+
+export const labValueFor = (labIds) =>
+  labIds.reduce((sum, id) => {
+    const item = labEquipment.find((e) => e.id === id);
+    return sum + (item ? item.cost : 0);
+  }, 0);
+
 // ---------- Badges ----------
 export const BADGES = [
-  { id: 'first-quest', name: 'First Steps', emoji: '👣', desc: 'Complete your very first activity' },
-  { id: 'hands-on-5', name: 'Hands-On Hero', emoji: '🧤', desc: 'Complete 5 experiments' },
-  { id: 'hands-on-15', name: 'Experiment Master', emoji: '⚗️', desc: 'Complete 15 experiments' },
-  { id: 'physics-whiz', name: 'Physics Whiz', emoji: '🎢', desc: 'Complete every physics experiment' },
-  { id: 'chem-champion', name: 'Chemistry Champion', emoji: '🧪', desc: 'Complete every chemistry experiment' },
-  { id: 'bio-boss', name: 'Biology Boss', emoji: '🌱', desc: 'Complete every biology experiment' },
-  { id: 'engineer-elite', name: 'Engineering Elite', emoji: '🏗️', desc: 'Complete every engineering experiment' },
-  { id: 'well-rounded', name: 'Well-Rounded', emoji: '🌈', desc: 'Do at least one experiment in every topic' },
-  { id: 'coder-5', name: 'Code Cadet', emoji: '💻', desc: 'Finish 5 coding lessons' },
-  { id: 'coder-15', name: 'Code Wizard', emoji: '🧙', desc: 'Finish 15 coding lessons' },
-  { id: 'bookworm', name: 'Bookworm', emoji: '📚', desc: 'Read 5 "5 Minutes of STEM" posts' },
-  { id: 'news-hound', name: 'News Hound', emoji: '🕵️', desc: 'Read 10 "5 Minutes of STEM" posts' },
-  { id: 'quiz-taker', name: 'Quiz Rookie', emoji: '✏️', desc: 'Finish your first quiz' },
-  { id: 'quiz-ace', name: 'Quiz Ace', emoji: '💯', desc: 'Score 100% on any quiz' },
-  { id: 'brainiac', name: 'Brainiac', emoji: '🧠', desc: 'Score 80%+ on all four topic quizzes' },
-  { id: 'sharpshooter', name: 'Sharpshooter', emoji: '🎯', desc: 'Hit 3 bullseyes in a row in the Physics Playground' },
-  { id: 'lab-legend', name: 'Lab Legend', emoji: '🏆', desc: 'Reach the highest level' },
+  { id: 'first-quest', name: 'First Steps', desc: 'Complete your very first activity' },
+  { id: 'hands-on-5', name: 'Hands-On Hero', desc: 'Complete 5 experiments' },
+  { id: 'hands-on-15', name: 'Experiment Master', desc: 'Complete 15 experiments' },
+  { id: 'physics-whiz', name: 'Physics Whiz', desc: 'Complete every physics experiment' },
+  { id: 'chem-champion', name: 'Chemistry Champion', desc: 'Complete every chemistry experiment' },
+  { id: 'bio-boss', name: 'Biology Boss', desc: 'Complete every biology experiment' },
+  { id: 'engineer-elite', name: 'Engineering Elite', desc: 'Complete every engineering experiment' },
+  { id: 'well-rounded', name: 'Well-Rounded', desc: 'Do at least one experiment in every topic' },
+  { id: 'coder-5', name: 'Code Cadet', desc: 'Finish 5 coding lessons' },
+  { id: 'coder-15', name: 'Code Wizard', desc: 'Finish 15 coding lessons' },
+  { id: 'bookworm', name: 'Bookworm', desc: 'Read 5 "5 Minutes of STEM" posts' },
+  { id: 'news-hound', name: 'News Hound', desc: 'Read 10 "5 Minutes of STEM" posts' },
+  { id: 'quiz-taker', name: 'Quiz Rookie', desc: 'Finish your first quiz' },
+  { id: 'quiz-ace', name: 'Quiz Ace', desc: 'Score 100% on any quiz' },
+  { id: 'brainiac', name: 'Brainiac', desc: 'Score 80%+ on all four topic quizzes' },
+  { id: 'sharpshooter', name: 'Sharpshooter', desc: 'Hit 3 bullseyes in a row in the Physics Playground' },
+  { id: 'lab-starter', name: 'Lab Starter', desc: 'Buy your first piece of lab equipment' },
+  { id: 'lab-tycoon', name: 'Lab Tycoon', desc: 'Own 10 pieces of lab equipment' },
+  { id: 'lab-complete', name: 'Dream Laboratory', desc: 'Own every piece of lab equipment' },
+  { id: 'lab-legend', name: 'Lab Legend', desc: 'Reach the highest level' },
 ];
 
 const evaluateBadges = (s) => {
@@ -97,6 +124,9 @@ const evaluateBadges = (s) => {
     'quiz-ace': Object.values(s.quizBest).some((b) => b.total > 0 && b.score === b.total),
     'brainiac': quizzes80.length >= 4,
     'sharpshooter': s.bestStreak >= 3,
+    'lab-starter': s.lab.length >= 1,
+    'lab-tycoon': s.lab.length >= 10,
+    'lab-complete': s.lab.length >= labEquipment.length,
     'lab-legend': levelForXp(s.xp).level >= 6,
   };
 
@@ -110,8 +140,10 @@ const evaluateBadges = (s) => {
 // ---------- Store ----------
 const DEFAULT_STATE = {
   name: '',
-  avatar: '🧑‍🔬',
+  avatar: 'blue',
   xp: 0,
+  coins: 0,
+  lab: [], // owned equipment ids
   completedExperiments: {}, // id -> difficulty
   completedActivities: [], // ids
   readPosts: [], // ids
@@ -119,7 +151,7 @@ const DEFAULT_STATE = {
   playgroundHits: 0,
   bestStreak: 0,
   badges: [],
-  log: [], // [{ ts, label, xp }]
+  log: [], // [{ ts, label, xp, coins }]
 };
 
 const load = () => {
@@ -141,37 +173,39 @@ export function QuestProvider({ children }) {
     } catch { /* storage unavailable (private mode) — progress lives in memory only */ }
   }, [state]);
 
-  const applyUpdate = useCallback((updater, label, xpGain) => {
+  const applyUpdate = useCallback((updater, label, xpGain = 0, coinGain = 0) => {
     setState((prev) => {
       const next = updater({ ...prev });
-      if (xpGain) {
-        next.xp = prev.xp + xpGain;
-        next.log = [{ ts: Date.now(), label, xp: xpGain }, ...prev.log].slice(0, 30);
+      if (xpGain) next.xp = prev.xp + xpGain;
+      if (coinGain) next.coins = (next.coins ?? prev.coins) + coinGain;
+      if (xpGain || coinGain) {
+        next.log = [{ ts: Date.now(), label, xp: xpGain, coins: coinGain }, ...prev.log].slice(0, 30);
       }
 
-      // level-up check
       const prevLevel = levelForXp(prev.xp).level;
       const newLevel = levelForXp(next.xp).level;
 
-      // badge check
       const newBadges = evaluateBadges(next);
       if (newBadges.length) next.badges = [...next.badges, ...newBadges];
 
       // celebrations (deferred so we don't toast during render)
       setTimeout(() => {
-        if (xpGain) {
-          toast({ title: `+${xpGain} XP`, description: label });
+        if (xpGain || coinGain) {
+          const parts = [];
+          if (xpGain) parts.push(`+${xpGain} XP`);
+          if (coinGain) parts.push(`+${coinGain} coins`);
+          toast({ title: parts.join('  ·  '), description: label });
         }
         if (newLevel > prevLevel) {
           const l = levelForXp(next.xp);
           confetti({ particleCount: 180, spread: 90, origin: { y: 0.6 } });
-          toast({ title: `🎉 Level up! You're now a ${l.name} ${l.emoji}` });
+          toast({ title: `Level up! You're now a ${l.name}` });
         }
         newBadges.forEach((id) => {
           const b = BADGES.find((x) => x.id === id);
           if (b) {
             confetti({ particleCount: 90, spread: 60, origin: { y: 0.7 } });
-            toast({ title: `${b.emoji} Badge earned: ${b.name}!`, description: b.desc });
+            toast({ title: `Badge earned: ${b.name}`, description: b.desc });
           }
         });
       }, 50);
@@ -180,10 +214,14 @@ export function QuestProvider({ children }) {
     });
   }, []);
 
+  const multiplier = labMultiplierFor(state.lab);
+
   const api = {
     ...state,
     level: levelForXp(state.xp),
     next: nextLevel(state.xp),
+    labMultiplier: multiplier,
+    labValue: labValueFor(state.lab),
 
     setProfile: (name, avatar) =>
       setState((prev) => ({ ...prev, name, avatar })),
@@ -223,6 +261,7 @@ export function QuestProvider({ children }) {
       const xp =
         improvement * XP_RULES.quizCorrect +
         (score === total && prevScore !== total ? XP_RULES.quizPerfectBonus : 0);
+      const coins = Math.round(score * COIN_RULES.perCorrectAnswer * multiplier);
       applyUpdate(
         (s) => ({
           ...s,
@@ -232,7 +271,40 @@ export function QuestProvider({ children }) {
           },
         }),
         `Quiz: ${topic} (${score}/${total})`,
-        xp
+        xp,
+        coins
+      );
+    },
+
+    // One research-session summary award (Science Lab)
+    recordResearchSession: (correct, total, coinsEarned) => {
+      if (correct <= 0) {
+        applyUpdate((s) => s, `Research session: ${correct}/${total}`, 0, 0);
+        return;
+      }
+      applyUpdate(
+        (s) => s,
+        `Research session: ${correct}/${total} correct`,
+        correct * XP_RULES.researchXp,
+        coinsEarned
+      );
+    },
+
+    purchaseLabItem: (item) => {
+      if (state.lab.includes(item.id) || state.coins < item.cost) return false;
+      applyUpdate(
+        (s) => ({ ...s, coins: s.coins - item.cost, lab: [...s.lab, item.id] }),
+        `Purchased: ${item.name}`
+      );
+      return true;
+    },
+
+    sellLabItem: (item) => {
+      if (!state.lab.includes(item.id)) return;
+      const refund = Math.floor(item.cost / 2);
+      applyUpdate(
+        (s) => ({ ...s, coins: s.coins + refund, lab: s.lab.filter((id) => id !== item.id) }),
+        `Sold ${item.name} for ${refund} coins`
       );
     },
 
@@ -243,8 +315,9 @@ export function QuestProvider({ children }) {
           playgroundHits: s.playgroundHits + 1,
           bestStreak: Math.max(s.bestStreak, streak),
         }),
-        'Physics Playground bullseye!',
-        XP_RULES.playgroundHit
+        'Physics Playground bullseye',
+        XP_RULES.playgroundHit,
+        Math.round(5 * multiplier)
       );
     },
 

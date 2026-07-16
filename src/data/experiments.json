@@ -238,5 +238,245 @@
     "what_you_learn": "Electric current flows through a closed circuit to power LEDs. Demonstrates basic electricity, conductivity, and circuit design.",
     "order": 24,
     "id": "6966fad1e548b830753a421a"
+  },
+  {
+    "title": "Static Electricity Water Bending",
+    "topic": "physics",
+    "difficulty": "Beginner",
+    "materials": "Inflated balloon\nWool sweater or clean, dry hair\nWater tap or narrow stream of water\nSink or bowl",
+    "instructions": "1. Inflate a balloon and tie it closed.\n2. Rub the balloon on a wool sweater or your hair for about 20 seconds to build up charge.\n3. Turn on the tap so a thin, steady stream of water flows into the sink.\n4. Slowly bring the charged side of the balloon close to the stream without touching it.\n5. Watch the stream of water bend toward the balloon.\n6. Recharge the balloon and try holding it at different distances to see how the bend changes.",
+    "what_you_learn": "Rubbing the balloon gives it a static electric charge that attracts the slightly polar water molecules. This experiment demonstrates static electricity and how charged objects can exert force without touching.",
+    "order": 25,
+    "id": "cq-exp-025"
+  },
+  {
+    "title": "Bending Pencil Light Refraction",
+    "topic": "physics",
+    "difficulty": "Beginner",
+    "materials": "Clear glass\nWater (~250 ml)\nPencil or straight straw",
+    "instructions": "1. Fill the clear glass about three-quarters full with water.\n2. Place a pencil into the glass so part of it stays above the water.\n3. Look at the pencil from the side, level with the water surface.\n4. Notice how the pencil appears bent or broken where it enters the water.\n5. Slowly move your head up and down and watch the apparent bend change.\n6. Try again with the glass empty and compare what you see.",
+    "what_you_learn": "Light travels at different speeds in air and water, so it bends as it crosses the surface. This experiment demonstrates refraction and why objects can look shifted or broken when viewed through water.",
+    "order": 26,
+    "id": "cq-exp-026"
+  },
+  {
+    "title": "Homemade Floating Compass",
+    "topic": "physics",
+    "difficulty": "Medium",
+    "materials": "Sewing needle\nBar magnet or refrigerator magnet\nSmall piece of cork or foam\nShallow bowl of water\nActual compass or phone compass (for checking)",
+    "instructions": "1. Stroke the needle in one direction along one end of the magnet about 30 times, lifting the magnet away between each stroke.\n2. Cut a thin slice of cork or a small piece of foam about 1 cm wide.\n3. Lay the magnetized needle flat on top of the cork.\n4. Float the cork gently in the center of a bowl of water.\n5. Let it settle and watch the needle slowly turn to point north-south.\n6. Compare the direction with a real compass, then spin the cork and confirm it returns to the same alignment.",
+    "what_you_learn": "Stroking the needle aligns its atoms so it becomes a weak magnet that lines up with Earth's magnetic field. This experiment demonstrates magnetism and how a compass uses Earth's field to find direction.",
+    "order": 27,
+    "id": "cq-exp-027"
+  },
+  {
+    "title": "Marble Roller Coaster Energy",
+    "topic": "physics",
+    "difficulty": "Medium",
+    "materials": "Foam pipe insulation cut lengthwise, or flexible cardboard track (~2 m)\nMarble\nTape\nBooks or chairs for height\nMeasuring tape",
+    "instructions": "1. Tape one end of the track high on a stack of books or a chair to make a starting hill.\n2. Curve the rest of the track down and along the floor, adding a loop or a small second hill if you like.\n3. Release a marble from the top without pushing it and watch it roll through the track.\n4. Measure how far the marble travels past the end of the track.\n5. Raise the starting height with more books and release the marble again.\n6. Record the distance for each starting height and compare the results.",
+    "what_you_learn": "The marble stores gravitational potential energy at the top that converts to kinetic energy as it rolls down. This experiment demonstrates energy transfer and how starting height affects speed and distance.",
+    "order": 28,
+    "id": "cq-exp-028"
+  },
+  {
+    "title": "Sound Wave Salt Patterns",
+    "topic": "physics",
+    "difficulty": "Advanced",
+    "materials": "Large empty can or plastic tub with both ends open, or a bowl\nPlastic wrap or a cut balloon\nRubber band\nSalt (~1 tsp)\nSpeaker or phone playing tones",
+    "instructions": "1. Stretch plastic wrap or a piece of cut balloon tightly over the open top of the can and hold it with a rubber band, making a flat drum-like surface.\n2. Sprinkle about a teaspoon of salt evenly across the stretched surface.\n3. Place a speaker or phone close to the surface, facing it, playing a steady low tone.\n4. Slowly raise the pitch of the tone and watch the salt jump and gather into patterns.\n5. Note which pitches make the salt form clear shapes or lines.\n6. Adjust how tightly the surface is stretched and repeat to see how the patterns change.",
+    "what_you_learn": "Sound waves make the stretched surface vibrate, and the salt collects at the still points between vibrations. This experiment demonstrates standing waves and how frequency shapes vibration patterns.",
+    "order": 29,
+    "id": "cq-exp-029"
+  },
+  {
+    "title": "Air Pressure Can Crusher",
+    "topic": "physics",
+    "difficulty": "Advanced",
+    "materials": "Empty aluminum soda can\nWater (~1 tbsp)\nTongs\nStove or hot plate\nLarge bowl of ice water\nOven mitt",
+    "instructions": "1. Ask an adult to help, as this experiment uses heat and steam that can burn. An adult should supervise every step.\n2. Put about one tablespoon of water into the empty can.\n3. With an adult, heat the can on the stove until steam flows steadily from the opening for about 30 seconds.\n4. Prepare a large bowl of ice water next to the stove.\n5. Using tongs, quickly lift the can and flip it upside down into the ice water so the opening goes under the surface.\n6. Watch the can crush itself almost instantly, then discuss what happened.",
+    "what_you_learn": "Heating turns the water to steam that pushes out air, and cooling condenses the steam so outside air pressure crushes the can. This experiment demonstrates air pressure and how gases expand and contract with temperature.",
+    "order": 30,
+    "id": "cq-exp-030"
+  },
+  {
+    "title": "Celery Transpiration Colors",
+    "topic": "biology",
+    "difficulty": "Beginner",
+    "materials": "Celery stalks with leaves (2-3)\nClear cups\nWater\nFood coloring (red or blue)\nKnife (adult use)",
+    "instructions": "1. Fill each clear cup about halfway with water.\n2. Add 10-15 drops of food coloring to each cup and stir.\n3. Ask an adult to trim about 1 cm off the bottom of each celery stalk.\n4. Stand one celery stalk in each cup of colored water.\n5. Leave the cups in a bright spot and check every few hours for a full day.\n6. After a day, look at the leaves and ask an adult to slice a stalk crosswise to see the colored tubes inside.",
+    "what_you_learn": "Water moves up the celery through tiny tubes and the dye reveals the path all the way to the leaves. This experiment demonstrates transpiration and how plants transport water from roots to leaves.",
+    "order": 31,
+    "id": "cq-exp-031"
+  },
+  {
+    "title": "Fingerprint Patterns Study",
+    "topic": "biology",
+    "difficulty": "Beginner",
+    "materials": "Pencil\nWhite paper\nClear tape\nMagnifying glass\nSeveral volunteers",
+    "instructions": "1. Rub a pencil firmly on a small patch of paper to make a dark graphite square.\n2. Press one fingertip onto the graphite so it picks up the powder.\n3. Stick a piece of clear tape over your fingertip, then peel it off to lift the print.\n4. Place the tape on white paper to reveal the fingerprint.\n5. Use a magnifying glass to look for loops, whorls, and arches in the pattern.\n6. Collect prints from friends and family, then sort them by pattern type and compare.",
+    "what_you_learn": "Everyone has unique fingerprint ridges that fall into a few basic pattern types. This experiment demonstrates individual variation and how traits can be both inherited and unique.",
+    "order": 32,
+    "id": "cq-exp-032"
+  },
+  {
+    "title": "Bird Feeder Observation Journal",
+    "topic": "biology",
+    "difficulty": "Medium",
+    "materials": "Empty plastic bottle or cardboard tube\nBird seed\nString\nScissors\nNotebook and pen\nOptional: field guide or bird ID app",
+    "instructions": "1. With adult help, cut two small holes near the bottom of a plastic bottle and push a stick or spoon through to make perches.\n2. Cut small feeding openings above the perches and fill the bottle with bird seed.\n3. Tie string around the neck and hang the feeder from a tree branch or hook outdoors.\n4. Watch quietly from a window at the same time each day for one week.\n5. In your notebook, record the date, time, weather, and each bird species you see.\n6. At the end of the week, count how many different species visited and note which foods and times were most popular.",
+    "what_you_learn": "Different birds visit at different times and prefer different foods and perches. This experiment demonstrates observation skills, biodiversity, and how animals adapt their feeding behavior.",
+    "order": 33,
+    "id": "cq-exp-033"
+  },
+  {
+    "title": "Seed Dispersal Models",
+    "topic": "biology",
+    "difficulty": "Medium",
+    "materials": "Paper\nScissors\nPaper clips\nTape\nCotton or tissue\nVelcro or a sock, dried burrs\nSmall dried beans or beads",
+    "instructions": "1. Build a helicopter seed by cutting a paper strip, splitting the top into two wings, and adding a paper clip at the bottom.\n2. Build a fluffy seed by taping a light bead to a tuft of cotton so it can float on air.\n3. Build a hitchhiker seed by attaching a small hook or burr to a bead so it can cling to fabric.\n4. Drop the helicopter and fluffy seeds from the same height and watch how they travel.\n5. Press the hitchhiker seed against a sock and check whether it sticks.\n6. Record how far each model moves and which method spreads seeds farthest.",
+    "what_you_learn": "Plants spread their seeds using wind, animals, and other clever shapes to travel far from the parent. This experiment demonstrates seed dispersal strategies and how structure helps plants survive and reproduce.",
+    "order": 34,
+    "id": "cq-exp-034"
+  },
+  {
+    "title": "Bread Mold Growth Study",
+    "topic": "biology",
+    "difficulty": "Advanced",
+    "materials": "3 slices of bread\n3 sealable plastic bags\nWater spray or dropper\nLabels and marker\nNotebook",
+    "instructions": "1. Label three bags: dry, damp, and damp-dark.\n2. Place one dry bread slice in the first bag and seal it.\n3. Lightly spray or sprinkle a few drops of water on two other slices, then seal each in its own bag.\n4. Keep the dry bag and one damp bag on a warm counter, and put the second damp bag in a dark cupboard.\n5. Do not open the bags again, as mold spores should not be breathed in; only observe through the sealed plastic.\n6. Check each bag daily for one to two weeks, recording when mold appears and how much grows in each condition, then throw the sealed bags away without opening them.",
+    "what_you_learn": "Mold grows fastest where there is moisture and warmth, showing what microorganisms need to thrive. This experiment demonstrates decomposition and how environmental conditions control microbial growth.",
+    "order": 35,
+    "id": "cq-exp-035"
+  },
+  {
+    "title": "Balloon Lung Model",
+    "topic": "biology",
+    "difficulty": "Advanced",
+    "materials": "Clear plastic bottle, cut in half at the bottom (adult use)\n2 small balloons\n1 large balloon\nPlastic straw or Y-shaped tubing\nRubber band\nTape or modeling clay",
+    "instructions": "1. Ask an adult to cut off the bottom of a plastic bottle.\n2. Attach a small balloon to the end of a straw and lower it inside the bottle so the balloon hangs down and the straw sticks out the top; seal around the straw with clay.\n3. This small balloon inside represents a lung.\n4. Cut the neck off the large balloon and stretch the wide part tightly over the open bottom of the bottle, securing it with a rubber band. This is the diaphragm.\n5. Gently pull the stretched bottom balloon downward and watch the lung balloon inside inflate.\n6. Push the bottom balloon back up and watch the lung balloon deflate, then repeat to model breathing.",
+    "what_you_learn": "Pulling the diaphragm down lowers the pressure inside so air rushes in to fill the lung. This experiment demonstrates how breathing works and how air pressure drives inhalation and exhalation.",
+    "order": 36,
+    "id": "cq-exp-036"
+  },
+  {
+    "title": "Penny Cleaning Acid Test",
+    "topic": "chemistry",
+    "difficulty": "Beginner",
+    "materials": "Several dull, dirty pennies\nWhite vinegar (~50 ml)\nSalt (1 tsp)\nSmall bowl\nWater\nPaper towel",
+    "instructions": "1. Pour about 50 ml of vinegar into a small bowl and stir in one teaspoon of salt until it dissolves.\n2. Set aside one dirty penny so you can compare it later.\n3. Dip another penny halfway into the vinegar-salt mixture and hold it for about 20 seconds.\n4. Lift it out and compare the dipped half with the untouched half.\n5. Drop several more pennies fully into the mixture and wait 5 minutes.\n6. Rinse the pennies with water, dry them on a paper towel, and compare their shine to the untreated penny.",
+    "what_you_learn": "The acid in vinegar combined with salt dissolves the dull copper oxide coating and reveals shiny metal. This experiment demonstrates acid-base chemistry and how acids react with metal oxides.",
+    "order": 37,
+    "id": "cq-exp-037"
+  },
+  {
+    "title": "Homemade Polymer Slime",
+    "topic": "chemistry",
+    "difficulty": "Beginner",
+    "materials": "White school glue (~120 ml)\nWater (~120 ml)\nBaking soda (1/2 tsp)\nContact lens solution containing boric acid (~1 tbsp)\nFood coloring (optional)\nBowl and spoon",
+    "instructions": "1. Pour about 120 ml of white glue into a bowl.\n2. Stir in about 120 ml of water and a few drops of food coloring if you want.\n3. Mix in half a teaspoon of baking soda until fully combined.\n4. Add contact lens solution one tablespoon at a time, stirring after each addition.\n5. Keep stirring until the mixture pulls away from the bowl and becomes stretchy.\n6. Knead the slime with your hands for a minute, adding a tiny bit more solution if it is too sticky, then wash your hands when finished.",
+    "what_you_learn": "The contact lens solution links the glue molecules into long chains that trap the liquid, forming a stretchy polymer. This experiment demonstrates polymers and how cross-linking changes a material from liquid to gel.",
+    "order": 38,
+    "id": "cq-exp-038"
+  },
+  {
+    "title": "Lemon Juice Invisible Ink",
+    "topic": "chemistry",
+    "difficulty": "Medium",
+    "materials": "Lemon juice (~2 tbsp)\nWater (few drops)\nCotton swab or thin paintbrush\nWhite paper\nSmall bowl\nDesk lamp with an incandescent bulb or an iron (adult use)",
+    "instructions": "1. Mix about two tablespoons of lemon juice with a few drops of water in a small bowl.\n2. Dip a cotton swab into the mixture and write a secret message on white paper.\n3. Let the paper dry completely so the writing becomes invisible.\n4. Ask an adult to help with the heat step, as hot lamps and irons can burn.\n5. With an adult, hold the paper near a warm incandescent bulb or press it with a warm iron.\n6. Watch the hidden message turn brown and appear as the paper heats up.",
+    "what_you_learn": "Lemon juice weakens the paper and browns at a lower temperature than plain paper when heated. This experiment demonstrates oxidation and how heat can trigger a chemical color change.",
+    "order": 39,
+    "id": "cq-exp-039"
+  },
+  {
+    "title": "Balloon Gas Race: Pop Rocks vs Baking Soda",
+    "topic": "chemistry",
+    "difficulty": "Medium",
+    "materials": "2 small bottles\n2 balloons\nPop Rocks candy (1 pack)\nBaking soda (1 tsp)\nVinegar (~50 ml)\nSoda or carbonated water (~50 ml)\nFunnel or spoon",
+    "instructions": "1. Pour about 50 ml of vinegar into the first bottle.\n2. Use a funnel to add one teaspoon of baking soda into the first balloon.\n3. Pour about 50 ml of carbonated soda into the second bottle and add a pack of Pop Rocks into the second balloon.\n4. Stretch each balloon over its bottle without letting the contents fall in yet.\n5. Lift both balloons at the same time so the powder and candy drop into the liquids together.\n6. Watch both balloons inflate and record which one fills faster and larger.",
+    "what_you_learn": "The baking soda and vinegar reaction produces carbon dioxide quickly, while Pop Rocks release trapped carbon dioxide more slowly. This experiment demonstrates gas production and lets you compare the rate of two different reactions.",
+    "order": 40,
+    "id": "cq-exp-040"
+  },
+  {
+    "title": "Rock Candy Sugar Crystals",
+    "topic": "chemistry",
+    "difficulty": "Advanced",
+    "materials": "Sugar (~500 g)\nWater (~250 ml)\nWooden skewer or string\nClothespin\nTall glass or jar\nSaucepan (adult use)\nFood coloring (optional)",
+    "instructions": "1. Ask an adult to help, as this uses boiling water that can scald. An adult should handle the heat throughout.\n2. With an adult, heat 250 ml of water in a saucepan and stir in sugar a little at a time until no more will dissolve, about 500 g.\n3. Add a few drops of food coloring if desired, then let the syrup cool for 15 minutes.\n4. Dampen a skewer, roll it in a little dry sugar, and let it dry so crystals have a surface to grow on.\n5. Pour the cooled syrup into a glass and suspend the skewer with a clothespin so it does not touch the sides or bottom.\n6. Leave the glass undisturbed for about one week, checking daily as sugar crystals slowly grow on the skewer.",
+    "what_you_learn": "As the water slowly evaporates, dissolved sugar rejoins into solid crystals on the skewer. This experiment demonstrates solubility, supersaturation, and how crystals form from a solution over time.",
+    "order": 41,
+    "id": "cq-exp-041"
+  },
+  {
+    "title": "Kid-Safe Elephant Toothpaste",
+    "topic": "chemistry",
+    "difficulty": "Advanced",
+    "materials": "Empty plastic bottle\n3% hydrogen peroxide (~100 ml)\nDish soap (1 tbsp)\nWarm water (~1 tbsp)\nActive dry yeast (1 tbsp)\nFood coloring\nTray, safety goggles, gloves",
+    "instructions": "1. Ask an adult to supervise, and have everyone wear safety goggles, since hydrogen peroxide can irritate eyes and skin.\n2. Stand the bottle in the center of a tray to catch the foam.\n3. Pour about 100 ml of 3% hydrogen peroxide into the bottle, then add a squirt of dish soap and a few drops of food coloring.\n4. In a separate cup, stir one tablespoon of yeast into one tablespoon of warm water and wait one minute.\n5. Quickly pour the yeast mixture into the bottle and step back.\n6. Watch the foamy column push out of the bottle, and once it cools, wipe it up with water since it is just soapy water and yeast.",
+    "what_you_learn": "The yeast speeds up the breakdown of hydrogen peroxide into water and oxygen, and the soap traps the oxygen as foam. This experiment demonstrates a catalyzed decomposition reaction and how a catalyst speeds up chemical change.",
+    "order": 42,
+    "id": "cq-exp-042"
+  },
+  {
+    "title": "Spaghetti and Marshmallow Tower",
+    "topic": "engineering",
+    "difficulty": "Beginner",
+    "materials": "Uncooked spaghetti (~30 strands)\nMini marshmallows (~30)\nRuler\nFlat table",
+    "instructions": "1. Push marshmallows onto the ends of spaghetti strands to connect them.\n2. Build small triangles first, since triangles are strong shapes.\n3. Join the triangles into a base, then build upward.\n4. Keep the structure balanced so it does not lean or tip.\n5. Measure the height of your tower with a ruler once it stands on its own.\n6. Rebuild a second design and try to make it taller and more stable than the first.",
+    "what_you_learn": "Triangles distribute weight and make structures stable and strong. This experiment demonstrates structural engineering and how shape affects the stability of a building.",
+    "order": 43,
+    "id": "cq-exp-043"
+  },
+  {
+    "title": "Paper Airplane Design Testing",
+    "topic": "engineering",
+    "difficulty": "Beginner",
+    "materials": "Several sheets of paper\nMeasuring tape\nOpen hallway or room\nNotebook and pen\nPaper clips (optional)",
+    "instructions": "1. Fold three different paper airplane designs, such as a dart, a glider, and a wide-wing plane.\n2. Mark a starting line on the floor to throw from.\n3. Throw each plane three times using about the same force, and measure how far each flight goes.\n4. Record the distances for every throw in your notebook.\n5. Add a paper clip to the nose of one plane and test whether it flies farther or straighter.\n6. Compare your results and decide which design flew best and why.",
+    "what_you_learn": "Wing shape and weight balance change how far and straight a plane flies. This experiment demonstrates aerodynamics, lift, and the engineering practice of testing and improving designs.",
+    "order": 44,
+    "id": "cq-exp-044"
+  },
+  {
+    "title": "Egg Drop Lander",
+    "topic": "engineering",
+    "difficulty": "Medium",
+    "materials": "Raw egg\nCotton balls, sponges, or bubble wrap\nSmall box or plastic cup\nTape\nStraws or craft sticks\nPlastic bag\nMeasuring tape",
+    "instructions": "1. Design a container that will protect a raw egg from a fall using cushioning and supports.\n2. Wrap the egg in cotton balls, sponge, or bubble wrap and place it inside a box or cup.\n3. Add straws or craft sticks as a frame to absorb impact, and tape everything securely.\n4. Optionally attach a plastic bag as a parachute to slow the fall.\n5. Drop the lander from about 2 meters over a safe outdoor surface.\n6. Open it and check whether the egg cracked, then adjust the design and test again from a greater height.",
+    "what_you_learn": "Cushioning and structure spread out the impact force and slow the egg's stop. This experiment demonstrates force, impulse, and how engineers design to protect fragile cargo.",
+    "order": 45,
+    "id": "cq-exp-045"
+  },
+  {
+    "title": "Straw Roller Coaster",
+    "topic": "engineering",
+    "difficulty": "Medium",
+    "materials": "Paper straws or bendy straws (~20)\nTape\nCardboard base\nSmall marble or bead\nScissors",
+    "instructions": "1. Tape a starting support to the cardboard base to hold the top of your track high.\n2. Cut straws lengthwise and tape them end to end to form a channel for the marble.\n3. Build a downhill slope from the starting height, then add gentle curves.\n4. Try adding a small hill or a curved turn, keeping each rise lower than the start.\n5. Roll a marble from the top and watch it travel the track.\n6. Adjust the slopes and supports until the marble completes the whole track smoothly.",
+    "what_you_learn": "The marble needs enough starting height to keep enough energy for every hill and curve. This experiment demonstrates energy conservation and the engineering trade-offs in designing a working track.",
+    "order": 46,
+    "id": "cq-exp-046"
+  },
+  {
+    "title": "Simple Pulley Lifting System",
+    "topic": "engineering",
+    "difficulty": "Advanced",
+    "materials": "String (~2 m)\n2 empty thread spools or small pulleys\nBroomstick or dowel between two chairs\nSmall bucket or cup\nWeights (coins or small toys)\nTape",
+    "instructions": "1. Rest a broomstick across the backs of two chairs to make a sturdy overhead bar.\n2. For a single fixed pulley, hang a spool on the bar and run string over it, tying a small bucket to one end.\n3. Add weights to the bucket and lift it by pulling the other end of the string, noticing the effort needed.\n4. Now set up a second spool attached to the bucket and thread the string down, around it, and back up to build a movable pulley system.\n5. Lift the same weight again and compare how hard you have to pull.\n6. Record how the pulling effort and the length of string pulled change between the two setups.",
+    "what_you_learn": "A movable pulley lets you lift a load with less force but requires pulling more string. This experiment demonstrates mechanical advantage and how simple machines trade force for distance.",
+    "order": 47,
+    "id": "cq-exp-047"
+  },
+  {
+    "title": "Cardboard Automaton with Cams",
+    "topic": "engineering",
+    "difficulty": "Advanced",
+    "materials": "Cardboard box\nWooden skewers or dowels\nHot glue or strong tape (adult use for hot glue)\nCardboard or bottle caps for cams\nStraws\nScissors\nSmall paper figure",
+    "instructions": "1. Cut holes in the top and sides of the box so a skewer can pass through as a turning handle axle.\n2. Push straws through the side holes to act as smooth bearings, then slide a skewer through as the crank axle.\n3. Cut a round or egg-shaped cam from cardboard or use a bottle cap and attach it to the axle inside the box.\n4. Stand a vertical skewer through the top hole so its bottom rests on the cam, with a paper figure taped on top.\n5. Ask an adult to help with any hot glue, as it can burn.\n6. Turn the crank and watch the cam push the vertical rod up and down, making the figure bob, then try different cam shapes to change the motion.",
+    "what_you_learn": "The rotating cam converts spinning motion into up-and-down motion of the follower rod. This experiment demonstrates mechanisms and how cams transform one type of motion into another.",
+    "order": 48,
+    "id": "cq-exp-048"
   }
 ]

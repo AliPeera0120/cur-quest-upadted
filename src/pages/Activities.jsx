@@ -28,10 +28,11 @@ const activityTypes = [
 ];
 
 const codeCourses = [
-  { id: 'python', label: 'Python', icon: '🐍', color: 'bg-[#3776AB]', available: true },
-  { id: 'java', label: 'Java', icon: '☕', color: 'bg-[#ED8B00]', available: false },
-  { id: 'html-css', label: 'HTML/CSS', icon: '🌐', color: 'bg-[#E34F26]', available: false },
+  { id: 'python', label: 'Python', language: 'Python', color: 'bg-[#3776AB]', available: true },
+  { id: 'java', label: 'Java', language: 'Java', color: 'bg-[#ED8B00]', available: true },
+  { id: 'html-css', label: 'HTML/CSS', language: 'HTML/CSS', color: 'bg-[#E34F26]', available: true },
 ];
+const courseLanguage = (id) => codeCourses.find((c) => c.id === id)?.language;
 
 export default function Activities() {
   const [mainTab, setMainTab] = useState('hands-on');
@@ -66,11 +67,12 @@ export default function Activities() {
   });
 
   const filteredVirtualActivities = uniqueVirtualActivities.filter((act) => {
+    const matchesCourse = act.language === courseLanguage(selectedCourse);
     const matchesType = selectedActivityType === 'all' || act.activity_type === selectedActivityType;
-    const matchesSearch = !searchQuery || 
+    const matchesSearch = !searchQuery ||
       act.title?.toLowerCase().includes(searchQuery.toLowerCase()) ||
       act.description?.toLowerCase().includes(searchQuery.toLowerCase());
-    return matchesType && matchesSearch;
+    return matchesCourse && matchesType && matchesSearch;
   });
 
   return (
@@ -193,7 +195,6 @@ export default function Activities() {
                         : 'bg-gray-100 text-gray-400 cursor-not-allowed'
                   }`}
                 >
-                  <span className="text-xl">{course.icon}</span>
                   <span>{course.label}</span>
                   {!course.available && (
                     <Badge variant="outline" className="ml-2 text-xs">Coming Soon</Badge>
@@ -202,7 +203,7 @@ export default function Activities() {
               ))}
             </div>
 
-            {selectedCourse === 'python' && (
+            {(
               <>
                 {/* Type Filters */}
                 <div className="mb-8">
@@ -248,20 +249,6 @@ export default function Activities() {
                   </div>
                 )}
               </>
-            )}
-
-            {selectedCourse !== 'python' && (
-              <div className="text-center py-20">
-                <div className="text-6xl mb-4">
-                  {codeCourses.find(c => c.id === selectedCourse)?.icon}
-                </div>
-                <h3 className="text-2xl font-bold text-[#055b8e] mb-2" style={{ fontFamily: 'Nunito, sans-serif' }}>
-                  {codeCourses.find(c => c.id === selectedCourse)?.label} Course
-                </h3>
-                <p className="text-gray-500 text-lg">
-                  Coming soon! Check back later for lessons.
-                </p>
-              </div>
             )}
           </TabsContent>
         </Tabs>

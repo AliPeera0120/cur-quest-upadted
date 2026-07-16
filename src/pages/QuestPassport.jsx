@@ -8,16 +8,31 @@ import { Progress } from '@/components/ui/progress';
 import {
   Rocket, BookOpen, FlaskConical, Code, Award, Stamp, Brain,
   ChevronRight, RotateCcw, Sparkles, Check, X as XIcon,
+  Atom, Beaker, Sprout, Wrench, Microscope, Bot, Bird, Zap, Star, Rabbit,
+  Coins,
 } from 'lucide-react';
 import { motion, AnimatePresence } from 'framer-motion';
 
-const AVATARS = ['🧑‍🔬', '👩‍🔬', '👨‍🚀', '👩‍🚀', '🧑‍💻', '🦖', '🤖', '🦉', '🐙', '🦊', '⚡', '🌟'];
+// Icon-based avatars (id stored in profile), each with an accent color
+const AVATARS = [
+  { id: 'blue', icon: Microscope, color: '#055b8e' },
+  { id: 'orange', icon: FlaskConical, color: '#ed7219' },
+  { id: 'green', icon: Sprout, color: '#22c55e' },
+  { id: 'purple', icon: Atom, color: '#8b5cf6' },
+  { id: 'red', icon: Beaker, color: '#ef4444' },
+  { id: 'teal', icon: Bot, color: '#14b8a6' },
+  { id: 'sky', icon: Bird, color: '#0ea5e9' },
+  { id: 'amber', icon: Zap, color: '#f59e0b' },
+  { id: 'pink', icon: Star, color: '#ec4899' },
+  { id: 'slate', icon: Rabbit, color: '#64748b' },
+];
+const avatarById = (id) => AVATARS.find((a) => a.id === id) || AVATARS[0];
 
 const TOPIC_META = {
-  physics: { label: 'Physics', emoji: '🎢', color: 'bg-blue-500' },
-  chemistry: { label: 'Chemistry', emoji: '🧪', color: 'bg-purple-500' },
-  biology: { label: 'Biology', emoji: '🌱', color: 'bg-green-500' },
-  engineering: { label: 'Engineering', emoji: '🏗️', color: 'bg-orange-500' },
+  physics: { label: 'Physics', icon: Atom, color: 'bg-blue-500', text: 'text-blue-600' },
+  chemistry: { label: 'Chemistry', icon: Beaker, color: 'bg-purple-500', text: 'text-purple-600' },
+  biology: { label: 'Biology', icon: Sprout, color: 'bg-green-500', text: 'text-green-600' },
+  engineering: { label: 'Engineering', icon: Wrench, color: 'bg-orange-500', text: 'text-orange-600' },
 };
 
 const QUIZ_LENGTH = 5;
@@ -27,7 +42,6 @@ function Quiz({ topic, onClose }) {
   const quest = useQuest();
   const questions = useMemo(() => {
     const bank = [...(quizzes[topic] || [])];
-    // shuffle
     for (let i = bank.length - 1; i > 0; i--) {
       const j = Math.floor(Math.random() * (i + 1));
       [bank[i], bank[j]] = [bank[j], bank[i]];
@@ -42,6 +56,7 @@ function Quiz({ topic, onClose }) {
 
   const q = questions[idx];
   const meta = TOPIC_META[topic];
+  const MetaIcon = meta.icon;
 
   const pick = (i) => {
     if (picked !== null) return;
@@ -74,8 +89,8 @@ function Quiz({ topic, onClose }) {
         onClick={(e) => e.stopPropagation()}
       >
         <div className={`${meta.color} text-white px-6 py-4 flex items-center justify-between`}>
-          <h3 className="font-bold text-lg" style={{ fontFamily: 'Nunito, sans-serif' }}>
-            {meta.emoji} {meta.label} Quiz
+          <h3 className="font-bold text-lg flex items-center gap-2" style={{ fontFamily: 'Nunito, sans-serif' }}>
+            <MetaIcon className="w-5 h-5" /> {meta.label} Quiz
           </h3>
           <button onClick={onClose} className="hover:bg-white/20 rounded-full p-1">
             <XIcon className="w-5 h-5" />
@@ -116,13 +131,9 @@ function Quiz({ topic, onClose }) {
             </div>
             <AnimatePresence>
               {picked !== null && (
-                <motion.div
-                  initial={{ opacity: 0, y: 8 }}
-                  animate={{ opacity: 1, y: 0 }}
-                  className="mt-4"
-                >
+                <motion.div initial={{ opacity: 0, y: 8 }} animate={{ opacity: 1, y: 0 }} className="mt-4">
                   <div className={`rounded-xl p-3.5 text-sm ${picked === q.answer ? 'bg-green-50 text-green-800' : 'bg-orange-50 text-orange-800'}`}>
-                    <strong>{picked === q.answer ? 'Correct! ' : 'Not quite. '}</strong>
+                    <strong>{picked === q.answer ? 'Correct. ' : 'Not quite. '}</strong>
                     {q.explain}
                   </div>
                   <Button onClick={advance} className="w-full mt-4 bg-[#055b8e] hover:bg-[#044a73] rounded-xl gap-1">
@@ -134,22 +145,18 @@ function Quiz({ topic, onClose }) {
           </div>
         ) : (
           <div className="p-8 text-center">
-            <div className="text-6xl mb-3">
-              {score === questions.length ? '🏅' : score >= questions.length * 0.6 ? '🎉' : '💪'}
-            </div>
+            <Award className={`w-14 h-14 mx-auto mb-3 ${score === questions.length ? 'text-yellow-500' : 'text-[#055b8e]'}`} />
             <h4 className="text-2xl font-bold text-[#055b8e] mb-1" style={{ fontFamily: 'Nunito, sans-serif' }}>
               {score} / {questions.length}
             </h4>
             <p className="text-gray-500 text-sm mb-6">
               {score === questions.length
-                ? 'Perfect score! You really know your stuff.'
+                ? 'Perfect score. You really know your stuff.'
                 : score >= questions.length * 0.6
-                  ? 'Nice work! Review the experiments and try for a perfect score.'
-                  : 'Keep exploring! Try the hands-on experiments, then quiz again.'}
+                  ? 'Nice work. Review the experiments and try for a perfect score.'
+                  : 'Keep exploring. Try the hands-on experiments, then quiz again.'}
             </p>
-            <div className="flex gap-3 justify-center">
-              <Button onClick={onClose} variant="outline" className="rounded-xl">Done</Button>
-            </div>
+            <Button onClick={onClose} variant="outline" className="rounded-xl">Done</Button>
           </div>
         )}
       </motion.div>
@@ -184,6 +191,9 @@ export default function QuestPassport() {
     quest.completedActivities.length +
     quest.readPosts.length;
 
+  const Avatar = avatarById(quest.avatar);
+  const AvatarIcon = Avatar.icon;
+
   return (
     <div className="min-h-screen bg-gray-50">
       {/* Hero */}
@@ -195,7 +205,7 @@ export default function QuestPassport() {
             className="text-3xl sm:text-4xl font-bold mb-2"
             style={{ fontFamily: 'Nunito, sans-serif' }}
           >
-            Quest Passport 🛂
+            Quest Passport
           </motion.h1>
           <motion.p
             initial={{ opacity: 0, y: 20 }}
@@ -204,7 +214,7 @@ export default function QuestPassport() {
             className="text-white/80 max-w-2xl mx-auto"
           >
             Your STEM learning journey, all in one place. Do experiments, finish lessons,
-            read posts, ace quizzes — earn XP, level up, and collect badges!
+            read posts, and ace quizzes to earn XP, level up, and collect badges.
           </motion.p>
         </div>
       </div>
@@ -215,27 +225,34 @@ export default function QuestPassport() {
           {editingProfile ? (
             <div className="max-w-md">
               <h2 className="text-xl font-bold text-[#055b8e] mb-4" style={{ fontFamily: 'Nunito, sans-serif' }}>
-                {quest.name ? 'Edit your explorer profile' : 'Create your explorer profile!'}
+                {quest.name ? 'Edit your explorer profile' : 'Create your explorer profile'}
               </h2>
               <Input
-                placeholder="Your explorer name..."
+                placeholder="Your explorer name"
                 value={draftName}
                 onChange={(e) => setDraftName(e.target.value)}
                 maxLength={20}
                 className="rounded-xl mb-4"
               />
               <div className="flex flex-wrap gap-2 mb-5">
-                {AVATARS.map((a) => (
-                  <button
-                    key={a}
-                    onClick={() => setDraftAvatar(a)}
-                    className={`text-2xl w-11 h-11 rounded-xl border-2 transition-all ${
-                      draftAvatar === a ? 'border-[#ed7219] bg-[#ed7219]/10 scale-110' : 'border-gray-200 hover:border-gray-300'
-                    }`}
-                  >
-                    {a}
-                  </button>
-                ))}
+                {AVATARS.map((a) => {
+                  const Icon = a.icon;
+                  return (
+                    <button
+                      key={a.id}
+                      onClick={() => setDraftAvatar(a.id)}
+                      className={`w-11 h-11 rounded-xl border-2 flex items-center justify-center transition-all ${
+                        draftAvatar === a.id ? 'scale-110' : 'opacity-70 hover:opacity-100'
+                      }`}
+                      style={{
+                        borderColor: draftAvatar === a.id ? a.color : '#e5e7eb',
+                        backgroundColor: draftAvatar === a.id ? `${a.color}1a` : 'transparent',
+                      }}
+                    >
+                      <Icon className="w-5 h-5" style={{ color: a.color }} />
+                    </button>
+                  );
+                })}
               </div>
               <Button
                 onClick={() => {
@@ -250,13 +267,18 @@ export default function QuestPassport() {
           ) : (
             <div className="flex flex-col lg:flex-row lg:items-center gap-6">
               <div className="flex items-center gap-4">
-                <div className="text-6xl">{quest.avatar}</div>
+                <div
+                  className="w-16 h-16 rounded-2xl flex items-center justify-center shrink-0"
+                  style={{ backgroundColor: `${Avatar.color}1a` }}
+                >
+                  <AvatarIcon className="w-8 h-8" style={{ color: Avatar.color }} />
+                </div>
                 <div>
                   <h2 className="text-2xl font-bold text-gray-800" style={{ fontFamily: 'Nunito, sans-serif' }}>
                     {quest.name}
                   </h2>
                   <p className="text-[#055b8e] font-semibold">
-                    {quest.level.emoji} Level {quest.level.level} — {quest.level.name}
+                    Level {quest.level.level} — {quest.level.name}
                   </p>
                   <button
                     onClick={() => { setDraftName(quest.name); setDraftAvatar(quest.avatar); setEditingProfile(true); }}
@@ -270,7 +292,7 @@ export default function QuestPassport() {
                 <div className="flex justify-between text-sm font-semibold mb-1.5">
                   <span className="text-gray-600">{quest.xp} XP</span>
                   <span className="text-gray-400">
-                    {quest.next ? `${quest.next.minXp - quest.xp} XP to ${quest.next.name} ${quest.next.emoji}` : 'Max level reached! 🏆'}
+                    {quest.next ? `${quest.next.minXp - quest.xp} XP to ${quest.next.name}` : 'Max level reached'}
                   </span>
                 </div>
                 <Progress value={levelPct} className="h-3" />
@@ -279,25 +301,29 @@ export default function QuestPassport() {
                     <span
                       key={l.level}
                       title={l.name}
-                      className={`text-lg ${quest.level.level >= l.level ? '' : 'grayscale opacity-30'}`}
+                      className={`text-xs font-bold ${quest.level.level >= l.level ? 'text-[#055b8e]' : 'text-gray-300'}`}
                     >
-                      {l.emoji}
+                      {l.level}
                     </span>
                   ))}
                 </div>
               </div>
-              <div className="grid grid-cols-3 gap-3 text-center">
-                <div className="bg-blue-50 rounded-2xl px-4 py-3">
-                  <div className="text-2xl font-bold text-[#055b8e]">{doneCount}</div>
-                  <div className="text-xs text-gray-500 font-medium">Quests Done</div>
+              <div className="grid grid-cols-4 gap-3 text-center">
+                <div className="bg-blue-50 rounded-2xl px-3 py-3">
+                  <div className="text-xl font-bold text-[#055b8e]">{doneCount}</div>
+                  <div className="text-xs text-gray-500 font-medium">Quests</div>
                 </div>
-                <div className="bg-orange-50 rounded-2xl px-4 py-3">
-                  <div className="text-2xl font-bold text-[#ed7219]">{quest.badges.length}</div>
+                <div className="bg-orange-50 rounded-2xl px-3 py-3">
+                  <div className="text-xl font-bold text-[#ed7219]">{quest.badges.length}</div>
                   <div className="text-xs text-gray-500 font-medium">Badges</div>
                 </div>
-                <div className="bg-green-50 rounded-2xl px-4 py-3">
-                  <div className="text-2xl font-bold text-green-600">{quest.bestStreak}</div>
-                  <div className="text-xs text-gray-500 font-medium">Best Streak</div>
+                <div className="bg-yellow-50 rounded-2xl px-3 py-3">
+                  <div className="text-xl font-bold text-yellow-600">{quest.coins.toLocaleString()}</div>
+                  <div className="text-xs text-gray-500 font-medium">Coins</div>
+                </div>
+                <div className="bg-green-50 rounded-2xl px-3 py-3">
+                  <div className="text-xl font-bold text-green-600">{quest.bestStreak}</div>
+                  <div className="text-xs text-gray-500 font-medium">Streak</div>
                 </div>
               </div>
             </div>
@@ -314,10 +340,13 @@ export default function QuestPassport() {
               {Object.entries(TOPIC_META).map(([topic, meta]) => {
                 const total = quest.totals.topicTotals[topic] || 0;
                 const done = expDoneByTopic[topic] || 0;
+                const MetaIcon = meta.icon;
                 return (
                   <div key={topic}>
                     <div className="flex justify-between text-sm font-semibold mb-1.5">
-                      <span className="text-gray-700">{meta.emoji} {meta.label}</span>
+                      <span className="text-gray-700 flex items-center gap-1.5">
+                        <MetaIcon className={`w-4 h-4 ${meta.text}`} /> {meta.label}
+                      </span>
                       <span className="text-gray-400">{done}/{total}</span>
                     </div>
                     <div className="h-2.5 bg-gray-100 rounded-full overflow-hidden">
@@ -347,28 +376,29 @@ export default function QuestPassport() {
               <Brain className="w-5 h-5" /> Knowledge Quizzes
             </h3>
             <p className="text-xs text-gray-500 mb-5">
-              5 questions each. Earn 5 XP per correct answer, +15 for a perfect score. Retake anytime to beat your best!
+              Five questions each. Earn XP for correct answers, plus a bonus for a perfect score. Retake anytime to beat your best.
             </p>
             <div className="grid grid-cols-2 gap-3">
               {Object.entries(TOPIC_META).map(([topic, meta]) => {
                 const best = quest.quizBest[topic];
+                const MetaIcon = meta.icon;
                 return (
                   <button
                     key={topic}
                     onClick={() => setQuizTopic(topic)}
                     className="rounded-2xl border-2 border-gray-200 hover:border-[#ed7219] p-4 text-left transition-all group"
                   >
-                    <div className="text-2xl mb-1">{meta.emoji}</div>
+                    <MetaIcon className={`w-6 h-6 mb-1 ${meta.text}`} />
                     <div className="font-bold text-gray-800 text-sm" style={{ fontFamily: 'Nunito, sans-serif' }}>
                       {meta.label}
                     </div>
                     <div className="text-xs mt-1">
                       {best ? (
                         <span className={best.score === best.total ? 'text-green-600 font-semibold' : 'text-gray-500'}>
-                          Best: {best.score}/{best.total} {best.score === best.total && '💯'}
+                          Best: {best.score}/{best.total}
                         </span>
                       ) : (
-                        <span className="text-[#ed7219] font-semibold group-hover:underline">Take quiz →</span>
+                        <span className="text-[#ed7219] font-semibold group-hover:underline">Take quiz</span>
                       )}
                     </div>
                   </button>
@@ -384,24 +414,25 @@ export default function QuestPassport() {
             <Award className="w-5 h-5" /> Badge Collection
             <span className="text-sm font-medium text-gray-400">({quest.badges.length}/{BADGES.length})</span>
           </h3>
-          <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-6 gap-3">
+          <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5 gap-3">
             {BADGES.map((b) => {
               const earned = quest.badges.includes(b.id);
               return (
                 <div
                   key={b.id}
-                  title={b.desc}
-                  className={`rounded-2xl border-2 p-3 text-center transition-all ${
+                  className={`rounded-2xl border-2 p-4 transition-all ${
                     earned
                       ? 'border-[#ed7219]/40 bg-gradient-to-b from-orange-50 to-white shadow-sm'
-                      : 'border-gray-100 bg-gray-50 grayscale opacity-50'
+                      : 'border-gray-100 bg-gray-50 opacity-60'
                   }`}
                 >
-                  <div className="text-3xl mb-1">{b.emoji}</div>
+                  <div className={`w-9 h-9 rounded-xl flex items-center justify-center mb-2 ${earned ? 'bg-[#ed7219]/15' : 'bg-gray-200'}`}>
+                    <Award className={`w-5 h-5 ${earned ? 'text-[#ed7219]' : 'text-gray-400'}`} />
+                  </div>
                   <div className="text-xs font-bold text-gray-700 leading-tight" style={{ fontFamily: 'Nunito, sans-serif' }}>
                     {b.name}
                   </div>
-                  <div className="text-[10px] text-gray-400 mt-1 leading-tight">{b.desc}</div>
+                  <div className="text-[11px] text-gray-400 mt-1 leading-tight">{b.desc}</div>
                 </div>
               );
             })}
@@ -416,8 +447,8 @@ export default function QuestPassport() {
             </h3>
             {Object.keys(quest.completedExperiments).length === 0 ? (
               <p className="text-sm text-gray-400">
-                No stamps yet! Open any experiment on the Activities page and tap
-                <strong> "Stamp my passport"</strong> when you've done it.
+                No stamps yet. Open any experiment on the Activities page and tap
+                <strong> "Stamp my passport"</strong> when you have done it.
               </p>
             ) : (
               <div className="flex flex-wrap gap-2">
@@ -425,13 +456,14 @@ export default function QuestPassport() {
                   const e = experiments.find((x) => x.id === id);
                   if (!e) return null;
                   const meta = TOPIC_META[e.topic];
+                  const MetaIcon = meta?.icon || FlaskConical;
                   return (
                     <div
                       key={id}
-                      className="rounded-xl border-2 border-dashed border-gray-300 px-3 py-2 text-xs font-semibold text-gray-600 rotate-[-1deg] hover:rotate-0 transition-transform"
+                      className="rounded-xl border-2 border-dashed border-gray-300 px-3 py-2 text-xs font-semibold text-gray-600 flex items-center gap-1.5 rotate-[-1deg] hover:rotate-0 transition-transform"
                       style={{ fontFamily: 'Nunito, sans-serif' }}
                     >
-                      {meta?.emoji} {e.title}
+                      <MetaIcon className={`w-3.5 h-3.5 ${meta?.text || ''}`} /> {e.title}
                     </div>
                   );
                 })}
@@ -444,13 +476,20 @@ export default function QuestPassport() {
               <Rocket className="w-5 h-5" /> Recent Activity
             </h3>
             {quest.log.length === 0 ? (
-              <p className="text-sm text-gray-400">Your XP history will appear here. Go explore!</p>
+              <p className="text-sm text-gray-400">Your XP and coin history will appear here. Go explore.</p>
             ) : (
               <div className="space-y-2 max-h-64 overflow-y-auto pr-1">
                 {quest.log.map((entry, i) => (
                   <div key={i} className="flex items-center justify-between text-sm bg-gray-50 rounded-xl px-3 py-2">
                     <span className="text-gray-600 truncate pr-3">{entry.label}</span>
-                    <span className="font-bold text-[#ed7219] shrink-0">+{entry.xp} XP</span>
+                    <span className="flex items-center gap-2 shrink-0">
+                      {entry.xp > 0 && <span className="font-bold text-[#ed7219]">+{entry.xp} XP</span>}
+                      {entry.coins > 0 && (
+                        <span className="font-bold text-yellow-600 flex items-center gap-0.5">
+                          <Coins className="w-3.5 h-3.5" />{entry.coins}
+                        </span>
+                      )}
+                    </span>
                   </div>
                 ))}
               </div>
@@ -462,10 +501,10 @@ export default function QuestPassport() {
         <div className="text-center pb-4">
           {confirmReset ? (
             <div className="inline-flex items-center gap-3 text-sm">
-              <span className="text-gray-600">Erase all progress? This can't be undone.</span>
+              <span className="text-gray-600">Erase all progress? This cannot be undone.</span>
               <Button
                 size="sm" variant="destructive" className="rounded-xl"
-                onClick={() => { quest.resetProgress(); setConfirmReset(false); setEditingProfile(true); setDraftName(''); setDraftAvatar('🧑‍🔬'); }}
+                onClick={() => { quest.resetProgress(); setConfirmReset(false); setEditingProfile(true); setDraftName(''); setDraftAvatar('blue'); }}
               >
                 Yes, reset
               </Button>

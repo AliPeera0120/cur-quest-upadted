@@ -1,6 +1,6 @@
 import React from 'react';
 import { Badge } from '@/components/ui/badge';
-import { ChevronRight } from 'lucide-react';
+import { ChevronRight, BookOpen, Terminal, FolderGit2 } from 'lucide-react';
 import { motion } from 'framer-motion';
 
 const typeColors = {
@@ -10,12 +10,13 @@ const typeColors = {
 };
 
 const typeIcons = {
-  'Lesson': '📚',
-  'Program': '💻',
-  'Project': '🚀',
+  'Lesson': BookOpen,
+  'Program': Terminal,
+  'Project': FolderGit2,
 };
 
 export default function VirtualActivityCard({ activity, onClick, index = 0 }) {
+  const TypeIcon = typeIcons[activity.activity_type] || BookOpen;
   return (
     <motion.div
       initial={{ opacity: 0, y: 20 }}
@@ -27,15 +28,15 @@ export default function VirtualActivityCard({ activity, onClick, index = 0 }) {
       {/* Header */}
       <div className="bg-gradient-to-r from-[#055b8e]/5 to-[#ed7219]/5 p-4 flex items-center justify-between gap-2">
         <div className="flex items-center gap-2">
-          <Badge className={`${typeColors[activity.activity_type]} text-white`}>
-            {typeIcons[activity.activity_type]} {activity.activity_type}
+          <Badge className={`${typeColors[activity.activity_type]} text-white gap-1`}>
+            <TypeIcon className="w-3.5 h-3.5" /> {activity.activity_type}
           </Badge>
         </div>
       </div>
       
       <div className="p-5">
         <div className="text-sm font-medium text-[#3776AB] mb-1">
-          Python - {activity.activity_type} {activity.order}
+          {activity.language} - {activity.activity_type}
         </div>
         <h3 
           className="font-bold text-[#055b8e] text-xl mb-2 group-hover:text-[#ed7219] transition-colors"

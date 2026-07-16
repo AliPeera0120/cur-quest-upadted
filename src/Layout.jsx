@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
 import { createPageUrl } from './utils';
-import { Menu, X, Instagram } from 'lucide-react';
+import { Menu, X, Instagram, Heart } from 'lucide-react';
 import { motion } from 'framer-motion';
 import { Button } from '@/components/ui/button';
 
@@ -12,6 +12,7 @@ export default function Layout({ children, currentPageName }) {
     { name: 'Home', page: 'Home' },
     { name: 'Activities', page: 'Activities' },
     { name: 'Playground', page: 'PhysicsPlayground' },
+    { name: 'Science Lab', page: 'ScienceLab' },
     { name: 'Passport', page: 'QuestPassport' },
     { name: 'Events', page: 'Events' },
     { name: '5 Minutes of STEM', page: 'ThisWeekInSTEM' },
@@ -46,7 +47,8 @@ export default function Layout({ children, currentPageName }) {
         whileHover={{ scale: 1.08 }}
         style={{ fontFamily: 'Nunito, sans-serif' }}
       >
-        <span className="text-sm">💛 Donate Now</span>
+        <Heart className="w-5 h-5" />
+        <span className="text-sm">Donate Now</span>
       </motion.a>
 
       <style>{`

@@ -258,5 +258,245 @@
     "content": "## Final Project: Task Manager\n\nBuild a complete CLI application with:\n- Functions\n- Loops\n- Conditionals\n- Data structures\n- Input validation\n\n## Complete Implementation\n\n```python\nimport datetime\n\ntasks = []\n\ndef add_task():\n    title = input(\"Task title: \").strip()\n    if not title:\n        print(\"Title cannot be empty!\")\n        return\n    \n    priority = input(\"Priority (high/medium/low): \").lower()\n    if priority not in ['high', 'medium', 'low']:\n        priority = 'medium'\n    \n    task = {\n        \"id\": len(tasks) + 1,\n        \"title\": title,\n        \"priority\": priority,\n        \"completed\": False,\n        \"created\": datetime.datetime.now().strftime(\"%Y-%m-%d %H:%M\")\n    }\n    tasks.append(task)\n    print(f\"✅ Task '{title}' added!\")\n\ndef view_tasks(show_completed=True):\n    if not tasks:\n        print(\"No tasks yet!\")\n        return\n    \n    print(\"\\n\" + \"=\"*50)\n    print(\"YOUR TASKS\")\n    print(\"=\"*50)\n    \n    for task in tasks:\n        if not show_completed and task['completed']:\n            continue\n        \n        status = \"✓\" if task['completed'] else \"○\"\n        priority_icon = {\"high\": \"🔴\", \"medium\": \"🟡\", \"low\": \"🟢\"}[task['priority']]\n        \n        print(f\"{task['id']}. [{status}] {priority_icon} {task['title']}\")\n        print(f\"   Created: {task['created']}\")\n    print(\"=\"*50)\n\ndef complete_task():\n    view_tasks(show_completed=False)\n    try:\n        task_id = int(input(\"Enter task ID to complete: \"))\n        for task in tasks:\n            if task['id'] == task_id:\n                task['completed'] = True\n                print(f\"✅ '{task['title']}' marked complete!\")\n                return\n        print(\"Task not found.\")\n    except ValueError:\n        print(\"Invalid ID.\")\n\ndef delete_task():\n    view_tasks()\n    try:\n        task_id = int(input(\"Enter task ID to delete: \"))\n        for i, task in enumerate(tasks):\n            if task['id'] == task_id:\n                removed = tasks.pop(i)\n                print(f\"🗑️ '{removed['title']}' deleted!\")\n                return\n        print(\"Task not found.\")\n    except ValueError:\n        print(\"Invalid ID.\")\n\ndef main():\n    print(\"\\n🎯 TASK MANAGER\")\n    print(\"Your personal productivity tool!\\n\")\n    \n    while True:\n        print(\"\\n1. Add Task\")\n        print(\"2. View All Tasks\")\n        print(\"3. View Pending Tasks\")\n        print(\"4. Complete Task\")\n        print(\"5. Delete Task\")\n        print(\"6. Exit\")\n        \n        choice = input(\"\\nChoose an option: \")\n        \n        if choice == \"1\":\n            add_task()\n        elif choice == \"2\":\n            view_tasks()\n        elif choice == \"3\":\n            view_tasks(show_completed=False)\n        elif choice == \"4\":\n            complete_task()\n        elif choice == \"5\":\n            delete_task()\n        elif choice == \"6\":\n            print(\"\\nGoodbye! Stay productive! 🚀\")\n            break\n        else:\n            print(\"Invalid option.\")\n\nif __name__ == \"__main__\":\n    main()\n```\n\n## What You've Learned\n- Complete program architecture\n- User input handling\n- Data management with dictionaries\n- Menu-driven interfaces\n- Error handling\n\n## Congratulations!\n\nBy completing this course, you:\n- Understand Python at a conceptual level\n- Write clean, maintainable code\n- Debug and reason about programs\n- Are prepared for advanced topics (OOP, files, APIs)\n\n**CuriosityQuest graduates are real coders!** 🎓",
     "order": 26,
     "id": "6966fb58e548b830753a4260"
+  },
+  {
+    "title": "Getting Started With Java",
+    "language": "Java",
+    "activity_type": "Lesson",
+    "difficulty": "Beginner",
+    "description": "Discover what makes Java power everything from Minecraft to Android, and write your very first Java program.",
+    "content": "## What Is Java?\n\nJava is one of the most popular programming languages in the world. It powers Android apps, Minecraft, banking systems, and huge websites. Java code is **compiled** into bytecode that runs on the **Java Virtual Machine (JVM)**, so the same program works on Windows, macOS, and Linux.\n\n## Installing the JDK\n\nThe **JDK (Java Development Kit)** contains everything you need to write and run Java.\n\n1. Go to **adoptium.net** and download the latest LTS release (Temurin)\n2. Run the installer with the default options\n3. Verify it worked in a terminal:\n\n```bash\njava --version     # shows the runtime version\njavac --version    # shows the compiler version\n```\n\n## Your First Program\n\nCreate a file named `HelloWorld.java`. In Java, the file name must match the class name.\n\n```java\npublic class HelloWorld {\n    public static void main(String[] args) {\n        System.out.println(\"Hello, world!\");\n        System.out.println(\"Welcome to CuriosityQuest\");\n    }\n}\n```\n\n## Compile and Run\n\n```bash\njavac HelloWorld.java   # creates HelloWorld.class\njava HelloWorld         # runs the program\n```\n\nEvery Java program starts at the **main method** and runs top to bottom.\n\n## Try It Yourself\n\nChange the program so it prints your name and your favorite hobby on two separate lines, then compile and run it again.",
+    "order": 101,
+    "id": "cq-java-01"
+  },
+  {
+    "title": "Variables & Data Types",
+    "language": "Java",
+    "activity_type": "Lesson",
+    "difficulty": "Beginner",
+    "description": "Learn how Java stores numbers, text, and true/false values, and how to convert between types with casting.",
+    "content": "## Variables in Java\n\nJava is **statically typed**: every variable declares its type up front, and that type never changes.\n\n```java\npublic class Variables {\n    public static void main(String[] args) {\n        int age = 13;              // whole numbers\n        double price = 4.99;       // decimal numbers\n        boolean isCoder = true;    // true or false\n        String name = \"Alex\";      // text (note the capital S)\n        char grade = 'A';          // a single character\n\n        System.out.println(name + \" is \" + age + \" years old.\");\n    }\n}\n```\n\n## Choosing the Right Type\n\n- **int** for counting things: scores, lives, loop counters\n- **double** for measurements and decimal math\n- **boolean** for yes/no questions\n- **String** for words and sentences\n\n## Casting Between Types\n\n**Casting** converts one type to another.\n\n```java\ndouble pi = 3.99;\nint rounded = (int) pi;        // 3 (the decimal part is cut off)\n\nint points = 7;\ndouble exact = points / 2.0;   // 3.5 (dividing by a double)\nint chopped = 7 / 2;           // 3 (int / int drops the decimal!)\n```\n\nWatch out: `int / int` always gives an int result, so `7 / 2` is `3`, not `3.5`.\n\n## Try It Yourself\n\nDeclare a `double` for your height in centimeters, cast it to an `int`, and print both values. Which one loses information?",
+    "order": 102,
+    "id": "cq-java-02"
+  },
+  {
+    "title": "Input & Output with Scanner",
+    "language": "Java",
+    "activity_type": "Lesson",
+    "difficulty": "Beginner",
+    "description": "Make your programs interactive by reading whatever the user types with the Scanner class.",
+    "content": "## Reading Input with Scanner\n\nThe **Scanner** class reads what the user types. It lives in the `java.util` package, so you must **import** it at the top of your file.\n\n```java\nimport java.util.Scanner;\n\npublic class Greeter {\n    public static void main(String[] args) {\n        Scanner input = new Scanner(System.in);\n\n        System.out.print(\"What is your name? \");\n        String name = input.nextLine();\n\n        System.out.print(\"How old are you? \");\n        int age = input.nextInt();\n\n        System.out.println(\"Hi \" + name + \"! Next year you will be \" + (age + 1) + \".\");\n        input.close();\n    }\n}\n```\n\n## Scanner Methods\n\n- `nextLine()` reads a whole line of text\n- `nextInt()` reads a whole number\n- `nextDouble()` reads a decimal number\n- `next()` reads a single word\n\n## A Common Trap\n\nAfter `nextInt()`, a leftover newline can confuse `nextLine()`. Fix it by adding one extra `nextLine()` call:\n\n```java\nint score = input.nextInt();\ninput.nextLine();                    // clears the leftover newline\nString comment = input.nextLine();   // now reads correctly\n```\n\n## print vs println\n\n- `System.out.print()` stays on the same line\n- `System.out.println()` moves to the next line\n\n## Try It Yourself\n\nWrite a program that asks for two numbers with `nextDouble()` and prints their sum, difference, and product.",
+    "order": 103,
+    "id": "cq-java-03"
+  },
+  {
+    "title": "Conditionals: if, else, switch",
+    "language": "Java",
+    "activity_type": "Lesson",
+    "difficulty": "Beginner",
+    "description": "Teach your programs to make decisions with if, else if, else, and switch statements.",
+    "content": "## Making Decisions\n\nPrograms use **conditionals** to choose between different paths.\n\n```java\npublic class Grades {\n    public static void main(String[] args) {\n        int score = 85;\n\n        if (score >= 90) {\n            System.out.println(\"A - Outstanding!\");\n        } else if (score >= 80) {\n            System.out.println(\"B - Great job!\");\n        } else if (score >= 70) {\n            System.out.println(\"C - Keep practicing!\");\n        } else {\n            System.out.println(\"Time to review!\");\n        }\n    }\n}\n```\n\n## Comparison and Logic\n\n```java\nint age = 14;\nboolean hasPermission = true;\n\nif (age >= 13 && hasPermission) {   // && means AND\n    System.out.println(\"Welcome!\");\n}\n```\n\nImportant: use `==` to compare numbers, but use `.equals()` to compare Strings:\n\n```java\nString answer = \"yes\";\nif (answer.equals(\"yes\")) {\n    System.out.println(\"Confirmed!\");\n}\n```\n\n## The switch Statement\n\n**switch** is a clean way to compare one value against many options.\n\n```java\nint day = 3;\nswitch (day) {\n    case 1: System.out.println(\"Monday\"); break;\n    case 2: System.out.println(\"Tuesday\"); break;\n    case 3: System.out.println(\"Wednesday\"); break;\n    default: System.out.println(\"Another day\");\n}\n```\n\nDo not forget `break`, or execution \"falls through\" into the next case.\n\n## Try It Yourself\n\nWrite a program that stores a temperature and prints \"hot\", \"warm\", or \"cold\" using if/else if/else.",
+    "order": 104,
+    "id": "cq-java-04"
+  },
+  {
+    "title": "Loops: for, while, do-while",
+    "language": "Java",
+    "activity_type": "Lesson",
+    "difficulty": "Medium",
+    "description": "Repeat actions automatically with for, while, and do-while loops instead of copying code.",
+    "content": "## Repeating with Loops\n\nLoops let you run code many times without copying and pasting.\n\n## The for Loop\n\nBest when you know how many times to repeat.\n\n```java\npublic class Loops {\n    public static void main(String[] args) {\n        for (int i = 1; i <= 5; i++) {\n            System.out.println(\"Count: \" + i);\n        }\n    }\n}\n```\n\nThe three parts: **start** (`int i = 1`), **condition** (`i <= 5`), **update** (`i++`).\n\n## The while Loop\n\nBest when you repeat until something changes.\n\n```java\nint lives = 3;\nwhile (lives > 0) {\n    System.out.println(\"Lives left: \" + lives);\n    lives--;\n}\nSystem.out.println(\"Game over!\");\n```\n\n## The do-while Loop\n\nRuns the body **at least once**, then checks the condition. Perfect for re-asking questions.\n\n```java\nScanner input = new Scanner(System.in);\nint number;\ndo {\n    System.out.print(\"Enter a positive number: \");\n    number = input.nextInt();\n} while (number <= 0);\n```\n\n## break and continue\n\n- **break** exits the loop immediately\n- **continue** skips ahead to the next repetition\n\n```java\nfor (int i = 1; i <= 10; i++) {\n    if (i % 2 == 0) continue;   // skip even numbers\n    System.out.println(i);      // prints 1, 3, 5, 7, 9\n}\n```\n\n## Try It Yourself\n\nUse a for loop to print the multiplication table for 7, from `7 x 1 = 7` up to `7 x 10 = 70`.",
+    "order": 105,
+    "id": "cq-java-05"
+  },
+  {
+    "title": "Methods & Parameters",
+    "language": "Java",
+    "activity_type": "Lesson",
+    "difficulty": "Medium",
+    "description": "Organize your code into reusable methods that take inputs and return results.",
+    "content": "## Why Methods?\n\nA **method** is a named block of code you can reuse. Instead of repeating yourself, you write the logic once and call it whenever you need it.\n\n```java\npublic class MethodsDemo {\n    public static void main(String[] args) {\n        greet(\"Maya\");\n        greet(\"Sam\");\n\n        int total = add(3, 4);\n        System.out.println(\"3 + 4 = \" + total);\n        System.out.println(\"Area: \" + rectangleArea(5.0, 2.5));\n    }\n\n    static void greet(String name) {\n        System.out.println(\"Hello, \" + name + \"!\");\n    }\n\n    static int add(int a, int b) {\n        return a + b;\n    }\n\n    static double rectangleArea(double width, double height) {\n        return width * height;\n    }\n}\n```\n\n## The Anatomy of a Method\n\n- **Return type**: what the method gives back (`int`, `double`, or `void` for nothing)\n- **Name**: use lowerCamelCase, like `rectangleArea`\n- **Parameters**: the inputs listed in parentheses\n- **return**: sends a value back and ends the method\n\n## Parameters vs Arguments\n\n**Parameters** are the placeholders in the definition (`String name`). **Arguments** are the real values you pass in (`\"Maya\"`). Java matches them by position.\n\n## Try It Yourself\n\nWrite a method `static boolean isEven(int n)` that returns true when a number is even, then test it in `main` with several different numbers.",
+    "order": 106,
+    "id": "cq-java-06"
+  },
+  {
+    "title": "Arrays & ArrayLists",
+    "language": "Java",
+    "activity_type": "Lesson",
+    "difficulty": "Medium",
+    "description": "Store whole collections of data with fixed-size arrays and flexible, growable ArrayLists.",
+    "content": "## Arrays: Fixed-Size Lists\n\nAn **array** stores many values of the same type. Its size is fixed when it is created.\n\n```java\npublic class ArraysDemo {\n    public static void main(String[] args) {\n        int[] scores = {90, 85, 78, 92};\n\n        System.out.println(scores[0]);       // 90 (first item)\n        System.out.println(scores.length);   // 4\n\n        int sum = 0;\n        for (int i = 0; i < scores.length; i++) {\n            sum += scores[i];\n        }\n        System.out.println(\"Average: \" + (sum / (double) scores.length));\n    }\n}\n```\n\nArray positions start at **index 0**. Going past the end crashes with an `ArrayIndexOutOfBoundsException`.\n\n## The Enhanced for Loop\n\nA shortcut for visiting every element:\n\n```java\nfor (int score : scores) {\n    System.out.println(score);\n}\n```\n\n## ArrayList: A List That Grows\n\nAn **ArrayList** can grow and shrink as you add and remove items. It stores objects, so use `Integer` instead of `int`.\n\n```java\nimport java.util.ArrayList;\n\nArrayList<String> players = new ArrayList<>();\nplayers.add(\"Ava\");\nplayers.add(\"Leo\");\nplayers.add(\"Zoe\");\n\nplayers.remove(\"Leo\");\nSystem.out.println(players.get(0));           // Ava\nSystem.out.println(players.size());           // 2\nSystem.out.println(players.contains(\"Zoe\"));  // true\n```\n\n## Try It Yourself\n\nCreate an ArrayList of your five favorite foods, remove one, then print each remaining item with an enhanced for loop.",
+    "order": 107,
+    "id": "cq-java-07"
+  },
+  {
+    "title": "Program: Guess-the-Number Game",
+    "language": "Java",
+    "activity_type": "Program",
+    "difficulty": "Medium",
+    "description": "Build a complete guessing game where the computer picks a secret number and gives you hot-or-cold hints.",
+    "content": "## Build the Game\n\nYou will build a classic: the computer picks a secret number from 1 to 100, and the player guesses until they find it. The game gives \"higher\" or \"lower\" hints and counts the guesses.\n\n## Complete Starter Code\n\n```java\nimport java.util.Random;\nimport java.util.Scanner;\n\npublic class GuessTheNumber {\n    public static void main(String[] args) {\n        Random random = new Random();\n        Scanner input = new Scanner(System.in);\n\n        int secret = random.nextInt(100) + 1;  // 1 to 100\n        int guesses = 0;\n        int guess = 0;\n\n        System.out.println(\"I am thinking of a number from 1 to 100.\");\n\n        while (guess != secret) {\n            System.out.print(\"Your guess: \");\n            guess = input.nextInt();\n            guesses++;\n\n            if (guess < secret) {\n                System.out.println(\"Higher!\");\n            } else if (guess > secret) {\n                System.out.println(\"Lower!\");\n            } else {\n                System.out.println(\"Correct in \" + guesses + \" guesses!\");\n            }\n        }\n        input.close();\n    }\n}\n```\n\n## How It Works\n\n- `random.nextInt(100) + 1` picks a random int from 1 to 100\n- The **while loop** repeats until the guess matches the secret\n- `guesses++` counts every attempt\n\n## Stretch Goals\n\n1. Reject guesses outside 1 to 100 without counting them\n2. Rate the player: 7 guesses or fewer earns \"Mind reader!\"\n3. Ask \"Play again? (yes/no)\" and loop the whole game\n\n## What You'll Learn\n\n- Combining loops, conditionals, and Scanner in one program\n- Using the Random class\n- Tracking state with counter variables",
+    "order": 108,
+    "id": "cq-java-08"
+  },
+  {
+    "title": "Classes & Objects",
+    "language": "Java",
+    "activity_type": "Lesson",
+    "difficulty": "Advanced",
+    "description": "Unlock object-oriented programming by designing your own classes with fields, constructors, and methods.",
+    "content": "## Objects: Data + Behavior\n\nA **class** is a blueprint. An **object** is a real thing built from that blueprint. One `Dog` class can create many dog objects, each with its own name and age.\n\n```java\npublic class Dog {\n    // Fields: the data every Dog has\n    String name;\n    int age;\n\n    // Constructor: runs when a Dog is created\n    public Dog(String name, int age) {\n        this.name = name;\n        this.age = age;\n    }\n\n    // Methods: what a Dog can do\n    public void bark() {\n        System.out.println(name + \" says: Woof!\");\n    }\n\n    public int ageInDogYears() {\n        return age * 7;\n    }\n}\n```\n\n## Creating and Using Objects\n\nSave each class in its own file: `Dog.java` and `Main.java`.\n\n```java\npublic class Main {\n    public static void main(String[] args) {\n        Dog rex = new Dog(\"Rex\", 3);\n        Dog bella = new Dog(\"Bella\", 5);\n\n        rex.bark();                                 // Rex says: Woof!\n        bella.bark();                               // Bella says: Woof!\n        System.out.println(bella.ageInDogYears());  // 35\n    }\n}\n```\n\n## Key Ideas\n\n- **Fields** store each object's own data\n- The **constructor** has the same name as the class and no return type\n- **this** means \"the current object\" and separates fields from parameters\n- **new** creates a fresh object in memory\n\n## Try It Yourself\n\nCreate a `Book` class with `title` and `pages` fields, a constructor, and a `describe()` method that prints both. Make two different Book objects in main.",
+    "order": 109,
+    "id": "cq-java-09"
+  },
+  {
+    "title": "Inheritance & Polymorphism",
+    "language": "Java",
+    "activity_type": "Lesson",
+    "difficulty": "Advanced",
+    "description": "Build families of related classes with inheritance and watch polymorphism pick the right behavior automatically.",
+    "content": "## Inheritance: Building on a Class\n\n**Inheritance** lets a class reuse everything from another class. The child class uses **extends** and can add or replace behavior. Save each class in its own file.\n\n```java\npublic class Animal {\n    protected String name;\n\n    public Animal(String name) {\n        this.name = name;\n    }\n\n    public void speak() {\n        System.out.println(name + \" makes a sound.\");\n    }\n}\n```\n\n```java\npublic class Cat extends Animal {\n    public Cat(String name) {\n        super(name);  // calls the Animal constructor\n    }\n\n    @Override\n    public void speak() {\n        System.out.println(name + \" says: Meow!\");\n    }\n}\n```\n\n## Polymorphism in Action\n\n**Polymorphism** means \"many forms\": an Animal variable can hold any subclass, and Java automatically calls the right version of the method.\n\n```java\npublic class Main {\n    public static void main(String[] args) {\n        Animal[] zoo = { new Animal(\"Generic\"), new Cat(\"Whiskers\") };\n\n        for (Animal a : zoo) {\n            a.speak();  // each object uses its own speak()\n        }\n    }\n}\n```\n\nOutput:\n\n```\nGeneric makes a sound.\nWhiskers says: Meow!\n```\n\n## Key Terms\n\n- **extends** creates a child (sub) class\n- **super(...)** calls the parent constructor\n- **@Override** marks a replaced method so the compiler double-checks it\n\n## Try It Yourself\n\nAdd a `Dog` class that extends `Animal` and overrides `speak()` to bark, then add one to the zoo array and run it.",
+    "order": 110,
+    "id": "cq-java-10"
+  },
+  {
+    "title": "Program: Bank Account Simulator",
+    "language": "Java",
+    "activity_type": "Program",
+    "difficulty": "Advanced",
+    "description": "Simulate a real bank account with deposits, withdrawals, safety checks, and a menu system.",
+    "content": "## The Project\n\nBuild a bank account simulator with deposits, withdrawals, and balance checks. This combines classes, methods, and input handling. Save the classes in `BankAccount.java` and `Bank.java`.\n\n## The BankAccount Class\n\n```java\npublic class BankAccount {\n    private String owner;\n    private double balance;\n\n    public BankAccount(String owner, double start) {\n        this.owner = owner;\n        this.balance = start;\n    }\n\n    public void deposit(double amount) {\n        if (amount > 0) balance += amount;\n    }\n\n    public void withdraw(double amount) {\n        if (amount > balance) {\n            System.out.println(\"Insufficient funds!\");\n        } else if (amount > 0) {\n            balance -= amount;\n        }\n    }\n\n    public double getBalance() {\n        return balance;\n    }\n}\n```\n\n## The Menu Loop\n\n```java\nimport java.util.Scanner;\n\npublic class Bank {\n    public static void main(String[] args) {\n        Scanner in = new Scanner(System.in);\n        BankAccount account = new BankAccount(\"Sam\", 100.0);\n        int choice = 0;\n\n        while (choice != 4) {\n            System.out.println(\"1) Deposit  2) Withdraw  3) Balance  4) Quit\");\n            choice = in.nextInt();\n            if (choice == 1) account.deposit(in.nextDouble());\n            else if (choice == 2) account.withdraw(in.nextDouble());\n            else if (choice == 3) System.out.println(\"$\" + account.getBalance());\n        }\n        in.close();\n    }\n}\n```\n\n## Stretch Goals\n\n1. Record every transaction in an ArrayList and print a statement\n2. Add a savings account that earns interest with each menu loop\n\n## What You'll Learn\n\n- **private** fields protect data (encapsulation)\n- Validating input before changing state\n- Menu-driven program design",
+    "order": 111,
+    "id": "cq-java-11"
+  },
+  {
+    "title": "Capstone Project: Text Adventure Game",
+    "language": "Java",
+    "activity_type": "Project",
+    "difficulty": "Advanced",
+    "description": "Design and build your own text adventure game with rooms, items, choices, and multiple endings.",
+    "content": "## Your Capstone Quest\n\nDesign and build a **text adventure game** where the player explores rooms, collects items, and makes choices that change the story. You are the game designer: pick a theme like a haunted mansion, a space station, or a jungle temple.\n\n## Requirements\n\nYour game must include:\n- A story with at least **four rooms or scenes**\n- Player choices read with Scanner\n- An inventory stored in an ArrayList\n- At least one **win** ending and one **lose** ending\n- Methods that keep `main()` short and organized\n\n## Starter Skeleton\n\n```java\nimport java.util.ArrayList;\nimport java.util.Scanner;\n\npublic class Adventure {\n    static Scanner in = new Scanner(System.in);\n    static ArrayList<String> inventory = new ArrayList<>();\n\n    public static void main(String[] args) {\n        System.out.println(\"You wake up in a dark castle...\");\n        firstRoom();\n    }\n\n    static void firstRoom() {\n        System.out.println(\"Doors lead north and east. Which way? (north/east)\");\n        String choice = in.nextLine();\n        if (choice.equals(\"north\")) {\n            inventory.add(\"rusty key\");\n            System.out.println(\"You found a rusty key!\");\n        } else {\n            System.out.println(\"A dragon blocks the path. Game over!\");\n        }\n    }\n}\n```\n\n## Design Tips\n\n- Sketch a map of your rooms on paper before coding\n- Write one method per room to keep code readable\n- Use `inventory.contains(\"rusty key\")` to unlock special paths\n\n## Stretch Goals\n\n1. Add a health system that ends the game at zero\n2. Add surprise events with the Random class\n3. Let the player type \"inventory\" at any time to list their items\n\n## What You'll Learn\n\n- Planning a full program from scratch\n- Organizing code with methods and shared state\n- Turning a story into interactive logic",
+    "order": 112,
+    "id": "cq-java-12"
+  },
+  {
+    "title": "What Is a Website? Your First HTML Page",
+    "language": "HTML/CSS",
+    "activity_type": "Lesson",
+    "difficulty": "Beginner",
+    "description": "Find out how websites really work, then build and open your very first web page in minutes.",
+    "content": "## What Is a Website?\n\nEvery website you visit is built from three languages:\n- **HTML** provides the structure (the skeleton)\n- **CSS** provides the style (colors, fonts, layout)\n- **JavaScript** provides the behavior (interactivity)\n\nYour browser downloads these files and draws the page. Best of all, you already have every tool you need: a text editor and a browser.\n\n## Your First HTML Page\n\nCreate a file named `index.html` and type this:\n\n```html\n<!DOCTYPE html>\n<html lang=\"en\">\n  <head>\n    <meta charset=\"UTF-8\">\n    <title>My First Page</title>\n  </head>\n  <body>\n    <h1>Hello, world!</h1>\n    <p>I built this page myself with HTML.</p>\n  </body>\n</html>\n```\n\nSave the file, then double-click it to open it in your browser.\n\n## Understanding the Parts\n\n- `<!DOCTYPE html>` tells the browser this is modern HTML\n- `<head>` holds information about the page, like its title\n- `<body>` holds everything visitors actually see\n- **Tags** usually come in pairs: `<p>` opens, `</p>` closes\n\n## Edit, Save, Refresh\n\nChange the text inside `<h1>`, save, and refresh the browser. That edit-save-refresh loop is exactly how professional web developers work every day.\n\n## Try It Yourself\n\nAdd a second paragraph describing your favorite animal, then change the `<title>` and watch the browser tab update.",
+    "order": 201,
+    "id": "cq-web-01"
+  },
+  {
+    "title": "HTML Structure: Headings, Paragraphs, Lists, Links",
+    "language": "HTML/CSS",
+    "activity_type": "Lesson",
+    "difficulty": "Beginner",
+    "description": "Give your pages real structure with headings, paragraphs, bullet lists, and clickable links.",
+    "content": "## Headings\n\nHTML gives you six heading levels. Use `<h1>` once for the page's main title, then `<h2>` and `<h3>` for sections.\n\n```html\n<h1>My Cooking Blog</h1>\n<h2>Breakfast Recipes</h2>\n<h3>Perfect Pancakes</h3>\n```\n\n## Paragraphs\n\n```html\n<p>Pancakes are easy to make and fun to flip.</p>\n<p>Each paragraph gets its own tag and its own space on the page.</p>\n```\n\n## Lists\n\n**Unordered lists** (`<ul>`) show bullets; **ordered lists** (`<ol>`) show numbers. Each item goes in an `<li>` tag.\n\n```html\n<h2>Ingredients</h2>\n<ul>\n  <li>Flour</li>\n  <li>Eggs</li>\n  <li>Milk</li>\n</ul>\n\n<h2>Steps</h2>\n<ol>\n  <li>Mix the batter</li>\n  <li>Heat the pan</li>\n  <li>Flip when bubbly</li>\n</ol>\n```\n\n## Links\n\nThe `<a>` (anchor) tag creates links. The **href attribute** says where the link goes.\n\n```html\n<a href=\"https://www.wikipedia.org\">Visit Wikipedia</a>\n<a href=\"about.html\">About Me</a>\n```\n\nThe first link goes to another website; the second opens another file in your own folder.\n\n## Try It Yourself\n\nBuild a page about your favorite game: one `<h1>`, two paragraphs, an ordered \"How to Play\" list, and a link to a related website.",
+    "order": 202,
+    "id": "cq-web-02"
+  },
+  {
+    "title": "Images, Attributes & File Paths",
+    "language": "HTML/CSS",
+    "activity_type": "Lesson",
+    "difficulty": "Beginner",
+    "description": "Add pictures to your pages and learn how browsers track down files with paths.",
+    "content": "## Attributes\n\n**Attributes** add extra information to a tag. They live inside the opening tag as `name=\"value\"` pairs.\n\n```html\n<a href=\"https://example.com\" target=\"_blank\">Opens in a new tab</a>\n```\n\n## Adding Images\n\nThe `<img>` tag is **self-closing**, so it has no closing tag. It needs two key attributes:\n\n- **src**: where the image file lives\n- **alt**: a text description for screen readers and broken images\n\n```html\n<img src=\"puppy.jpg\" alt=\"A golden retriever puppy\" width=\"300\">\n```\n\n## File Paths\n\nA **path** tells the browser where to find a file, starting from the folder your HTML file is in.\n\n```html\n<img src=\"cat.png\" alt=\"Cat\">           <!-- same folder -->\n<img src=\"images/dog.png\" alt=\"Dog\">    <!-- inside the images folder -->\n<img src=\"../logo.png\" alt=\"Logo\">      <!-- one folder up -->\n```\n\nKeeping pictures in an `images/` folder keeps your project tidy, and it is how real websites are organized.\n\n## Sizing Images\n\nSet only the `width` (in pixels) and the browser scales the height automatically, so the picture never looks squashed.\n\n## Try It Yourself\n\nMake an `images` folder, save two pictures into it, and build a page that shows both with helpful alt text and a caption paragraph under each one.",
+    "order": 203,
+    "id": "cq-web-03"
+  },
+  {
+    "title": "Intro to CSS: Selectors, Colors, Fonts",
+    "language": "HTML/CSS",
+    "activity_type": "Lesson",
+    "difficulty": "Beginner",
+    "description": "Bring your pages to life with colors, fonts, and your very first stylesheet.",
+    "content": "## What Is CSS?\n\n**CSS (Cascading Style Sheets)** controls how HTML looks. HTML says \"this is a heading\"; CSS says \"headings are dark blue and centered.\"\n\n## Linking a Stylesheet\n\nCreate a file named `styles.css` next to your HTML file, then connect it inside `<head>`:\n\n```html\n<link rel=\"stylesheet\" href=\"styles.css\">\n```\n\n## CSS Rules\n\nA rule has a **selector** (what to style) and **declarations** (property: value pairs).\n\n```css\nh1 {\n  color: darkblue;\n  text-align: center;\n}\n\np {\n  color: #333333;\n  font-size: 18px;\n}\n\nbody {\n  background-color: #f0f8ff;\n}\n```\n\n## Colors Three Ways\n\n```css\nh2 { color: tomato; }            /* named color */\nh3 { color: #ff6347; }           /* hex code */\nh4 { color: rgb(255, 99, 71); }  /* red, green, blue */\n```\n\nHex codes like `#ff6347` mix amounts of red, green, and blue.\n\n## Fonts\n\n**font-family** lists backup fonts in case the first one is missing:\n\n```css\nbody {\n  font-family: Verdana, Arial, sans-serif;\n}\n```\n\n## Try It Yourself\n\nStyle your favorite-game page from the last lesson: give the body a background color, center the `<h1>`, pick a new font, and try all three color formats.",
+    "order": 204,
+    "id": "cq-web-04"
+  },
+  {
+    "title": "The Box Model: Margin, Padding, Border",
+    "language": "HTML/CSS",
+    "activity_type": "Lesson",
+    "difficulty": "Medium",
+    "description": "Master the invisible boxes behind every web page: margin, padding, and borders.",
+    "content": "## Every Element Is a Box\n\nThe browser treats every element as a rectangular box with four layers, from the inside out:\n\n- **Content**: the text or image itself\n- **Padding**: space between the content and the border\n- **Border**: the visible edge\n- **Margin**: space outside, pushing other boxes away\n\n## Styling the Box\n\n```html\n<div class=\"card\">\n  <h2>Box Model</h2>\n  <p>Padding inside, margin outside.</p>\n</div>\n```\n\n```css\n.card {\n  width: 250px;\n  padding: 20px;\n  border: 2px solid steelblue;\n  border-radius: 10px;\n  margin: 16px;\n  background-color: white;\n}\n```\n\n## Padding vs Margin\n\nMixing these up is the most common beginner bug:\n- Need space *inside* the border? Use **padding**\n- Need space *between* elements? Use **margin**\n\n## Shorthand Values\n\n```css\np {\n  padding: 10px;              /* all four sides */\n  padding: 10px 20px;         /* top/bottom 10, left/right 20 */\n  margin: 5px 10px 15px 20px; /* top right bottom left (clockwise) */\n}\n```\n\n## Seeing the Boxes\n\nRight-click any element in your browser and choose **Inspect**. The box model diagram shows every layer's exact size.\n\n## Try It Yourself\n\nCreate three `.card` boxes with different border colors, then experiment: what changes when you double the padding versus doubling the margin?",
+    "order": 205,
+    "id": "cq-web-05"
+  },
+  {
+    "title": "Classes, IDs & Reusable Styles",
+    "language": "HTML/CSS",
+    "activity_type": "Lesson",
+    "difficulty": "Medium",
+    "description": "Style exactly the elements you want with reusable classes and one-of-a-kind IDs.",
+    "content": "## The Problem\n\nElement selectors style *every* paragraph the same way. What if only some paragraphs should stand out?\n\n## Classes: Reusable Labels\n\nAdd a **class attribute** in HTML, then select it in CSS with a dot.\n\n```html\n<p class=\"highlight\">This is important!</p>\n<p>This is a normal paragraph.</p>\n<p class=\"highlight\">Also important!</p>\n```\n\n```css\n.highlight {\n  background-color: yellow;\n  font-weight: bold;\n}\n```\n\nAny element can use a class, and a class can be reused as many times as you like.\n\n## IDs: One of a Kind\n\nAn **id** labels a single unique element. Select it with `#`. Each id may appear only once per page.\n\n```html\n<header id=\"main-header\">Welcome!</header>\n```\n\n```css\n#main-header {\n  background-color: navy;\n  color: white;\n  padding: 20px;\n}\n```\n\n## Combining Classes\n\nElements can wear several classes at once, separated by spaces:\n\n```html\n<p class=\"highlight large\">Big and bold!</p>\n```\n\n```css\n.large {\n  font-size: 24px;\n}\n```\n\n## Rule of Thumb\n\n- Use **classes** for styles you plan to reuse\n- Use **ids** for unique landmarks like a header or footer\n\n## Try It Yourself\n\nMake a page with five paragraphs. Create a `.warning` class (red text) and a `.success` class (green text), and apply each one to at least two paragraphs.",
+    "order": 206,
+    "id": "cq-web-06"
+  },
+  {
+    "title": "Flexbox Layouts",
+    "language": "HTML/CSS",
+    "activity_type": "Lesson",
+    "difficulty": "Medium",
+    "description": "Arrange anything on the page with rows, columns, and perfect centering using flexbox.",
+    "content": "## Why Flexbox?\n\nBy default, block elements stack vertically. **Flexbox** lets you arrange items in rows or columns and control the spacing with just a few lines of CSS.\n\n## Turning On Flexbox\n\nSet `display: flex` on the **container**; its children become flex items automatically.\n\n```html\n<div class=\"nav\">\n  <a href=\"index.html\">Home</a>\n  <a href=\"about.html\">About</a>\n  <a href=\"contact.html\">Contact</a>\n</div>\n```\n\n```css\n.nav {\n  display: flex;\n  gap: 20px;\n  justify-content: center;\n  background-color: #222;\n  padding: 12px;\n}\n\n.nav a {\n  color: white;\n  text-decoration: none;\n}\n```\n\n## The Key Properties\n\n- **justify-content**: spacing along the main axis (`flex-start`, `center`, `space-between`, `space-around`)\n- **align-items**: alignment on the cross axis (`center`, `stretch`)\n- **gap**: space between items\n- **flex-direction**: `row` (the default) or `column`\n\n## Perfect Centering\n\nThe classic trick every developer memorizes — center anything both ways:\n\n```css\n.hero {\n  display: flex;\n  justify-content: center;\n  align-items: center;\n  height: 300px;\n}\n```\n\n## Try It Yourself\n\nBuild a navigation bar with four links. Try every `justify-content` value and watch the layout change, then switch `flex-direction` to `column`.",
+    "order": 207,
+    "id": "cq-web-07"
+  },
+  {
+    "title": "Program: Build a Personal Profile Page",
+    "language": "HTML/CSS",
+    "activity_type": "Program",
+    "difficulty": "Medium",
+    "description": "Combine everything you know so far to build a stylish one-page profile all about you.",
+    "content": "## The Challenge\n\nBuild a one-page profile about yourself (or an invented character) using everything so far: structure, images, classes, and a real stylesheet.\n\n## Requirements\n\n- A header with your name and a short tagline\n- A photo or avatar image with proper `alt` text\n- An \"About Me\" section with at least two paragraphs\n- A list of hobbies or skills\n- A stylesheet with at least one class used more than once\n\n## Starter Code\n\n```html\n<!DOCTYPE html>\n<html lang=\"en\">\n  <head>\n    <meta charset=\"UTF-8\">\n    <title>My Profile</title>\n    <link rel=\"stylesheet\" href=\"styles.css\">\n  </head>\n  <body>\n    <header class=\"banner\">\n      <h1>Jordan Rivera</h1>\n      <p>Future game developer</p>\n    </header>\n    <main>\n      <img src=\"images/avatar.png\" alt=\"My avatar\" width=\"150\">\n      <h2>About Me</h2>\n      <p>I love robotics and drawing.</p>\n      <h2>Skills</h2>\n      <ul>\n        <li>HTML and CSS</li>\n        <li>Scratch</li>\n      </ul>\n    </main>\n  </body>\n</html>\n```\n\n```css\n.banner {\n  background-color: #4a90d9;\n  color: white;\n  text-align: center;\n  padding: 24px;\n}\n\nmain {\n  max-width: 600px;\n  margin: 0 auto;\n  padding: 16px;\n  font-family: Arial, sans-serif;\n}\n```\n\n## Stretch Goals\n\n1. Add a flexbox row of \"favorite things\" cards\n2. Make your avatar round with `border-radius: 50%`\n\n## What You'll Learn\n\n- Planning a page before styling it\n- Combining HTML structure with a shared stylesheet",
+    "order": 208,
+    "id": "cq-web-08"
+  },
+  {
+    "title": "Responsive Design & Media Queries",
+    "language": "HTML/CSS",
+    "activity_type": "Lesson",
+    "difficulty": "Advanced",
+    "description": "Make your site look great on phones, tablets, and desktops with flexible units and media queries.",
+    "content": "## One Site, Every Screen\n\n**Responsive design** means your page looks great on phones, tablets, and desktops. Instead of building three sites, you write rules that adapt.\n\n## The Viewport Tag\n\nAlways add this inside `<head>`, or phones will show a tiny shrunken desktop page:\n\n```html\n<meta name=\"viewport\" content=\"width=device-width, initial-scale=1\">\n```\n\n## Media Queries\n\nA **media query** applies CSS only when a condition is true, such as the screen width.\n\n```css\n.container {\n  display: flex;\n  gap: 16px;\n}\n\n/* On screens 600px wide or less, stack vertically */\n@media (max-width: 600px) {\n  .container {\n    flex-direction: column;\n  }\n\n  h1 {\n    font-size: 24px;\n  }\n}\n```\n\n## Flexible Sizing\n\nFixed pixel widths break on small screens. Prefer flexible units:\n\n- **%** is relative to the parent element\n- **rem** is relative to the base font size\n\n```css\nimg {\n  max-width: 100%;   /* images never overflow their container */\n  height: auto;\n}\n```\n\n## Testing Like a Pro\n\nOpen your browser's developer tools and use **device mode** to preview your page at phone and tablet sizes. Drag the window narrower and watch your media query switch on.\n\n## Try It Yourself\n\nAdd a media query at 600px to your profile page that stacks any flex rows into columns and enlarges the body text for comfortable phone reading.",
+    "order": 209,
+    "id": "cq-web-09"
+  },
+  {
+    "title": "CSS Transitions & Simple Animations",
+    "language": "HTML/CSS",
+    "activity_type": "Lesson",
+    "difficulty": "Advanced",
+    "description": "Add smooth hover effects and eye-catching animations using nothing but CSS.",
+    "content": "## Motion With Pure CSS\n\nYou can animate elements without any JavaScript. Small motions make pages feel alive and professional.\n\n## Transitions\n\nA **transition** smoothly animates a property when it changes, such as on hover.\n\n```css\n.button {\n  background-color: steelblue;\n  color: white;\n  padding: 12px 24px;\n  border-radius: 8px;\n  transition: background-color 0.3s, transform 0.3s;\n}\n\n.button:hover {\n  background-color: navy;\n  transform: scale(1.1);\n}\n```\n\nThe `:hover` **pseudo-class** applies while the mouse is over the element. The transition makes the change take 0.3 seconds instead of snapping instantly.\n\n## Keyframe Animations\n\n**Keyframes** define a whole sequence that the browser plays automatically.\n\n```css\n@keyframes bounce {\n  0%   { transform: translateY(0); }\n  50%  { transform: translateY(-20px); }\n  100% { transform: translateY(0); }\n}\n\n.ball {\n  width: 50px;\n  height: 50px;\n  border-radius: 50%;\n  background-color: tomato;\n  animation: bounce 1s infinite;\n}\n```\n\n## Best Properties to Animate\n\n- **transform**: scale, rotate, translate (smoothest performance)\n- **opacity**: fade elements in and out\n- **background-color**: gentle color shifts\n\n## Try It Yourself\n\nMake a card that lifts up with `transform: translateY(-8px)` on hover, then create a `pulse` keyframe animation that slowly grows and shrinks a notification dot.",
+    "order": 210,
+    "id": "cq-web-10"
+  },
+  {
+    "title": "Program: Photo Gallery with Flexbox",
+    "language": "HTML/CSS",
+    "activity_type": "Program",
+    "difficulty": "Advanced",
+    "description": "Build a responsive photo gallery with wrapping cards, captions, and hover zoom effects.",
+    "content": "## The Challenge\n\nBuild a photo gallery that shows image cards in neat rows, wraps onto new lines on small screens, and zooms photos on hover.\n\n## Starter Code\n\n```html\n<!DOCTYPE html>\n<html lang=\"en\">\n  <head>\n    <meta charset=\"UTF-8\">\n    <meta name=\"viewport\" content=\"width=device-width, initial-scale=1\">\n    <title>My Gallery</title>\n    <link rel=\"stylesheet\" href=\"gallery.css\">\n  </head>\n  <body>\n    <h1>Nature Gallery</h1>\n    <div class=\"gallery\">\n      <figure class=\"photo\">\n        <img src=\"images/forest.jpg\" alt=\"Sunlight through a forest\">\n        <figcaption>Forest light</figcaption>\n      </figure>\n      <figure class=\"photo\">\n        <img src=\"images/ocean.jpg\" alt=\"Waves on a beach\">\n        <figcaption>Ocean waves</figcaption>\n      </figure>\n    </div>\n  </body>\n</html>\n```\n\n```css\n.gallery {\n  display: flex;\n  flex-wrap: wrap;\n  gap: 16px;\n  justify-content: center;\n}\n\n.photo {\n  width: 220px;\n  margin: 0;\n  text-align: center;\n}\n\n.photo img {\n  width: 100%;\n  border-radius: 8px;\n  transition: transform 0.3s;\n}\n\n.photo img:hover {\n  transform: scale(1.05);\n}\n```\n\n## Key Technique\n\n**flex-wrap: wrap** lets cards flow onto the next line when a row fills up — instant responsiveness from a single property.\n\n## Stretch Goals\n\n1. Add at least six photos with descriptive captions\n2. Add a hover shadow with `box-shadow`\n\n## What You'll Learn\n\n- Wrapping flexbox layouts\n- Semantic tags: `<figure>` and `<figcaption>`\n- Combining transitions with layout",
+    "order": 211,
+    "id": "cq-web-11"
+  },
+  {
+    "title": "Capstone Project: Multi-Page Website for a Cause",
+    "language": "HTML/CSS",
+    "activity_type": "Project",
+    "difficulty": "Advanced",
+    "description": "Plan and build a complete three-page website that champions a cause you care about.",
+    "content": "## Your Capstone Mission\n\nDesign and build a complete **multi-page website** for a cause you care about: animal rescue, recycling, kindness at school, or anything that matters to you. This is your portfolio piece.\n\n## Requirements\n\n- At least **three pages**: `index.html`, `about.html`, `get-involved.html`\n- One shared stylesheet (`styles.css`) linked from every page\n- A flexbox navigation bar that appears on all pages\n- Images with alt text, headings, lists, and links\n- A media query so the site works on phones\n- At least one hover transition\n\n## Shared Navigation\n\n```html\n<nav class=\"navbar\">\n  <a href=\"index.html\">Home</a>\n  <a href=\"about.html\">About</a>\n  <a href=\"get-involved.html\">Get Involved</a>\n</nav>\n```\n\n```css\n.navbar {\n  display: flex;\n  gap: 24px;\n  justify-content: center;\n  background-color: #14532d;\n  padding: 14px;\n}\n\n.navbar a {\n  color: white;\n  text-decoration: none;\n  transition: color 0.3s;\n}\n\n.navbar a:hover {\n  color: #a7f3d0;\n}\n```\n\nCopy the nav into every page so visitors can always find their way around.\n\n## Build Plan\n\n1. Sketch each page on paper first\n2. Build the HTML skeletons and link them together\n3. Style the shared parts, then each individual page\n4. Test at phone size and fix anything that breaks\n\n## Stretch Goals\n\n1. Add a \"facts\" section styled as flexbox cards\n2. Add a keyframe animation to your homepage headline\n\n## What You'll Learn\n\n- Organizing a real multi-file project\n- Reusing one stylesheet across pages\n- Presenting a cause clearly and persuasively",
+    "order": 212,
+    "id": "cq-web-12"
   }
 ]

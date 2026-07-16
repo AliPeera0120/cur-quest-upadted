@@ -54,6 +54,7 @@ import Home from './pages/Home';
 import MakeAnImpact from './pages/MakeAnImpact';
 import PhysicsPlayground from './pages/PhysicsPlayground';
 import QuestPassport from './pages/QuestPassport';
+import ScienceLab from './pages/ScienceLab';
 import ThisWeekInSTEM from './pages/ThisWeekInSTEM';
 import __Layout from './Layout.jsx';
 
@@ -66,6 +67,7 @@ export const PAGES = {
     "MakeAnImpact": MakeAnImpact,
     "PhysicsPlayground": PhysicsPlayground,
     "QuestPassport": QuestPassport,
+    "ScienceLab": ScienceLab,
     "ThisWeekInSTEM": ThisWeekInSTEM,
 }
 

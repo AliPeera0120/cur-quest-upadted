@@ -47,6 +47,30 @@
       "options": ["It has more friction only", "More mass needs more force to accelerate", "Air escapes faster", "Gravity turns off"],
       "answer": 1,
       "explain": "Newton's Second Law: F = ma. With the same force, more mass means less acceleration."
+    },
+    {
+      "q": "Sound travels as a wave of...",
+      "options": ["Light particles", "Vibrations through a material", "Electricity", "Heat"],
+      "answer": 1,
+      "explain": "Sound is vibrating molecules bumping into their neighbors — that's why it can't travel through empty space."
+    },
+    {
+      "q": "Why does a pencil look bent when half of it is underwater?",
+      "options": ["The water bends the pencil", "Light changes speed and direction entering water", "Your eyes are tricked by color", "The pencil actually bends"],
+      "answer": 1,
+      "explain": "Light refracts — it changes direction when it moves between air and water because it travels at different speeds in each."
+    },
+    {
+      "q": "Rubbing a balloon on your hair charges it with...",
+      "options": ["Static electricity", "Magnetism", "Heat energy", "Sound waves"],
+      "answer": 0,
+      "explain": "Electrons rub off your hair onto the balloon, giving it a negative static charge that can attract water and paper."
+    },
+    {
+      "q": "A compass needle points north because...",
+      "options": ["The needle is heavier on one end", "Earth itself is a giant magnet", "Wind pushes it", "The Sun pulls it"],
+      "answer": 1,
+      "explain": "Earth's molten iron core creates a magnetic field, and a magnetized needle aligns itself with it."
     }
   ],
   "chemistry": [
@@ -97,6 +121,30 @@
       "options": ["Baking soda", "Soap", "Lemon juice", "Water"],
       "answer": 2,
       "explain": "Lemon juice contains citric acid — that's why it tastes sour and turns cabbage juice red."
+    },
+    {
+      "q": "Why does lemon juice writing turn brown when heated?",
+      "options": ["The paper melts", "The juice oxidizes and darkens before the paper does", "Heat adds ink", "The lemon freezes"],
+      "answer": 1,
+      "explain": "The acidic juice weakens the paper fibers, so that spot browns (oxidizes) at a lower temperature — revealing the secret message."
+    },
+    {
+      "q": "Slime is stretchy because glue molecules link into long chains called...",
+      "options": ["Crystals", "Polymers", "Magnets", "Atoms"],
+      "answer": 1,
+      "explain": "An activator links glue's long molecules together into a tangled polymer network — stretchy like a net, not a liquid or solid."
+    },
+    {
+      "q": "Why does vinegar clean a dirty penny?",
+      "options": ["It scrubs like sandpaper", "Its acid dissolves the copper oxide layer", "It paints the penny", "It magnetizes the dirt"],
+      "answer": 1,
+      "explain": "The dull coating is copper oxide. A weak acid dissolves it, exposing the shiny copper underneath."
+    },
+    {
+      "q": "In a mixture of salt fully stirred into water, the salt is called the...",
+      "options": ["Solvent", "Solute", "Sediment", "Solution"],
+      "answer": 1,
+      "explain": "The substance that dissolves is the solute; the water doing the dissolving is the solvent; together they make a solution."
     }
   ],
   "biology": [
@@ -147,6 +195,30 @@
       "options": ["Sleep", "Convert sugar into energy and gas", "Turn into plants", "Freeze"],
       "answer": 1,
       "explain": "Yeast metabolizes sugar for energy and releases CO₂ — used for thousands of years to make bread and more."
+    },
+    {
+      "q": "Colored water climbs up a celery stalk because of...",
+      "options": ["Gravity", "Capillary action in tiny tubes", "Magnetism", "Wind"],
+      "answer": 1,
+      "explain": "Narrow tubes called xylem pull water upward through capillary action — the same way plants drink from their roots."
+    },
+    {
+      "q": "The ridges that make your fingerprints are unique to...",
+      "options": ["Your whole family", "Only you", "Everyone born the same year", "Identical twins share them"],
+      "answer": 1,
+      "explain": "No two people, not even identical twins, have the same fingerprints — they form randomly before birth."
+    },
+    {
+      "q": "Mold grows fastest on bread that is...",
+      "options": ["Dry and cold", "Warm and damp", "Frozen", "In sunlight"],
+      "answer": 1,
+      "explain": "Mold is a fungus that thrives in warm, moist conditions — which is why bread lasts longer in the fridge."
+    },
+    {
+      "q": "When you breathe in, your lungs fill because your diaphragm...",
+      "options": ["Pushes up", "Pulls down to make more space", "Stays still", "Disappears"],
+      "answer": 1,
+      "explain": "The diaphragm flattens downward, lowering air pressure in your chest so air rushes in — exactly like the balloon lung model."
     }
   ],
   "engineering": [
@@ -197,6 +269,30 @@
       "options": ["For fun", "To find the weakest point and make it stronger", "To waste materials", "Because they're angry"],
       "answer": 1,
       "explain": "Load testing reveals exactly where a structure fails first, so the next version can be reinforced there."
+    },
+    {
+      "q": "A spaghetti-and-marshmallow tower stands tallest when its base is...",
+      "options": ["Narrow and tall", "Wide and made of triangles", "A single stick", "Round"],
+      "answer": 1,
+      "explain": "A wide base lowers the center of gravity and triangles resist bending — the two secrets of stable towers."
+    },
+    {
+      "q": "A pulley makes lifting easier by...",
+      "options": ["Removing the weight", "Changing the direction of your pull and sharing the load", "Adding gravity", "Making the rope shorter"],
+      "answer": 1,
+      "explain": "A pulley lets you pull down (easier) to lift up, and multiple pulleys share the weight so each pull feels lighter."
+    },
+    {
+      "q": "The best egg-drop lander protects the egg by...",
+      "options": ["Making it fall faster", "Slowing the fall and cushioning the impact", "Adding weight", "Being very stiff"],
+      "answer": 1,
+      "explain": "Parachutes slow the fall and soft padding spreads the impact force over more time, so the egg survives the landing."
+    },
+    {
+      "q": "A cam in a machine is a shaped wheel that turns rotation into...",
+      "options": ["Heat", "Up-and-down motion", "Electricity", "Light"],
+      "answer": 1,
+      "explain": "As a cam spins, its bumpy edge pushes a follower up and down — the trick behind automaton toys and engine valves."
     }
   ]
 }

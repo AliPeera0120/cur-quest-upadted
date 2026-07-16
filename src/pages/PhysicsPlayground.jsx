@@ -18,24 +18,24 @@ const TARGET_HALF_WIDTH_M = 3; // hit tolerance in meters
 
 const PLANETS = {
   earth: {
-    name: 'Earth', g: 9.8, emoji: '🌍',
+    name: 'Earth', g: 9.8, dot: '#3b82f6',
     sky: ['#7ec8f7', '#cdeaff'], ground: '#5aa845',
-    fact: 'Gravity on Earth pulls everything down at 9.8 m/s² — that\'s why a ball and a feather fall differently only because of air!',
+    fact: 'Gravity on Earth pulls everything down at 9.8 m/s². A ball and a feather fall at the same rate here, except that air slows the feather.',
   },
   moon: {
-    name: 'Moon', g: 1.62, emoji: '🌕',
+    name: 'Moon', g: 1.62, dot: '#9ca3af',
     sky: ['#1a1a2e', '#3d3d5c'], ground: '#9a9a9a',
-    fact: 'The Moon\'s gravity is 6× weaker than Earth\'s. Astronaut Alan Shepard hit a golf ball here — it flew for miles!',
+    fact: 'The Moon\'s gravity is six times weaker than Earth\'s. Astronaut Alan Shepard hit a golf ball here and it flew for a very long way.',
   },
   mars: {
-    name: 'Mars', g: 3.71, emoji: '🔴',
+    name: 'Mars', g: 3.71, dot: '#dc2626',
     sky: ['#d98e5a', '#f5c9a0'], ground: '#b5541c',
-    fact: 'Mars has about 1/3 of Earth\'s gravity. If you can jump 1 meter high on Earth, you could jump almost 3 meters on Mars!',
+    fact: 'Mars has about one third of Earth\'s gravity. If you can jump one meter high on Earth, you could jump almost three meters on Mars.',
   },
   jupiter: {
-    name: 'Jupiter', g: 24.79, emoji: '🟠',
+    name: 'Jupiter', g: 24.79, dot: '#d97706',
     sky: ['#c9a06a', '#e8d4a9'], ground: '#8a6237',
-    fact: 'Jupiter\'s gravity is 2.5× stronger than Earth\'s. A ball thrown here comes crashing down fast — you\'d weigh over 2× more!',
+    fact: 'Jupiter\'s gravity is about 2.5 times stronger than Earth\'s. A ball thrown here comes crashing down fast, and you would weigh more than twice as much.',
   },
 };
 
@@ -64,7 +64,7 @@ export default function PhysicsPlayground() {
   const [streak, setStreak] = useState(0);
   const [flying, setFlying] = useState(false);
   const [lastShot, setLastShot] = useState(null); // { distance, maxHeight, time, hit }
-  const [message, setMessage] = useState('Set your angle and power, then launch! 🚀');
+  const [message, setMessage] = useState('Set your angle and power, then launch.');
 
   const stateRef = useRef({
     angle: 45, power: 60, planetKey: 'earth', showHint: false,
@@ -84,7 +84,7 @@ export default function PhysicsPlayground() {
     stateRef.current.landed = null;
     setLastShot(null);
     setFlying(false);
-    setMessage(`Welcome to ${PLANETS[planetKey].name}! Gravity here is ${PLANETS[planetKey].g} m/s². 🎯`);
+    setMessage(`Welcome to ${PLANETS[planetKey].name}. Gravity here is ${PLANETS[planetKey].g} m/s².`);
   }, [planetKey]);
 
   const v0FromPower = (p) => 10 + (p / 100) * 40; // 10–50 m/s
@@ -95,7 +95,7 @@ export default function PhysicsPlayground() {
     s.ball = { t: 0, trail: [] };
     s.landed = null;
     setFlying(true);
-    setMessage('Whoosh! 🚀');
+    setMessage('Launching...');
   }, []);
 
   const resetTarget = useCallback(() => {
@@ -105,7 +105,7 @@ export default function PhysicsPlayground() {
     s.landed = null;
     setLastShot(null);
     setFlying(false);
-    setMessage('New target placed. You got this! 🎯');
+    setMessage('New target placed. Take your best shot.');
   }, []);
 
   // ----- Drawing + physics loop -----
@@ -151,7 +151,7 @@ export default function PhysicsPlayground() {
             streakRef.current += 1;
             setStreak(streakRef.current);
             questRef.current?.recordPlaygroundHit(streakRef.current);
-            setMessage('🎉 BULLSEYE! Amazing shot!');
+            setMessage('Bullseye! Great shot.');
             confetti({ particleCount: 130, spread: 75, origin: { y: 0.7 } });
             s.targetDist = randomTarget(planet.g);
           } else {
@@ -314,7 +314,7 @@ export default function PhysicsPlayground() {
             className="text-3xl sm:text-4xl font-bold mb-2"
             style={{ fontFamily: 'Nunito, sans-serif' }}
           >
-            Physics Playground 🚀
+            Physics Playground
           </motion.h1>
           <motion.p
             initial={{ opacity: 0, y: 20 }}
@@ -362,7 +362,7 @@ export default function PhysicsPlayground() {
         <div className="grid md:grid-cols-3 gap-6 mt-6">
           <div className="bg-white rounded-2xl p-6 shadow-sm border border-gray-100">
             <h3 className="font-bold text-[#055b8e] mb-4" style={{ fontFamily: 'Nunito, sans-serif' }}>
-              🎛️ Launch Controls
+              Launch Controls
             </h3>
             <div className="space-y-5">
               <div>
@@ -402,7 +402,7 @@ export default function PhysicsPlayground() {
 
           <div className="bg-white rounded-2xl p-6 shadow-sm border border-gray-100">
             <h3 className="font-bold text-[#055b8e] mb-4" style={{ fontFamily: 'Nunito, sans-serif' }}>
-              🪐 Pick a Planet
+              Pick a Planet
             </h3>
             <div className="grid grid-cols-2 gap-2 mb-4">
               {Object.entries(PLANETS).map(([key, p]) => (
@@ -416,7 +416,10 @@ export default function PhysicsPlayground() {
                   }`}
                   style={{ fontFamily: 'Nunito, sans-serif' }}
                 >
-                  {p.emoji} {p.name}
+                  <span className="flex items-center gap-1.5">
+                    <span className="w-3 h-3 rounded-full" style={{ backgroundColor: p.dot }} />
+                    {p.name}
+                  </span>
                   <span className="block text-xs font-medium text-gray-500">g = {p.g} m/s²</span>
                 </button>
               ))}
@@ -426,7 +429,7 @@ export default function PhysicsPlayground() {
 
           <div className="bg-white rounded-2xl p-6 shadow-sm border border-gray-100">
             <h3 className="font-bold text-[#055b8e] mb-4" style={{ fontFamily: 'Nunito, sans-serif' }}>
-              🔬 The Science
+              The Science
             </h3>
             {lastShot ? (
               <div className="space-y-3 text-sm">
@@ -443,7 +446,7 @@ export default function PhysicsPlayground() {
                   <span className="font-bold text-[#055b8e]">{lastShot.time.toFixed(2)} s</span>
                 </div>
                 <div className={`rounded-xl p-3 text-xs font-medium ${lastShot.hit ? 'bg-green-50 text-green-700' : 'bg-orange-50 text-orange-700'}`}>
-                  {lastShot.hit ? 'Direct hit! 🎯' : 'Adjust and try again!'}
+                  {lastShot.hit ? 'Direct hit.' : 'Adjust and try again.'}
                 </div>
               </div>
             ) : (
@@ -467,9 +470,9 @@ export default function PhysicsPlayground() {
             <Target className="w-5 h-5 text-[#ed7219]" /> Try These Challenges!
           </h3>
           <div className="grid sm:grid-cols-3 gap-4 text-sm text-white/85">
-            <p>1️⃣ Hit the same target twice using two <strong>different</strong> angles. (Hint: 30° and 60° travel the same distance!)</p>
-            <p>2️⃣ Find the target on the Moon, then switch to Jupiter. How much more power do you need?</p>
-            <p>3️⃣ Get a streak of 3 bullseyes without using the predicted path hint. Lab Legend status! 🏆</p>
+            <p><strong>1.</strong> Hit the same target twice using two different angles. Hint: 30 degrees and 60 degrees travel the same distance.</p>
+            <p><strong>2.</strong> Find the target on the Moon, then switch to Jupiter. How much more power do you need?</p>
+            <p><strong>3.</strong> Get a streak of three bullseyes without using the predicted path hint.</p>
           </div>
         </div>
       </div>
