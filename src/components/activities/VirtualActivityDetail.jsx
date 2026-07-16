@@ -1,9 +1,10 @@
 import React from 'react';
 import { Badge } from '@/components/ui/badge';
 import { Button } from '@/components/ui/button';
-import { X, Code } from 'lucide-react';
+import { X, Code, Check, Stamp } from 'lucide-react';
 import { motion, AnimatePresence } from 'framer-motion';
 import ReactMarkdown from 'react-markdown';
+import { useQuest } from '@/lib/quest';
 
 const typeColors = {
   'Lesson': 'bg-[#055b8e]',
@@ -12,7 +13,9 @@ const typeColors = {
 };
 
 export default function VirtualActivityDetail({ activity, onClose }) {
+  const quest = useQuest();
   if (!activity) return null;
+  const isDone = quest.completedActivities.includes(activity.id);
 
   return (
     <AnimatePresence>
@@ -152,10 +155,26 @@ export default function VirtualActivityDetail({ activity, onClose }) {
           </div>
 
           {/* Footer */}
-          <div className="border-t border-gray-100 p-6">
+          <div className="border-t border-gray-100 p-6 space-y-3">
+            <Button
+              onClick={() => quest.markActivityDone(activity)}
+              disabled={isDone}
+              className={`w-full py-6 rounded-xl font-semibold text-lg ${
+                isDone
+                  ? 'bg-green-100 text-green-700 hover:bg-green-100'
+                  : 'bg-[#ed7219] hover:bg-[#d86515] text-white'
+              }`}
+            >
+              {isDone ? (
+                <><Check className="w-5 h-5 mr-2" /> Lesson complete!</>
+              ) : (
+                <><Stamp className="w-5 h-5 mr-2" /> Mark lesson complete</>
+              )}
+            </Button>
             <Button
               onClick={onClose}
-              className="w-full bg-[#055b8e] hover:bg-[#044a73] text-white py-6 rounded-xl font-semibold text-lg"
+              variant="outline"
+              className="w-full py-6 rounded-xl font-semibold text-lg"
             >
               Back to Activities
             </Button>

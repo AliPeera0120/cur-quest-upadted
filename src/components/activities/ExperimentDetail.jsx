@@ -1,8 +1,9 @@
 import React from 'react';
 import { Button } from '@/components/ui/button';
 import { Badge } from '@/components/ui/badge';
-import { X, Beaker, ListChecks, BookOpen, Lightbulb } from 'lucide-react';
+import { X, Beaker, ListChecks, BookOpen, Lightbulb, Stamp, Check } from 'lucide-react';
 import { motion, AnimatePresence } from 'framer-motion';
+import { useQuest } from '@/lib/quest';
 
 const topicLabels = {
   physics: 'Physics',
@@ -25,7 +26,9 @@ const difficultyColors = {
 };
 
 export default function ExperimentDetail({ experiment, onClose }) {
+  const quest = useQuest();
   if (!experiment) return null;
+  const isDone = !!quest.completedExperiments[experiment.id];
 
   const materials = experiment.materials?.split('\n').filter(m => m.trim()) || [];
   const instructions = experiment.instructions?.split('\n').filter(i => i.trim()) || [];
@@ -122,10 +125,26 @@ export default function ExperimentDetail({ experiment, onClose }) {
           </div>
 
           {/* Footer */}
-          <div className="border-t border-gray-100 p-6">
+          <div className="border-t border-gray-100 p-6 space-y-3">
+            <Button
+              onClick={() => quest.markExperimentDone(experiment)}
+              disabled={isDone}
+              className={`w-full py-6 rounded-xl font-semibold text-lg ${
+                isDone
+                  ? 'bg-green-100 text-green-700 hover:bg-green-100'
+                  : 'bg-[#ed7219] hover:bg-[#d86515] text-white'
+              }`}
+            >
+              {isDone ? (
+                <><Check className="w-5 h-5 mr-2" /> Stamped in your passport!</>
+              ) : (
+                <><Stamp className="w-5 h-5 mr-2" /> I did this — stamp my passport!</>
+              )}
+            </Button>
             <Button
               onClick={onClose}
-              className="w-full bg-[#055b8e] hover:bg-[#044a73] text-white py-6 rounded-xl font-semibold text-lg"
+              variant="outline"
+              className="w-full py-6 rounded-xl font-semibold text-lg"
             >
               Back to Activities
             </Button>

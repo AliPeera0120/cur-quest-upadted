@@ -4,6 +4,7 @@ import { queryClientInstance } from '@/lib/query-client'
 import { pagesConfig } from './pages.config'
 import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
 import PageNotFound from './lib/PageNotFound';
+import { QuestProvider } from '@/lib/quest';
 
 const { Pages, Layout, mainPage } = pagesConfig;
 const mainPageKey = mainPage ?? Object.keys(Pages)[0];
@@ -16,6 +17,7 @@ const LayoutWrapper = ({ children, currentPageName }) => Layout ?
 function App() {
   return (
     <QueryClientProvider client={queryClientInstance}>
+      <QuestProvider>
       <Router>
         <Routes>
           <Route path="/" element={
@@ -38,6 +40,7 @@ function App() {
         </Routes>
       </Router>
       <Toaster />
+      </QuestProvider>
     </QueryClientProvider>
   )
 }

@@ -5,6 +5,7 @@ import { Switch } from '@/components/ui/switch';
 import { Rocket, Target, RotateCcw, Trophy, Flame, Lightbulb } from 'lucide-react';
 import { motion } from 'framer-motion';
 import confetti from 'canvas-confetti';
+import { useQuest } from '@/lib/quest';
 
 // ----- World constants -----
 const CANVAS_W = 960;
@@ -48,6 +49,10 @@ const randomTarget = (g) => {
 export default function PhysicsPlayground() {
   const canvasRef = useRef(null);
   const animRef = useRef(null);
+  const quest = useQuest();
+  const questRef = useRef(quest);
+  const streakRef = useRef(0);
+  useEffect(() => { questRef.current = quest; });
 
   // Controls (state drives UI; refs drive the animation loop)
   const [angle, setAngle] = useState(45);
@@ -143,11 +148,14 @@ export default function PhysicsPlayground() {
           setLastShot({ distance: dist, maxHeight: maxH, time: landT, hit });
           if (hit) {
             setScore((sc) => sc + 10);
-            setStreak((st) => st + 1);
+            streakRef.current += 1;
+            setStreak(streakRef.current);
+            questRef.current?.recordPlaygroundHit(streakRef.current);
             setMessage('🎉 BULLSEYE! Amazing shot!');
             confetti({ particleCount: 130, spread: 75, origin: { y: 0.7 } });
             s.targetDist = randomTarget(planet.g);
           } else {
+            streakRef.current = 0;
             setStreak(0);
             const off = dist - s.targetDist;
             setMessage(

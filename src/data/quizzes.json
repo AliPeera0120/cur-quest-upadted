@@ -1,0 +1,202 @@
+{
+  "physics": [
+    {
+      "q": "Why does a balloon-powered car move forward when air rushes out the back?",
+      "options": ["The air pushes the ground", "Every action has an equal and opposite reaction", "The balloon gets heavier", "Wind from the room pushes it"],
+      "answer": 1,
+      "explain": "Newton's Third Law! Air rushing backward pushes the car forward with equal force."
+    },
+    {
+      "q": "What happens to a pendulum's swing time when you make the string longer?",
+      "options": ["It swings faster", "It takes longer to swing", "Nothing changes", "It stops swinging"],
+      "answer": 1,
+      "explain": "Longer pendulums have a longer period — each swing takes more time. That's how grandfather clocks keep time!"
+    },
+    {
+      "q": "A stretched rubber band stores what kind of energy?",
+      "options": ["Electrical energy", "Sound energy", "Elastic potential energy", "Light energy"],
+      "answer": 2,
+      "explain": "Stretching stores elastic potential energy, which turns into kinetic (motion) energy when released."
+    },
+    {
+      "q": "What force pulls a water bottle rocket back down to the ground?",
+      "options": ["Friction", "Magnetism", "Air pressure", "Gravity"],
+      "answer": 3,
+      "explain": "Gravity pulls everything on Earth downward at 9.8 m/s² — rockets included!"
+    },
+    {
+      "q": "Wrapping more wire coils around a nail makes an electromagnet...",
+      "options": ["Weaker", "Stronger", "Colder", "Lighter"],
+      "answer": 1,
+      "explain": "More coils = more magnetic field. Current flowing through each loop adds to the magnet's strength."
+    },
+    {
+      "q": "At what angle does a launched ball travel the farthest (with no air resistance)?",
+      "options": ["15°", "30°", "45°", "75°"],
+      "answer": 2,
+      "explain": "45° is the perfect balance between going up and going forward — try it in the Physics Playground!"
+    },
+    {
+      "q": "In a Rube Goldberg machine, what passes from one step to the next?",
+      "options": ["Electricity", "Energy", "Water", "Sound"],
+      "answer": 1,
+      "explain": "Each step transfers energy to the next — a rolling marble's motion energy knocks over dominoes, and so on."
+    },
+    {
+      "q": "Why does a heavier balloon car move slower than a lighter one with the same balloon?",
+      "options": ["It has more friction only", "More mass needs more force to accelerate", "Air escapes faster", "Gravity turns off"],
+      "answer": 1,
+      "explain": "Newton's Second Law: F = ma. With the same force, more mass means less acceleration."
+    }
+  ],
+  "chemistry": [
+    {
+      "q": "What gas makes the baking soda volcano erupt?",
+      "options": ["Oxygen", "Hydrogen", "Carbon dioxide", "Helium"],
+      "answer": 2,
+      "explain": "Baking soda (a base) reacts with vinegar (an acid) to make carbon dioxide gas — all those bubbles push the 'lava' out!"
+    },
+    {
+      "q": "Why does oil float on top of water?",
+      "options": ["Oil is less dense than water", "Oil is heavier", "Water is sticky", "Oil is magnetic"],
+      "answer": 0,
+      "explain": "Density is mass per volume. Oil is less dense than water, so it floats — they don't mix because oil is hydrophobic."
+    },
+    {
+      "q": "Red cabbage juice turns RED when you add something...",
+      "options": ["Basic, like baking soda", "Acidic, like lemon juice", "Salty", "Sweet"],
+      "answer": 1,
+      "explain": "Cabbage juice is a pH indicator: acids turn it red/pink, bases turn it green/blue."
+    },
+    {
+      "q": "In the milk experiment, what does dish soap do to make the colors swirl?",
+      "options": ["Heats the milk", "Freezes the milk", "Breaks the surface tension", "Turns milk into water"],
+      "answer": 2,
+      "explain": "Soap molecules break the milk's surface tension and chase fat molecules, dragging the food coloring around!"
+    },
+    {
+      "q": "Crystals grow from a solution when it becomes...",
+      "options": ["Frozen", "Supersaturated", "Colorful", "Warm"],
+      "answer": 1,
+      "explain": "A supersaturated solution holds more dissolved material than it can keep — the extra comes out as beautiful crystals."
+    },
+    {
+      "q": "Electrolysis uses electricity to split water into which two gases?",
+      "options": ["Oxygen and carbon dioxide", "Hydrogen and oxygen", "Nitrogen and helium", "Hydrogen and chlorine"],
+      "answer": 1,
+      "explain": "Water is H₂O — electricity breaks it into hydrogen (H₂) and oxygen (O₂) bubbles at the two pencils."
+    },
+    {
+      "q": "What is a chemical reaction?",
+      "options": ["Mixing two things together", "A change that makes new substances", "Melting ice", "Stirring really fast"],
+      "answer": 1,
+      "explain": "In a chemical reaction, substances change into NEW substances — like vinegar + baking soda making gas that wasn't there before."
+    },
+    {
+      "q": "Which of these is an acid?",
+      "options": ["Baking soda", "Soap", "Lemon juice", "Water"],
+      "answer": 2,
+      "explain": "Lemon juice contains citric acid — that's why it tastes sour and turns cabbage juice red."
+    }
+  ],
+  "biology": [
+    {
+      "q": "Why do plant stems grow toward light?",
+      "options": ["Phototropism", "Magnetism", "Gravity", "Luck"],
+      "answer": 0,
+      "explain": "Phototropism means 'turning toward light' — plants grow toward their energy source to power photosynthesis."
+    },
+    {
+      "q": "What gas does yeast produce that inflates the balloon?",
+      "options": ["Oxygen", "Carbon dioxide", "Helium", "Steam"],
+      "answer": 1,
+      "explain": "Yeast eats sugar and releases carbon dioxide through fermentation — the same reason bread rises!"
+    },
+    {
+      "q": "What are the lines you see in a leaf rubbing?",
+      "options": ["Cracks", "Veins that carry water and nutrients", "Worm trails", "Shadows"],
+      "answer": 1,
+      "explain": "Leaf veins are like tiny highways carrying water, minerals, and food throughout the leaf."
+    },
+    {
+      "q": "Why is DNA from mashed strawberries visible as white strings?",
+      "options": ["Strawberries are painted inside", "DNA clumps together in cold alcohol", "It's actually sugar", "The soap turns white"],
+      "answer": 1,
+      "explain": "DNA doesn't dissolve in cold alcohol, so it clumps into visible white strands you can spool on a toothpick!"
+    },
+    {
+      "q": "How do earthworms help soil?",
+      "options": ["They eat plant roots", "They make tunnels that let in air and water", "They keep soil frozen", "They scare away insects"],
+      "answer": 1,
+      "explain": "Worm tunnels aerate the soil and their castings add nutrients — gardeners love them!"
+    },
+    {
+      "q": "What do you need to see a plant cell's structure?",
+      "options": ["A telescope", "A microscope", "Binoculars", "Sunglasses"],
+      "answer": 1,
+      "explain": "Cells are far too small for our eyes — microscopes magnify them hundreds of times so we can see nuclei and cell walls."
+    },
+    {
+      "q": "What does a seed need to germinate (start growing)?",
+      "options": ["Water, warmth, and air", "Music", "Darkness only", "Fertilizer only"],
+      "answer": 0,
+      "explain": "Seeds wake up with moisture, the right temperature, and oxygen — light matters more after the sprout appears."
+    },
+    {
+      "q": "Fermentation is when microorganisms like yeast...",
+      "options": ["Sleep", "Convert sugar into energy and gas", "Turn into plants", "Freeze"],
+      "answer": 1,
+      "explain": "Yeast metabolizes sugar for energy and releases CO₂ — used for thousands of years to make bread and more."
+    }
+  ],
+  "engineering": [
+    {
+      "q": "Which shape makes bridges strongest?",
+      "options": ["Circles", "Squares", "Triangles", "Hearts"],
+      "answer": 2,
+      "explain": "Triangles can't be squished out of shape without changing their side lengths — that's why you see them in real bridges everywhere!"
+    },
+    {
+      "q": "What does a catapult store before launch?",
+      "options": ["Elastic potential energy", "Electricity", "Heat", "Sound"],
+      "answer": 0,
+      "explain": "Pulling back the spoon stretches the rubber bands, storing elastic energy that becomes motion when released."
+    },
+    {
+      "q": "In a water filter, what is each layer's job?",
+      "options": ["Adding flavor", "Trapping different-sized particles", "Coloring the water", "Making bubbles"],
+      "answer": 1,
+      "explain": "Gravel catches big bits, sand catches smaller ones, and charcoal grabs tiny particles and chemicals."
+    },
+    {
+      "q": "An LED only lights up when the circuit is...",
+      "options": ["Broken", "Closed (a complete loop)", "Wet", "Painted"],
+      "answer": 1,
+      "explain": "Electricity needs a complete path from the battery, through the LED, and back — any gap stops the flow."
+    },
+    {
+      "q": "What makes a balloon rocket zoom along the string?",
+      "options": ["Escaping air pushing it forward", "The string pulling it", "Magnets", "Gravity"],
+      "answer": 0,
+      "explain": "Air rushing out the back pushes the balloon forward — thrust, just like a real rocket engine!"
+    },
+    {
+      "q": "What should an engineer do when their design fails?",
+      "options": ["Give up", "Hide it", "Study why it failed and improve the design", "Blame the materials"],
+      "answer": 2,
+      "explain": "Failure is data! Engineers test, learn what broke and why, redesign, and test again. That's the engineering design process."
+    },
+    {
+      "q": "Twisting the rubber band in a paper helicopter stores energy that becomes...",
+      "options": ["Rotational motion", "Light", "Heat only", "Sound only"],
+      "answer": 0,
+      "explain": "The twisted band unwinds and spins the rotors — elastic energy becomes rotational kinetic energy, creating lift!"
+    },
+    {
+      "q": "Why do engineers test bridges with weights until they break?",
+      "options": ["For fun", "To find the weakest point and make it stronger", "To waste materials", "Because they're angry"],
+      "answer": 1,
+      "explain": "Load testing reveals exactly where a structure fails first, so the next version can be reinforced there."
+    }
+  ]
+}

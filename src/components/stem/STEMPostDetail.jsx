@@ -2,9 +2,10 @@ import React from 'react';
 import { format } from 'date-fns';
 import { Badge } from '@/components/ui/badge';
 import { Button } from '@/components/ui/button';
-import { X, Globe, Lightbulb, Calendar } from 'lucide-react';
+import { X, Globe, Lightbulb, Calendar, Check, BookOpen } from 'lucide-react';
 import { motion, AnimatePresence } from 'framer-motion';
 import ReactMarkdown from 'react-markdown';
+import { useQuest } from '@/lib/quest';
 
 const topicColors = {
   science: 'bg-green-100 text-green-700',
@@ -15,7 +16,9 @@ const topicColors = {
 };
 
 export default function STEMPostDetail({ post, onClose }) {
+  const quest = useQuest();
   if (!post) return null;
+  const isRead = quest.readPosts.includes(post.id);
 
   const weekDate = post.week_date ? new Date(post.week_date) : new Date();
 
@@ -139,10 +142,26 @@ export default function STEMPostDetail({ post, onClose }) {
           </div>
 
           {/* Footer */}
-          <div className="border-t border-gray-100 p-6">
+          <div className="border-t border-gray-100 p-6 space-y-3">
+            <Button
+              onClick={() => quest.markPostRead(post)}
+              disabled={isRead}
+              className={`w-full py-6 rounded-xl font-semibold text-lg ${
+                isRead
+                  ? 'bg-green-100 text-green-700 hover:bg-green-100'
+                  : 'bg-[#ed7219] hover:bg-[#d86515] text-white'
+              }`}
+            >
+              {isRead ? (
+                <><Check className="w-5 h-5 mr-2" /> Read — nice work!</>
+              ) : (
+                <><BookOpen className="w-5 h-5 mr-2" /> I read this!</>
+              )}
+            </Button>
             <Button
               onClick={onClose}
-              className="w-full bg-[#055b8e] hover:bg-[#044a73] text-white py-6 rounded-xl font-semibold text-lg"
+              variant="outline"
+              className="w-full py-6 rounded-xl font-semibold text-lg"
             >
               Back to This Week in STEM
             </Button>

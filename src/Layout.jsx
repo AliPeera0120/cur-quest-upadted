@@ -12,6 +12,7 @@ export default function Layout({ children, currentPageName }) {
     { name: 'Home', page: 'Home' },
     { name: 'Activities', page: 'Activities' },
     { name: 'Playground', page: 'PhysicsPlayground' },
+    { name: 'Passport', page: 'QuestPassport' },
     { name: 'Events', page: 'Events' },
     { name: '5 Minutes of STEM', page: 'ThisWeekInSTEM' },
     { name: 'Careers', page: 'CareersInSTEM' },
