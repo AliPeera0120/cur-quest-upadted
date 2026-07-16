@@ -52,6 +52,7 @@ import CareersInSTEM from './pages/CareersInSTEM';
 import Events from './pages/Events';
 import Home from './pages/Home';
 import MakeAnImpact from './pages/MakeAnImpact';
+import PhysicsPlayground from './pages/PhysicsPlayground';
 import ThisWeekInSTEM from './pages/ThisWeekInSTEM';
 import __Layout from './Layout.jsx';
 
@@ -62,6 +63,7 @@ export const PAGES = {
     "Events": Events,
     "Home": Home,
     "MakeAnImpact": MakeAnImpact,
+    "PhysicsPlayground": PhysicsPlayground,
     "ThisWeekInSTEM": ThisWeekInSTEM,
 }
 
