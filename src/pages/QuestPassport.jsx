@@ -9,7 +9,7 @@ import {
   Rocket, BookOpen, FlaskConical, Code, Award, Stamp, Brain,
   ChevronRight, RotateCcw, Sparkles, Check, X as XIcon,
   Atom, Beaker, Sprout, Wrench, Microscope, Bot, Bird, Zap, Star, Rabbit,
-  Coins,
+  Coins, Swords,
 } from 'lucide-react';
 import { motion, AnimatePresence } from 'framer-motion';
 
@@ -322,8 +322,8 @@ export default function QuestPassport() {
                   <div className="text-xs text-gray-500 font-medium">Coins</div>
                 </div>
                 <div className="bg-green-50 rounded-2xl px-3 py-3">
-                  <div className="text-xl font-bold text-green-600">{quest.bestStreak}</div>
-                  <div className="text-xs text-gray-500 font-medium">Streak</div>
+                  <div className="text-xl font-bold text-green-600">{quest.arena.level}</div>
+                  <div className="text-xs text-gray-500 font-medium">Arena Lvl</div>
                 </div>
               </div>
             </div>
@@ -407,6 +407,37 @@ export default function QuestPassport() {
             </div>
           </div>
         </div>
+
+        {/* Arena mastery (per-topic accuracy) */}
+        {Object.keys(quest.arena.topicStats).length > 0 && (
+          <div className="bg-white rounded-3xl shadow-sm border border-gray-100 p-6">
+            <h3 className="font-bold text-[#055b8e] mb-1 flex items-center gap-2" style={{ fontFamily: 'Nunito, sans-serif' }}>
+              <Swords className="w-5 h-5" /> Science Arena Mastery
+            </h3>
+            <p className="text-xs text-gray-500 mb-5">
+              How accurately you have answered questions in each topic during Arena battles.
+            </p>
+            <div className="grid sm:grid-cols-2 gap-x-8 gap-y-3">
+              {Object.entries(quest.arena.topicStats)
+                .sort((a, b) => b[1].total - a[1].total)
+                .map(([topic, st]) => {
+                  const pct = st.total ? Math.round((st.correct / st.total) * 100) : 0;
+                  const barColor = pct >= 80 ? 'bg-green-500' : pct >= 50 ? 'bg-yellow-500' : 'bg-red-400';
+                  return (
+                    <div key={topic}>
+                      <div className="flex justify-between text-sm font-medium mb-1">
+                        <span className="text-gray-700">{topic}</span>
+                        <span className="text-gray-400">{pct}% ({st.correct}/{st.total})</span>
+                      </div>
+                      <div className="h-2 bg-gray-100 rounded-full overflow-hidden">
+                        <div className={`h-full ${barColor} rounded-full transition-all`} style={{ width: `${pct}%` }} />
+                      </div>
+                    </div>
+                  );
+                })}
+            </div>
+          </div>
+        )}
 
         {/* Badges */}
         <div className="bg-white rounded-3xl shadow-sm border border-gray-100 p-6">

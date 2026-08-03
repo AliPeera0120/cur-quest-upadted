@@ -54,9 +54,9 @@ import Events from './pages/Events';
 import Home from './pages/Home';
 import LearnHub from './pages/LearnHub';
 import MakeAnImpact from './pages/MakeAnImpact';
-import PhysicsPlayground from './pages/PhysicsPlayground';
 import PlayHub from './pages/PlayHub';
 import QuestPassport from './pages/QuestPassport';
+import ScienceArena from './pages/ScienceArena';
 import ScienceLab from './pages/ScienceLab';
 import ThisWeekInSTEM from './pages/ThisWeekInSTEM';
 import __Layout from './Layout.jsx';
@@ -70,9 +70,9 @@ export const PAGES = {
     "Home": Home,
     "Learn": LearnHub,
     "MakeAnImpact": MakeAnImpact,
-    "PhysicsPlayground": PhysicsPlayground,
     "Play": PlayHub,
     "QuestPassport": QuestPassport,
+    "ScienceArena": ScienceArena,
     "ScienceLab": ScienceLab,
     "ThisWeekInSTEM": ThisWeekInSTEM,
 }

@@ -2,15 +2,15 @@ import React from 'react';
 import { Link } from 'react-router-dom';
 import { motion } from 'framer-motion';
 import { createPageUrl } from '../utils';
-import { Rocket, FlaskConical, Award, ArrowRight } from 'lucide-react';
+import { Swords, FlaskConical, Award, ArrowRight } from 'lucide-react';
 
 const games = [
   {
-    icon: Rocket,
-    title: 'Physics Playground',
-    desc: 'Launch projectiles at targets and discover how angle, power, and gravity shape every throw. Switch between Earth, the Moon, Mars, and Jupiter.',
-    tag: 'Simulation',
-    to: createPageUrl('PhysicsPlayground'),
+    icon: Swords,
+    title: 'Science Arena',
+    desc: 'A battle campaign where correct science answers power your elixir. Deploy units, topple the enemy tower, and climb through curriculum-aligned levels.',
+    tag: 'Battle campaign',
+    to: createPageUrl('ScienceArena'),
     color: 'bg-[#055b8e]',
     accent: 'text-[#055b8e]',
   },

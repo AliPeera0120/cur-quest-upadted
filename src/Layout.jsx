@@ -30,7 +30,7 @@ export default function Layout({ children, currentPageName }) {
     },
     {
       name: 'Interactive Play', page: 'Play', children: [
-        { name: 'Physics Playground', page: 'PhysicsPlayground', desc: 'Launch projectiles, explore gravity' },
+        { name: 'Science Arena', page: 'ScienceArena', desc: 'Battle campaign fueled by your answers' },
         { name: 'Science Lab Tycoon', page: 'ScienceLab', desc: 'Answer questions, build a lab' },
         { name: 'Quest Passport', page: 'QuestPassport', desc: 'Track XP, badges, and progress' },
       ],

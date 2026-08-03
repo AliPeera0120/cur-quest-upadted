@@ -26,8 +26,8 @@ export const XP_RULES = {
   post: 10,
   quizCorrect: 5,
   quizPerfectBonus: 15,
-  playgroundHit: 5,
   researchXp: 2, // XP per correct answer in a Science Lab research session
+  arenaLevelClear: 40, // XP for clearing an Arena level
 };
 
 export const COIN_RULES = {
@@ -48,6 +48,9 @@ export const levelForXp = (xp) =>
   [...LEVELS].reverse().find((l) => xp >= l.minXp) || LEVELS[0];
 
 export const nextLevel = (xp) => LEVELS.find((l) => l.minXp > xp) || null;
+
+// Total number of levels in the Science Arena campaign (kept in sync with ScienceArena.jsx)
+export const ARENA_TOTAL_LEVELS = 12;
 
 // ---------- Topic totals (computed from real content) ----------
 const topicTotals = experiments.reduce((acc, e) => {
@@ -85,10 +88,13 @@ export const BADGES = [
   { id: 'quiz-taker', name: 'Quiz Rookie', desc: 'Finish your first quiz' },
   { id: 'quiz-ace', name: 'Quiz Ace', desc: 'Score 100% on any quiz' },
   { id: 'brainiac', name: 'Brainiac', desc: 'Score 80%+ on all four topic quizzes' },
-  { id: 'sharpshooter', name: 'Sharpshooter', desc: 'Hit 3 bullseyes in a row in the Physics Playground' },
   { id: 'lab-starter', name: 'Lab Starter', desc: 'Buy your first piece of lab equipment' },
   { id: 'lab-tycoon', name: 'Lab Tycoon', desc: 'Own 10 pieces of lab equipment' },
   { id: 'lab-complete', name: 'Dream Laboratory', desc: 'Own every piece of lab equipment' },
+  { id: 'arena-first', name: 'First Victory', desc: 'Win your first Science Arena battle' },
+  { id: 'arena-streak', name: 'On Fire', desc: 'Answer 5 questions in a row correctly in the Arena' },
+  { id: 'arena-chapter', name: 'Chapter Cleared', desc: 'Clear the first Arena chapter (3 levels)' },
+  { id: 'arena-champion', name: 'Arena Champion', desc: 'Clear every level in the Science Arena' },
   { id: 'lab-legend', name: 'Lab Legend', desc: 'Reach the highest level' },
 ];
 
@@ -123,10 +129,13 @@ const evaluateBadges = (s) => {
     'quiz-taker': Object.keys(s.quizBest).length >= 1,
     'quiz-ace': Object.values(s.quizBest).some((b) => b.total > 0 && b.score === b.total),
     'brainiac': quizzes80.length >= 4,
-    'sharpshooter': s.bestStreak >= 3,
     'lab-starter': s.lab.length >= 1,
     'lab-tycoon': s.lab.length >= 10,
     'lab-complete': s.lab.length >= labEquipment.length,
+    'arena-first': s.arena.level >= 1,
+    'arena-streak': s.bestStreak >= 5,
+    'arena-chapter': s.arena.level >= 3,
+    'arena-champion': s.arena.level >= ARENA_TOTAL_LEVELS,
     'lab-legend': levelForXp(s.xp).level >= 6,
   };
 
@@ -148,8 +157,8 @@ const DEFAULT_STATE = {
   completedActivities: [], // ids
   readPosts: [], // ids
   quizBest: {}, // topic -> { score, total }
-  playgroundHits: 0,
-  bestStreak: 0,
+  bestStreak: 0, // best answer streak (Science Arena)
+  arena: { level: 0, stars: {}, topicStats: {} }, // level = highest cleared; topicStats: cat -> {correct,total}
   badges: [],
   log: [], // [{ ts, label, xp, coins }]
 };
@@ -308,16 +317,30 @@ export function QuestProvider({ children }) {
       );
     },
 
-    recordPlaygroundHit: (streak) => {
+    // Called once when a Science Arena battle is won.
+    completeArenaLevel: ({ level, stars, correct, total, topicStats, runStreak, coins }) => {
+      const isNewClear = level > state.arena.level;
       applyUpdate(
-        (s) => ({
-          ...s,
-          playgroundHits: s.playgroundHits + 1,
-          bestStreak: Math.max(s.bestStreak, streak),
-        }),
-        'Physics Playground bullseye',
-        XP_RULES.playgroundHit,
-        Math.round(5 * multiplier)
+        (s) => {
+          const mergedTopics = { ...s.arena.topicStats };
+          Object.entries(topicStats || {}).forEach(([cat, st]) => {
+            const prev = mergedTopics[cat] || { correct: 0, total: 0 };
+            mergedTopics[cat] = { correct: prev.correct + st.correct, total: prev.total + st.total };
+          });
+          const bestStars = Math.max(s.arena.stars[level] || 0, stars);
+          return {
+            ...s,
+            bestStreak: Math.max(s.bestStreak, runStreak || 0),
+            arena: {
+              level: Math.max(s.arena.level, level),
+              stars: { ...s.arena.stars, [level]: bestStars },
+              topicStats: mergedTopics,
+            },
+          };
+        },
+        `Arena level ${level} cleared (${correct}/${total} correct)`,
+        isNewClear ? XP_RULES.arenaLevelClear : Math.round(XP_RULES.arenaLevelClear / 2),
+        Math.round((coins || 0) * multiplier)
       );
     },
 
