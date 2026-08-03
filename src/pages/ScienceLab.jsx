@@ -8,7 +8,7 @@ import {
   FlaskConical, Search, Thermometer, Scale, Flame, Sprout, Magnet, Microscope,
   CircuitBoard, Wind, Telescope, Fish, CloudSun, Bot, Printer, Zap, Dna, Fan,
   Rainbow, Server, Atom, Sparkles, Shield, Globe,
-  Coins, TrendingUp, Lock, Check, X as XIcon, Beaker, ChevronRight, Play, Store,
+  Coins, TrendingUp, Lock, Check, X as XIcon, Beaker, ChevronRight, Play, Store, Swords,
 } from 'lucide-react';
 import { motion, AnimatePresence } from 'framer-motion';
 
@@ -276,6 +276,19 @@ export default function ScienceLab() {
           >
             <Play className="w-5 h-5" /> Start Research
           </button>
+        </div>
+
+        {/* Arena link banner */}
+        <div className="bg-gradient-to-r from-[#055b8e]/5 to-[#ed7219]/5 border border-gray-100 rounded-2xl px-5 py-4 mb-6 flex flex-wrap items-center gap-x-6 gap-y-2">
+          <div className="flex items-center gap-2 text-[#055b8e] font-bold" style={{ fontFamily: 'Nunito, sans-serif' }}>
+            <Swords className="w-5 h-5 text-[#ed7219]" /> Powers your Science Arena army
+          </div>
+          <div className="text-sm text-gray-600">
+            <strong className="text-[#ed7219]">+{Math.round(0.04 * owned.length * 100)}%</strong> unit strength
+            {' · '}
+            <strong className="text-[#ed7219]">{[0, 3, 6, 10].filter((t) => owned.length >= t).length}/4</strong> unit tiers unlocked
+          </div>
+          <span className="text-xs text-gray-400">Build your lab, then win harder Arena battles.</span>
         </div>
 
         {/* Tabs */}
