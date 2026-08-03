@@ -7,15 +7,38 @@ import { Button } from '@/components/ui/button';
 
 export default function Layout({ children, currentPageName }) {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
+  const [openTab, setOpenTab] = useState(null);
 
-  // Three main hub tabs. Each hub highlights when you're on it or any of its child pages.
+  // Three main hub tabs. Each hub highlights when you're on it or any of its child pages,
+  // and reveals its child pages on hover.
   const navTabs = [
     { name: 'Home', page: 'Home', children: [] },
-    { name: 'About Us', page: 'AboutUs', children: ['Events', 'CareersInSTEM', 'MakeAnImpact'] },
-    { name: 'Activities', page: 'Learn', children: ['Activities', 'ThisWeekInSTEM'] },
-    { name: 'Interactive Play', page: 'Play', children: ['PhysicsPlayground', 'ScienceLab', 'QuestPassport'] },
+    {
+      name: 'About Us', page: 'AboutUs', children: [
+        { name: 'Overview', page: 'AboutUs', desc: 'Our mission, team, and story' },
+        { name: 'Events', page: 'Events', desc: 'Free STEM events near you' },
+        { name: 'Careers in STEM', page: 'CareersInSTEM', desc: 'Explore science career paths' },
+        { name: 'Make an Impact', page: 'MakeAnImpact', desc: 'Support and get involved' },
+      ],
+    },
+    {
+      name: 'Activities', page: 'Learn', children: [
+        { name: 'Hands-On Experiments', page: 'Activities', desc: '72 experiments to try at home' },
+        { name: 'Coding Courses', page: 'Activities', query: 'tab=code', desc: 'Python, Java, and web' },
+        { name: '5 Minutes of STEM', page: 'ThisWeekInSTEM', desc: 'Quick, fascinating reads' },
+      ],
+    },
+    {
+      name: 'Interactive Play', page: 'Play', children: [
+        { name: 'Physics Playground', page: 'PhysicsPlayground', desc: 'Launch projectiles, explore gravity' },
+        { name: 'Science Lab Tycoon', page: 'ScienceLab', desc: 'Answer questions, build a lab' },
+        { name: 'Quest Passport', page: 'QuestPassport', desc: 'Track XP, badges, and progress' },
+      ],
+    },
   ];
-  const isTabActive = (tab) => currentPageName === tab.page || tab.children.includes(currentPageName);
+  const childPages = (tab) => tab.children.map((c) => c.page);
+  const isTabActive = (tab) => currentPageName === tab.page || childPages(tab).includes(currentPageName);
+  const linkTo = (c) => `${createPageUrl(c.page)}${c.query ? `?${c.query}` : ''}`;
 
   return (
     <div className="min-h-screen bg-white flex flex-col">
@@ -88,17 +111,57 @@ export default function Layout({ children, currentPageName }) {
             {/* Desktop Navigation */}
             <nav className="hidden md:flex items-center gap-1">
               {navTabs.map((tab) => (
-                <Link
-                  key={tab.page}
-                  to={createPageUrl(tab.page)}
-                  className={`px-4 py-2 rounded-lg text-base font-medium transition-all ${
-                    isTabActive(tab)
-                      ? 'bg-[#055b8e] text-white'
-                      : 'text-gray-700 hover:bg-[#055b8e]/10 hover:text-[#055b8e]'
-                  }`}
-                >
-                  {tab.name}
-                </Link>
+                tab.children.length === 0 ? (
+                  <Link
+                    key={tab.page}
+                    to={createPageUrl(tab.page)}
+                    className={`px-4 py-2 rounded-lg text-base font-medium transition-all ${
+                      isTabActive(tab)
+                        ? 'bg-[#055b8e] text-white'
+                        : 'text-gray-700 hover:bg-[#055b8e]/10 hover:text-[#055b8e]'
+                    }`}
+                  >
+                    {tab.name}
+                  </Link>
+                ) : (
+                  <div
+                    key={tab.page}
+                    className="relative"
+                    onMouseEnter={() => setOpenTab(tab.page)}
+                    onMouseLeave={() => setOpenTab(null)}
+                  >
+                    <Link
+                      to={createPageUrl(tab.page)}
+                      className={`px-4 py-2 rounded-lg text-base font-medium transition-all inline-block ${
+                        isTabActive(tab)
+                          ? 'bg-[#055b8e] text-white'
+                          : 'text-gray-700 hover:bg-[#055b8e]/10 hover:text-[#055b8e]'
+                      }`}
+                    >
+                      {tab.name}
+                    </Link>
+                    {openTab === tab.page && (
+                      <div className="absolute left-0 top-full pt-2 w-72 z-50">
+                        <div className="bg-white rounded-2xl shadow-xl border border-gray-100 p-2">
+                          {tab.children.map((c) => (
+                            <Link
+                              key={c.name}
+                              to={linkTo(c)}
+                              className={`block px-4 py-2.5 rounded-xl transition-all ${
+                                currentPageName === c.page ? 'bg-[#055b8e]/10' : 'hover:bg-gray-50'
+                              }`}
+                            >
+                              <div className="font-semibold text-[#055b8e]" style={{ fontFamily: 'Nunito, sans-serif' }}>
+                                {c.name}
+                              </div>
+                              <div className="text-sm text-gray-500">{c.desc}</div>
+                            </Link>
+                          ))}
+                        </div>
+                      </div>
+                    )}
+                  </div>
+                )
               ))}
             </nav>
 
@@ -121,20 +184,35 @@ export default function Layout({ children, currentPageName }) {
         {/* Mobile Navigation */}
         {mobileMenuOpen && (
           <div className="md:hidden bg-white border-t border-gray-100 py-4">
-            <nav className="flex flex-col px-4 gap-2">
+            <nav className="flex flex-col px-4 gap-1">
               {navTabs.map((tab) => (
-                <Link
-                  key={tab.page}
-                  to={createPageUrl(tab.page)}
-                  onClick={() => setMobileMenuOpen(false)}
-                  className={`px-4 py-3 rounded-xl text-lg font-medium transition-all ${
-                    isTabActive(tab)
-                      ? 'bg-[#055b8e] text-white'
-                      : 'text-gray-700 hover:bg-[#055b8e]/10'
-                  }`}
-                >
-                  {tab.name}
-                </Link>
+                <div key={tab.page} className={tab.children.length ? 'mb-1' : ''}>
+                  <Link
+                    to={createPageUrl(tab.page)}
+                    onClick={() => setMobileMenuOpen(false)}
+                    className={`block px-4 py-3 rounded-xl text-lg font-medium transition-all ${
+                      currentPageName === tab.page
+                        ? 'bg-[#055b8e] text-white'
+                        : 'text-gray-700 hover:bg-[#055b8e]/10'
+                    }`}
+                  >
+                    {tab.name}
+                  </Link>
+                  {tab.children.map((c) => (
+                    <Link
+                      key={c.name}
+                      to={linkTo(c)}
+                      onClick={() => setMobileMenuOpen(false)}
+                      className={`block ml-4 px-4 py-2.5 rounded-xl text-base font-medium transition-all ${
+                        currentPageName === c.page
+                          ? 'text-[#055b8e]'
+                          : 'text-gray-500 hover:text-[#055b8e]'
+                      }`}
+                    >
+                      {c.name}
+                    </Link>
+                  ))}
+                </div>
               ))}
             </nav>
           </div>
