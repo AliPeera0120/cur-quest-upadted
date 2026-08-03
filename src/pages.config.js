@@ -47,12 +47,15 @@
  *
  * The mainPage value must match a key in the PAGES object exactly.
  */
+import AboutUs from './pages/AboutUs';
 import Activities from './pages/Activities';
 import CareersInSTEM from './pages/CareersInSTEM';
 import Events from './pages/Events';
 import Home from './pages/Home';
+import LearnHub from './pages/LearnHub';
 import MakeAnImpact from './pages/MakeAnImpact';
 import PhysicsPlayground from './pages/PhysicsPlayground';
+import PlayHub from './pages/PlayHub';
 import QuestPassport from './pages/QuestPassport';
 import ScienceLab from './pages/ScienceLab';
 import ThisWeekInSTEM from './pages/ThisWeekInSTEM';
@@ -60,12 +63,15 @@ import __Layout from './Layout.jsx';
 
 
 export const PAGES = {
+    "AboutUs": AboutUs,
     "Activities": Activities,
     "CareersInSTEM": CareersInSTEM,
     "Events": Events,
     "Home": Home,
+    "Learn": LearnHub,
     "MakeAnImpact": MakeAnImpact,
     "PhysicsPlayground": PhysicsPlayground,
+    "Play": PlayHub,
     "QuestPassport": QuestPassport,
     "ScienceLab": ScienceLab,
     "ThisWeekInSTEM": ThisWeekInSTEM,

@@ -1,4 +1,5 @@
 import React, { useState, useEffect } from 'react';
+import { useSearchParams } from 'react-router-dom';
 import experiments from '@/data/experiments.json';
 import virtualActivities from '@/data/virtualActivities.json';
 import { Tabs, TabsList, TabsTrigger, TabsContent } from '@/components/ui/tabs';
@@ -35,7 +36,8 @@ const codeCourses = [
 const courseLanguage = (id) => codeCourses.find((c) => c.id === id)?.language;
 
 export default function Activities() {
-  const [mainTab, setMainTab] = useState('hands-on');
+  const [searchParams] = useSearchParams();
+  const [mainTab, setMainTab] = useState(searchParams.get('tab') === 'code' ? 'code' : 'hands-on');
   const [selectedTopic, setSelectedTopic] = useState('all');
   const [selectedActivityType, setSelectedActivityType] = useState('all');
   const [selectedCourse, setSelectedCourse] = useState('python');
