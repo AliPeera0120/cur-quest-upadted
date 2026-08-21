@@ -1,0 +1,429 @@
+/* ============================================================================
+   CuriosityQuest system classes.
+
+   These carry the visual identity, so a component looks the same no matter who
+   assembled the page. Tailwind handles layout; this handles language.
+
+   Direction: crisp white surfaces, generous space, soft elevation, restrained
+   rounded cards, deep blue primary with the brand orange as an accent.
+   ========================================================================= */
+
+@layer components {
+  /* Skip link — first tab stop on every page. */
+  .cq-skip {
+    position: absolute;
+    left: var(--sp-4);
+    top: var(--sp-3);
+    z-index: 999;
+    transform: translateY(-250%);
+    background: var(--cq-ink-900);
+    color: #fff;
+    font-size: var(--text-sm);
+    font-weight: 500;
+    padding: 0.65rem 1rem;
+    border-radius: var(--r-sm);
+    box-shadow: var(--shadow-lg);
+    transition: transform var(--dur-2) var(--ease-out);
+  }
+  .cq-skip:focus { transform: translateY(0); }
+
+  /* ---------------------------------------------------------------- layout */
+  .cq-container         { width: 100%; max-width: var(--container);        margin-inline: auto; padding-inline: var(--gutter); }
+  .cq-container--wide   { max-width: var(--container-wide); }
+  .cq-container--narrow { max-width: var(--container-narrow); }
+
+  .cq-section          { padding-block: var(--section-y); }
+  .cq-section--tight   { padding-block: var(--section-y-tight); }
+  .cq-section--loose   { padding-block: var(--section-y-loose); }
+
+  /* A soft light-blue wash used behind hero and feature bands instead of a
+     hard gradient or a texture. */
+  .cq-wash {
+    background:
+      radial-gradient(1100px 520px at 12% -10%, var(--cq-blue-50) 0%, transparent 62%),
+      radial-gradient(900px 460px at 92% 4%, var(--cq-orange-50) 0%, transparent 58%);
+  }
+  .cq-wash--tint { background-color: var(--cq-paper-2); }
+
+  /* ----------------------------------------------------------------- eyebrow
+     Small uppercase label above headings. Sans, not monospace. */
+  .cq-eyebrow {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.5rem;
+    font-size: var(--text-micro);
+    font-weight: 600;
+    letter-spacing: var(--track-label);
+    text-transform: uppercase;
+    color: var(--cq-blue-600);
+  }
+  .cq-eyebrow--orange { color: var(--cq-orange-800); }
+  .cq-eyebrow--onDark { color: rgba(255, 255, 255, 0.72); }
+  .cq-eyebrow__dot {
+    width: 0.4rem; height: 0.4rem;
+    border-radius: var(--r-pill);
+    background: var(--cq-orange-500);
+  }
+
+  /* A soft pill used for the eyebrow when it needs more presence. */
+  .cq-eyebrow--pill {
+    padding: 0.35rem 0.7rem 0.35rem 0.55rem;
+    border-radius: var(--r-pill);
+    background: var(--cq-blue-50);
+    color: var(--cq-blue-700);
+  }
+  .cq-eyebrow--pill.cq-eyebrow--onDark {
+    background: rgba(255, 255, 255, 0.12);
+    color: #fff;
+  }
+
+  /* -------------------------------------------------------------- card ---- */
+  .cq-panel {
+    background: var(--cq-surface);
+    border: 1px solid var(--cq-line);
+    border-radius: var(--r-md);
+    box-shadow: var(--shadow-xs);
+  }
+  .cq-panel--lift   { box-shadow: var(--shadow-sm); }
+  .cq-panel--raised { box-shadow: var(--shadow-md); border-color: transparent; }
+  .cq-panel--quiet  { background: var(--cq-surface-2); border-color: transparent; box-shadow: none; }
+  .cq-panel--flat   { box-shadow: none; }
+  .cq-panel--lg     { border-radius: var(--r-lg); }
+  .cq-panel--pad    { padding: var(--sp-5); }
+  .cq-panel--pad-lg { padding: clamp(1.25rem, 0.9rem + 1.2vw, 2rem); }
+
+  .cq-panel--action {
+    transition:
+      transform var(--dur-2) var(--ease-out),
+      box-shadow var(--dur-2) var(--ease-out),
+      border-color var(--dur-2) var(--ease-out);
+  }
+  .cq-panel--action:hover,
+  .cq-panel--action:focus-visible {
+    transform: translateY(-2px);
+    box-shadow: var(--shadow-lg);
+    border-color: var(--cq-blue-200);
+  }
+  .cq-panel--action:active { transform: translateY(0); box-shadow: var(--shadow-sm); }
+  @media (hover: none) {
+    .cq-panel--action:hover { transform: none; box-shadow: var(--shadow-xs); }
+  }
+
+  /* -------------------------------------------------------------- button -- */
+  .cq-btn {
+    --btn-h: 2.75rem;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.5rem;
+    min-height: var(--btn-h);
+    min-width: var(--btn-h);
+    padding-inline: 1.15rem;
+    border: 1px solid transparent;
+    border-radius: var(--r-sm);
+    font-family: var(--font-display);
+    font-size: var(--text-sm);
+    font-weight: 600;
+    letter-spacing: -0.008em;
+    line-height: 1;
+    text-align: center;
+    text-decoration: none;
+    white-space: nowrap;
+    cursor: pointer;
+    transition:
+      background-color var(--dur-1) var(--ease-out),
+      border-color var(--dur-1) var(--ease-out),
+      color var(--dur-1) var(--ease-out),
+      box-shadow var(--dur-2) var(--ease-out),
+      transform var(--dur-1) var(--ease-out);
+  }
+  .cq-btn:disabled,
+  .cq-btn[aria-disabled='true'] { opacity: 0.5; pointer-events: none; }
+  .cq-btn:active:not(:disabled) { transform: translateY(1px); }
+
+  /* Primary: deep blue. The confident default across the whole product. */
+  .cq-btn--primary {
+    background: var(--cq-blue-600);
+    color: #fff;
+    box-shadow: var(--shadow-sm);
+  }
+  .cq-btn--primary:hover { background: var(--cq-blue-500); box-shadow: var(--shadow-md); }
+
+  /* Accent: the brand orange, at the step that clears contrast with white
+     text. Used for the single most important action on a page. */
+  .cq-btn--accent {
+    background: var(--cq-orange-700);
+    color: #fff;
+    box-shadow: var(--shadow-sm);
+  }
+  .cq-btn--accent:hover { background: var(--cq-orange-600); box-shadow: var(--shadow-md); }
+
+  .cq-btn--secondary {
+    background: var(--cq-blue-50);
+    color: var(--cq-blue-700);
+    border-color: var(--cq-blue-100);
+  }
+  .cq-btn--secondary:hover { background: var(--cq-blue-100); border-color: var(--cq-blue-200); }
+
+  .cq-btn--outline {
+    background: var(--cq-surface);
+    color: var(--cq-ink-800);
+    border-color: var(--cq-ink-200);
+    box-shadow: var(--shadow-xs);
+  }
+  .cq-btn--outline:hover { border-color: var(--cq-ink-300); background: var(--cq-surface-2); }
+
+  .cq-btn--ghost { background: transparent; color: var(--cq-ink-700); }
+  .cq-btn--ghost:hover { background: var(--cq-ink-50); color: var(--cq-ink-900); }
+
+  .cq-btn--onDark {
+    background: #fff;
+    color: var(--cq-blue-800);
+    box-shadow: var(--shadow-md);
+  }
+  .cq-btn--onDark:hover { background: var(--cq-blue-50); }
+
+  .cq-btn--outlineOnDark {
+    background: rgba(255, 255, 255, 0.06);
+    color: #fff;
+    border-color: rgba(255, 255, 255, 0.32);
+  }
+  .cq-btn--outlineOnDark:hover { border-color: rgba(255, 255, 255, 0.6); background: rgba(255, 255, 255, 0.14); }
+
+  .cq-btn--danger { background: var(--cq-danger-600); color: #fff; box-shadow: var(--shadow-sm); }
+  .cq-btn--danger:hover { background: var(--cq-danger-500); }
+
+  .cq-btn--sm  { --btn-h: 2.25rem; font-size: var(--text-xs); padding-inline: 0.85rem; }
+  .cq-btn--lg  { --btn-h: 3.125rem; font-size: var(--text-body); padding-inline: 1.6rem; border-radius: var(--r-md); }
+  .cq-btn--xl  { --btn-h: 3.5rem; font-size: var(--text-lead); padding-inline: 2rem; border-radius: var(--r-md); }
+  .cq-btn--block { width: 100%; }
+  .cq-btn--icon { padding-inline: 0; }
+
+  /* Larger touch floor inside the lesson player, for younger hands. */
+  [data-skin='arena'] .cq-btn { --btn-h: var(--tap-kid); }
+  [data-skin='arena'] .cq-btn--sm { --btn-h: 2.5rem; }
+  [data-skin='arena'] .cq-btn--primary { background: var(--cq-blue-600); color: var(--arena-bg); }
+  [data-skin='arena'] .cq-btn--primary:hover { background: #64C6F6; }
+
+  /* --------------------------------------------------------------- badge -- */
+  .cq-badge {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.35rem;
+    padding: 0.2rem 0.6rem;
+    border: 1px solid var(--cq-line);
+    border-radius: var(--r-pill);
+    background: var(--cq-surface);
+    font-size: var(--text-micro);
+    font-weight: 600;
+    color: var(--cq-ink-700);
+    white-space: nowrap;
+  }
+  .cq-badge--solid   { background: var(--cq-ink-900); color: #fff; border-color: var(--cq-ink-900); }
+  .cq-badge--info    { background: var(--cq-blue-50);    color: var(--cq-blue-700);    border-color: var(--cq-blue-100); }
+  .cq-badge--ember   { background: var(--cq-orange-50);  color: var(--cq-orange-800);  border-color: var(--cq-orange-100); }
+  .cq-badge--success { background: var(--cq-success-50); color: var(--cq-success-700); border-color: #C7EBDD; }
+  .cq-badge--warning { background: var(--cq-warning-50); color: var(--cq-warning-700); border-color: #F1DEB0; }
+  .cq-badge--danger  { background: var(--cq-danger-50);  color: var(--cq-danger-700);  border-color: #F5CDCA; }
+  .cq-badge--square  { border-radius: var(--r-xs); }
+
+  /* --------------------------------------------------------------- field -- */
+  .cq-label {
+    display: block;
+    font-size: var(--text-xs);
+    font-weight: 600;
+    color: var(--cq-ink-800);
+    margin-bottom: 0.4rem;
+  }
+  .cq-field {
+    display: block;
+    width: 100%;
+    min-height: 2.875rem;
+    padding: 0.65rem 0.85rem;
+    background: var(--cq-surface);
+    border: 1px solid var(--cq-ink-200);
+    border-radius: var(--r-sm);
+    font-size: var(--text-body);
+    color: var(--cq-ink-900);
+    box-shadow: var(--shadow-xs);
+    transition: border-color var(--dur-1) var(--ease-out), box-shadow var(--dur-1) var(--ease-out);
+  }
+  .cq-field::placeholder { color: var(--cq-ink-400); }
+  .cq-field:hover  { border-color: var(--cq-ink-300); }
+  .cq-field:focus-visible { border-color: var(--cq-blue-500); }
+  .cq-field[aria-invalid='true'] { border-color: var(--cq-danger-600); background: var(--cq-danger-50); }
+  .cq-field:disabled { background: var(--cq-ink-50); color: var(--cq-ink-500); }
+  .cq-field--code {
+    font-size: 1.375rem;
+    font-weight: 700;
+    letter-spacing: 0.2em;
+    text-align: center;
+    text-transform: uppercase;
+    font-family: var(--font-display);
+    min-height: 3.5rem;
+  }
+  .cq-hint  { font-size: var(--text-xs); color: var(--cq-ink-500); margin-top: 0.4rem; }
+  .cq-error { font-size: var(--text-xs); color: var(--cq-danger-700); margin-top: 0.4rem; font-weight: 500; }
+
+  /* --------------------------------------------------------------- meter -- */
+  .cq-meter {
+    position: relative;
+    height: 8px;
+    background: var(--cq-ink-100);
+    border-radius: var(--r-pill);
+    overflow: hidden;
+  }
+  .cq-meter__fill {
+    height: 100%;
+    border-radius: var(--r-pill);
+    background: var(--cq-blue-500);
+    transition: width var(--dur-4) var(--ease-out);
+  }
+  .cq-meter--lg { height: 12px; }
+  .cq-meter--sm { height: 6px; }
+
+  /* ------------------------------------------------------------- mastery -- */
+  .cq-mastery { display: inline-flex; align-items: center; gap: 0.4rem; font-weight: 500; }
+  .cq-mastery__glyph { font-size: 0.95em; line-height: 1; }
+  .cq-mastery--none       { color: var(--cq-ink-500); }
+  .cq-mastery--beginning  { color: var(--cq-mastery-beginning); }
+  .cq-mastery--developing { color: var(--cq-mastery-developing); }
+  .cq-mastery--proficient { color: var(--cq-mastery-proficient); }
+  .cq-mastery--mastered   { color: var(--cq-mastery-mastered); }
+
+  /* ---------------------------------------------------------------- data --
+     Tabular figures so dashboard columns line up, in the display face. */
+  .cq-data {
+    font-family: var(--font-display);
+    font-variant-numeric: tabular-nums;
+    font-feature-settings: 'tnum' 1;
+    letter-spacing: -0.02em;
+    font-weight: 700;
+  }
+  .cq-data--xl { font-size: clamp(1.875rem, 1.3rem + 1.9vw, 2.75rem); line-height: 1; }
+  .cq-data--lg { font-size: 1.625rem; line-height: 1.05; }
+  .cq-data--md { font-size: 1.1875rem; }
+
+  /* --------------------------------------------------------------- table -- */
+  .cq-table { width: 100%; font-size: var(--text-sm); }
+  .cq-table th {
+    text-align: left;
+    font-size: var(--text-xs);
+    font-weight: 600;
+    color: var(--cq-ink-600);
+    padding: 0.7rem 0.85rem;
+    border-bottom: 1px solid var(--cq-line);
+    background: var(--cq-surface-2);
+    white-space: nowrap;
+  }
+  .cq-table td { padding: 0.75rem 0.85rem; border-bottom: 1px solid var(--cq-line); vertical-align: middle; }
+  .cq-table tbody tr:last-child td { border-bottom: 0; }
+  .cq-table tbody tr:hover td { background: var(--cq-blue-50); }
+  .cq-table--sticky th { position: sticky; top: 0; z-index: 2; }
+  .cq-table__rowhead {
+    position: sticky; left: 0; z-index: 1;
+    background: var(--cq-surface);
+    border-right: 1px solid var(--cq-line);
+    font-weight: 500;
+  }
+  .cq-table tbody tr:hover .cq-table__rowhead { background: var(--cq-blue-50); }
+
+  /* --------------------------------------------------------------- prose -- */
+  .cq-prose { max-width: 70ch; color: var(--cq-ink-700); }
+  .cq-prose > * + * { margin-top: 1.15em; }
+  .cq-prose h2 { font-size: var(--text-h3); margin-top: 2em; color: var(--cq-ink-900); }
+  .cq-prose h3 { font-size: var(--text-h4); margin-top: 1.7em; color: var(--cq-ink-900); }
+  .cq-prose ul, .cq-prose ol { padding-left: 1.35rem; }
+  .cq-prose li + li { margin-top: 0.4em; }
+  .cq-prose strong { color: var(--cq-ink-900); }
+  .cq-prose code {
+    background: var(--cq-ink-50);
+    border: 1px solid var(--cq-line);
+    padding: 0.1em 0.35em;
+    border-radius: var(--r-xs);
+    font-size: 0.88em;
+    color: var(--cq-ink-900);
+  }
+  .cq-prose pre {
+    background: var(--cq-ink-950);
+    color: #E8EEF5;
+    padding: var(--sp-4);
+    border-radius: var(--r-md);
+    overflow-x: auto;
+    font-size: var(--text-xs);
+    line-height: 1.65;
+  }
+  .cq-prose pre code { background: none; border: 0; padding: 0; color: inherit; }
+  .cq-prose blockquote {
+    border-left: 3px solid var(--cq-orange-300);
+    padding-left: var(--sp-4);
+    color: var(--cq-ink-700);
+    font-style: normal;
+  }
+
+  /* ------------------------------------------------------------- overlay -- */
+  .cq-overlay {
+    position: fixed;
+    inset: 0;
+    z-index: var(--z-modal);
+    background: rgba(10, 19, 31, 0.45);
+    backdrop-filter: blur(3px);
+    display: grid;
+    place-items: center;
+    padding: var(--gutter);
+    animation: cqFade var(--dur-2) var(--ease-out);
+  }
+  .cq-sheet {
+    background: var(--cq-surface);
+    border-radius: var(--r-lg);
+    box-shadow: var(--shadow-xl);
+    width: 100%;
+    max-height: min(88dvh, 52rem);
+    overflow: auto;
+    animation: cqRise var(--dur-3) var(--ease-out);
+  }
+
+  /* ---------------------------------------------------------------- misc -- */
+  .cq-sr {
+    position: absolute; width: 1px; height: 1px;
+    padding: 0; margin: -1px; overflow: hidden;
+    clip: rect(0, 0, 0, 0); white-space: nowrap; border: 0;
+  }
+  .cq-hairline   { border-top: 1px solid var(--cq-line); }
+  .cq-hairline-l { border-left: 1px solid var(--cq-line); }
+
+  /* Used for "no data" regions so emptiness reads as intentional. */
+  .cq-hatch {
+    background-image: repeating-linear-gradient(
+      -45deg,
+      var(--cq-ink-50) 0 6px,
+      transparent 6px 12px
+    );
+  }
+
+  .cq-scroll-x {
+    overflow-x: auto;
+    overscroll-behavior-x: contain;
+    scrollbar-width: thin;
+    -webkit-overflow-scrolling: touch;
+  }
+  .cq-scroll-x::-webkit-scrollbar { height: 8px; }
+  .cq-scroll-x::-webkit-scrollbar-thumb { background: var(--cq-ink-200); border-radius: var(--r-pill); }
+
+  /* Reveal-on-scroll: opacity plus a small rise, nothing more. */
+  .cq-reveal { opacity: 0; transform: translateY(14px); }
+  .cq-reveal[data-visible='true'] {
+    opacity: 1;
+    transform: none;
+    transition: opacity var(--dur-4) var(--ease-out), transform var(--dur-4) var(--ease-out);
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .cq-reveal { opacity: 1; transform: none; }
+}
+
+@keyframes cqFade { from { opacity: 0; } to { opacity: 1; } }
+@keyframes cqRise { from { opacity: 0; transform: translateY(12px); } to { opacity: 1; transform: none; } }
+@keyframes cqSweep { from { transform: translateX(-100%); } to { transform: translateX(100%); } }
+@keyframes cqPulse { 0%, 100% { opacity: 1; } 50% { opacity: 0.55; } }

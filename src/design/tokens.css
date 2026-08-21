@@ -1,0 +1,331 @@
+/* ============================================================================
+   CuriosityQuest Design Tokens
+
+   Direction: clean, modern, premium education product. Crisp white surfaces,
+   generous breathing room, soft elevation, restrained rounded cards, deep
+   blue as the confident primary with the brand orange as a deliberate accent.
+   Nothing decorative for its own sake.
+
+   Brand anchors preserved:
+     blue    #055B8E
+     orange  #ED7219
+
+   Every colour pair used for text has been contrast-checked; the ratio is
+   noted where it matters.
+   ========================================================================= */
+
+:root {
+  /* ---------------------------------------------------------------- INK ---
+     Text and structure. Cool, slightly blue-shifted neutrals so they sit in
+     the same family as the primary rather than looking like flat grey. */
+  --cq-ink-950: #0A131F;
+  --cq-ink-900: #0F1B2A;   /* headings, body            17.4:1 on white */
+  --cq-ink-800: #1E2E3F;   /*                           13.8:1 */
+  --cq-ink-700: #3A4C5F;   /* secondary text             8.8:1 */
+  --cq-ink-600: #4C5F73;   /*                            6.9:1 */
+  --cq-ink-500: #5A6B7D;   /* muted text                 5.5:1 */
+  --cq-ink-400: #7C8A99;   /* non-text only              3.5:1 */
+  --cq-ink-300: #A8B4C0;   /* input borders */
+  --cq-ink-200: #D6DDE5;   /* dividers, card borders */
+  --cq-ink-100: #EAEFF4;   /* rails, track backgrounds */
+  --cq-ink-50:  #F4F7FB;   /* section tint */
+
+  /* --------------------------------------------------------------- BLUE ---
+     Primary. Confident, trustworthy, and the same blue the organisation
+     already uses. */
+  --cq-blue-950: #021A2A;
+  --cq-blue-900: #03293F;
+  --cq-blue-800: #044A73;
+  --cq-blue-700: #044E7B;
+  --cq-blue-600: #055B8E;  /* PRIMARY — white text 7.3:1 */
+  --cq-blue-500: #0A72AF;
+  --cq-blue-400: #2E92CB;
+  --cq-blue-300: #74B8E0;
+  --cq-blue-200: #B3D9EF;
+  --cq-blue-100: #DCECF8;
+  --cq-blue-50:  #EFF6FC;
+
+  /* ------------------------------------------------------------- ORANGE ---
+     Accent. 500 is the brand orange and is used for fills, highlights and
+     illustration. 700 is the text-and-button-safe step. */
+  --cq-orange-950: #401A04;
+  --cq-orange-900: #6B2B06;
+  --cq-orange-800: #A2440C;  /* text on white           6.2:1 */
+  --cq-orange-700: #BE550F;  /* solid button, white text 4.7:1 */
+  --cq-orange-600: #D2600F;
+  --cq-orange-500: #ED7219;  /* brand orange — fills, accents, large type */
+  --cq-orange-400: #F5964F;
+  --cq-orange-300: #FAB985;
+  --cq-orange-200: #FCD8B8;
+  --cq-orange-100: #FDECDE;
+  --cq-orange-50:  #FFF6EF;
+
+  /* Legacy aliases so nothing that referenced the old ember ramp breaks. */
+  --cq-ember-950: var(--cq-orange-950);
+  --cq-ember-900: var(--cq-orange-900);
+  --cq-ember-800: var(--cq-orange-800);
+  --cq-ember-700: var(--cq-orange-800);
+  --cq-ember-600: var(--cq-orange-700);
+  --cq-ember-500: var(--cq-orange-500);
+  --cq-ember-400: var(--cq-orange-400);
+  --cq-ember-300: var(--cq-orange-300);
+  --cq-ember-200: var(--cq-orange-200);
+  --cq-ember-100: var(--cq-orange-100);
+  --cq-ember-50:  var(--cq-orange-50);
+
+  /* ---------------------------------------------------------- SURFACES --- */
+  --cq-paper:     #FFFFFF;   /* page background */
+  --cq-paper-2:   #F7F9FC;   /* alternating section tint */
+  --cq-surface:   #FFFFFF;   /* cards */
+  --cq-surface-2: #F4F7FB;   /* inset panels, table heads */
+  --cq-inverse:   var(--cq-blue-950);
+
+  --cq-line:        #E6EBF1;
+  --cq-line-strong: var(--cq-ink-200);
+  --cq-line-ink:    var(--cq-ink-300);
+
+  /* -------------------------------------------------------- SEMANTIC ---- */
+  --cq-success-700: #12664C;
+  --cq-success-600: #16785A;
+  --cq-success-500: #1B8A67;
+  --cq-success-100: #DAF2E9;
+  --cq-success-50:  #F0FAF6;
+
+  --cq-warning-700: #8A5808;
+  --cq-warning-600: #A56A0A;
+  --cq-warning-500: #C4820D;
+  --cq-warning-100: #FBEED4;
+  --cq-warning-50:  #FEF9EE;
+
+  --cq-danger-700: #93211C;
+  --cq-danger-600: #B02A23;
+  --cq-danger-500: #C9342C;
+  --cq-danger-100: #FBE0DE;
+  --cq-danger-50:  #FEF2F1;
+
+  --cq-info-700: var(--cq-blue-700);
+  --cq-info-600: var(--cq-blue-600);
+  --cq-info-100: var(--cq-blue-100);
+  --cq-info-50:  var(--cq-blue-50);
+
+  /* ------------------------------------------------------------ STRANDS ---
+     Six science strands. Hues and luminances are both separated, and every
+     use is labelled or icon-marked — colour is never the only signal. */
+  --cq-strand-forces:      #0A72AF;  /* Forces & Energy       */
+  --cq-strand-forces-soft: #E3F0FA;
+  --cq-strand-matter:      #6247B5;  /* Matter & Waves        */
+  --cq-strand-matter-soft: #ECE8F8;
+  --cq-strand-life:        #1B8A67;  /* Life Science          */
+  --cq-strand-life-soft:   #DEF3EC;
+  --cq-strand-earth:       #99703A;  /* Earth & Space         */
+  --cq-strand-earth-soft:  #F5ECDE;
+  --cq-strand-build:       #C25B12;  /* Engineering & Tech    */
+  --cq-strand-build-soft:  #FCE9DA;
+  --cq-strand-method:      #46596B;  /* Science Practices     */
+  --cq-strand-method-soft: #E9EDF2;
+
+  /* ------------------------------------------------------------ MASTERY ---
+     Always paired with a glyph and a word. */
+  --cq-mastery-none:       var(--cq-ink-300);
+  --cq-mastery-beginning:  #A56A0A;
+  --cq-mastery-developing: #C25B12;
+  --cq-mastery-proficient: #0A6494;
+  --cq-mastery-mastered:   #16785A;
+
+  /* ------------------------------------------------------------- ARENA ---
+     The lesson player runs on a dark stage, because that is where a game
+     screen belongs. Everything else in the platform stays on the light
+     surfaces so the product reads as one thing. */
+  --arena-bg:        #0A1728;
+  --arena-surface:   #122238;
+  --arena-surface-2: #1A2E48;
+  --arena-surface-3: #24405F;
+  --arena-line:      #26405C;
+  --arena-line-2:    #33547A;
+  --arena-text:      #F1F6FB;
+  --arena-text-2:    #B4C6D8;
+  --arena-muted:     #8AA2B8;
+  --arena-elixir:    #A87BFF;
+  --arena-elixir-2:  #CFB4FF;
+  --arena-ally:      #3FB6F2;
+  --arena-foe:       #F4635A;
+  --arena-gold:      #F5BE3C;
+
+  /* --------------------------------------------------------------- VIZ ---
+     One measure at a time, so there is no categorical series palette to get
+     wrong. Ordinal magnitude uses a single-hue blue ramp; "no data" uses a
+     hatch texture; status flags always ship with an icon and a word.
+     Validated: light #74B8E0,#2E92CB,#0A72AF,#044E7B — all checks pass. */
+  --viz-surface:  var(--cq-surface);
+  --viz-ink:      var(--cq-ink-900);
+  --viz-ink-2:    var(--cq-ink-500);
+  --viz-grid:     var(--cq-ink-100);
+  --viz-axis:     var(--cq-ink-200);
+  --viz-bar:      var(--cq-blue-500);
+  --viz-bar-soft: var(--cq-blue-100);
+  --viz-line:     var(--cq-blue-500);
+  --viz-seq-1: #74B8E0;
+  --viz-seq-2: #2E92CB;
+  --viz-seq-3: #0A72AF;
+  --viz-seq-4: #044E7B;
+  --viz-none:  var(--cq-ink-300);
+  --viz-good:     var(--cq-success-500);
+  --viz-warning:  var(--cq-warning-600);
+  --viz-critical: var(--cq-danger-600);
+
+  /* ------------------------------------------------------------ TYPE ---- */
+  --font-display: 'Plus Jakarta Sans Variable', 'Plus Jakarta Sans', ui-sans-serif, system-ui, sans-serif;
+  --font-sans:    'Inter Variable', 'Inter', ui-sans-serif, system-ui, -apple-system, sans-serif;
+  --font-mono:    ui-monospace, 'SFMono-Regular', Menlo, monospace;
+
+  --text-display: clamp(2.5rem, 1.3rem + 4.4vw, 4.25rem);
+  --text-h1:      clamp(2.125rem, 1.4rem + 2.6vw, 3.25rem);
+  --text-h2:      clamp(1.625rem, 1.3rem + 1.35vw, 2.375rem);
+  --text-h3:      clamp(1.25rem, 1.13rem + 0.5vw, 1.5rem);
+  --text-h4:      1.125rem;
+  --text-lead:    clamp(1.0625rem, 1rem + 0.28vw, 1.25rem);
+  --text-body:    1rem;
+  --text-sm:      0.9375rem;
+  --text-xs:      0.8125rem;
+  --text-micro:   0.75rem;
+
+  --lh-tight:   1.06;
+  --lh-snug:    1.14;
+  --lh-heading: 1.22;
+  --lh-body:    1.65;
+  --lh-relaxed: 1.75;
+
+  --track-display: -0.03em;
+  --track-heading: -0.02em;
+  --track-body:     -0.006em;
+  --track-label:    0.06em;
+
+  /* ---------------------------------------------------------- SPACING --- */
+  --sp-1:  0.25rem;  --sp-2:  0.5rem;   --sp-3:  0.75rem;  --sp-4: 1rem;
+  --sp-5:  1.25rem;  --sp-6:  1.5rem;   --sp-7:  1.75rem;  --sp-8: 2rem;
+  --sp-10: 2.5rem;   --sp-12: 3rem;     --sp-14: 3.5rem;   --sp-16: 4rem;
+  --sp-20: 5rem;     --sp-24: 6rem;     --sp-32: 8rem;
+
+  --section-y:       clamp(4rem, 2.2rem + 5.4vw, 7rem);
+  --section-y-tight: clamp(2.75rem, 1.8rem + 3vw, 4.25rem);
+  --section-y-loose: clamp(5rem, 2.6rem + 7.5vw, 9.5rem);
+
+  --container:        75rem;
+  --container-wide:   87.5rem;
+  --container-narrow: 45rem;
+  --gutter: clamp(1.25rem, 0.7rem + 2.4vw, 2.5rem);
+
+  /* ----------------------------------------------------------- RADIUS --- */
+  --r-xs:   4px;
+  --r-sm:   6px;
+  --r-md:   10px;
+  --r-lg:   14px;
+  --r-xl:   20px;
+  --r-pill: 999px;
+
+  /* ---------------------------------------------------------- SHADOWS ---
+     Soft, cool-tinted, and used to signal elevation only. */
+  --shadow-xs: 0 1px 2px rgba(15, 27, 42, 0.05);
+  --shadow-sm: 0 1px 3px rgba(15, 27, 42, 0.07), 0 1px 2px rgba(15, 27, 42, 0.04);
+  --shadow-md: 0 6px 16px -4px rgba(15, 27, 42, 0.10), 0 2px 6px -2px rgba(15, 27, 42, 0.05);
+  --shadow-lg: 0 14px 32px -8px rgba(15, 27, 42, 0.14), 0 5px 12px -6px rgba(15, 27, 42, 0.08);
+  --shadow-xl: 0 28px 60px -16px rgba(15, 27, 42, 0.22), 0 8px 20px -10px rgba(15, 27, 42, 0.10);
+  --shadow-ring: 0 0 0 1px rgba(15, 27, 42, 0.06);
+
+  /* ----------------------------------------------------------- MOTION --- */
+  --ease-out:    cubic-bezier(0.22, 0.9, 0.24, 1);
+  --ease-in-out: cubic-bezier(0.45, 0, 0.2, 1);
+  --ease-spring: cubic-bezier(0.3, 1.35, 0.6, 1);
+  --dur-1: 120ms;
+  --dur-2: 200ms;
+  --dur-3: 320ms;
+  --dur-4: 520ms;
+
+  /* -------------------------------------------------------- TOUCH/A11Y --- */
+  --tap-min: 44px;
+  --tap-kid: 52px;
+  --focus-ring: 0 0 0 2px #FFFFFF, 0 0 0 4px var(--cq-blue-500);
+  --focus-ring-dark: 0 0 0 2px var(--arena-bg), 0 0 0 4px var(--arena-ally);
+
+  --z-header: 60;
+  --z-dropdown: 70;
+  --z-modal: 90;
+  --z-toast: 100;
+}
+
+/* The immersive lesson stage. Re-points the neutral tokens at the dark
+   surfaces so every shared component inherits the game skin without needing
+   a second implementation. */
+[data-skin='arena'] {
+  --cq-paper:     var(--arena-bg);
+  --cq-paper-2:   var(--arena-surface);
+  --cq-surface:   var(--arena-surface);
+  --cq-surface-2: var(--arena-surface-2);
+  --cq-line:        var(--arena-line);
+  --cq-line-strong: var(--arena-line-2);
+  --cq-line-ink:    var(--arena-line-2);
+  --cq-ink-950: #FFFFFF;
+  --cq-ink-900: var(--arena-text);
+  --cq-ink-800: var(--arena-text);
+  --cq-ink-700: var(--arena-text-2);
+  --cq-ink-600: var(--arena-text-2);
+  --cq-ink-500: var(--arena-muted);
+  --cq-ink-400: var(--arena-muted);
+  --cq-ink-300: #5C7690;
+  --cq-ink-200: var(--arena-line);
+  --cq-ink-100: var(--arena-surface-2);
+  --cq-ink-50:  var(--arena-surface);
+  --cq-blue-600: var(--arena-ally);
+  --cq-blue-700: #64C6F6;
+  --cq-blue-500: var(--arena-ally);
+  --cq-blue-100: var(--arena-surface-3);
+  --cq-blue-50:  var(--arena-surface-2);
+  --cq-orange-800: #FFB067;
+  --cq-orange-700: #E9701C;
+  --cq-orange-100: #3A2411;
+  --cq-orange-50:  #2B1A0C;
+  --cq-ember-700: #FFB067;
+  --cq-ember-100: #3A2411;
+  --cq-ember-50:  #2B1A0C;
+  --cq-success-700: #57DCAC;
+  --cq-success-500: #57DCAC;
+  --cq-success-100: #10382A;
+  --cq-success-50:  #0D2A20;
+  --cq-danger-700: #FF9089;
+  --cq-danger-600: #F4635A;
+  --cq-danger-100: #3B1714;
+  --cq-danger-50:  #2C1210;
+  --cq-warning-700: #F5C557;
+  --cq-warning-600: #F5BE3C;
+  --cq-warning-100: #362810;
+  --cq-warning-50:  #281D0C;
+  --cq-mastery-none:       #5C7690;
+  --cq-mastery-beginning:  #F5BE3C;
+  --cq-mastery-developing: #FF9A52;
+  --cq-mastery-proficient: #5BB8ED;
+  --cq-mastery-mastered:   #57DCAC;
+  --cq-strand-forces: #5BB8ED;
+  --cq-strand-matter: #A691F0;
+  --cq-strand-life:   #57DCAC;
+  --cq-strand-earth:  #E0B071;
+  --cq-strand-build:  #FF9A52;
+  --cq-strand-method: #9FB4C8;
+  --viz-surface: var(--arena-surface);
+  --viz-grid:    var(--arena-line);
+  --viz-axis:    var(--arena-line-2);
+  --viz-bar:     var(--arena-ally);
+  --viz-bar-soft: var(--arena-surface-3);
+  --viz-line:    var(--arena-ally);
+  --viz-seq-1: #2C6E96;
+  --viz-seq-2: #3E96C6;
+  --viz-seq-3: #5FB9E6;
+  --viz-seq-4: #9BD8F5;
+  --viz-none:  #3B5C78;
+  --shadow-sm: 0 1px 3px rgba(0, 0, 0, 0.5);
+  --shadow-md: 0 8px 20px -6px rgba(0, 0, 0, 0.6);
+  --shadow-lg: 0 18px 40px -12px rgba(0, 0, 0, 0.7);
+  --shadow-xl: 0 32px 70px -20px rgba(0, 0, 0, 0.8);
+  --shadow-ring: 0 0 0 1px rgba(63, 182, 242, 0.12);
+  --focus-ring: var(--focus-ring-dark);
+  color-scheme: dark;
+}

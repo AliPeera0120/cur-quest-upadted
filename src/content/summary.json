@@ -1,0 +1,284 @@
+{
+ "sampleQuestions": [
+  {
+   "id": "q.bank.forces-motion.002",
+   "prompt": "Why does a sled slide more easily on smooth ice than on rough grass?",
+   "choices": [
+    "Smooth ice has less friction",
+    "Ice has more gravity",
+    "Grass is magnetic",
+    "Ice is much heavier"
+   ],
+   "answer": 0,
+   "explanation": "Smooth ice has less friction, so objects slide across it more easily.",
+   "topic": "Forces & Motion",
+   "difficulty": 1,
+   "skillId": "forces.friction",
+   "skillName": "Friction",
+   "strandId": "forces"
+  },
+  {
+   "id": "q.bank.ecosystems.083",
+   "prompt": "In a food chain, what is usually the main starting source of energy?",
+   "choices": [
+    "A fish",
+    "A rock",
+    "A cloud",
+    "The sun"
+   ],
+   "answer": 3,
+   "explanation": "The sun's energy is captured by plants, which begin most food chains.",
+   "topic": "Ecosystems",
+   "difficulty": 1,
+   "skillId": "life.food-webs",
+   "skillName": "Food Chains & Webs",
+   "strandId": "life"
+  },
+  {
+   "id": "q.bank.engineering-design.140",
+   "prompt": "Which shape is often used in bridges and towers because it is very strong?",
+   "choices": [
+    "Circle",
+    "Square",
+    "Triangle",
+    "Oval"
+   ],
+   "answer": 2,
+   "explanation": "Triangles hold their shape well under pressure, which makes structures built with them very sturdy.",
+   "topic": "Engineering & Design",
+   "difficulty": 1,
+   "skillId": "eng.structures",
+   "skillName": "Structures & Materials",
+   "strandId": "build"
+  },
+  {
+   "id": "q.bank.space-astronomy.127",
+   "prompt": "What do we call the round object that orbits Earth and seems to change shape in the sky each month?",
+   "choices": [
+    "The Sun",
+    "A comet",
+    "The Moon",
+    "Mars"
+   ],
+   "answer": 2,
+   "explanation": "The Moon orbits Earth, and we see it appear to change shape as it goes through its phases.",
+   "topic": "Space & Astronomy",
+   "difficulty": 1,
+   "skillId": "space.earth-motion",
+   "skillName": "Earth, Sun & Moon",
+   "strandId": "earth"
+  }
+ ],
+ "stats": {
+  "lessons": 204,
+  "questions": 234,
+  "skills": 48,
+  "byFormat": {
+   "mission": 32,
+   "quick": 16,
+   "battle": 12,
+   "experiment": 72,
+   "course": 50,
+   "assessment": 8,
+   "brief": 14
+  },
+  "activities": 502,
+  "strands": 6,
+  "experiments": 72,
+  "codingLessons": 50,
+  "battles": 12,
+  "briefs": 14
+ },
+ "strands": [
+  {
+   "id": "forces",
+   "name": "Forces & Energy",
+   "blurb": "Why things move, stop, push, pull, heat up and slow down.",
+   "sort": 1,
+   "skillCount": 9,
+   "lessonCount": 29
+  },
+  {
+   "id": "matter",
+   "name": "Matter & Waves",
+   "blurb": "What stuff is made of, and how light, sound and electricity travel.",
+   "sort": 2,
+   "skillCount": 8,
+   "lessonCount": 32
+  },
+  {
+   "id": "life",
+   "name": "Life Science",
+   "blurb": "Cells, bodies, plants, animals and the systems that connect them.",
+   "sort": 3,
+   "skillCount": 8,
+   "lessonCount": 35
+  },
+  {
+   "id": "earth",
+   "name": "Earth & Space",
+   "blurb": "Weather, rocks, resources, and everything past the atmosphere.",
+   "sort": 4,
+   "skillCount": 8,
+   "lessonCount": 11
+  },
+  {
+   "id": "build",
+   "name": "Engineering & Tech",
+   "blurb": "Designing, testing, building and programming things that work.",
+   "sort": 5,
+   "skillCount": 10,
+   "lessonCount": 82
+  },
+  {
+   "id": "method",
+   "name": "Science Practices",
+   "blurb": "Measuring, testing fairly, and how scientists actually work.",
+   "sort": 6,
+   "skillCount": 5,
+   "lessonCount": 15
+  }
+ ],
+ "featured": [
+  {
+   "id": "mission.forces-motion.explorer",
+   "title": "Forces & Motion: Explorer",
+   "summary": "Start here. Builds the core ideas with plenty of support. 8 questions across 4 skills.",
+   "strandId": "forces",
+   "subject": "Forces & Motion",
+   "gradeMin": 3,
+   "gradeMax": 5,
+   "difficulty": 1,
+   "estMinutes": 9,
+   "format": "mission",
+   "tags": [
+    "#mission",
+    "#forces-motion",
+    "#explorer",
+    "#grades3-5"
+   ]
+  },
+  {
+   "id": "mission.energy.investigator",
+   "title": "Energy: Investigator",
+   "summary": "Goes deeper, with the harder questions from this topic. 8 questions across 3 skills.",
+   "strandId": "forces",
+   "subject": "Energy",
+   "gradeMin": 5,
+   "gradeMax": 8,
+   "difficulty": 3,
+   "estMinutes": 9,
+   "format": "mission",
+   "tags": [
+    "#mission",
+    "#energy",
+    "#investigator",
+    "#grades3-5"
+   ]
+  },
+  {
+   "id": "quick.ecosystems",
+   "title": "Ecosystems: 5-Question Challenge",
+   "summary": "A five-question check on Ecosystems. Designed to fit the last few minutes of a lesson.",
+   "strandId": "life",
+   "subject": "Ecosystems",
+   "gradeMin": 3,
+   "gradeMax": 8,
+   "difficulty": 2,
+   "estMinutes": 5,
+   "format": "quick",
+   "tags": [
+    "#quick",
+    "#exit-ticket",
+    "#ecosystems"
+   ]
+  },
+  {
+   "id": "battle.01.inertia-imp",
+   "title": "Inertia Imp",
+   "summary": "Arena battle 1 of 12. Correct answers charge your elixir — spend it to deploy units and bring down Inertia Imp.",
+   "strandId": "forces",
+   "subject": "Forces & Motion",
+   "gradeMin": 3,
+   "gradeMax": 5,
+   "difficulty": 1,
+   "estMinutes": 12,
+   "format": "battle",
+   "tags": [
+    "#battle",
+    "#arena",
+    "#chapter-motion-energy"
+   ]
+  },
+  {
+   "id": "assess.physics.pre",
+   "title": "Physics Pre-Check",
+   "summary": "Twelve questions to find out what students already know about physics before you teach it.",
+   "strandId": "forces",
+   "subject": "Physics",
+   "gradeMin": 4,
+   "gradeMax": 8,
+   "difficulty": 2,
+   "estMinutes": 12,
+   "format": "assessment",
+   "tags": [
+    "#assessment",
+    "#physics",
+    "#pre-check"
+   ]
+  },
+  {
+   "id": "experiment.physics.balloon-powered-car",
+   "title": "Balloon-Powered Car",
+   "summary": "Air pushes the car forward when it escapes the balloon (Newton's Third Law). The experiment demonstrates action-reaction forces and friction effects.",
+   "strandId": "forces",
+   "subject": "Physics",
+   "gradeMin": 3,
+   "gradeMax": 5,
+   "difficulty": 1,
+   "estMinutes": 15,
+   "format": "experiment",
+   "tags": [
+    "#hands-on",
+    "#experiment",
+    "#physics",
+    "#beginner"
+   ]
+  },
+  {
+   "id": "code.python.01.getting-started-with-python",
+   "title": "Getting Started With Python",
+   "summary": "Learn what Python is, install it on your computer, and write your first program!",
+   "strandId": "build",
+   "subject": "Python",
+   "gradeMin": 4,
+   "gradeMax": 8,
+   "difficulty": 1,
+   "estMinutes": 15,
+   "format": "course",
+   "tags": [
+    "#coding",
+    "#python",
+    "#lesson",
+    "#beginner"
+   ]
+  },
+  {
+   "id": "brief.2026-06-07.how-do-self-driving-cars-work",
+   "title": "How Do Self-Driving Cars Work?",
+   "summary": "Have you ever wondered how a car can drive itself? Self-driving cars use special computers and AI to understand the world around them!",
+   "strandId": "build",
+   "subject": "5 Minutes of STEM",
+   "gradeMin": 4,
+   "gradeMax": 8,
+   "difficulty": 1,
+   "estMinutes": 5,
+   "format": "brief",
+   "tags": [
+    "#brief",
+    "#reading",
+    "#technology"
+   ]
+  }
+ ]
+}

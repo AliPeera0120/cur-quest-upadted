@@ -28,3 +28,6 @@ dist-ssr
 *.sw?
 
 .env
+# scratch left by the rebuild session — safe to delete
+_to_delete/
+cq-rebuild.tar.gz
