@@ -410,6 +410,55 @@
   .cq-scroll-x::-webkit-scrollbar { height: 8px; }
   .cq-scroll-x::-webkit-scrollbar-thumb { background: var(--cq-ink-200); border-radius: var(--r-pill); }
 
+
+  /* ------------------------------------------------------- float bubbles ---
+
+     The two pinned corner actions carried over from the old site. Sized to
+     `--tap-min` so a thumb on a Chromebook trackpad or a phone hits them
+     first time, and shaped like the rest of the buttons rather than as a
+     separate visual language. */
+  .cq-float {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.5rem;
+    min-height: var(--tap-min);
+    padding: 0 1rem;
+    border-radius: var(--r-pill);
+    border: 1px solid transparent;
+    font-family: var(--font-display);
+    font-size: 0.875rem;
+    font-weight: 700;
+    letter-spacing: -0.005em;
+    text-decoration: none;
+    box-shadow: var(--shadow-lg);
+    animation: cqRise var(--dur-4) var(--ease-out) both;
+    transition:
+      transform var(--dur-2) var(--ease-out),
+      box-shadow var(--dur-2) var(--ease-out),
+      background-color var(--dur-2) var(--ease-out);
+  }
+  /* Below `sm` the label is hidden, so the pill has to become a circle rather
+     than a stubby lozenge with an off-centre icon. */
+  @media (max-width: 479px) {
+    .cq-float { width: var(--tap-min); padding: 0; justify-content: center; }
+  }
+  .cq-float:hover { transform: translateY(-2px); box-shadow: var(--shadow-xl); }
+  .cq-float:active { transform: translateY(0); }
+  .cq-float:focus-visible { outline: none; box-shadow: var(--focus-ring), var(--shadow-lg); }
+
+  .cq-float--accent {
+    background: var(--cq-orange-700);
+    color: #FFFFFF;
+  }
+  .cq-float--accent:hover { background: var(--cq-orange-800); }
+
+  .cq-float--plain {
+    background: #FFFFFF;
+    border-color: var(--cq-ink-200);
+    color: var(--cq-ink-900);
+  }
+  .cq-float--plain:hover { background: var(--cq-paper-2); }
+
   /* Reveal-on-scroll: opacity plus a small rise, nothing more. */
   .cq-reveal { opacity: 0; transform: translateY(14px); }
   .cq-reveal[data-visible='true'] {
@@ -421,6 +470,8 @@
 
 @media (prefers-reduced-motion: reduce) {
   .cq-reveal { opacity: 1; transform: none; }
+  .cq-float { animation: none; }
+  .cq-float:hover { transform: none; }
 }
 
 @keyframes cqFade { from { opacity: 0; } to { opacity: 1; } }

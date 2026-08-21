@@ -247,6 +247,7 @@
   --focus-ring: 0 0 0 2px #FFFFFF, 0 0 0 4px var(--cq-blue-500);
   --focus-ring-dark: 0 0 0 2px var(--arena-bg), 0 0 0 4px var(--arena-ally);
 
+  --z-float: 50;
   --z-header: 60;
   --z-dropdown: 70;
   --z-modal: 90;
