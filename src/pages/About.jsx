@@ -66,10 +66,10 @@ function Hero() {
             </div>
           </div>
           <Reveal className="min-w-0">
-            <Figure caption="Phoenixville Public Library, one of our Saturday sessions. Everything we run in the community is free and open to whoever turns up.">
+            <Figure caption="CuriosityQuest student leaders presenting bridge engineering during a community library workshop.">
               <img
-                src="/images/event-phoenixville-library.png"
-                alt="CuriosityQuest volunteers running a hands-on session with children at Phoenixville Public Library"
+                src="/images/about-presentation.jpg"
+                alt="CuriosityQuest student leaders presenting in front of a bridge engineering lesson on a classroom screen"
                 width="720" height="480" loading="eager" decoding="async"
                 className="aspect-[3/2] w-full object-cover"
               />

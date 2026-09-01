@@ -57,7 +57,7 @@ export default function Home() {
                 and interactive science experiences for young people in our community.
               </p>
               <div className="mt-7 flex flex-wrap gap-3">
-                <Button to="/explore" size="lg" variant="accent">
+                <Button to="/programs" size="lg" variant="accent">
                   Explore What We Built <ArrowRight size={17} aria-hidden="true" />
                 </Button>
                 <Button href="#team" size="lg" variant="outline">Meet the Team</Button>

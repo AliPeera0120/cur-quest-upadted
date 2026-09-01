@@ -2,6 +2,7 @@ import React from 'react';
 import { Outlet } from 'react-router-dom';
 import PublicHeader from './PublicHeader.jsx';
 import PublicFooter from './PublicFooter.jsx';
+import FloatingActions from './FloatingActions.jsx';
 
 export default function PublicLayout() {
   return (
@@ -12,6 +13,7 @@ export default function PublicLayout() {
         <Outlet />
       </main>
       <PublicFooter />
+      <FloatingActions />
     </div>
   );
 }
