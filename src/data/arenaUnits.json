@@ -1,0 +1,74 @@
+[
+  {
+    "id": "spark",
+    "name": "Spark Sprite",
+    "cost": 2,
+    "hp": 70,
+    "dmg": 16,
+    "speed": 11,
+    "range": 5,
+    "unlockLab": 0,
+    "color": "#f59e0b",
+    "blurb": "Fast and cheap. Great for chipping away at the enemy tower."
+  },
+  {
+    "id": "voltbot",
+    "name": "Volt Bot",
+    "cost": 3,
+    "hp": 130,
+    "dmg": 22,
+    "speed": 8,
+    "range": 5,
+    "unlockLab": 0,
+    "color": "#0ea5e9",
+    "blurb": "A balanced all-rounder with solid health and damage."
+  },
+  {
+    "id": "gearling",
+    "name": "Gearling",
+    "cost": 4,
+    "hp": 200,
+    "dmg": 26,
+    "speed": 6,
+    "range": 5,
+    "unlockLab": 0,
+    "color": "#14b8a6",
+    "blurb": "A sturdy machine that pushes steadily forward."
+  },
+  {
+    "id": "golem",
+    "name": "Magma Golem",
+    "cost": 5,
+    "hp": 360,
+    "dmg": 34,
+    "speed": 4,
+    "range": 5,
+    "unlockLab": 3,
+    "color": "#ef4444",
+    "blurb": "Slow but incredibly tough. Unlocks once your lab has 3 instruments."
+  },
+  {
+    "id": "frost",
+    "name": "Frost Moth",
+    "cost": 3,
+    "hp": 90,
+    "dmg": 18,
+    "speed": 9,
+    "range": 24,
+    "unlockLab": 6,
+    "color": "#22d3ee",
+    "blurb": "Attacks from a distance. Unlocks once your lab has 6 instruments."
+  },
+  {
+    "id": "titan",
+    "name": "Atom Titan",
+    "cost": 7,
+    "hp": 520,
+    "dmg": 55,
+    "speed": 4,
+    "range": 6,
+    "unlockLab": 10,
+    "color": "#8b5cf6",
+    "blurb": "A game-changing powerhouse. Unlocks once your lab has 10 instruments."
+  }
+]
