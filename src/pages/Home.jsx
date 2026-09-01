@@ -3,9 +3,9 @@ import { ArrowRight } from 'lucide-react';
 import { Button, Kicker, Reveal } from '@/components/cq';
 import { Band, TextLink } from '@/components/marketing/Sections.jsx';
 import Meta from '@/shell/Meta.jsx';
+import team from '@/data/team.json';
 
 const IMPACT = [
-  { value: '600+', label: 'Children reached' },
   { value: '10+', label: 'Community events' },
   { value: '$1,000+', label: 'Donations & funding raised' },
 ];
@@ -66,7 +66,7 @@ export default function Home() {
             </div>
           </div>
 
-          <dl id="impact" className="mt-12 grid overflow-hidden rounded-lg border border-white/15 bg-white/[0.06] sm:grid-cols-3">
+          <dl id="impact" className="mt-10 grid max-w-[46rem] overflow-hidden rounded-lg border border-white/15 bg-white/[0.06] sm:grid-cols-2">
             {IMPACT.map((item, index) => (
               <div
                 key={item.label}
@@ -77,6 +77,33 @@ export default function Home() {
               </div>
             ))}
           </dl>
+        </div>
+      </section>
+
+      <section id="team" className="border-b border-line bg-white">
+        <div className="cq-container py-12 cb:py-14">
+          <Reveal className="max-w-[42rem]">
+            <Kicker pill>Meet the team</Kicker>
+            <h2 className="mt-4 text-h2">The students behind CuriosityQuest.</h2>
+          </Reveal>
+          <div className="mt-8 grid gap-5 sm:grid-cols-3">
+            {team.map((member, index) => (
+              <Reveal key={member.id} delay={index * 60} className="overflow-hidden rounded-lg border border-line bg-paper-2">
+                <img
+                  src={member.image}
+                  alt={`${member.name}, ${member.role} at CuriosityQuest`}
+                  className="aspect-[4/3] w-full object-cover object-top"
+                  loading={index === 0 ? 'eager' : 'lazy'}
+                  decoding="async"
+                />
+                <div className="p-5">
+                  <h3 className="text-h4 font-bold text-ink-900">{member.name}</h3>
+                  <p className="mt-1 text-sm font-semibold text-blue-600">{member.role}</p>
+                </div>
+              </Reveal>
+            ))}
+          </div>
+          <TextLink to="/about" className="mt-6">Read our story</TextLink>
         </div>
       </section>
 

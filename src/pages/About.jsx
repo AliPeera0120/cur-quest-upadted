@@ -54,7 +54,7 @@ function Hero() {
             </h1>
             <p className="mt-6 max-w-[50ch] text-lead text-ink-600">
               CuriosityQuest exists to spark a love of learning through hands-on STEM.
-              Four of us started it, all still in high school, and everything we make
+              Three of us started it, all still in high school, and everything we make
               is free — {stats.experiments} experiments, {stats.lessons} lessons in
               Science Arena, a weekly newsletter, and workshops at libraries near us.
             </p>
@@ -150,15 +150,15 @@ function Mission() {
 }
 
 /* ---------------------------------------------------------------- team -----
-   Editorial rows rather than a grid of round avatars: these are four named
-   high-school students with real bios in their own words, and a 4-up avatar
+   Editorial rows rather than a grid of round avatars: these are three named
+   high-school students with real bios in their own words, and an avatar
    strip would flatten them into decoration. */
 function Team() {
   return (
     <Band
       tone="tint"
       kicker="The team"
-      title="Four students, four jobs, one Google Doc that got out of hand."
+      title="Three students, three roles, one mission."
       lede="We are all still in high school. The bios below are in our own words."
     >
       <ul className="divide-y divide-line">
