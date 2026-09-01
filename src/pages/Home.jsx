@@ -5,11 +5,6 @@ import { Band, TextLink } from '@/components/marketing/Sections.jsx';
 import Meta from '@/shell/Meta.jsx';
 import team from '@/data/team.json';
 
-const IMPACT = [
-  { value: '10+', label: 'Community events' },
-  { value: '$1,000+', label: 'Donations & funding raised' },
-];
-
 const PROGRAMS = [
   {
     number: '01',
@@ -45,38 +40,59 @@ export default function Home() {
   return (
     <>
       <Meta
-        title="Student-led STEM programs with measurable community impact"
-        description="CuriosityQuest expands access to hands-on STEM education through community workshops, educational resources, and student-led outreach."
+        title="Hands-on STEM, built by students"
+        description="CuriosityQuest is a student-led nonprofit creating free community workshops, educational resources, and interactive STEM learning."
       />
 
-      <section className="relative overflow-hidden border-b border-blue-700 bg-blue-800 text-white">
-        <div className="cq-container py-16 cb:py-20">
-          <div className="max-w-[58rem]">
-            <Kicker onDark pill>Student-led STEM nonprofit</Kicker>
-            <h1 className="mt-6 text-display text-white">CuriosityQuest</h1>
-            <p className="mt-5 max-w-[48rem] text-lead leading-relaxed text-white/80">
-              Expanding access to hands-on STEM education through community workshops,
-              educational resources, and student-led outreach.
-            </p>
-            <div className="mt-8 flex flex-wrap gap-3">
-              <Button href="#impact" size="lg" variant="accent">
-                Explore Our Impact <ArrowRight size={17} aria-hidden="true" />
-              </Button>
-              <Button to="/get-involved" size="lg" variant="onDark">Get Involved</Button>
-            </div>
-          </div>
-
-          <dl id="impact" className="mt-10 grid max-w-[46rem] overflow-hidden rounded-lg border border-white/15 bg-white/[0.06] sm:grid-cols-2">
-            {IMPACT.map((item, index) => (
-              <div
-                key={item.label}
-                className={`px-6 py-6 cb:px-8 ${index ? 'border-t border-white/15 sm:border-l sm:border-t-0' : ''}`}
-              >
-                <dd className="cq-data text-[clamp(2rem,1.5rem+1.7vw,3rem)] font-bold text-white">{item.value}</dd>
-                <dt className="mt-1 text-sm font-medium text-white/65">{item.label}</dt>
+      <section className="cq-wash border-b border-line bg-white">
+        <div className="cq-container py-12 cb:py-16">
+          <div className="grid items-center gap-10 cb:grid-cols-[1.05fr_0.95fr] cb:gap-16">
+            <div className="min-w-0">
+              <Kicker pill>Student-led STEM nonprofit</Kicker>
+              <h1 className="mt-5 max-w-[14ch] text-display text-ink-900">
+                Hands-on STEM, built by students.
+              </h1>
+              <p className="mt-5 max-w-[46rem] text-lead leading-relaxed text-ink-600">
+                CuriosityQuest creates free workshops, practical learning resources,
+                and interactive science experiences for young people in our community.
+              </p>
+              <div className="mt-7 flex flex-wrap gap-3">
+                <Button to="/explore" size="lg" variant="accent">
+                  Explore What We Built <ArrowRight size={17} aria-hidden="true" />
+                </Button>
+                <Button href="#team" size="lg" variant="outline">Meet the Team</Button>
               </div>
-            ))}
-          </dl>
+
+              <div className="mt-9 grid max-w-[44rem] gap-4 border-t border-line pt-6 sm:grid-cols-3">
+                {[
+                  ['Community workshops', 'Hands-on programs with local partners'],
+                  ['Free resources', 'Experiments and short STEM explainers'],
+                  ['Science Arena', 'Interactive learning for students and teachers'],
+                ].map(([title, body]) => (
+                  <div key={title}>
+                    <p className="text-sm font-bold text-ink-900">{title}</p>
+                    <p className="mt-1 text-xs leading-relaxed text-ink-500">{body}</p>
+                  </div>
+                ))}
+              </div>
+            </div>
+
+            <Reveal className="min-w-0">
+              <div className="overflow-hidden rounded-lg border border-line bg-paper-2 shadow-md">
+                <img
+                  src="/images/hands-on-workshop.jpg"
+                  alt="Children taking part in a hands-on CuriosityQuest STEM activity"
+                  className="aspect-[4/3] w-full object-cover"
+                  loading="eager"
+                  decoding="async"
+                />
+                <div className="flex items-center justify-between gap-4 border-t border-line bg-white px-5 py-4">
+                  <p className="text-sm font-semibold text-ink-800">Learning by building, testing, and asking questions.</p>
+                  <span className="shrink-0 rounded-pill bg-orange-50 px-3 py-1 text-xs font-bold text-orange-800">Free programs</span>
+                </div>
+              </div>
+            </Reveal>
+          </div>
         </div>
       </section>
 
@@ -107,25 +123,6 @@ export default function Home() {
         </div>
       </section>
 
-      <section className="border-b border-line bg-white">
-        <div className="cq-container cq-section--tight">
-          <div className="grid gap-8 cb:grid-cols-[0.8fr_1.2fr] cb:gap-16">
-            <Reveal>
-              <Kicker pill>What we do</Kicker>
-              <h2 className="mt-4 text-h2">We turn curiosity into hands-on learning.</h2>
-            </Reveal>
-            <Reveal delay={80} className="max-w-[44rem] space-y-4 text-lead leading-relaxed text-ink-600">
-              <p>
-                CuriosityQuest is a student-led nonprofit that brings practical STEM experiences to children and families. We create workshops, activities, and educational content that make science feel accessible—not distant or intimidating.
-              </p>
-              <p>
-                Our work gives young learners more opportunities to build, test, ask questions, and discover what they can do.
-              </p>
-            </Reveal>
-          </div>
-        </div>
-      </section>
-
       <section className="bg-paper-2">
         <div className="cq-container cq-section--tight">
           <div className="grid items-center gap-10 cb:grid-cols-2 cb:gap-16">
@@ -143,6 +140,9 @@ export default function Home() {
                 We organize hands-on STEM programs with libraries, recreation departments,
                 schools, and community organizations. Each partnership helps us reach students
                 where they already learn, gather, and feel at home.
+              </p>
+              <p className="mt-5 text-sm font-semibold text-ink-700">
+                10+ community events <span className="mx-2 text-ink-300">·</span> $1,000+ raised to support programming
               </p>
               <TextLink to="/programs" className="mt-6">See our community events</TextLink>
             </Reveal>
@@ -175,20 +175,20 @@ export default function Home() {
         </div>
       </Band>
 
-      <section className="bg-blue-800 text-white">
+      <section className="border-y border-line bg-paper-2">
         <div className="cq-container cq-section--tight">
-          <div className="grid gap-8 cb:grid-cols-[1.2fr_auto] cb:items-end cb:gap-12">
+          <div className="grid gap-8 rounded-lg border border-line bg-white p-7 shadow-sm cb:grid-cols-[1.2fr_auto] cb:items-end cb:gap-12 cb:p-10">
             <div className="max-w-[46rem]">
-              <Kicker onDark pill>Get involved</Kicker>
-              <h2 className="mt-4 text-h2 text-white">Help bring more STEM experiences into the community.</h2>
-              <p className="mt-4 text-lead leading-relaxed text-white/70">
+              <Kicker pill>Get involved</Kicker>
+              <h2 className="mt-4 text-h2 text-ink-900">Help bring more STEM experiences into the community.</h2>
+              <p className="mt-4 text-lead leading-relaxed text-ink-600">
                 We welcome organizations, schools, volunteers, and sponsors who want to expand access to hands-on learning.
               </p>
             </div>
             <div className="flex flex-wrap gap-3">
               <Button to="/get-involved" variant="accent" size="lg">Partner With Us</Button>
-              <Button to="/get-involved" variant="onDark" size="lg">Volunteer</Button>
-              <Button to="/explore" variant="outlineOnDark" size="lg">Explore Our Programs</Button>
+              <Button to="/get-involved" variant="outline" size="lg">Volunteer</Button>
+              <Button to="/explore" variant="ghost" size="lg">Explore Our Programs</Button>
             </div>
           </div>
         </div>
