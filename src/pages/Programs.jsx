@@ -107,8 +107,6 @@ export default function Programs() {
         </div>
       </section>
 
-      <SessionShape />
-
       <Band
         tone="tint"
         kicker="Past events"
@@ -119,6 +117,8 @@ export default function Programs() {
           {past.map((e, i) => <PastEvent key={e.id} event={e} delay={i * 60} />)}
         </ul>
       </Band>
+
+      <SessionShape />
 
       <HostSection />
     </>
@@ -133,15 +133,17 @@ function UpcomingEvent({ event }) {
       <div className="grid cb:grid-cols-[minmax(0,22rem)_1fr]">
         {/* The posters are portrait artwork with text on them, so they are
             contained on a tinted panel rather than cropped to a card ratio. */}
-        <div className="flex items-center justify-center bg-paper-2 p-6 cb:p-8">
+        <div className={`flex items-center justify-center bg-paper-2 ${event.imageType === 'photo' ? '' : 'p-6 cb:p-8'}`}>
           <img
             src={event.image}
-            alt={`Event poster for ${event.title}`}
+            alt={event.imageAlt || `Event poster for ${event.title}`}
             width="791"
             height="1024"
-            loading="lazy"
+            loading="eager"
             decoding="async"
-            className="w-full max-w-[18rem] rounded-md object-contain shadow-sm"
+            className={event.imageType === 'photo'
+              ? 'aspect-[4/3] h-full w-full object-cover'
+              : 'w-full max-w-[18rem] rounded-md object-contain shadow-sm'}
           />
         </div>
 

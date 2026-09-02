@@ -1,5 +1,18 @@
 [
  {
+  "id": "phoenixville-library-september-2026",
+  "title": "Phoenixville Library STEM Workshop",
+  "date": "September 22nd, 2026",
+  "time": "Time to be announced",
+  "ageGroup": "Ages 8-11",
+  "location": "Phoenixville Library",
+  "description": "Join CuriosityQuest for another free, hands-on STEM workshop at Phoenixville Library. Students will investigate, build, and test ideas alongside our student-led team. Additional activity and registration details will be announced soon.",
+  "image": "/images/events-workshop-live.jpg",
+  "imageAlt": "CuriosityQuest student leaders helping children with hands-on STEM activities at Phoenixville Library",
+  "imageType": "photo",
+  "upcoming": true
+ },
+ {
   "id": "phoenixville-library-stem-event",
   "title": "Phoenixville Library STEM Event",
   "date": "June 17th, 2026",
@@ -8,7 +21,7 @@
   "location": "Phoenixville Library",
   "description": "Join us at the Phoenixville Library for a fun, hands-on STEM session! Kids ages 8–11 will explore exciting science experiments and discover how science, technology, engineering, and math show up in everyday life. Come ready to experiment, discover, and have a blast!",
   "image": "/images/event-phoenixville-library.png",
-  "upcoming": true
+  "upcoming": false
  },
  {
   "id": "curiosityquest-at-earth-day-phoenixville",

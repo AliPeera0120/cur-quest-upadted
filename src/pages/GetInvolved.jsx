@@ -77,6 +77,41 @@ export default function GetInvolved() {
         </div>
       </section>
 
+      <Band kicker="Volunteers" title="Specific things we need doing." id="volunteer">
+        <Ledger
+          items={[
+            {
+              title: 'Run a library workshop',
+              body: 'Two hours on a Saturday, an experiment we give you, and a room of eight-to-eleven-year-olds. No teaching experience needed — we will pair you with someone who has done it.',
+              detail: 'Chester and Montgomery County, Pennsylvania',
+              linkLabel: 'Volunteer',
+              to: '/get-involved#contact',
+            },
+            {
+              title: 'Write questions or review the bank',
+              body: `We have ${stats.questions} questions across 48 skills, and some skills only have two or three. If you know a science area well, writing six good multiple-choice questions with real explanations is the single highest-leverage thing you can give us.`,
+              detail: 'Remote · a couple of hours',
+              linkLabel: 'Get in touch',
+              to: '/get-involved#contact',
+            },
+            {
+              title: 'Build the platform',
+              body: 'The site is React and Vite, open in a public repository, with the data model and mastery engine documented. If you write code, there is plenty to do — more activity types, better recommendations, a real content editor.',
+              detail: 'Remote · React, Vite, Tailwind, Postgres',
+              linkLabel: 'See the code',
+              to: '/get-involved#contact',
+            },
+            {
+              title: 'Photograph and film events',
+              body: 'We would rather show real sessions than stock photography, and we are usually too busy running the activity to document it.',
+              detail: 'At events',
+              linkLabel: 'Offer to help',
+              to: '/get-involved#contact',
+            },
+          ]}
+        />
+      </Band>
+
       <Band kicker="Teachers" title="The most useful thing you can do is use it." id="teachers"
         lede="Genuinely — a teacher running this with a real class of twenty-four eleven-year-olds tells us more than any amount of planning.">
         <Split
@@ -116,41 +151,6 @@ export default function GetInvolved() {
       <Statement cite="What we are actually short of">
         Time, materials, and people who can write a good science question.
       </Statement>
-
-      <Band kicker="Volunteers" title="Specific things we need doing." id="volunteer">
-        <Ledger
-          items={[
-            {
-              title: 'Run a library workshop',
-              body: 'Two hours on a Saturday, an experiment we give you, and a room of eight-to-eleven-year-olds. No teaching experience needed — we will pair you with someone who has done it.',
-              detail: 'Chester and Montgomery County, Pennsylvania',
-              linkLabel: 'Volunteer',
-              to: '/get-involved#contact',
-            },
-            {
-              title: 'Write questions or review the bank',
-              body: `We have ${stats.questions} questions across 48 skills, and some skills only have two or three. If you know a science area well, writing six good multiple-choice questions with real explanations is the single highest-leverage thing you can give us.`,
-              detail: 'Remote · a couple of hours',
-              linkLabel: 'Get in touch',
-              to: '/get-involved#contact',
-            },
-            {
-              title: 'Build the platform',
-              body: 'The site is React and Vite, open in a public repository, with the data model and mastery engine documented. If you write code, there is plenty to do — more activity types, better recommendations, a real content editor.',
-              detail: 'Remote · React, Vite, Tailwind, Postgres',
-              linkLabel: 'See the code',
-              to: '/get-involved#contact',
-            },
-            {
-              title: 'Photograph and film events',
-              body: 'We would rather show real sessions than stock photography, and we are usually too busy running the activity to document it.',
-              detail: 'At events',
-              linkLabel: 'Offer to help',
-              to: '/get-involved#contact',
-            },
-          ]}
-        />
-      </Band>
 
       <Band tone="tint" kicker="Libraries, schools and community groups" title="Invite us." id="host">
         <div className="grid gap-6 cb:grid-cols-2">
