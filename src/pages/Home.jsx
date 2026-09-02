@@ -41,7 +41,7 @@ export default function Home() {
     <>
       <Meta
         title="Hands-on STEM, built by students"
-        description="CuriosityQuest is a student-led nonprofit creating free community workshops, educational resources, and interactive STEM learning."
+        description="CuriosityQuest is expanding access to hands-on STEM education throughout the community through free workshops, educational resources, and interactive learning."
       />
 
       <section className="cq-wash border-b border-line bg-white">
@@ -53,8 +53,9 @@ export default function Home() {
                 Hands-on STEM, built by students.
               </h1>
               <p className="mt-5 max-w-[46rem] text-lead leading-relaxed text-ink-600">
-                CuriosityQuest creates free workshops, practical learning resources,
-                and interactive science experiences for young people in our community.
+                Expanding access to hands-on STEM education throughout the community.
+                We create free workshops, practical learning resources, and interactive
+                science experiences for young people.
               </p>
               <div className="mt-7 flex flex-wrap gap-3">
                 <Button to="/programs" size="lg" variant="accent">
@@ -119,7 +120,10 @@ export default function Home() {
               </Reveal>
             ))}
           </div>
-          <TextLink to="/about" className="mt-6">Read our story</TextLink>
+          <div className="mt-6 flex flex-wrap items-center gap-4">
+            <Button to="/get-involved#volunteer" variant="accent">Volunteer with us</Button>
+            <TextLink to="/about">Read our story</TextLink>
+          </div>
         </div>
       </section>
 

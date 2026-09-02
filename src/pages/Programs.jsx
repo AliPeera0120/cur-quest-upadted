@@ -3,7 +3,7 @@ import {
   ArrowRight, CalendarDays, Check, Clock, Mail, MapPin, Users,
 } from 'lucide-react';
 import { Badge, Button, Callout, EmptyState, Kicker, Reveal } from '@/components/cq';
-import { Band, Ledger, Split, TextLink } from '@/components/marketing/Sections.jsx';
+import { Band, Figure, Ledger, Split, TextLink } from '@/components/marketing/Sections.jsx';
 import Meta from '@/shell/Meta.jsx';
 import EVENTS from '@/data/events.json';
 import { CONTENT_SUMMARY } from '@/content/index.js';
@@ -57,27 +57,44 @@ export default function Programs() {
 
       <section className="cq-wash border-b border-line">
         <div className="cq-container py-14 cb:py-20">
-          <Kicker pill>Programs and events</Kicker>
-          <h1 className="mt-6 max-w-[24ch] text-h1">Free STEM sessions where kids already are.</h1>
-          <p className="mt-6 max-w-[54ch] text-lead text-ink-600">
-            We run hands-on experiments at public libraries and community events around
-            Phoenixville — the kind where every kid does the experiment themselves
-            instead of watching an adult do it at the front of the room.
-          </p>
-          <div className="mt-9 flex flex-wrap gap-3">
-            <Button href="#upcoming" size="lg" variant="primary">See what is coming up</Button>
-            <Button href="#host" size="lg" variant="accent">
-              Bring us to your library <ArrowRight size={17} aria-hidden="true" />
-            </Button>
+          <div className="grid items-center gap-12 cb:grid-cols-[1fr_1fr] cb:gap-16">
+            <div className="min-w-0">
+              <Kicker pill>Programs and events</Kicker>
+              <h1 className="mt-6 max-w-[24ch] text-h1">Free STEM sessions where kids already are.</h1>
+              <p className="mt-6 max-w-[54ch] text-lead text-ink-600">
+                We run hands-on experiments at public libraries and community events around
+                Phoenixville — the kind where every kid does the experiment themselves
+                instead of watching an adult do it at the front of the room.
+              </p>
+              <div className="mt-9 flex flex-wrap gap-3">
+                <Button href="#upcoming" size="lg" variant="primary">See what is coming up</Button>
+                <Button href="#host" size="lg" variant="accent">
+                  Bring us to your library <ArrowRight size={17} aria-hidden="true" />
+                </Button>
+              </div>
+              <ul className="mt-10 flex flex-wrap gap-x-7 gap-y-3">
+                {['Always free', 'About 45 minutes', 'Ages 8–11 works best', 'We bring the materials'].map((t) => (
+                  <li key={t} className="inline-flex items-center gap-2 text-sm font-medium text-ink-700">
+                    <Check size={16} aria-hidden="true" className="text-success-500" />
+                    {t}
+                  </li>
+                ))}
+              </ul>
+            </div>
+            <Reveal className="min-w-0">
+              <Figure caption="The CuriosityQuest team at Earth Day Phoenixville, sharing hands-on environmental STEM activities with the community.">
+                <img
+                  src="/images/events-earth-day-team.jpg"
+                  alt="CuriosityQuest student leaders standing behind their STEM activity booth at Earth Day Phoenixville"
+                  width="720"
+                  height="540"
+                  loading="eager"
+                  decoding="async"
+                  className="aspect-[4/3] w-full object-cover"
+                />
+              </Figure>
+            </Reveal>
           </div>
-          <ul className="mt-10 flex flex-wrap gap-x-7 gap-y-3">
-            {['Always free', 'About 45 minutes', 'Ages 8–11 works best', 'We bring the materials'].map((t) => (
-              <li key={t} className="inline-flex items-center gap-2 text-sm font-medium text-ink-700">
-                <Check size={16} aria-hidden="true" className="text-success-500" />
-                {t}
-              </li>
-            ))}
-          </ul>
         </div>
       </section>
 
