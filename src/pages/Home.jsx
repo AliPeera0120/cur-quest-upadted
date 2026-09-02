@@ -5,6 +5,9 @@ import { Band, TextLink } from '@/components/marketing/Sections.jsx';
 import Meta from '@/shell/Meta.jsx';
 import team from '@/data/team.json';
 
+const DONATE_URL = 'https://hcb.hackclub.com/donations/start/curiosityquest';
+const EMAIL = 'curiosity.quest25@gmail.com';
+
 const PROGRAMS = [
   {
     number: '01',
@@ -61,7 +64,9 @@ export default function Home() {
                 <Button to="/programs" size="lg" variant="accent">
                   Explore What We Built <ArrowRight size={17} aria-hidden="true" />
                 </Button>
-                <Button href="#team" size="lg" variant="outline">Meet the Team</Button>
+                <Button to="/get-involved#volunteer" size="lg" variant="primary">Volunteer</Button>
+                <Button href={DONATE_URL} size="lg" variant="outline">Donate</Button>
+                <Button href={`mailto:${EMAIL}`} size="lg" variant="ghost">Email Us</Button>
               </div>
 
               <div className="mt-9 grid max-w-[44rem] gap-4 border-t border-line pt-6 sm:grid-cols-3">
@@ -120,10 +125,7 @@ export default function Home() {
               </Reveal>
             ))}
           </div>
-          <div className="mt-6 flex flex-wrap items-center gap-4">
-            <Button to="/get-involved#volunteer" variant="accent">Volunteer with us</Button>
-            <TextLink to="/about">Read our story</TextLink>
-          </div>
+          <TextLink to="/about" className="mt-6">Read our story</TextLink>
         </div>
       </section>
 
