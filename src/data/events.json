@@ -10,7 +10,51 @@
   "image": "/images/events-workshop-live.jpg",
   "imageAlt": "CuriosityQuest student leaders helping children with hands-on STEM activities at Phoenixville Library",
   "imageType": "photo",
-  "upcoming": true
+ "upcoming": true
+ },
+ {
+  "id": "tour-de-ford-biking-event",
+  "title": "Tour de Ford Biking Event",
+  "date": "August 8th, 2026",
+  "time": "10:00 AM - 11:00 AM",
+  "ageGroup": "All Ages",
+  "location": "Royersford Parks and Recreation",
+  "description": "We joined Royersford Parks and Recreation for the Tour de Ford community bike event. Bikes are a whole physics lesson you can sit on — gears trading speed for force, friction in the brakes, momentum through a turn — so we set up alongside the ride and let families take a look at what is actually going on underneath a bicycle.",
+  "image": "/images/event-2026-08-08-tour-de-ford.png",
+  "upcoming": false
+ },
+ {
+  "id": "phoenixville-library-august-5-2026",
+  "title": "Phoenixville Library STEM Session",
+  "date": "August 5th, 2026",
+  "time": "2:30 PM - 3:15 PM",
+  "ageGroup": "Ages 8-11",
+  "location": "Phoenixville Library",
+  "description": "The second of our two August sessions at the Phoenixville Library. Forty-five minutes, ages 8–11, every kid running the experiment themselves rather than watching one at the front of the room — and the same write-up waiting on this site so they could run it again at home.",
+  "image": "/images/event-2026-08-05-phoenixville.png",
+  "upcoming": false
+ },
+ {
+  "id": "senator-haywood-back-to-school-festival-2026",
+  "title": "Senator Haywood's Back to School Festival",
+  "date": "August 1st, 2026",
+  "time": "1:00 PM - 4:00 PM",
+  "ageGroup": "All Ages",
+  "location": "Senator Haywood's Back to School Festival",
+  "description": "We brought a table of hands-on experiments to Senator Haywood's Back to School Festival — three hours, families passing through all afternoon, and a first circuit or a first chemical reaction for a lot of kids who were there for the backpacks and the free lunch.",
+  "image": "/images/event-2026-08-01-back-to-school.png",
+  "upcoming": false
+ },
+ {
+  "id": "phoenixville-library-july-29-2026",
+  "title": "Phoenixville Library STEM Session",
+  "date": "July 29th, 2026",
+  "time": "2:30 PM - 3:15 PM",
+  "ageGroup": "Ages 8-11",
+  "location": "Phoenixville Library",
+  "description": "A Wednesday afternoon session at the Phoenixville Library for ages 8–11. Everyone got their own materials, made their own mess, and left knowing why it happened — which is the part that turns a fun forty-five minutes into something a kid can explain at dinner.",
+  "image": "/images/event-2026-07-29-phoenixville.png",
+  "upcoming": false
  },
  {
   "id": "phoenixville-library-stem-event",
