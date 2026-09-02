@@ -77,9 +77,21 @@ export default function GetInvolved() {
         </div>
       </section>
 
-      <Band kicker="Volunteers" title="Specific things we need doing." id="volunteer">
+      <Band
+        kicker="Volunteers"
+        title="Bring hands-on STEM to your community."
+        id="volunteer"
+        lede="CuriosityQuest welcomes volunteers anywhere in the world who want to make STEM more accessible in their own school, library, neighborhood, or community."
+      >
         <Ledger
           items={[
+            {
+              title: 'Start something where you live',
+              body: 'Use our free activities to organize a workshop, school club, library session, or community event. We can help you choose approachable experiments and plan a format that works with the people and materials you have.',
+              detail: 'Anywhere in the world · local action with remote support',
+              linkLabel: 'Bring STEM to your community',
+              to: '/get-involved#contact',
+            },
             {
               title: 'Run a library workshop',
               body: 'Two hours on a Saturday, an experiment we give you, and a room of eight-to-eleven-year-olds. No teaching experience needed — we will pair you with someone who has done it.',
