@@ -6,6 +6,8 @@ import Meta from '@/shell/Meta.jsx';
 import team from '@/data/team.json';
 
 const EMAIL = 'curiosity.quest25@gmail.com';
+const composeEmail = (subject) =>
+  `https://mail.google.com/mail/?view=cm&fs=1&to=${encodeURIComponent(EMAIL)}&su=${encodeURIComponent(subject)}`;
 
 const PROGRAMS = [
   {
@@ -63,8 +65,12 @@ export default function Home() {
                 <Button to="/programs" size="lg" variant="accent">
                   Explore What We Built <ArrowRight size={17} aria-hidden="true" />
                 </Button>
-                <Button to="/get-involved#volunteer" size="lg" variant="primary">Volunteer</Button>
-                <Button href={`mailto:${EMAIL}`} size="lg" variant="ghost">Email Us</Button>
+                <Button href={composeEmail('Volunteering with CuriosityQuest')} size="lg" variant="primary">
+                  Volunteer
+                </Button>
+                <Button href={composeEmail('Question for CuriosityQuest')} size="lg" variant="ghost">
+                  Email Us
+                </Button>
               </div>
 
               <div className="mt-9 grid max-w-[44rem] gap-4 border-t border-line pt-6 sm:grid-cols-3">
