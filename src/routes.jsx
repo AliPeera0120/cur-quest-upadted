@@ -16,6 +16,7 @@ const Briefs      = lazy(() => import('./pages/Briefs.jsx'));
 const Careers     = lazy(() => import('./pages/Careers.jsx'));
 const ArenaAbout  = lazy(() => import('./pages/ArenaAbout.jsx'));
 const Programs    = lazy(() => import('./pages/Programs.jsx'));
+const BringAnEvent = lazy(() => import('./pages/BringAnEvent.jsx'));
 const Educators   = lazy(() => import('./pages/Educators.jsx'));
 const About       = lazy(() => import('./pages/About.jsx'));
 const GetInvolved = lazy(() => import('./pages/GetInvolved.jsx'));
@@ -90,6 +91,7 @@ export default function AppRoutes() {
             <Route path="/explore/careers" element={<Careers />} />
             <Route path="/arena" element={<ArenaAbout />} />
             <Route path="/programs" element={<Programs />} />
+            <Route path="/bring-an-event" element={<BringAnEvent />} />
             <Route path="/educators" element={<Educators />} />
             <Route path="/about" element={<About />} />
             <Route path="/get-involved" element={<GetInvolved />} />

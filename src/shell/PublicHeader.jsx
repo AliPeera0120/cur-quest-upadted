@@ -21,6 +21,7 @@ const NAV = [
     items: [
       { label: 'Overview', to: '/about', hint: 'Our mission, team and story' },
       { label: 'Events', to: '/programs', hint: 'Free STEM events near you' },
+      { label: 'Bring a CuriosityQuest Event to You', to: '/bring-an-event', hint: 'Invite us to lead a free STEM session' },
       { label: 'Careers in STEM', to: '/explore/careers', hint: '116 real jobs and how to get there' },
       { label: 'Make an Impact', to: '/get-involved', hint: 'Volunteer, partner or donate' },
     ],
