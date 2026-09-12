@@ -69,7 +69,7 @@ export default function Home() {
                   Volunteer
                 </Button>
                 <Button href={composeEmail('Question for CuriosityQuest')} size="lg" variant="ghost">
-                  Email Us
+                  Contact Us
                 </Button>
               </div>
 
