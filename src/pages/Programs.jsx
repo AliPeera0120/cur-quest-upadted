@@ -176,6 +176,11 @@ function UpcomingEvent({ event }) {
           <p className="mt-6 max-w-[62ch] text-ink-600">{event.description}</p>
 
           <div className="mt-8 flex flex-wrap items-center gap-3">
+            {event.signupUrl ? (
+              <Button href={event.signupUrl} variant="accent">
+                Sign up for this event <ArrowRight size={15} aria-hidden="true" />
+              </Button>
+            ) : null}
             <Button href={`mailto:${EMAIL}?subject=${encodeURIComponent(`Question about ${event.title}`)}`} variant="outline">
               <Mail size={15} aria-hidden="true" /> Ask us a question
             </Button>
