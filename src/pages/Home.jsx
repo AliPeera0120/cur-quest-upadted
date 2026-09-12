@@ -63,7 +63,7 @@ export default function Home() {
               </p>
               <div className="mt-7 flex flex-wrap gap-3">
                 <Button to="/programs" size="lg" variant="accent">
-                  Explore What We Built <ArrowRight size={17} aria-hidden="true" />
+                  Upcoming Events <ArrowRight size={17} aria-hidden="true" />
                 </Button>
                 <Button href={composeEmail('Volunteering with CuriosityQuest')} size="lg" variant="primary">
                   Volunteer
