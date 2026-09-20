@@ -90,14 +90,14 @@ export default function Home() {
             <Reveal className="min-w-0">
               <div className="overflow-hidden rounded-lg border border-line bg-paper-2 shadow-md">
                 <img
-                  src="/images/hands-on-workshop.jpg"
-                  alt="Children taking part in a hands-on CuriosityQuest STEM activity"
+                  src="/images/community-event.jpg"
+                  alt="CuriosityQuest co-founders with Senator Art Haywood at a community event"
                   className="aspect-[4/3] w-full object-cover"
                   loading="eager"
                   decoding="async"
                 />
                 <div className="flex items-center justify-between gap-4 border-t border-line bg-white px-5 py-4">
-                  <p className="text-sm font-semibold text-ink-800">Learning by building, testing, and asking questions.</p>
+                  <p className="text-sm font-semibold text-ink-800">Student-led STEM outreach, built in the community.</p>
                   <span className="shrink-0 rounded-pill bg-orange-50 px-3 py-1 text-xs font-bold text-orange-800">Free programs</span>
                 </div>
               </div>
@@ -138,8 +138,8 @@ export default function Home() {
           <div className="grid items-center gap-10 cb:grid-cols-2 cb:gap-16">
             <Reveal>
               <img
-                src="/images/community-event.jpg"
-                alt="CuriosityQuest student leaders at a community STEM event"
+                src="/images/hands-on-workshop.jpg"
+                alt="Children taking part in a hands-on CuriosityQuest STEM activity"
                 className="aspect-[4/3] w-full rounded-lg object-cover shadow-sm"
               />
             </Reveal>
