@@ -1,5 +1,5 @@
 import React from 'react';
-import { ArrowRight } from 'lucide-react';
+import { ArrowRight, Linkedin, Mail } from 'lucide-react';
 import { Button, Kicker, Reveal } from '@/components/cq';
 import { Band, TextLink } from '@/components/marketing/Sections.jsx';
 import Meta from '@/shell/Meta.jsx';
@@ -41,6 +41,8 @@ const PROGRAMS = [
 ];
 
 export default function Home() {
+  const founder = team[0];
+
   return (
     <>
       <Meta
@@ -108,30 +110,49 @@ export default function Home() {
 
       <section id="team" className="border-b border-line bg-white">
         <div className="cq-container py-12 cb:py-14">
-          <Reveal className="max-w-[42rem]">
-            <Kicker pill>Meet the founder</Kicker>
-            <h2 className="mt-4 text-h2">The student behind CuriosityQuest.</h2>
-          </Reveal>
-          <div className="mt-8 max-w-md">
-            {team.slice(0, 1).map((member) => (
-              <Reveal key={member.id} className="overflow-hidden rounded-lg border border-line bg-paper-2">
-                <img
-                  src={member.image}
-                  alt={`${member.name}, ${member.role} at CuriosityQuest`}
-                  className="aspect-[4/3] w-full object-cover object-top"
-                  loading="eager"
-                  decoding="async"
-                />
-                <div className="p-5">
-                  <h3 className="text-h4 font-bold text-ink-900">{member.name}</h3>
-                  <p className="mt-1 text-sm font-semibold text-blue-600">{member.role}</p>
-                </div>
-              </Reveal>
-            ))}
+          <div className="grid overflow-hidden rounded-lg border border-line bg-paper-2 shadow-sm cb:grid-cols-[0.9fr_1.1fr]">
+            <Reveal className="min-h-full">
+              <img
+                src={founder.image}
+                alt={`${founder.name}, ${founder.role} at CuriosityQuest`}
+                className="h-full min-h-[22rem] w-full object-cover object-top"
+                loading="eager"
+                decoding="async"
+              />
+            </Reveal>
+            <Reveal delay={70} className="flex flex-col justify-center p-7 sm:p-10 cb:p-12">
+              <Kicker pill>Meet the founder</Kicker>
+              <h2 className="mt-4 text-h2">Alijawad Peera</h2>
+              <p className="mt-2 text-base font-semibold text-blue-600">Founder, CuriosityQuest</p>
+              <p className="mt-5 max-w-[42rem] text-base leading-relaxed text-ink-600">
+                Alijawad is a student at Spring-Ford High School with an interest in biomedical
+                engineering. He founded CuriosityQuest to make hands-on STEM learning more
+                exciting, welcoming, and accessible to young people throughout the community.
+              </p>
+              <p className="mt-4 max-w-[42rem] text-base leading-relaxed text-ink-600">
+                Through free workshops, educational resources, and community partnerships, he
+                works to help more students discover the confidence to ask questions, build,
+                experiment, and explore.
+              </p>
+              <div className="mt-7 flex flex-wrap gap-3">
+                <Button href="https://www.linkedin.com/in/alijawad-peera-0282a7308" variant="primary">
+                  <Linkedin size={17} aria-hidden="true" /> LinkedIn
+                </Button>
+                <Button href="mailto:alipeera2009@gmail.com" variant="outline">
+                  <Mail size={17} aria-hidden="true" /> Email Alijawad
+                </Button>
+                <Button to="/about" variant="ghost">
+                  Meet the full team <ArrowRight size={17} aria-hidden="true" />
+                </Button>
+              </div>
+              <a
+                href="mailto:alipeera2009@gmail.com"
+                className="mt-5 w-fit text-sm font-semibold text-ink-600 underline decoration-line underline-offset-4 transition hover:text-blue-700"
+              >
+                alipeera2009@gmail.com
+              </a>
+            </Reveal>
           </div>
-          <Button to="/about" variant="primary" className="mt-6">
-            Meet the full team <ArrowRight size={17} aria-hidden="true" />
-          </Button>
         </div>
       </section>
 
