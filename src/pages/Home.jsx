@@ -109,17 +109,17 @@ export default function Home() {
       <section id="team" className="border-b border-line bg-white">
         <div className="cq-container py-12 cb:py-14">
           <Reveal className="max-w-[42rem]">
-            <Kicker pill>Meet the team</Kicker>
-            <h2 className="mt-4 text-h2">The students behind CuriosityQuest.</h2>
+            <Kicker pill>Meet the founder</Kicker>
+            <h2 className="mt-4 text-h2">The student behind CuriosityQuest.</h2>
           </Reveal>
-          <div className="mt-8 grid gap-5 sm:grid-cols-3">
-            {team.map((member, index) => (
-              <Reveal key={member.id} delay={index * 60} className="overflow-hidden rounded-lg border border-line bg-paper-2">
+          <div className="mt-8 max-w-md">
+            {team.slice(0, 1).map((member) => (
+              <Reveal key={member.id} className="overflow-hidden rounded-lg border border-line bg-paper-2">
                 <img
                   src={member.image}
                   alt={`${member.name}, ${member.role} at CuriosityQuest`}
                   className="aspect-[4/3] w-full object-cover object-top"
-                  loading={index === 0 ? 'eager' : 'lazy'}
+                  loading="eager"
                   decoding="async"
                 />
                 <div className="p-5">
@@ -129,7 +129,9 @@ export default function Home() {
               </Reveal>
             ))}
           </div>
-          <TextLink to="/about" className="mt-6">Read our story</TextLink>
+          <Button to="/about" variant="primary" className="mt-6">
+            Meet the full team <ArrowRight size={17} aria-hidden="true" />
+          </Button>
         </div>
       </section>
 
